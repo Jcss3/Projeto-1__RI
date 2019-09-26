@@ -1,0 +1,2987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta name="generator" content="ShopSite Pro 12 sp3 r2.1 (data - MTGOTraders_Header)">
+
+   
+   
+   
+          
+
+    
+
+
+
+	<link type="text/css" media="all" href="https://www.mtgotraders.com/store/media/css/frame.css?2" rel="stylesheet" />
+	<link type="text/css" media="all" href="https://www.mtgotraders.com/store/media/css/style.css?2" rel="stylesheet" />
+
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/prototype.js"></script>
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/effects.js"></script>	
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/validation.js"></script>	
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/overlay.js?1"></script>
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/sstop.js?1"></script>
+	<script type="text/javascript">
+		var serialNumber = "0001148097";
+		var storeId = "*1a4c945171a04aae08de729fc95b2a";
+		var baseUrl = "https://www.mtgotraders.com/store";
+		var shoppingCartUrl = "https://www.mtgotraders.com/cgi-bin/shop-bin/sc";
+		var domain = ".mtgotraders.com";
+	</script>
+	<link rel="stylesheet" type="text/css" href="//d2r7ualogzlf1u.cloudfront.net/autocomplete/autocomplete.css">
+ 
+<!--
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
+<title>MTGO Traders - Beginner's Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<script type="text/javascript" src="https://www.mtgotraders.com/store/media/en-US/javascript/jquery/jquery.js"></script>
+  <script type="text/javascript">
+    var ss_jQuery = jQuery.noConflict(true);
+</script>
+
+  <script type="text/javascript" src="https://www.mtgotraders.com/store/media/en-US/javascript/jquery/json2.min.js"> </script>
+  <script type="text/javascript">
+
+function ss_handleResponse_inv(data) {
+  var cnt = 0;
+  while (data.getElementsByTagName("recid")[cnt] != undefined) {
+    recid = data.getElementsByTagName("recid")[cnt].firstChild.nodeValue;
+    msg = data.getElementsByTagName("message")[cnt].firstChild.nodeValue;
+    id = document.getElementById('ss_inv' + recid);
+    msg1 = msg.replace(/\"/g, '&quot;');
+    msg2 = msg1.replace(/\|q\|/g, '"');
+    id.innerHTML = msg2;
+    cnt++;
+  }
+}
+var ss_rec_str = '';
+function ss_inv_getinfo() {
+  var dataObj = {
+     storeid: "*1a4c945171a04aae08de729fc95b2a",
+     itemnum: ss_rec_str
+  }
+  var data = ss_jQuery.param(dataObj, false);
+
+  if (ss_rec_str != '') {
+   ss_jQuery.ajax({ type: "GET",
+    url: "https://www.mtgotraders.com/cgi-bin/shop-bin/sc/inv.cgi",
+    data: data,
+    dataType: "jsonp",
+    crossDomain: true,
+    jsonp: true,
+    success: function(rdata, textStatus, jqXHR){
+       if (window.DOMParser){
+         parser=new DOMParser();
+         data=parser.parseFromString(rdata.data,"text/xml");
+         ss_handleResponse_inv(data);
+       } else{ // Internet Explorer
+         xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+         xmlDoc.async=false;
+         xmlDoc.loadXML(rdata.data);
+         ss_handleResponse_inv(xmlDoc);
+       }
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+           //            console.log(errorThrown);
+    }
+   });
+ }
+}
+ss_jQuery(document).ready(function(){
+  ss_inv_getinfo();
+  return true;
+});
+  </script>
+</head>
+<body>
+<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/search.js"></script>
+<div class="wrapper">
+	<div class="wrapperinner">
+		<div class="content">
+<!-- End HEADER-->
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+    <style>
+
+        .absheader .deliveryhours {
+            background: url(https://www.mtgotraders.com/images/deliveryhours-left.png) no-repeat 0 0 !important;
+            position: absolute;
+            width: 43px;
+            height: 240px;
+            overflow: hidden;
+            top: 180px;
+            left: -43px !important;
+        }
+        <!--
+        /* Font Definitions */
+        @font-face
+        {font-family:Wingdings;
+            panose-1:5 0 0 0 0 0 0 0 0 0;}
+        @font-face
+        {font-family:"Cambria Math";
+            panose-1:2 4 5 3 5 4 6 3 2 4;}
+        @font-face
+        {font-family:Calibri;
+            panose-1:2 15 5 2 2 2 4 3 2 4;}
+        @font-face
+        {font-family:Tahoma;
+            panose-1:2 11 6 4 3 5 4 4 2 4;}
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:10.0pt;
+            margin-left:0in;
+            text-indent:.5in;
+            line-height:200%;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoHeader, li.MsoHeader, div.MsoHeader
+        {mso-style-link:"Header Char";
+            margin:0in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoFooter, li.MsoFooter, div.MsoFooter
+        {mso-style-link:"Footer Char";
+            margin:0in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        a:link, span.MsoHyperlink
+        {color:blue;
+            text-decoration:underline;}
+        a:visited, span.MsoHyperlinkFollowed
+        {color:purple;
+            text-decoration:underline;}
+        p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+        {mso-style-link:"Balloon Text Char";
+            margin:0in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            font-size:8.0pt;
+            font-family:"Tahoma",sans-serif;}
+        p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+        {margin:0in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+        {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:10.0pt;
+            margin-left:.5in;
+            text-indent:.5in;
+            line-height:200%;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+        {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:0in;
+            margin-left:.5in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            line-height:200%;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+        {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:0in;
+            margin-left:.5in;
+            margin-bottom:.0001pt;
+            text-indent:.5in;
+            line-height:200%;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+        {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:10.0pt;
+            margin-left:.5in;
+            text-indent:.5in;
+            line-height:200%;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        span.BalloonTextChar
+        {mso-style-name:"Balloon Text Char";
+            mso-style-link:"Balloon Text";
+            font-family:"Tahoma",sans-serif;}
+        span.HeaderChar
+        {mso-style-name:"Header Char";
+            mso-style-link:Header;}
+        span.FooterChar
+        {mso-style-name:"Footer Char";
+            mso-style-link:Footer;}
+        .MsoChpDefault
+        {font-family:"Calibri",sans-serif;}
+        .MsoPapDefault
+        {margin-bottom:10.0pt;
+            text-indent:.5in;
+            line-height:200%;}
+        /* Page Definitions */
+        @page WordSection1
+        {size:8.5in 11.0in;
+            margin:1.0in 1.0in 1.0in 1.0in;}
+        div.WordSection1
+        {page:WordSection1;}
+        /* List Definitions */
+        ol
+        {margin-bottom:0in;}
+        ul
+        {margin-bottom:0in;}
+        .center-image
+        {display:inline-block;width:100%;text-align:center}
+        .toc-link
+        {text-decoration: none !important;color:royalblue !important;font-size: 13px;line-height: 1.8;}
+        .toc-link:hover
+        {text-decoration: underline !important;color:royalblue !important;}
+
+        .cart-contents
+        {overflow: visible !important;}
+        -->
+    </style>
+
+    <script>
+
+
+        $(document).ready(function(e) {
+
+            var $sidebar   = $("#sidebar"),
+                $window    = $(window),
+                $bottombar = $("#bottombar"),
+                $wrapper = $('.wrapper'),
+                $sideWidth = $sidebar.width(),
+                $sideOffset = $sidebar.offset().left,
+                offset     = $sidebar.offset(),
+                $botcontent = $('#bottomcontent'),
+                topPadding = 15,
+                $curSelectIndex = -1,
+                $curSelect = null,
+                $mainOffset = 0,
+                $curSelectIsTerm = false,
+                $curSelectVar = "";
+
+            var $time = $('#time');
+            $time.toggleClass('time-fix')
+
+            var width = 980 + 330;
+
+            var $mainOffset = (($(window).width() - width) / 2) + (43 / 2);
+
+            var oldOffset = parseInt($('.wrapper').css('marginLeft'));
+
+            $('body').css('background-position', $mainOffset - 4 + 'px 0px');
+
+            $('.wrapper').css('marginLeft', $mainOffset)
+            $('.wrapper').css('marginRight', 0)
+
+
+            $sideWidth = $sidebar.width();
+            $sideOffset = $sidebar.offset().left;
+
+            updateView($(window).width(), $(window).height())
+
+            if ($(document).width() > $(window).width()) {
+                $sidebar = $sidebar.detach();
+                $botcontent.css('marginLeft', '-25px');
+                $bottombar.css('width', '980px');
+                $bottombar.css('marginLeft', $('.wrapper').offset().left + 43);
+                $bottombar.css('visibility', 'visible');
+            }
+
+            offset = $sidebar.offset();
+
+
+            $window.scroll(function () {
+                if ($window.scrollTop() > offset.top) {
+                    $sidebar.css("margin-top", $window.scrollTop() - offset.top + topPadding + "px");
+                } else {
+                    $sidebar.css("margin-top", "0px");
+                }
+            });
+
+
+            function updateView(x, y) {
+                var width = 980 + 330;
+
+
+                $mainOffset = ((x - width) / 2) + (43 / 2);
+
+                if ($mainOffset > 100) {
+                    $('body').css('background-position', $mainOffset - 4 + 'px 0px');
+                    $('.wrapper').css('marginLeft', $mainOffset)
+                }
+                else {
+                    $('body').css('background-position', '96px 0px');
+                    $('.wrapper').css('marginLeft', 100);
+                }
+
+                if (x < ($('.content').offset().left + 980 + $sideWidth)) {
+
+                    $sidebar = $sidebar.detach();
+                    $botcontent.css('marginLeft', '-25px');
+
+                    $('.wrapper').css('marginLeft', 'auto');
+                    $('.wrapper').css('marginRight', 'auto');
+                    $('body').css('background-position', '');
+
+                    $bottombar.css('width', '980px');
+                    $bottombar.css('right', '0px');
+                    $bottombar.css('left', $('.wrapper').offset().left);
+                    $bottombar.css('visibility', 'visible');
+
+                    $('#scroll').css('display', 'none');
+                }
+                else {
+                    if ($sidebar.parent().length === 0)
+                        $sidebar.appendTo("#wrapped");
+
+                    $sideWidth = $sidebar.width(),
+                        $sideOffset = $sidebar.offset().left;
+
+                    $bottombar.css('visibility', 'collapse')
+                    $('.wrapper').css('marginRight', 0);
+                    $('#scroll').css('display', 'block');
+                }
+
+                $('.toc-contents').css('max-height', y * 0.5);
+
+                offset = $sidebar.offset();
+
+                if ($window.scrollTop() > offset.top) {
+                    $sidebar.css('margin-top', $window.scrollTop() - offset.top + topPadding + "px")
+                } else {
+                    $sidebar.css('margin-top', "0px")
+                }
+
+            }
+
+            $(window).on('resize', function (e) {
+                var x = $(this).width();
+                var y = $(this).width();
+                updateView(x, y);
+            });
+        });
+
+    </script>
+
+</head>
+
+<div id="sidebar" style="margin-top: 0px;">
+    <div class="sidebar-inner">
+        <div class="sidebar-panel-top panel">
+            <div class="panel-body" style="padding:2px;">
+                <span class="sidebar-header ng-binding">Table of Contents</span>
+            </div>
+        </div>
+        <div class="cart-contents ng-hide" style="max-height: 1271.5px;" ng-show="products.length > 0">
+            <ol>
+                <li>
+                    <a class="toc-link" href="#whyplay">Why Play Online?</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#intro">Intro to MTGO <span style="font-weight: bold; color: black">(VIDEO)</span></a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#whatis">What is Magic Online?</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#starting">Getting Started</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#collection">Collection Management & Deck Building <span style="font-weight: bold; color: black">(VIDEO)</span></a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#firstgame">Your First Game</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#priority">Priority & Keyboard Shortcuts</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#othersettings">Other Settings & Tricks</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#formats">Magic Online Formats</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#costs">Costs & Currencies</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#events">Events</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#trading">Buying, Selling & Trading <span style="font-weight: bold; color: black">(VIDEO)</span></a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#economy">Economy Tips & Tricks</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#redemption">Set Redemption & Selling Your Collection</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#resources">Magic Online Resources</a>
+                </li>
+                <li>
+                    <a class="toc-link" href="#final">Final Thoughts</a>
+                </li>
+            </ol>
+        </div>
+        <div class="sidebar-panel-bottom panel">
+            <div class="panel-body" style="padding:2px;">
+                &nbsp;
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+    <p class=MsoNormal align=center style='text-align:center'><b><span
+                style='font-size:20.0pt;line-height:200%'>The Complete Beginner’s Guide to
+Magic Online</span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Welcome! If
+        you’re a Magic player thinking about taking the Magic Online plunge, look no
+        further. My name is Chas Andres, and I’ve been playing Magic—both online and
+        off—for the better part of two decades. My goal in writing this guide is to
+        demystify the Magic Online experience. From your initial download through your
+        first tournament victory, I’ve got you covered.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Let’s not get into
+        the technical stuff quite yet, though. I’d rather start with the basics. First
+        of all:</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><b><span style='font-size:20.0pt'><a style="color:#000 !important" name="whyplay">Why Play Magic Online?</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Quick—what’s your
+        biggest problem with Magic?</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Mine is this: I
+        don’t get to play nearly as much as I want to! My local shop only hosts two booster
+        drafts a week, and I have work one of those nights. I have a playgroup I can
+        rally to the cause sometimes, but we don’t get to meet every week. That’s six
+        or seven matches of a week if I’m lucky–not nearly enough.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Magic Online is
+        the best answer to that problem. Love Standard? Dying to draft? Want to master
+        Modern? Whatever your preferred format is, you can log onto Magic Online right
+        now and find a game within minutes. You can play Legacy at 2 AM. You can battle
+        Standard in your pajamas, or with friends shouting at the screen over your
+        shoulder, or while sipping an ice cold drink. You can play
+        Vintage—Vintage!!—despite the fact that no one you know actually owns a Black
+        Lotus. Don’t like your draft deck? You don’t have to wait until next Friday
+        night to play again—just join another queue. Want to figure out how G/W Midrange
+        beats U/B Control? You can run that match-up again, and again, and again, and
+        again, until you get it right.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Many professional
+        Magic players know that this is the secret to leveling up your abilities. I’ve
+        been part of the Magic community all my adult life, and I can’t count how many
+        times I’ve heard a pro player tell me that they only started getting really
+        good once they started playing a lot online. The best way to master Magic is to
+        play as much as you can. Magic Online enables this in a way that nothing else
+        does.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>There has been a
+        lot of digital ink spilled about the problems with Magic Online, and many of these
+        complaints do have merit. The interface is lackluster compared to the beauty of
+        Hearthstone, you’ll encounter bugged cards from time to time, and there will be
+        days when the program crashes on you during a crucial turn. Things aren’t as
+        bad as some of the nay-sayers claim, but these problems will frustrate you if
+        you play a significant amount of Magic Online.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Here’s the thing,
+        though—all those ugly bugs? They’re small potatoes when compared to the benefit
+        of getting to play as much Magic as you want, whenever you want. It’s the best
+        game ever created, and it’s at your fingertips 24/7. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><b><span style='font-size:20.0pt'><a style="color:#000 !important" name="intro">Intro to MTGO</a></span></b></p>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>If you prefer, The Professor does a great job of introducing MTGO to newer players. Check out the video below!</p>
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/j4acqXA6iWU" frameborder="0" allowfullscreen></iframe>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><b><span style='font-size:20.0pt'><a style="color:#000 !important" name="whatis">Okay, So What Exactly
+*IS* Magic Online?</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>There are two
+        different Magic: the Gathering computer programs, and it’s worth taking a
+        moment to talk about the difference between them. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>In addition to <b>Magic
+            Online</b>, there is also a game called <b>Magic Duels</b> (formerly Duels of
+        the Planeswalkers) that features digital Magic gameplay. If you’ve visited the
+        Wizards of the Coast booth at a gaming convention or you’ve downloaded
+        something Magic-related on Steam or XBOX Live, you’ve probably experienced some
+        iteration of Magic Duels, NOT Magic Online.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>Duels</b> is a
+        beautiful game. It has a modern, intuitive interface. You can play it on your
+        iPhone, your PC, or your XBOX. There’s great story content, unlockable cards,
+        and different AI bosses you can play against. If you’re a casual Magic player,
+        I highly recommend it.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>The problem is
+        that Duels isn’t quite Magic. Because our favorite game was created back in
+        1993, creator Richard Garfield didn’t think about how difficult it would be to
+        program Magic’s rules and interactions into a digital interface. Duels cuts the
+        rulebook to shreds, simplifying the game to the point where you can play it on
+        your smartphone. If you’re a serious Magic player, you’ll feel constrained by
+        what Duels leaves out. There are no formats. The available card pool is small. Your
+        ability to build interesting decks is very limited.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>Magic Online (abbreviated
+            MTGO, or sometimes MODO)</b> has the opposite problem. The game’s purpose is to
+        replicate paper Magic as faithfully as possible, and for the most part it succeeds.
+        Barring some Un-set shenanigans, there isn’t anything you can do in a game of paper
+        Magic that you can’t do on Magic Online.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>There are
+        trade-offs for this level of control, though. Because Magic Online has to
+        replicate the complex priority-passing experience of high level Magic, the
+        program is currently limited to use on the <b>Windows PC</b>—there are no mobile
+        or console versions of the program. They’ve never gotten around to building a
+        Mac OSX version, either. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>MTGO requires a
+        reasonably beefy system to run, too—you need at least a Pentium 4 processor (2
+        GHz or better), at least 1 GB of memory, at least 12 MB of video RAM, at least
+        650 MB of disc space, a broadband internet connection, and Windows Vista or
+        newer. If all these words are technobabble nonsense to you, use your best judgment.
+        A PC bought in the past five years shouldn’t have any issues whatsoever. A
+        cheap or older netbook can run Magic Online as long as you don’t have anything
+        else running at the same time. That creaky, ten-year-old XP tower that went in
+        your closet after you got a MacBook for your birthday? Not so much. If you find
+        that MTGO is constantly crashing and lagging while you follow this guide, the
+        problem might lie with your low end hardware.  </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Beyond that, the
+        biggest difference between Magic Duels and Magic Online is that <b>cards and booster
+            packs in Magic Online are treated like their paper Magic counterparts.</b>
+        That’s right—a Magic Online booster pack has the same $3.99 MSRP as a pack down
+        at your local shop, and you can’t just sign up for an account that contains
+        four copies of every card. If you want a good Standard deck, you have to buy or
+        trade for the singles just like in paper Magic. Prerelease tournaments and
+        drafts cost about the same online as they do at your local shop. Magic Online
+        is cheap to buy—you can get started for just $10—but it costs a lot to play.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>This is a stumbling
+        block for a lot of people, and I get it. If you already have an extensive Magic
+        collection in paper form, do you really have to re-buy everything in digital
+        form? </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Well, uh, yeah. But
+        the good news is that most digital cards are cheaper than their paper analogues.
+        And there are ways to redeem sets, allowing you to give up your digital copies
+        in exchange for paper cards that show up in the mail from Wizards of the Coast.
+        (This isn’t just a theoretical proposition, either—I redeem sets all the time.)
+        Even if you don’t want to do this, Magic Online’s cards still have real value.
+        There are reputable companies out there that will pay you actual money for your
+        digital objects. Paying real money for digital objects feels weird, but there’s
+        no realistic risk of your Magic Online investment becoming worthless overnight.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>We’ll dive into the
+        economic stuff a little bit later, but for now all I need you to grasp is the
+        idea that digital cards are roughly equivalent to their paper counterparts. I
+        like to imagine that Wizards of the Coast shrunk down a bunch of real cards and
+        converted them into software like in <i>Tron</i>.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><b><span style='font-size:20.0pt'><a style="color:#000 !important" name="starting">Getting Started: Download
+and Account Creation</span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>As you might imagine,
+        the best place to <b>download Magic Online</b> is<a
+            href="http://magic.wizards.com/en/content/download"> directly from the Wizards
+            of the Coast website</a>.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>The initial
+        download is 159 megabytes, and it goes fast—Wizards of the Coast has some
+        serious server power dedicated to letting you get started quickly. I had the
+        whole thing up and running within about two minutes on my mediocre cable
+        connection.</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=385 height=397 id="Picture 1"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image001.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>Creating your
+            account</b> is easy, too. Just press the ‘Create New Account’ button on your
+        freshly downloaded client or <a
+            href="https://accounts.onlinegaming.wizards.com/accountsignup.aspx">follow this
+            link</a>, which takes you to the same place. The website will prompt you to fill
+        out your birthdate and ask you how much experience you have playing Magic: The
+        Gathering. After that, you just have to complete a standard username and
+        password form. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Don’t forget to
+        choose a fun username! Mine is SeaTroll—a tribute to my favorite card from the <i>Homelands</i>
+        expansion. Feel free to drop me a friend request if you’d like!</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=624 height=528 id="Picture 2"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image002.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>After you have
+        your account, the website sends you to a billing screen where you have provide
+        payment information. Wizards of the Coast takes all major credit cards and
+        PayPal, so it’s pretty standard. The cost of a new account? <b>$9.99 plus tax</b>.
+        Don’t worry—you’ll get most of this money back in the form of cards and
+        currency.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>The first time
+            you log in</b>, you’ll have to accept a couple of agreements stating that the
+        part of the world you live in doesn’t have any laws that prevent you from
+        accepting prizes or receiving rewards. If you’re an adult living in the United
+        States, you’re good. If not, make sure that you aren’t running afoul of any
+        local laws.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Once inside,
+        you’ll come face to face with a menu bar that looks something like this:</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=624 height=47 id="Picture 3"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image003.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>This is the main bar
+        we’ll be using to navigate the program. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>The <b>HOME</b>
+        screen isn’t all that useful, but it will show you the major upcoming events as
+        well as which of your buddies are currently online. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>The <b>COLLECTION</b>
+        tab displays all of your cards and decks. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>PLAY LOBBY</b>
+        is where you will find tournaments and casual pick-up games. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>STORE</b>
+        takes you to the official Magic Online store, where you can buy booster packs
+        and such. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>TRADE</b> is
+        where you’ll be able to buy and sell cards with other users.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>ACCOUNT</b> is
+        where you’ll find the program’s interface settings. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>If you experience
+        a bug or find a problem with your software, you’ll be able to open up a chat
+        connection with MTGO support in the <b>HELP</b> tab.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>I’ll come back to
+        all of these topics later, but first we should take a look at what be bought
+        with our ten dollars. Not only did we get a copy of the program and a brand new
+        account, but we have been gifted a <b>Magic Online New Account Starter Kit.</b>
+        You’ll find it by going to ‘COLLECTION’ and then filtering by ‘Other Products.’</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Double-click on
+        the kit, and MTGO will ask if you’re sure you want to open it up. Go for it!</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=624 height=422 id="Picture 6"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image004.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>And now your
+        account has a bunch of fun new toys! Here’s what my Starter Kit contained:</p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal'><span
+            style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Five Avatars</p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal'><span
+            style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Five Event Tickets</p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal'><span
+            style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Twenty New Player Points</p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal'><span
+            style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>400 Standard-Legal Cards (five of which are rares)</p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal'><span
+            style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>300 Basic Lands</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>We’ll talk about
+        Event Tickets and Avatars in good time. For now, the things that excite me the
+        most are those hundreds of new cards we have. It’s about time we built a deck,
+        don’t you think?</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="collection">Collection Management &amp; Deck
+Building</a></span></b></p>
+
+    <br>
+    <br>
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/mpD6R9VyD9M" frameborder="0" allowfullscreen></iframe>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><span
+            style='font-size:20.0pt;color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Your Magic Online
+        <b>collection</b> is divided into two sections: <b>Cards</b> and <b>Other
+            Products</b>. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>It’s pretty
+        simple—all your cards (including basic lands) are sorted into one digital bin,
+        and everything else—boosters, tickets, tokens, points, whatever—ends up in
+        another. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Let’s start by
+        taking a look at our <b>cards</b>. The first thing you’ll notice is that we can
+        <b>sort them all by</b> <b>format</b>. You might notice a few unusual
+        choices—we’ll discuss online-only casual formats like Momir Basic and Freeform
+        Vanguard a bit later—but the idea is intuitive enough. Press the little radio
+        button next to “Modern,” for example, and only Modern-legal cards will show up.
+    </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Above that,
+        there’s a search feature that will let you modify your search even further.
+        Type in “tap” and now you’re only seeing Modern-legal cards that contain the
+        word “tap.” Type in “Cryptic Command” and now you’re only seeing Modern-legal cards
+        that contain the word “Cryptic Command.” (Hint: there’s only one, and we don’t
+        have a copy in our collection yet.)</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=278 height=425 id="Picture 7"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image005.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The important thing to remember here is that <b>you are
+                only searching cards you actually own.</b> So unless you actually have an
+online copy of Cryptic Command, your Cryptic Command search will leave you
+empty-handed.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>There are also search tabs that let you search your
+collection based on <b>Format, Set, Color, Type, Subtype, Converted Mana Cost,
+                Power, Toughness, and Rarity.</b> And the search tools stack—if you want to
+look up Standard-legal blue rares with a toughness greater than two and a
+converted mana cost no greater than five, you can.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=279 height=478 id="Picture 8"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image006.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The cards that meet your search criteria (or, if you
+don’t have search criteria, your entire collection) will show up in pictorial
+form on the right side of your screen. Above the cards are a few more menus
+that let you control how the cards are displayed. You can <b>increase or
+                decrease size</b> with the little slider on the right. You can <b>control how
+                the cards are sorted</b> with the “Sort” tab. With the “Versions” tab, you can
+the program whether or not you want Magic Online to<b> group promotional cards,
+                foils, and different versions in the same pile. </b>On the left, you can choose
+whether or not you want <b>a pop-out “Preview Pane”</b> that you can move
+around your desktop.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=390 id="Picture 9"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image007.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The most interesting feature here is the “Quantity” tab.
+Normally, it is set between 1 and 20+, which shows you all the cards in your
+collection. If you set the slider back to zero, however, it will show you <b>shadow
+                versions of all cards that exist on Magic Online</b>—regardless of whether or
+not you own them. Here, for example, are some of the Zendikar Expeditions as
+seen from my brand new account:</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=452 id="Picture 10"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image008.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>This is especially useful when building new decks,
+because it allows you to fiddle around with whatever list you’d like even if
+you don’t currently own the necessary cards.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Speaking of deck building, let’s get down to it! Down at
+the bottom of your screen, you’ll see an “Add Deck” button. Click it, and the
+Add Deck interface pops up:</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=457 id="Picture 11"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image009.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>From here, you can either <b>import a deck</b> (many
+Magic websites, including WotC’s own, have decklist files you can download) or <b>create
+                a new deck.</b> You can name your deck, select the format, and even pick a
+nifty little deck box from a pre-selected series of pictures. Since I’m making
+a U/G deck and none of the pictures feature either the Simic guild symbol or
+Kiora, I’m going with a generic planeswalker deck box for now. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>After creating your new deck, Magic Online will open up a
+pane at the bottom of your screen. You can add cards to your deck by either <b>double-clicking</b>
+or <b>clicking and dragging</b> from your collection. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>If you add a card that you don’t currently own, little
+yellow caution stripes appear on its black border</span></b><span
+            style='color:#222222'>. You can save the deck, but you can’t play with it until
+you acquire a copy of the missing card.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Otherwise, you can sort your deck in much the same way
+you can sort your collection—by name, color, rarity, or (most helpfully)
+converted mana cost. Throw in some lands and you’re good to go.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Well, you’re good to go as long as you’re okay losing a
+whole bunch. I wasn’t able to build the sexiest Standard deck out of the meager
+collection Magic Online gave me to start with, but I tried my best:</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222;text-align:center;'><img border=0 width=625 height=298 id="Picture 12"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image010.jpg"></span><span
+            style='color:#222222'> </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>And that’s it! <b>Magic Online auto-saves all your decks</b>,
+so you don’t have to worry about forgetting to hit a save button. All your
+decks will be listed under the “Decks &amp; Binders” tab on the Collection page
+unless you delete them (which you can do by right-clicking on a deck name and
+selecting the “delete” option). </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Want to <b>export your deck?</b> Just <b>right-click it</b>
+and select “Export.” You can save decks as a Magic Online deck file (.dek), a
+text file (.txt), or a spreadsheet (.csv). </span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'>&nbsp;</span></b></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="firstgame">Playing Your First Game</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>I’m all for theory, but the best way to learn the Magic
+Online interface is by jumping right into a game. Click on the <b>PLAY LOBBY</b>
+header  and use the filters on the left side of the screen to select <b>Constructed
+                Open Play</b> and <b>Just Starting Out</b>. </span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=335 height=343 id="Picture 20"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image011.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Even if you’ve been playing Magic for many years, start here—your
+opponent will be much more understanding about the missclicks and interface
+mistakes you’re inevitably going to make if you join a beginner game. Also, I
+doubt my U/G monstrosity can handle an Abzan Midrange matchup just yet. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you select your deck, click the big button marked <b>PLAY</b>
+on the bottom left of the screen and Magic Online will automatically match you
+with a worthy opponent. Finally—let’s go!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=380 id="Picture 21"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image012.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you join a game, you will finally come face to face
+with Magic Online’s <b>game play interface</b>. There’s a window where your
+hand will appear in just a moment, a battlefield, a chat screen, two life
+totals, two graveyards, and a little row that spells out all the phases of a
+turn.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>This screen is a tad busy for my tastes. If you’d like,
+you can <b>hide the chat/game log</b> by pressing the little black ‘X’ next to
+where it says ‘CHAT,’ allowing you to have a slightly bigger battlefield. You
+can also <b>make the graveyards smaller</b> by pressing the little red X’s on
+the graveyard panel. This will pop them back under each player’s avatar and
+life total, freeing up yet more battlefield space. You can easily pop them back
+out if you’re playing a deck with reanimation spells or flashback cards.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>After you’ve finished adjusting your interface, you’ll
+notice that the first thing that the program does is simulate the die roll that
+determines who gets to choose whether to play or draw. <b>MTGO also</b> <b>starts
+                up your chess clock</b>—each player has one, and it is set to twenty-five
+minutes per player per match. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>This is one of the biggest differences between paper
+Magic and the online version—instead of each round having an overall time limit
+that ends with players taking extra turns, you each have twenty-five minutes to
+use how you wish. Be careful: <b>if your timer goes all the way down to zero, you
+                lose the match</b> no matter what else has happened!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>While this seems like a major departure from paper Magic,
+the vast majority of games don’t involve the clock one way or the other. It
+mostly acts as a way of keeping someone from making you wait around for fifteen
+minutes while they run down to the store for a can of soda. Play at your normal
+speed for now and you should be fine.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=440 height=368 id="Picture 23"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image013.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If you take a mulligan, MTGO will automatically set up
+your free scry once you find a hand to keep. Like most things in Magic Online, <b>right
+                click on the card to open up a menu of choices.</b> In this case, I right-clicked
+and then selected “Put on the bottom of your library” because I didn’t want to
+draw a land off my scry.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'> <img border=0 width=624 height=172 id="Picture 22"
+                                        src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image014.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you find a hand you can keep, it shows up in the
+window at the bottom of your screen. Want your hand to look bigger? Smaller?
+You can click on the top bar and adjust it just like the size of a browser
+window. Want to play your land for the turn? As long as it’s your main phase,
+just double-click it in your hand and it’ll pop right on over to the
+battlefield. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you’re ready to play a card with a mana cost, you’ve
+got two choices—either <b>tap the lands you want to tap and then double-click
+                the card in your hand</b>, or <b>double-click the card first and then tap the
+                lands you want to tap when prompted</b>. Either way, the result is the same—your
+spell shows up on the stack, giving your opponent a chance to respond. If they
+don’t cast a counterspell, your card will automatically resolve.</span></p>
+
+    <p class=MsoNormal style='margin-left:.25in;text-indent:0in;line-height:normal;
+background:white'><span class="center-image" style='color:#222222'><img border=0 width=624
+                                                   height=410 id="Picture 25"
+                                                   src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image015.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If you have a creature in play that is capable of
+attacking, <b>a red zone will open up</b> in the center of the screen at the
+beginning of your attack phase. Just click on the creature(s) you want to
+attack with, and it will be nudged forward to indicate an attack. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=263 id="Picture 28"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image016.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>After attackers have been declared, <b>your triggered
+                abilities (if any) will automatically be placed on the stack.</b></span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=407 id="Picture 29"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image017.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If a spell or ability has a target, (a removal spell,
+say, or the Separatist Voidmage below) Magic Online will prompt you to place it
+onto the stack by selecting a target. This is simple enough—<b>just click on
+                the creature(s) or player(s) you’d like to target with your spell or ability. </b>In
+this case, I used the Voidmage to bounce my opponent’s Monastery Swiftspear by
+clicking on my opponent’s only creature. Taste it!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=325 id="Picture 30"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image018.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Dead on board? Had enough? Whatever your reasons, right-clicking
+on the battlefield opens up a menu that allows you to <b>concede the game.</b>
+This is especially useful when facing down a game-winning infinite combo—while
+some players make their opponents play out every loop in the combo to
+demonstrate proficiency or in order to try and force a miss-click, most MTGO
+players consider it sporting to just offer a concession in the face of a clear loss.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=282 height=275 id="Picture 32"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image019.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Want to <b>watch a replay</b> of your game? Check the <b>Game
+                History</b> tab under the <b>ACCOUNT</b> menu. You’ll be able to see exactly
+when and where things went wrong.</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="priority">Priority and Keyboard Shortcuts</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=18 id="Picture 24"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image020.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>This little bar is what MTGO uses to represent the flow
+of a Magic game. If you’re an analytical thinker, you probably know these
+phases by heart—untap, upkeep, draw, etc. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If your preferred learning style is a little more
+holistic, however, some of these terms might unfamiliar. The first thing to
+know about phases is <b>Magic is a game of priority.</b> You can only cast a
+spell or activate an ability when you have priority—once you lose it, you have
+to wait for your opponent to pass it back to you in order to respond.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>When can you give yourself priority? Check out those
+little white tabs on that little bar above your hand. Those are your <b>stops</b>.
+Each serves as a way to ‘stop’ the game at a given phase in order to gain
+priority. <b>The stops on the bottom represent your turn, and the stops on the
+                top represent your opponent’s turn.</b></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Currently, only some of the stops are on—there is no stop
+set at your upkeep phase, so MTGO will always blast right past it on the way to
+your first main phase. There is no stop set at the beginning of your combat
+phase either—only during your main phase and at the start of your attack phase.
+Conversely, there’s no stop set on your opponent’s main phase but there is a
+stop set at the beginning of their combat phase—after all, that’s where you
+would normally stop the game to use a tapper or other pre-combat ability anyway.
+</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Make sure you set your stops the way you want them</span></b><span
+            style='color:#222222'> before you start a game, and be aware of how they work
+for when you want to do something in a phase when you wouldn’t normally stop.
+For example, if you want to cast Vendilion Clique on your opponent after the
+draw step on their turn, you can set that stop after you draw the Clique and
+remove it again after you’ve made that play.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Why not just turn on all your stops just in case? You
+can, but that forces you to constantly pass priority back to your opponent
+during phases of the game when you aren’t going to want to do anything 99.99%
+of the time. It gets old fast, believe me. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If this is all too confusing to you, <b>just keep MTGO’s
+                default stops for now.</b> They let you do what you need to do in all but the
+most complex situations. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The priority conversation doesn’t end there, however.  <b>You
+                also gain priority whenever your opponent passes it to you.</b> This allows you
+to respond to a spell they put on the stack with a card or ability of your own.
+This is how paper Magic works too, of course, but when you’re sitting across
+from someone there’s generally an understanding that they’ll say something if
+they want to respond to a spell that you play. Online, you have to keep hitting
+OK whenever you want to pass priority. And remember—<b>your clock is running
+                whenever you have priority!</b></span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=266 height=218 id="Picture 26"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image021.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Because passing priority is such a drag, Magic Online has
+built-in <b>function keys</b> that you can use to speed things along. Here they
+are:</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><u><span
+                    style='color:#222222'>Keyboard Shortcuts Dealing With Priority/Triggers</span></u></b></p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F2—Pass Priority Until The Next
+Thing Happens</span></b><span style='color:#222222'>. This is the same as
+clicking the OK button.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F4—Pass Priority Until Your
+Opponent Does Something.</span></b><span style='color:#222222'> Done with your
+turn? Have a counterspell up (or a counterspell you’d like to bluff) and/or a
+removal spell you might want to use if your opponent casts another threat? F4
+is your friend.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F6—Pass Priority Until You Can Attack
+or Block.</span></b><span style='color:#222222'> Similar to F4, except you
+won’t get to respond to any of your opponents’ spells. Incredibly useful for
+saving time, not so great if you want to bluff a counterspell.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F8—Pass Priority For The Rest of
+The Game As Long As You Can’t Cast Anything Or Activate Any Abilities. </span></b><span
+            style='color:#222222'>You only have to click this once per game, and it will
+yield for you as long as you’re tapped out and don’t have anything to do. Note
+that F8 isn’t smart enough to figure out Force of Will and Daze, so don’t use
+this if you’re running Force of Will or Daze (or want to bluff that can cast
+Force of Will or Daze).</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F7—Put All Matching Triggers On
+The Stack And Yield To Them.</span></b><span style='color:#222222'> Are you
+playing Monastery Mentor? Does your deck have a thousand identical Prowess
+triggers waiting to hit the stack? Press F7 so you don’t have to click ‘OK’ for
+each trigger individually.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F3—Cancel All Existing Yield
+Functions.</span></b><span style='color:#222222'> Did you press F6 or F8 by
+accident? Press F3 to disable their functionality.</span></p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Hold CTRL When Casting A
+Spell—Retains Priority.</span></b><span style='color:#222222'> Need an example
+of why this might be necessary? Let’s pretend you have Lightning Bolt and Fork
+in your hand and you want to cast Fork on your Lightning Bolt. If you just play
+the Bolt without holding CTRL, it will automatically pass priority to your
+opponent without giving you a chance to respond. If your opponent doesn’t have
+a response of their own, the Bolt will resolve without letting you cast Fork.
+By holding CTRL, it tells MTGO that you have a response of your own to
+something you’re putting on the stack, allowing you to cast the Fork.</span></p>
+
+    <p class=MsoNormal style='margin-left:.25in;text-indent:0in;line-height:normal;
+background:white'><b><u><span style='color:#222222'>Other Useful Keyboard Shortcuts</span></u></b></p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>F5—Look at Face-Down Cards.</span></b><span
+            style='color:#222222'> Important if you’re playing in a format where morph is a
+thing. No, you can’t use this to cheat and look at your opponent’s face-down
+cards.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>CTRL+Z—Undo.</span></b><span
+            style='color:#222222'> This one is especially useful if you tap your mana
+incorrectly. As long as you don’t pass priority in the meantime, you can untap
+and re-tap your lands with control-Z.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>ALT+Y—Chooses “YES.”</span></b></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>ALT+N—Chooses “NO.”</span></b><span
+            style='color:#222222'> </span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Z (or press down on the scroll
+wheel, or hold down both mouse buttons simultaneously)—Zoom In On A Card. </span></b><span
+            style='color:#222222'>This is especially useful because the ‘small’ version of
+a card rarely contains reminder text for a keyworded ability or otherwise
+shortcuts the rules text. Zooming in on a card allows you to see everything.</span></p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Hold M When Tapping Mana—Causes
+Land To Tap For Whatever Mana Ability Is Printed First On The Card.</span></b><span
+            style='color:#222222'> This is especially useful when you/your opponent has an
+Urborg, Tomb of Yawgmoth in play and suddenly you have to tell all your dang
+Mountains that yes, you still want to tap them for red. M shortcuts this
+process.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Got all that? No? That’s fine—just keep this guide
+bookmarked so you can come back to these hotkeys after you have a couple more
+games under your belt.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="othersettings">Other Magic Online Settings and Tricks</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If you’re anything like me, you’ve probably already had a
+bellyful of Magic Online’s <b>default sounds</b>. I’d rather crank up the Devo
+and let Magic Online stay silent. You can adjust the sound (as well as the
+default animations for both <b>summoning sickness</b> and <b>foil cards</b>)
+under the <b>ACCOUNT</b> tab.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=314 id="Picture 41"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image022.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You can also use this tab to set your avatar, change your
+keyboard shortcuts, enable or disable notifications, enable or disable people’s
+ability to message you, and turn off the (very aggressive) profanity filter. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You also might want to <b>turn on auto save for your
+                draft logs</b>. This will allow you to go back later and see all the decks
+you’ve drafted. It’s a little check box under the “Game History” menu:</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=192 height=479 id="Picture 42"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image023.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Sometimes, you
+        will encounter an MTGO bug so severe that it will cost you in terms of prizes
+        or entry fees. There are thousands of cards on MTGO, and it seems like at any
+        given time there’s a bug affecting one or two of them. Other times, the client
+        may disconnect you in the middle of a draft without notice, causing you to miss
+        a crucial pick or three. If you encounter one of these bugs and you feel like
+        it made a material difference in terms of how a game or tournament played out,
+        you can <b>file for reimbursement</b> on the Wizards of the Coast website. The
+        link is <a
+            href="http://magic.wizards.com/en/articles/archive/mtgo-articles/bug-reportreimbursement-request-2014-06-03">here</a>,
+        and I recommend keeping it handy. Note that you will need your <b>event number</b>,
+        which can be found under the <b>game history</b> tab.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="formats">Magic Online’s Formats</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you’ve mastered the intricacies of MTGO’s interface
+and currencies, it’s time to start playing some actual events. <b>The
+                Constructed Open Play Room</b> is the best place to start—all of these games
+are <b>free</b>, but they have <b>no prizes</b>—it’s the equivalent of sitting
+down across from someone at your local game store and asking them if they’d
+like to have a quick game before the tournament begins. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Just select the format you’d like to play, hit the big
+PLAY button at the bottom, and wait for an opponent. </span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=338 height=579 id="Picture 35"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image024.jpg"></span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='color:#222222'>I’m sure
+you’re already familiar with Standard, Modern. Legacy, Vintage, Commander, and
+Planechase, but there are a couple of online-only formats that are worth
+discussing further:</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><b><span style='color:#222222'>Pauper</span></b><span
+            style='color:#222222'> is an eternal format where you can only play with cards
+that have been released at <b>common in an MTGO-legal set.</b> There is an
+established Pauper metagame and a small banned list—for more, check out </span><a
+            href="http://www.mtggoldfish.com/metagame/pauper#online">the extensive Pauper metagame
+            page at MTGGoldfish.</a></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'><b>Planeswalker</b> was a format
+        created to help transition people from Duels of the Planeswalkers (the older
+        version of Magic Duels) using gold-bordered (not legal in tournaments) cards
+        that came in special <b>“Planeswalker Packs” </b>at the MTGO store. You can
+        still buy all the Planeswalker Packs there, but there hasn’t been a new Planeswalker
+        Pack released in over a year and I don’t expect that to change. No big loss—the
+        format was never all that popular, and it’s still difficult to find an
+        opponent. </p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'>&nbsp;</p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'><b>Freeform</b> is the Magic
+        Online version of <b>casual Magic</b>. Normal constructed deckbuilding
+        restrictions apply, but you aren’t constrained by any format-specific banned or
+        restricted lists. Want to play with four copies of Black Lotus in your 250-card
+        Battle of Wits deck? Go nuts!</p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'>&nbsp;</p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'><b>Freeform Vanguard</b> is a
+        casual format where players can start each game with one or more vanguards in
+        effect. Vanguards are like Commanders with passive abilities that modify the
+        game and cannot be destroyed. Each one encourages a slightly different style of
+        deckbuilding and has a unique power.</p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span class="center-image" style='color:#222222'><img
+                border=0 width=624 height=347 id="Picture 36"
+                src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image025.jpg"></span></p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'><b>&nbsp;</b></p>
+
+    <p class=MsoNoSpacing style='text-indent:0in'><b>Vanguards also double as
+            avatars.</b> You know that little Birds of Paradise with our life total on it
+        while we were playing our constructed game? Under <b>ACCOUNT</b>, we can change
+        that to any of the five avatars that came with our account. If I select
+        Chandra, she’ll appear instead of Birds of Paradise from now on!</p>
+
+    <p class=MsoNoSpacing align=center style='text-align:center;text-indent:0in'><img
+            border=0 width=624 height=259 id="Picture 37"
+            src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image026.jpg"></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><span
+            style='font-size:20.0pt;color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>You can get new avatars by winning events,
+        but they no longer have special abilities for the Freeform Vanguard
+        format—their only use now is purely cosmetic. If you want to play Freeform
+        Vanguard, you’ll have to buy the old ability-centric vanguards on the secondary
+        market.</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><b>Momir Basic</b> is another Vanguard
+        format, and it requires you to own the <b>Momir Vig, Simic Visionary</b>
+        vanguard card. This is what he does:</p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><span
+            style='font-size:20.0pt;color:#222222'><img border=0 width=222 height=299
+                                                        id="Picture 38"
+                                                        src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image027.jpg"></span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='font-size:20.0pt;
+color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>Neat, right? The idea is that both
+        players begin with the Momir Vig avatar and a deck that is usually just 60 basic
+        lands. You then battle it out with <b>random creatures from throughout the
+            history of Magic.</b> It’s a very fun causal format, and all you need to play
+        it is the Momir Vig avatar—usually available for somewhere between ten and
+        twenty tickets on the secondary market.</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>If Momir isn’t crazy and chaotic
+        enough for you, consider playing the <b>MoJhoSto</b> format. When players
+        choose <b>Freeform Vanguard</b>, nine times out of ten they are looking for a
+        MoJhoSto game. This combines the Momir Vig avatar with the Jhoria of the Ghitu
+        (random spells) and the Stonehewer Giant avatar (random equipment) for maximum wackiness.</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>There are a few other popular MTGO
+        formats that are only available seasonally/occasionally. <b>Legacy Cube Draft</b>
+        is available every time there is a window between when a set is released in
+        paper form and when it makes its way online. <b>Vintage Cube Draft</b>, a more
+        combo-oriented version of the cube with Black Lotus, Moxen, etc., that usually
+        shows up once a year during the holiday season. These cube formats are very popular,
+        and many people have MTGO accounts exclusively for cubing purposes.</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>Magic Online has also recently
+        introduced <b>Gauntlets</b>, which are constructed tournaments featuring a small
+        subset of decks—for example, each list that made day two at a Pro Tour. You
+        don’t need to own any cards to enter a gauntlet—you just sign up, pay the fee,
+        and are randomly assigned a constructed deck to battle with. These tournaments
+        are also very affordable, and are a great option for anyone who loves
+        constructed but doesn’t want to invest in a big digital card collection.</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="costs">The Costs and Currencies of Magic Online</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You can always join a causal pick-up game for free, but
+Magic Online’s official tournaments all have a cost associated with them. At
+some point, you’re going to want to draft or play in a constructed event. And
+for that, you’re gonna need some currency.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Interestingly enough, Magic Online actually has TWO
+currencies: <b>Event Tickets</b> (colloquially referred to as “<b>tix</b>”) and
+<b>Play Points</b>.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=420 height=150 id="Picture 4"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image028.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Event Tickets</span></b><span style='color:#222222'> have
+a nominal value of one US dollar. If you live in the United States, you can buy
+Event Tickets directly from the Magic Online store for a dollar each. I say
+“nominal” because </span><a
+            href="https://www.mtgotraders.com/store/10tickets.html">there are other places
+            where you can also buy tickets</a><span style='color:#222222'>, and you can
+often find them for less than a buck. $0.95 is about as cheap as you’ll ever
+find these—that’s the price most dealers will pay </span><a
+            href="https://www.mtgotraders.com/store/selltickets.html">if you decide to sell
+            your extra tickets</a><span style='color:#222222'>. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>if you find a bunch of tickets being sold for less than
+ninety-five cents each, I strongly advise against buying them. It is likely
+that they have come from a stolen or hacked account, and you are risking an
+account ban from Wizards of the Coast for participating in an illegal
+transaction. As long as you buy your tickets from the Magic Online store or
+from a reputable and established dealer, though, you have nothing to worry
+about.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>One of the biggest quirks of the Magic Online market is
+that there are no fractions of a ticket. If you have a card worth half a
+ticket, I can’t chop one of my tickets in half and give it to you—it’s all or
+nothing. This is a big part of why Magic Online uses <b>bots</b> in order to
+facilitate card buying and selling—more about them a little bit later.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Play Points</span></b><span style='color:#222222'> are
+very similar to Event Tickets, and almost every event cost can be paid using
+either currency. A Play Point is worth about 1/10<sup>th</sup> as much as an
+Event Ticket, so think of them as dimes. If an event costs fourteen Event
+Tickets to enter, it’ll cost you 140 Play Points.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>There’s another big difference between the two
+currencies, though—while Event Tickets can be bought and sold on the secondary
+market, Play Points are bound to your individual account. That means you can
+use Event Tickets to enter events, or you can use them to buy singles on the
+secondary market. Play Points can ONLY be used to enter events on your
+account—you can’t ever buy cards with them.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>What does this mean from a practical perspective? It’s
+pretty simple. Whenever you have a choice between using Event Tickets or Play
+Points, use up your Play Points first!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>How much does it costs to play in each of Magic Online’s
+major formats? Like with paper Magic, it depends on the season and the current
+roster of staples. I’ve attempted to create a solid baseline price by averaging
+out the value of the Top 8 decks in each format right now:</span></p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Standard</span></b><span
+            style='color:#222222'> – 314 tix (vs. $470 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Modern </span></b><span
+            style='color:#222222'>– 331 tix (vs. $841 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Legacy </span></b><span
+            style='color:#222222'>– 840 tix (vs. $2,730 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Vintage </span></b><span
+            style='color:#222222'>– 784 tix (vs. $12,183 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Pauper </span></b><span
+            style='color:#222222'>– 48 tix (vs. $67 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Commander </span></b><span
+            style='color:#222222'>– 65 tix (vs. $243 in paper)</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Momir Basic </span></b><span
+            style='color:#222222'>– 12 tix</span></p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>MoJhoSto </span></b><span
+            style='color:#222222'>– 13 tix</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Any way you slice it, Magic Online is significantly
+cheaper to play than paper Magic—and Vintage is almost SIXTEEN TIMES cheaper! Take
+that, reserved list! Who needs cardboard anyhow?</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="events">Magic Online’s Events</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Things will start to cost money once you leave the
+Constructed Open Play Room. Don’t forget that your new MTGO account came with
+twenty new player points, though, and you can use these to play in the
+following <b>new player events:</b></span></p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>New to Magic Online Standard</span></b><span
+            style='color:#222222'>—a two-player constructed queue that costs <b>two</b> new
+player points.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>New to Magic Online Phantom Swiss
+Draft</span></b><span style='color:#222222'>—a four-player draft queue (always
+the current draft format) that costs <b>four</b> new player points.</span></p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>New to Magic Online Phantom Swiss
+Sealed</span></b><span style='color:#222222'>—these are big daily events that
+are scheduled under the “featured tournaments” section at the top of the <b>PLAY
+                LOBBY</b> page. They require <b>five</b> new player points.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>New player events get old fast, though, and at some point
+you’re going to want to swim with the big fish. Have you ever played in side
+events at a Grand Prix or Open event? Most of Magic Online’s tournaments are
+sort of like that—you enter a queue, and it fires as soon as it gets eight
+committed players. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Here are a few MTGO terms you should know before you
+enter a queue:</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Phantom Draft</span></b><span style='color:#222222'>—this
+means that <b>you do not get to keep any of the cards you open!</b> The new to
+MTGO drafts are all phantom, as are all the cube drafts. Once the draft ends, so
+does your access to those cards.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Single Elimination Draft</span></b><span
+            style='color:#222222'>—exactly what it sounds like. Once you lose a match, you
+are eliminated from the tournament. A favorite choice of experienced players,
+who would rather move on after a loss. Single elimination drafts tend to have
+more top-heavy prize payouts, and the events move quicker because you’re not
+waiting around for nearly as many players to finish their games after round
+one.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Swiss Draft</span></b><span style='color:#222222'>—the
+opposite of single elimination. In a Swiss draft, you get to play all three
+rounds regardless of how well you do. Prize payouts tend to be flatter, and
+these drafts tend to attract less competitive players. A great choice for a lazy
+Sunday at home when you want to draft something fun and don’t care as much
+about winning.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>8-4</span></b><span style='color:#222222'>—the prize
+payout for the event. In an 8-4 draft, the winner gets eight packs, the player
+who loses in the final round gets four packs, and nobody else gets any. A
+favorite choice of competitive players.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>6-2-2-2</span></b><span style='color:#222222'>—six packs
+to the winner, two for whomever loses in the finals, and two to both players
+who lose in the second round.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>4-3-2-2</span></b><span style='color:#222222'>—four packs
+to the winner, three for second place, two for both players who lose in the
+second round. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Fast Build</span></b><span style='color:#222222'>—fast
+build events reduce deckbuilding time from ten minutes to five. This option is
+good for drafters who like to build their decks on the fly and don’t wait to
+wait around for everybody else to finish.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>All draft queues require eight people to play<b> </b>and
+range in cost between 10 tix (flashback draft) and 14 tix (current draft). They
+can also all be entered using the requisite number of play points (100 and 140
+respectively) or the three proper booster packs for the chosen format alongside
+a 2 tix entry fee.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>On the constructed side, you have a choice between single
+elimination eight person events in Standard and Modern (six tix each) or two
+person queues (one match only) that cost 2 tix to play. The two-person queues
+are available across all competitive formats—Standard, Modern, Legacy, Vintage,
+Pauper, and even Momir Basic</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Want to play in a tournament but don’t have four hours to
+spare right now? Consider joining a league. <b>Leagues</b> might actually be
+the best deal on Magic Online right now—for eight tix (constructed) or
+twenty-eight tix (sealed) you get five matches of Magic spread out among
+however many days you want. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Leagues run for about two months each, so just make sure
+you don’t join one on the last day if you don’t have time to play that much
+Magic right away. The prizes are quite reasonable, too—in a constructed league,
+you just have to go 3-2 to break even. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Want to play in a big event that plays out all at once?
+MTGO still has large <b>daily tournaments</b> that run anywhere between 12 and
+256 players. They cost 12 tix each, they’re four rounds long, and you need to
+win at least three of those rounds in order to get prizes. These were more
+popular before leagues were created, but they’re still the only way to play in,
+say, a large Vintage event. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Daily events not competitive enough for you? Well, you
+can <b>qualify for the Pro Tour</b> right here on Magic Online! Up at the top
+of the PLAY LOBBY page, you’ll see a series of featured tournaments, most of
+which are <b>PTQ Preliminaries</b>. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=90 id="Picture 39"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image029.jpg"></span><span
+            style='color:#222222'> </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Just like the New Player Sealed queues, these are <b>scheduled
+                events</b>—they don’t fire immediately once they fill up; you have to wait for
+them to begin at their scheduled time.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>All these tournaments are five rounds each. Win at least
+four of them and you’ll get a <b>PTQ Finals Token</b> that looks something like
+this:</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=502 id="Picture 40"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image030.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>These tokens are account-bound—you can’t sell or trade
+them. Once you have a finals token, you can <b>use it anytime that season to
+                enter a PTQ finals</b>—constructed if you played in a constructed prelim,
+limited if you played in a limited prelim. These are also large scheduled
+events, so make sure you have lots of time before you join.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Lastly, you can quality for the <b>Magic Online
+                Championship Series (MOCS)</b> tournament. All competitive MTGO events offer
+MOCS Qualifier Points—so if you win a bunch of drafts or constructed tournaments,
+you’ll start amassing QPs alongside your prize packs. Entry into one of the
+monthly MOCS tournaments costs 35 QPs, and the top 8 all get invites to the
+next MOCS playoff event. Get into the finals at MOCS playoff and you’ll find
+yourself with an invite to the next Pro Tour! </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="trading">Buying, Selling, and Trading on Magic
+Online</a></span></b></p>
+    <br>
+    <br>
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/7sV8F1qaFNc" frameborder="0" allowfullscreen></iframe>
+    <br>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>I love trading Magic cards.</span></b><span
+            style='color:#222222'> There’s nothing better than that firm handshake between players
+who have both gotten just a little bit closer to finishing their next Modern
+deck. I love flipping through binders and pulling out obscure foils. I love
+learning about promos I’ve never seen before. I love meeting new people and
+hearing about their Magic-playing lives.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Trading on Magic Online is a little different. The whole
+process starts back in the <b>collection tab</b>. This is where you should go
+to put together your <b>trade binders</b>—without a binder, trading and selling
+cards are both impossible!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Luckily, binders are easy to make. Underneath your list
+of decks in the collection interface, there’s a tab called “Binders” where all
+of your trade binders are stored. Just like in paper Magic, you can either
+stuff all your extra cards into a single binder or you can build different
+binders with different purposes—say, one filled with expensive Modern cards and
+another that only has the Standard commons you aren’t using.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=624 height=432 id="Picture 13"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image031.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The important thing to remember here is that <b>only one
+                binder can be active at a single time.</b> When you open a trade window with a
+bot, the only cards they’ll see are those in your active binder. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>I recommend being conservative when choosing which cards
+to put in your binders—nothing stings more than accidentally trading away half
+your Modern deck by accident and having to buy it back at full price.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Make sure that your event tickets are in your active
+binder!</span></b><span style='color:#222222'>  Unless your tickets are
+available for trade, you won’t be able to use them to buy packs or cards in the
+trade room. </span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=493 height=270 id="Picture 14"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image032.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Now that we’ve got some cards and tickets in our active
+binder, it’s time to start making deals. Unfortunately, <b>casual trading is
+                very rare on MTGO</b>. You might find someone willing to make a deal with you,
+but you’ll probably have to wait around a while and <b>I don’t really recommend
+                it.</b> </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Why? Well, There are two big reasons for this. The first
+is MTGO’s interface. The <b>TRADE</b> room looks like this: </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'> <img border=0 width=624 height=447 id="Picture 5"
+                                        src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image033.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You can post your own classified ad if you’d like, and if
+you sit around all day, you might get a few nibbles as people sift through all
+three thousand posts. Trading between players isn’t impossible, it’s just very
+inefficient. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>At some point, though, you’ll probably run afoul of the
+second big reason why it’s hard to trade on Magic Online. Take another look at
+that picture of the MTGO classified ads. See anything odd? </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>That’s right—cards are being sold for fractions of a
+ticket. How is this possible? As we discussed in our currency section, Event
+Tickets cannot be split up. So what’s going on here?</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Well, almost all the buying and selling on Magic Online
+happens via <b>bots</b>—automated Magic Online accounts running programmable
+scripts that allow them to make transactions automatically. This isn’t a new
+thing—most of the major bot chains have been around for years, and some have
+been around since Magic Online’s inception in 2002. They’re as much a part of
+MTGO as MTGO itself.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The bots are smart, and they’re capable of tracking every
+interaction they have with your account. Crucially, they’re capable of storing
+credit for future transactions. If you buy a card for 2.45 tix from a bot, it
+will require you to pay 3 tix now and it will store that extra 0.65 tix in its
+memory for a future deal. If you come back tomorrow and want to buy a card that
+is worth just 0.10 tix, it will deduct that amount from your credit, and so on.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>This incentivizes you for buying cards from a bot over a
+human, because the bot will be able to set the price at the most competitive
+margin it can while still making a reasonable profit. Human accounts can’t do
+this—they can only round to the nearest ticket. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You are also incentivized to stick with a single <b>bot
+                chain</b>—a group of bots run by the same person or company. All the bots in a
+given chain have access to your stored credit, though they might have slightly
+different contents. One bot in a chain might have high end foil sets, say,
+while another specializes in Standard rares. Once you </span><a
+            href="https://www.mtgotraders.com/store/bots.html">pick a bot chain you like</a><span
+            style='color:#222222'>, you don’t have to worry about your stored credit going
+to waste. It’ll always be there the next time you want to buy a card or a draft
+set.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>There are four different kinds of bots, and you should
+know the differences between them:</span></p>
+
+    <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Sell Bots</span></b><span
+            style='color:#222222'>—if you want to <b>buy cards from a bot</b>, use one of
+these. The prices listed by the sell bots are how much a card will cost you to
+buy. These are the most common type of bot.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Buy Bots—</span></b><span
+            style='color:#222222'>if you want to<b> sell cards to a bot, </b>use one of
+these.<b> </b>The prices listed by the buy bots are how much they will pay you
+for your copy of the card. These are the second most common type of bot.</span></p>
+
+    <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Trade Bots—</span></b><span
+            style='color:#222222'>if you want to <b>trade cards with a bot</b>, there are
+trade bots out there that will make deals with you. These bots are fairly rare,
+but they do exist.</span></p>
+
+    <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-family:Symbol;color:#222222'>·<span
+                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='color:#222222'>Free Bots—</span></b><span
+            style='color:#222222'>Free bots will <b>give you free cards</b>, usually
+worthless commons, usually with either a daily limit or a “one transaction per
+account” caveat. If you like building random casual decks, hit these bots up!
+Many of these bots will also <b>take your worthless cards for free</b>—since
+there is no way to delete unwanted cards from your account, you can give them
+to a free bot if you’d rather keep your collection tab a little cleaner.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='font-size:9.5pt;color:#222222'><img border=0 width=624 height=189
+                                                       id="Picture 15"
+                                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image034.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Open a chase rare and want to sell it? Most of the bot
+chains have similar prices, so it usually makes sense to stick with the dealer
+where you’ve got the bulk of your credit stored. Sometimes it can be worth it
+to do a quick search first, though—I typed “Ulamog Buy” into the search tab.
+Most of the dealers are currently paying between 6 and 6.25 tix, but a few were
+up around 6.8 and a handful of opportunists were offering as low as 4.65 tix
+for the card. The moral of the story? A little research never hurts.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>What if you wanted to buy a copy of Ulamog instead? Again,
+you can go to your loyal bot chain or type in “Ulamog Sell” and shop around a
+little. Note that <b>not every card is listed in the classifieds</b>—if you’re
+looking for a bulk rare or third tier staple, you’ll have to start clicking on
+bots and poking around their trade binders. This is another reason why I like
+dealing with the bigger chains—they often have five or ten bots, each with a
+slightly different trade binder. If I really need four foil copes of Wavewing
+Elemental, I can be reasonably sure they’re kicking around somewhere on one of
+those bots.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once you’ve found a bot you want to buy from or sell to,
+you might have to <b>wait for it to be open</b>. See where it says [BUSY] or
+[OPEN] next to the bot’s name on the picture above? Bots that are busy are
+currently engaged with another MTGO user. Just wait a few seconds and the bot
+should open right up.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Don’t know what cards you need to compete a deck? Don’t
+want to go digging through a bot’s inventory looking for twelve different
+spells? <b>MTGO’s trade interface search tool is here to help.</b> It allows
+you to <b>select any of your decks that currently have missing cards</b>, and
+it will <b>automatically add those cards to your side of the trade </b>while
+also letting you know which of the missing cards the bot doesn’t currently
+have. Easy, right? </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=333 id="Picture 48"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image035.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Remember our U/G deck from earlier? I think it’s a
+Lumbering Falls away from breaking the format wide open. I’ve put all my tix
+into my active trade binder, so it’s time to start wheeling and dealing. I type
+“Lumbering Falls” into the search bar and find a reputable bot chain selling
+Lumbering Falls for 1.02 tickets each—perfect. Let’s double-click on the bot’s
+name and enter the trading interface.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=316 id="Picture 16"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image036.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>The first thing I’ve noticed is that the bot’s trade
+binder looks a lot like my own collection, only with way more cards. The
+interface is the same, so I just use the familiar search tool to find a copy of
+Lumbering Falls and <b>double-click to add it to the trade</b>.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=508 height=272 id="Picture 17"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image037.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once I double click the card, the bot automatically
+calculates the costs of the deal, factor in my saved bot chain credit (none, in
+this case), and offers me a final price for everything. I always double-check
+to make sure that I’m satisfied with the total before completing the trade. In
+this case, everything looks good.</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span style='color:#222222'><img border=0
+                                                                      width=249 height=256 id="Picture 34"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image038.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Once I’m satisfied, I click <b>SUBMIT </b>and another
+page comes up, this one showing a copy of Lumbering Falls on the left and a
+pair of event tickets on the right. I click <b>CONFIRM TRADE</b> down at the
+bottom, and that’s it—time to go modify my deck and enter some tournaments!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Selling cards to a bot</span></b><span style='color:#222222'>
+is a very similar process. Just double-click on a <b>buy bot</b> and it will
+automatically select all the cards from your active trade binder that it is
+willing to buy. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=262 id="Picture 19"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image039.jpg"></span><span
+            style='color:#222222'> </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Don’t like the price offered on a card or two? You can
+remove cards from the deal by following the bot’s instructions (they vary from
+bot to bot) in the chat box.  This is one of the best parts about dealing
+exclusively with robots—their feelings won’t be hurt if you’d rather keep your
+Monastery Swiftspears than trade them in for a penny apiece.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>If you do want to try to find a human trade partner, your
+best bet is to <b>make a post on the MTGO classifieds.</b> Click on the TRADE
+tab on the top of your client, and you’ll get 250 characters to work with down
+at the bottom of your screen. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span class="center-image"
+            style='color:#222222'><img border=0 width=624 height=127 id="Picture 31"
+                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image040.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Be sure to specify that you are human!</span></b><span
+            style='color:#222222'> No, this isn’t just <i>Bladerunner</i>-style paranoia. Since
+bots are incapable of the nuances required in a human-to-human trade,
+specifying that you are human lets other traders know that you’re an actual
+person with the ability to negotiate and discuss terms.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'> If you do find someone you want to trade with, you can <b>right-click
+                their username to open a chat or the trading page.</b> </span></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal;background:white'><span class="center-image" style='color:#222222'><img border=0
+                                                                      width=391 height=268 id="Picture 33"
+                                                                      src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image041.jpg"></span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>When interacting with another human, it is considered
+proper to open a private chat with them before initiating a trade. If you’re
+dealing with a bot, feel free to just hit “Trade.” </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Making a trade with a human works just like it does when
+buying or selling with a bot, only you have to discuss your deal with your
+trade partner in the chat window and make sure they add the correct cards on
+their side of the deal. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><b><span
+                style='color:#222222'>Always double-check a trade before confirming!</span></b><span
+            style='color:#222222'> There is no way to negate a trade once it has gone
+through, and some unscrupulous players do try to sneak a key card out of their
+side of the deal (or add one on your side) at the last second, hoping you won’t
+notice. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="economy">MTGO Economy Tips and Tricks</a></span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>There’s plenty of correlation between online prices and
+paper prices—cards that are good in tier one decks tend to be expensive across
+all platforms—but it’s wrong to assume that the rules are the same on MTGO as
+they are in paper. For example, a physical copy of Daze will only set you back
+about three bucks, but you’d be lucky to find a copy on MTGO for less than 28
+tickets. Paper copies of Underground Sea are worth almost four hundred dollars
+each, but you can nab a copy for 22 tix online. What gives?</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Well, most of these discrepancies exist because <b>set
+                releases happen very differently online</b>. The first iteration of MTGO was
+launched alongside Invasion, and for many years you simply couldn’t play with
+any cards older than that. More recently, MTGO began adding older cards to the
+existing pool—some in their original sets, others in <i>Modern Masters</i>-style
+expansions. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>At this point, every significant card in Vintage and
+Legacy is available on MTGO in some form, though a few older unplayable cards
+have never been released online. Underground Sea is so expensive in paper
+because it’s on the reserved list and it hasn’t been printed since 1994. Online,
+it has been printed in <i>Masters’ Edition II</i>, <i>Masters Edition IV</i>,
+and <i>Vintage Masters</i>. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>MTGO prices also differ because of <b>flashback drafts</b>.
+If you head down to your local shop, your options are probably going to be limited
+to the current draft format. Online, I can draft any set currently in Standard
+as well as the flashback format of the day—right now, it’s Champions of
+Kamigawa. This means that brand new copies of Sensei’s Divining Top are
+entering the MTGO marketplace every day until the flashback format changes to
+something else. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Many frugal MTGO players use these flashback drafts a
+opportunities to build up their Legacy and Modern collections. Pay attention to
+the schedule of upcoming flashback drafts, sell your staples before they’re
+reprinted, and buy back in once freshly-drafted copies start flooding the
+marketplace. A few weeks ago, Tops were about 4 tix each. Right now, they’re
+closer to 2.75 tix apiece.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'> Another big difference between paper Magic and MTGO? <b>Casual
+                cards are much cheaper online.</b> While you can play Commander on MTGO, and
+there’s even a multiplayer interface, casual players have mostly given the
+program a pass. Chromatic Lantern, for example, is $9.50 in paper thanks to
+Commander demand. Online? They’re just 0.29 tix each. This is great news if you
+just want to kick back with some Commander—you can make a fun, competitive deck
+for twenty or thirty bucks! </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Bulk rares also behave very differently online. In paper,
+you can generally get between ten and fifteen cents each for even the worst rares.
+<b>Online, bulk rares are worth less than a penny apiece.</b> This can make the
+deepest bulk specs pay off in a way they can’t in paper, but without much casual
+demand it’s much harder to hit on a good long term bulk buy.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>We’ll be covering set redemption in the final section of
+this article, but I want to touch on the issue a little bit here because it’s
+important to understand the way it warps the price of cards in Standard.
+Because you can only redeem cards as complete sets, <b>bulk mythics tend to be
+                worth more online than in paper</b>. This is worth keeping in mind if you’re
+trying to rare draft. When in doubt, grab the mythic—uncommons and rares are
+only worth something when they’re being played in competitive decks. Just make
+sure you sell them before the set redemption period ends—after that, they can
+drop from a few tix each to just a few cents each.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Now that we have a snapshot of the MTGO market, let’s
+examine the way it moves.  If you’re used to tracking the price of your paper
+Magic collection, you might be shocked at <b>how fast the Magic Online economy adjusts
+                to new decks and trends.</b> Buyouts can happen quickly in paper Magic, but it
+still takes a few days (or sometimes weeks) for prices to adjust and settle. After
+all, paper cards still have to be mailed around the world. That takes time,
+which leads to lags in value that can last for days.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>On MTGO, cards can be bought and sold worldwide in
+seconds. If a chase rare falls out of favor in Standard, the online price can
+go into freefall in a matter of hours. If a bulk card starts making waves in a
+new Modern deck, it might not even take an hour for the price to spike across
+every bot chain on the program. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Much like in paper Magic, <b>singles prices tend to be at
+                their highest during prerelease week</b>. Because prerelease events are
+expensive and card supply is low, I recommend selling chase singles you open at
+the prerelease as soon as possible. The exception to this rule? <b>Bulk mythic
+                foils tend to be at their cheapest during prerelease week.</b> People aren’t
+thinking about set redemption yet, so if you want to redeem a foil set at any
+point, start trying to pick up the pieces right away. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>As an MTGO newbie, the important thing is not to
+overreact in either direction. Just like in paper Magic, you rarely want to buy
+into a spike unless you think a card still has room to grow and you probably don’t
+want to sell at the absolute bottom of the market. </span><a
+            href="http://www.mtggoldfish.com/"><b>MTGGoldfish</b></a><b><span
+                style='color:#222222'> is THE place to track online price trends</span></b><span
+            style='color:#222222'>. If you’re not sure whether a card is heading up or
+down, check there first.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>What’s the best way to play <b>the most Magic for the
+                least amount of money?</b> <b>Play constructed.</b> Yes, buying cards costs
+money, but constructed tournaments almost always offer better bang for your overall
+buck. If you want to try to “go infinite” with your Magic Online account—winning
+so much that you don’t have to keep pouring more money into event fees—constructed
+is just about the only possible path. If you can go infinite playing in limited
+events on MTGO, congratulations—you’re a Pro Tour-level drafter. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>You should also <b>check the secondary market price of
+                booster packs before joining a draft.</b> Sometimes it makes sense to just give
+MTGO your fourteen event tickets, but it’s usually cheaper to buy packs from
+your friendly neighborhood bot chain and use those plus the two tix surcharge
+when entering a limited event. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Last, try to abide by my biggest rule of MTGO finance—<b>never,
+                ever open booster packs!</b> Magic Online’s biggest draw is the ability to join
+a never-ending stream of drafts, and as we’ve just discussed, booster packs can
+be used as part of the entry cost. This means that digital boosters are often
+worth more than their paper counterparts, and their contents are often worth
+less. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='color:#222222'>Cracking packs on MTGO…not even once.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white'><span
+            style='font-size:9.5pt;color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="redemption">Set Redemption and Selling Your
+Collection</a></span></b></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><span
+            style='font-size:20.0pt;color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Part of the way Wizards
+        of the Coast ensures the stability of your digital collection’s value is by
+        tying MTGO cards directly to their paper counterparts. This is done through a
+        process called set redemption, where <b>you can pay a fee to transmute your
+            Magic Online cards into physical cardboard.</b> </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Here’s how it
+        works: </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>First, <b>you can
+            only redeem cards in complete sets.</b> You can’t just buy fifty copies of
+        Kozilek, the Great Distortion and ask Wizards to send them to you. You’d have
+        to buy fifty copies of each card in Oath of the Gatewatch and redeem the entire
+        set, commons and all.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Second, <b>you’re
+            only able to redeem recent sets.</b> Buy a complete set of Battle for Zendikar
+        and you’ll be able to redeem it. A set of Onslaught? Not so much. Redeemable
+        sets have to have been released in paper form, and they can’t be Masters-style
+        expansions—<i>Vintage Masters</i>, an online-exclusive set, was not eligible
+        for redemption. <i>Eternal Masters</i> will be printed in paper, but you won’t
+        be able to redeem your MTGO copies regardless.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>How long do you
+        have to redeem a set? Well, Magic Online has a <b>guarantee date</b> and a <b>cutoff
+            date</b> for each expansion. Sets are only guaranteed to be available for
+        redemption until that guarantee date—if WotC sells out of before that, they’ll
+        print more. Once that date has passed—usually about a month after it leaves
+        Standard—WotC will keep allowing redemptions until the cutoff date or until
+        they run out of available stock. For example, Dragon’s Maze was released on
+        MTGO on May 13, 2013. The guarantee date was October 31, 2014. The cutoff date
+        is November 2, 2015. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>In my experience,
+        sets are often available for a long time after their guarantee date. Gatecrash
+        and Dragon’s Maze were both in stock all the way up to their cutoff date. This
+        doesn’t always hold true, though—Theros was a popular set for redemption, and
+        it sold out in early February 2016, three months after its guarantee date but eight
+        months before its cutoff date. If you want to redeem a complete set, I
+        recommend doing so before the guarantee date if at all possible.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Unfortunately, <b>set
+            redemption costs money</b>. There is a twenty-five dollar fee per set, and
+        there’s no way to avoid paying that cost. There is also a $3 shipping charge
+        per order, but that fee doesn’t change if you redeem more than one set. Because
+        of that, I highly recommend redeeming multiple sets at once to keep your
+        shipping costs down.</p>
+
+    <p class="MsoNormal center-image" style='text-indent:0in;line-height:normal'><img border=0
+                                                                       width=624 height=421 id="Picture 43"
+                                                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image042.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>There’s another
+        way to get your cards off MTGO—<b>sell your collection to a </b><a
+            href="https://www.mtgotraders.com/buylist/"><b>reputable dealer</b></a>. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>I don’t recommend
+        dealing with anyone who isn’t a trusted friend or one of the major bot chains—just
+        like when you buy event tickets on the secondary market, you have to be
+        vigilant of scammers and fraudsters. At some point during a collection sale,
+        you’re going to have to hit a button that transfers your valuable cards to
+        someone else in exchange for their word that you’ll get paid. Is it worth the
+        anxiety of an unknown buyer for a shot at a couple of extra bucks? Remember: if
+        a deal seems like it’s too good to be true, it probably is.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>In order to sell
+        your collection to any of the big bot chains, you’re going to have to <b>generate
+            a CSV file</b>—this is a document created by MTGO that contains the full
+        contents of your collection. Dealers are able to use this in order to make sure
+        they can give you the most accurate offer possible. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Here’s how to
+        generate a CSV:</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>First, go to your
+        <b>COLLECTION</b> tab. Under <b>Versions</b>, make sure that <b>show versions
+            separately</b> is checked.</p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=624 height=241 id="Picture 44"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image043.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Next, you’re
+        going to want to <b>create a new trade binder.</b> Call it <b>Collection For
+            Sale</b> (or something.) Make sure it is your <b>Active Trade Binder.</b></p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=343 height=274 id="Picture 45"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image044.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Over on the left
+        side of the screen, click <b>reset all filters</b>.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Then, <b>click on
+            a card in your collection</b>—it doesn’t matter which one. Hit <b>CTRL+A to
+            select all your other cards.</b> Then <b>right-click and select “Add All To
+            Open Binder.”</b></p>
+
+    <p class="MsoNormal center-image" style='text-indent:0in;line-height:normal'><img border=0
+                                                                       width=553 height=254 id="Picture 46"
+                                                                       src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image045.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Now click over
+        from “Cards” to <b>“Other Products”</b> and <b>repeat this process. </b>This
+        adds all your tickets, avatars, etc. to the binder as well.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Down at the
+        bottom left, <b>right-click the active binder</b> and hit <b>Export</b>. </p>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:0in;
+line-height:normal'><img border=0 width=459 height=340 id="Picture 47"
+                         src="The%20Complete%20Beginners%20Guide%20to%20Magic%20Online_files/image046.jpg"></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'> </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Make sure you
+        save the document as a <b>CSV file!</b> This is what the big boys are going to
+        want to see. In my experience, it usually takes a day or two before getting an
+        offer. Much easier than haggling over condition at a Grand Prix, right?</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="resources">Suggested Resources</a></span></b></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='color:#222222'>The more
+time you spend on Magic Online, the more MTGO-related media you’ll want to
+consume. Here are my favorite resources:</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+0in;line-height:normal;background:white'><span style='font-size:20.0pt;
+color:#222222'>&nbsp;</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://magic.wizards.com/en/en/gameinfo/products/magiconline/resources"><b>The
+                Official MTGO Page</b></a><span style='color:#222222'>—Among other things, this
+contains the current <b>server status</b>. Can’t connect to MTGO? Check here
+before you start trying to debug your own system. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://magic.wizards.com/en/articles/archive/events-schedule"><b>List of
+                Scheduled Events</b></a><span style='color:#222222'>—Curious what events are
+coming up this week? Check here to find out.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://www.mtggoldfish.com/"><b>MTG Goldfish</b></a><b><span
+                style='color:#222222'> </span></b><span style='color:#222222'>– If you only
+check one MTGO-related site, make it this one. MTG Goldfish tracks card prices,
+deck prices, and the MTGO metagame across all relevant formats. It’s the #1
+MTGO resource on the web right now.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://magic.wizards.com/en/content/deck-lists-magic-online-products-game-info"><b>Official
+                MTGO Decklists</b></a><span style='color:#222222'>—WotC doesn’t release
+decklists from every event, but they do release a whole bunch of them. Looking
+for the latest crazy take on the metagame? Start here</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="https://www.mtgotraders.com/store/index.html"><b>MTGO Traders</b></a><span
+            style='color:#222222'>—MTGO Traders commissioned me to write this guide, and I
+can vouch for them as a reputable place to buy and sell digital cards. Their
+main site also links to many of the best MTGO articles each morning.  </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://www.starcitygames.com/"><b>Star City Games</b></a><span
+            style='color:#222222'>—If you liked this guide, check out my weekly articles
+about Magic finance over on Star City Games! Oh, and most of the best players
+in the world are there as well, writing weekly about all aspects of Magic strategy,
+both online and off. They don’t sell on MTGO, but if you want to buy paper
+Magic cards, look no further.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://puremtgo.com/"><b>Pure MTGO</b></a><span style='color:#222222'>—Videos,
+articles, and draft walkthroughs focusing on the MTGO metagame. A must-visit.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://www.mtgoacademy.com/"><b>The MTGO Academy</b></a><span
+            style='color:#222222'>—Another great MTGO-specific resource with tons of
+MTGO-specific content. </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b><span
+                style='color:#222222'>Twitch Streams: </span></b><a
+            href="https://www.twitch.tv/lsv"><b>Luis Scott-Vargas</b></a><b><span
+                style='color:#222222'>, </span></b><a href="https://www.twitch.tv/gabyspartz/"><b>Gaby
+                Spartz</b></a><b><span style='color:#222222'>, </span></b><a
+            href="https://www.twitch.tv/numotthenummy"><b>Numot The Nummy (Kenji Egashira)</b></a><b><span
+                style='color:#222222'>, </span></b><a href="https://www.twitch.tv/haumph"><b>HAUMPH
+                (Paul Cheon)</b></a><span style='color:#222222'>—The best way to get better is
+by watching the experts! There are loads of great MTGO streamers on Twitch, but
+these four are my favorites.  </span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://lrcast.com/"><b>The Limited Resources Podcast</b></a><span
+            style='color:#222222'>—You might find yourself facing a much higher caliber of
+drafter on Magic Online than you do down at your local shop. Want to level up
+your draft game? Marshall Sutcliffe and Luis-Scott Vargas have you covered in
+this weekly podcast. The complete archives are available for free at the iTunes
+store, too!</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="http://www.magicev.com/"><b>Magic EV</b></a><span style='color:#222222'>
+– curious what your expected value is when playing certain MTGO events? Input
+your match win percentage here, and the site will calculate it for you. Magic
+EV is <b>not currently updating</b>, but it’s still worth checking out to get a
+general idea of which events provide the best average value.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><a
+            href="https://www.reddit.com/r/Pauper/"><b>The Pauper Subreddit</b></a><span
+            style='color:#222222'>—Excited to try one of the best MTGO-exclusive formats?
+This is the place to get the latest on the Pauper metagame.</span></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>&nbsp;</b></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'><a style="color:#000 !important" name="final">Final Thoughts</a></span></b></p>
+
+    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;text-indent:0in;line-height:normal;background:white'><b><span
+                style='font-size:20.0pt;color:#222222'>&nbsp;</span></b></p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Feel like a Magic
+        Online expert yet? Well, you might not be quite as proficient as Luis
+        Scott-Vargas or Gaby Spartz, but I bet you know more after reading this guide than
+        80% of the Joe and Jane Randoms you’ll face in the constructed two-player
+        queues. </p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>The most
+        important thing to remember is that you will need to be patient with yourself.
+        Learning MTGO is a process—you will make miss-clicks, and some of them will
+        cost you games. It happens to everyone from the goofiest amateur to the most seasoned
+        pro. That’s the price we all have to pay for getting to play the greatest game
+        ever created, 24/7.</p>
+
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'>Is it worth it? Heck
+        yeah. In fact, I think I’m going to go join a draft right now! Want to join?</p>
+
+</div>
+
+
+</body>
+
+   
+   
+   
+          
+
+    
+
+
+
+<!-- Start FOOTER-->
+		<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<div class="absheader">
+		<h2 class="logo"><a href="https://www.mtgotraders.com" title="Go to www.mtgotraders.com">www.mtgotraders.com</a></h2>
+		<span class="deliveryhours">
+			<span id="time"></span>
+		</span>
+		<ul class="social">
+			<li class="twitter"><a href="https://twitter.com/MTGOTraders" target="_blank">Twiter</a></li>
+			<li class="facebook"><a href="https://www.facebook.com/MTGOTraders" target="_blank">Facebook</a></li>
+		</ul>
+		<ul class="topnav">
+			<script type="text/javascript">
+  var cookies=document.cookie;
+  var start = cookies.indexOf("ss_reg_0001148097=");
+  var name = "";
+  var start1;
+  var end1;
+  var tmp;
+  var signed_in = -1;
+
+  if (start != -1) {
+    start = cookies.indexOf("=", start) +1;
+    var end = cookies.indexOf("|", start);
+    if (end != -1) {
+      signed_in = cookies.indexOf("|yes", start);
+    }
+  }
+  if (signed_in == -1) {
+  	document.write('<li><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=2&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">Log In</a></li>')
+  }else{
+  	document.write('<li><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=3&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">My Account</a> - <a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=4&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">Logout</a></li>')
+  }
+			</script>
+			<li><a href="https://www.mtgotraders.com/store/contact.html">Contact Us</a></li>
+			<li><a href="https://www.mtgotraders.com/store/faq.html">FAQ</a></li>
+			<li><a href="https://www.mtgotraders.com/store/index.html#news">Articles</a></li>
+			<li><a href="https://www.mtgotraders.com/hotlist/#/">Hot List</a></li>
+			<li class="last"><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?storeid=*1a4c945171a04aae08de729fc95b2a&amp;function=show" rel="nofollow">View Cart <span id="cartinner"></span></a></li>
+		</ul>
+		<script type="text/javascript">showCart("cartinner", '({price})');</script>
+		<form method="get" action="https://www.mtgotraders.com/store/search.php" class="searchfrm">
+			<fieldset>
+				<legend>Search our Site</legend>
+				<input type="text" name="q" class="searchfrm-text" autocomplete="off" placeholder="Search store" value="" />
+				<input type="image" class="searchfrm-img" src="https://www.mtgotraders.com/store/media/images/go.png" value="Go" />
+			</fieldset>
+			<a href="https://www.mtgotraders.com/store/advanced-search.php">Advanced Search</a>
+		</form>
+		<ul class="nav">
+			<li class="level1 level1-standard" onmouseover="this.className = 'level1 level1-standard over'" onmouseout="this.className= 'level1 level1-standard'">
+				<h3>Standard</h3>
+				<div class="subnav">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 489px;">
+								<div class="img"><img src="https://www.mtgotraders.com/store/media/images/nav/standard-img.png" width="489" height="159" alt="" /></div>
+								<p class="fleft">This format consists of the most recent "Core Set" and the two most recent "Block" releases.  You may use any printing of a card that has an appearance in a standard legal set.
+</p>
+								
+								<ul class="fright">
+									<li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/core_set_2020.html">Core Set 2020</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/throne_of_eldraine.html">Throne of Eldraine</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/war_of_the_spark.html">War of the Spark</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/ravnica_allegiance.html">Ravnica Allegiance</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/guilds_of_ravnica.html">Guilds of Ravnica</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="level1 level1-modern" onmouseover="this.className='level1 level1-modern over'" onmouseout="this.className='level1 level1-modern'">
+				<h3>Modern</h3>
+				<div class="subnav" style="margin-left: -2px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/modern-img.png" width="493" height="159" alt="" /></div>
+								<p class="fright">Modern is the newest constructed format. Modern was created by Wizards of the Coast in the Spring of 2011 as a response to the increasing popularity of the Legacy format, which although popular proved difficult to access due to the high price of staple cards.  Modern allows cards from the 8th Edition core set and all expansions printed afterwards. 
+</p>
+								<ul class="big">
+									<li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_horizons.html">Modern Horizons</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters_2017.html">Modern Masters 2017</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters_2015.html">Modern Masters 2015</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters.html">Modern Masters</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/core_set_2019.html">Core Set 2019</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic_origins.html">Magic Origins</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic2015.html">Magic 2015</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic2014.html">Magic 2014</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic2013.html">Magic 2013</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic_2012.html">Magic 2012</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic_2011.html">Magic 2011</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Magic_2010.html">Magic 2010</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/10th_edition.html">Tenth Edition</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/9th_edition.html">Ninth Edition</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/8th_edition.html">Eighth Edition</a></h4>
+									</li>
+                                                                                <li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/dominaria.html">Dominaria</a></h4>
+										<h4>Ixalan</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ixalan.html">Ixalan</a></li>
+											<li><a href="https://www.mtgotraders.com/store/rivals_of_ixalan.html">Rivals of Ixalan</a></li>
+                                                                                </ul>
+										<h4>Amonkhet</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/amonkhet.html">Amonkhet</a></li>
+											<li><a href="https://www.mtgotraders.com/store/hour_of_devastation.html">Hour of Devastation</a></li>
+                                                                                </ul>
+										<h4>Kaladesh</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/kaladesh.html">Kaladesh</a></li>
+											<li><a href="https://www.mtgotraders.com/store/aether_revolt.html">Aether Revolt</a></li>
+                                                                                </ul>
+                                                                                <h4>Shadows over Innistrad</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/shadows_over_innistrad.html">Shadows over Innistrad</a></li>
+											<li><a href="https://www.mtgotraders.com/store/eldritch_moon.html">Eldritch Moon</a></li>
+                                                                                </ul>
+										<h4>Battle for Zendikar</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/battle_for_zendikar.html">Battle for Zendikar</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/oath_of_the_gatewatch.html">Oath of the Gatewatch</a></li>
+                                                                                </ul>
+                                                                                <h4>Khans of Tarkir</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/khans_of_tarkir.html">Khans of Tarkir</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/fate_reforged.html">Fate Reforged</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/dragons_of_tarkir.html">Dragons of Tarkir</a></li>
+										</ul>
+										</li>
+									<li>                                                                      
+                                                                                <h4>Theros</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/theros.html">Theros</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/born_of_the_gods.html">Born of the Gods</a></li>
+											<li><a href="https://www.mtgotraders.com/store/journey_into_nyx.html">Journey into Nyx</a></li>
+										</ul>
+                                                                                <h4>Return to Ravnica</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/return_to_ravnica.html">Return to Ravnica</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/gatecrash.html">Gatecrash</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dragons_maze.html">Dragon's Maze</a></li>
+										</ul>
+                                                                                <h4>Innistrad</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/innistrad.html">Innistrad</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dark_ascension.html">Dark Ascension</a></li>
+											<li><a href="https://www.mtgotraders.com/store/avacyn_restored.html">Avacyn Restored</a></li>
+										</ul>
+										<h4>Scars of Mirrodin</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/scars_of_mirrodin.html">Scars of Mirrodin</a></li>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin_besieged.html">Mirrodin Besieged</a></li>
+											<li><a href="https://www.mtgotraders.com/store/new_phyrexia.html">New Phyrexia</a></li>
+										</ul>
+										<h4>Zendikar</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Zendikar.html">Zendikar</a></li>
+											<li><a href="https://www.mtgotraders.com/store/worldwake.html">Worldwake</a></li>
+											<li><a href="https://www.mtgotraders.com/store/rise_of_the_eldrazi.html">Rise of the Eldrazi</a></li>
+										</ul>
+                                                                                <h4>Shards of Alara</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Shards_of_Alara.html">Shards of Alara</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Conflux.html">Conflux</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Alara_Reborn.html">Alara Reborn</a></li>
+										</ul>
+									</li>
+									<li class="last">
+										<h4>Lorwyn-Shadowmoor</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/lorwyn.html">Lorwyn</a></li>
+											<li><a href="https://www.mtgotraders.com/store/morningtide.html">Morningtide</a></li>
+											<li><a href="https://www.mtgotraders.com/store/shadowmoor.html">Shadowmoor</a></li>
+											<li><a href="https://www.mtgotraders.com/store/eventide.html">Eventide</a></li>
+										</ul>
+										<h4>Time Spiral</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/timespiral.html">Time Spiral</a></li>
+											<li><a href="https://www.mtgotraders.com/store/timeshifted.html">Timeshifted</a></li>
+											<li><a href="https://www.mtgotraders.com/store/planar_chaos.html">Planar Chaos</a></li>
+											<li><a href="https://www.mtgotraders.com/store/future_sight.html">Future Sight</a></li>
+										</ul>
+										<h4><a href="https://www.mtgotraders.com/store/coldsnap.html">Coldsnap</a></h4>
+										<h4>Ravnica</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ravnica.html">Ravnica: City of Guilds</a></li>
+											<li><a href="https://www.mtgotraders.com/store/guildpact.html">Guildpact</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dissension.html">Dissension</a></li>
+										</ul>
+										<h4>Kamigawa</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/champions_of_kamigawa.html">Champions of Kamigawa</a></li>
+											<li><a href="https://www.mtgotraders.com/store/betrayers_of_kamgawa.html">Betrayers of Kamigawa</a></li>
+											<li><a href="https://www.mtgotraders.com/store/saviors_of_kamigawa.html">Saviors of Kamigawa</a></li>
+										</ul>
+										<h4>Mirrodin</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin.html">Mirrodin</a></li>
+											<li><a href="https://www.mtgotraders.com/store/darksteel.html">Darksteel</a></li>
+											<li><a href="https://www.mtgotraders.com/store/5th_dawn.html">Fifth Dawn</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-legacy" onmouseover="this.className='level1 level1-legacy over'" onmouseout="this.className='level1 level1-legacy'">
+				<h3>Legacy</h3>
+				<div class="subnav" style="margin-left: -77px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/legacy-img.png" width="509" height="159" alt="" /></div>
+								<p class="fright">Legacy decks may consist of cards from all Magic card sets, any edition of the core set, and all special sets, supplements, and promotional printings released by Wizards of the Coast.
+
+Cards from expansions and special sets (like From the Vault, Commander, Duel Decks, etc) are legal in the Legacy format on the date of release of the expansion or special set.</p>
+								<ul class="big">
+									<li>
+										<h4><a href="https://www.mtgotraders.com/store/ultimate_masters.html">Ultimate Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/masters_25.html">Masters 25</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/iconic_masters.html">Iconic Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/eternal_masters.html">Eternal Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/vintage_masters.html">Vintage Masters</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/tempest_remastered.html">Tempest Remastered</a></h4>
+									</li>
+									<li>
+										<h4>Onslaught</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/onslaught.html">Onslaught</a></li>
+											<li><a href="https://www.mtgotraders.com/store/legions.html">Legions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/scourge.html">Scourge</a></li>
+										</ul>
+										<h4>Odyssey</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/odyssey.html">Odyssey</a></li>
+											<li><a href="https://www.mtgotraders.com/store/torment.html">Torment</a></li>
+											<li><a href="https://www.mtgotraders.com/store/judgment.html">Judgment</a></li>
+										</ul>
+                                                                                <h4>Invasion</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/invasion.html">Invasion</a></li>
+											<li><a href="https://www.mtgotraders.com/store/planeshift.html">Planeshift</a></li>
+											<li><a href="https://www.mtgotraders.com/store/apocalypse.html">Apocalypse</a></li>
+										</ul>										
+									</li>
+									<li>
+										<h4>Masques</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mercadian_masques.html">Mercadian Masques</a></li>
+											<li><a href="https://www.mtgotraders.com/store/nemesis.html">Nemesis</a></li>
+											<li><a href="https://www.mtgotraders.com/store/prophecy.html">Prophecy</a></li>
+										</ul>
+                                                                                <h4>Urza's</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/urzas_saga.html">Urza's Saga</a></li>
+											<li><a href="https://www.mtgotraders.com/store/urzas_legacy.html">Urza's Legacy</a></li>
+											<li><a href="https://www.mtgotraders.com/store/urzas_destiny.html">Urza's Destiny</a></li>
+										</ul>
+										<h4>Tempest</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/tempest.html">Tempest</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Stronghold.html">Stronghold</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Exodus.html">Exodus</a></li>
+										</ul>
+									</li>
+									<li class="last">
+                                                                                <h4>Mirage</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mirage.html">Mirage</a></li>
+											<li><a href="https://www.mtgotraders.com/store/visions.html">Visions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/weatherlight.html">Weatherlight</a></li>											
+										</ul>
+										<h4>Masters Edition</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition.html">Masters Edition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition_2.html">Masters Edition II</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition_3.html">Masters Edition III</a></li>
+											<li><a href="https://www.mtgotraders.com/store/masters_edition_4.html">Masters Edition IV</a></li>
+										</ul>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/7th_edition.html">Seventh Edition</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/classic.html">Ice Age/Alliances</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-specialsets" onmouseover="this.className='level1 level1-specialsets over'" onmouseout="this.className='level1 level1-specialsets'">
+				<h3>Special Sets</h3>
+				<div class="subnav" style="margin-left: -144px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/specialsets-img.png" width="509" height="159" alt="" /></div>
+								<p class="fright">These are various special releases that feature selected highlights throughout Magic's history.  This also includes Planechase and Commander format legal cards that are used in their respective format.
+</p>
+								<ul class="big">
+									<li>
+										<h4>Masterpiece Series</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ravnica_mythic_edition.html">Ravnica Mythic Edition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/amonkhet_invocations.html">Amonkhet Invocations</a></li>
+											<li><a href="https://www.mtgotraders.com/store/kaladesh_inventions.html">Kaladesh Inventions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/zendikar_expeditions.html">Zendikar Expeditions</a></li>
+										</ul>
+										<h4><a href="https://www.mtgotraders.com/store/vintage_masters_original_p9.html">Vintage Masters Original Power 9</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/ultimate_box_toppers.html">Ultimate Masters Box Toppers</a></h4>
+									</li>
+									<li>
+										<ul>
+										<h4><a href="https://www.mtgotraders.com/store/avatars.html">Vanguard</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Promos.html">Promotional</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Theme_Deck_Set.html">Theme Deck Set</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/planechase.html">Planechase</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/planechase2012.html">Planechase 2012</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/welcome_deck_2016.html">Welcome Deck 2016</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/welcome_deck_2017.html">Welcome Deck 2017</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/battlebond.html">Battlebond</a></h4>
+										</ul>
+										<h4>Commander</h4>
+										<ul>
+										<li><a href="https://www.mtgotraders.com/store/commander.html">Commander</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander2013.html">Commander 2013</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander2014.html">Commander 2014</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander_2019.html">Commander 2019</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/legendary_cube_prize_packs.html">Legendary Cube Prize Packs</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/treasure_chest.html">Treasure Chest</a></li>
+										</ul>
+									</li>
+									<li>
+										<h4>Duel Decks</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ElvesVsGoblins.html">Elves vs Goblins</a></li>
+											<li><a href="https://www.mtgotraders.com/store/JaceVsChandra.html">Jace vs Chandra</a></li>
+											<li><a href="https://www.mtgotraders.com/store/DivineVsDemonic.html">Divine vs Demonic</a></li>
+											<li><a href="https://www.mtgotraders.com/store/garruk_vs_liliana.html">Garruk vs Liliana</a></li>
+											<li><a href="https://www.mtgotraders.com/store/phyrexia_vs_the_coalition.html">Phyrexia vs The Coalition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/elspeth_vs_tezzeret.html">Elspeth vs Tezzeret</a></li>
+											<li><a href="https://www.mtgotraders.com/store/knights_vs_dragons.html">Knights vs Dragons</a></li>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin_pure_vs_new_phyrexia.html">Mirrodin Pure vs New Phyrexia</a></li>
+											<li><a href="https://www.mtgotraders.com/store/ajani_vs_nicol_bolas.html">Ajani vs Nicol Bolas</a></li>
+											<li><a href="https://www.mtgotraders.com/store/venser_vs_koth.html">Venser vs Koth</a></li>
+											<li><a href="https://www.mtgotraders.com/store/izzet_vs_golgari.html">Izzet vs Golgari</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/sorin_vs_tibalt.html">Sorin vs Tibalt</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/heroes_vs_monsters.html">Heroes vs Monsters</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/jace_vs_vraska.html">Jace vs Vraska</a></li>
+										</ul>
+										<h4>Premium Deck Series</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/slivers.html">Slivers</a></li>
+											<li><a href="https://www.mtgotraders.com/store/fire_lightning.html">Fire &amp; Lightning</a></li>
+											<li><a href="https://www.mtgotraders.com/store/graveborn.html">Graveborn</a></li>
+										</ul>
+									</li>
+									<li class="last">
+										<h4>From the Vault</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/From_the_Vault_Dragons.html">Dragons</a></li>
+											<li><a href="https://www.mtgotraders.com/store/From_the_Vault_Exiled.html">Exiled</a></li>
+											<li><a href="https://www.mtgotraders.com/store/from_the_vault_relics.html">Relics</a></li>
+											<li><a href="https://www.mtgotraders.com/store/from_the_vault_legends.html">Legends</a></li>
+											<li><a href="https://www.mtgotraders.com/store/ftv_realms.html">Realms</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_twenty.html">Twenty</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_annihilation.html">Annihilation</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_angels.html">Angels</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_lore.html">Lore</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_transform.html">Transform</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-sealedtickets" onmouseover="this.className='level1 level1-sealedtickets over'" onmouseout="this.className='level1 level1-sealedtickets'">
+				<h3>Sealed &amp; Tickets</h3>
+				<div class="subnav">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 489px; margin-left: -2px;">
+								<div class="img"><img src="https://www.mtgotraders.com/store/media/images/nav/sealedtickets-img.png" width="489" height="159" alt="" /></div>
+								<p class="fleft">Purchase everything you need for a draft or purchase bot credits to use on our automated trading bots that are online 24/7.
+</p>
+								
+								<ul class="fright">
+									<li>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/10tix.html">Event Tickets</a></h4>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/mtgobotcredit.html">Bot Credits</a></h4>
+                                                                                <h4 class="main"><a href="https://www.mtgotraders.com/store/100mtgobotcredits.html">Bot Credits x100</a></h4>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/boosters.html">Boosters</a></h4>
+                                                                                <h4 class="main"><a href="https://www.mtgotraders.com/store/selltickets.html">Sell Your Tickets</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="level1 level1-bots">
+				<a href="https://www.mtgotraders.com/store/bots.html" class="h3">Bots</a>
+			</li>
+			<li class="level1 level1-decks">
+				<a href="https://www.mtgotraders.com/deck/" class="h3">Decks</a>
+			</li>
+			<li class="level1 level1-completesets">
+				<a href="https://www.mtgotraders.com/store/complete_sets.html" class="h3">Complete Sets</a>
+			</li>
+			<li class="level1 level1-sellyourcollection">
+				<a href="https://www.mtgotraders.com/buylist/" class="h3">Sell Your Collection</a>
+			</li>
+			<li class="level1 level1-physicalcards">
+				<a href="http://www.capefeargames.com/" target="_blank" class="h3">Physical Cards</a>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			$$(".nav ul.big").each(function(ul){
+				var height = 0
+				ul.select("> li").each(function(li){
+					height = Math.max(height, li.getHeight())
+				})
+				height -= 3;
+				ul.select("> li").each(function(li){
+					li.setStyle({height: height + "px"})
+				})
+			})
+		</script>
+		
+	</div>
+	<div class="absfooter">
+		<ul>
+			<li><a href="https://www.mtgotraders.com/mtgo-guide/" target="_blank">Beginner's Guide</a></li>
+			<li><a href="https://www.mtgotraders.com/store/contact.html">Contact Us</a></li>
+			<li><a href="https://www.mtgotraders.com/store/faq.html">FAQs</a></li>
+			<li><a href="https://www.mtgotraders.com/deck/#/" target="_blank">Decks Section</a></li>
+			<li><a href="https://www.mtgotraders.com/store/terms-of-use.html">Terms of Use</a></li>
+			<li style="background: none"><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi?storeid=*1a4c945171a04aae08de729fc95b2a">Wish List</a></li>		</ul>
+		<p class="copyright"><script type="text/javascript">document.write( (new Date()).getFullYear())</script> &copy; Copyright MTGO Traders. All rights reserved.</p>
+	</div>
+</div>
+
+<form action="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi" method="post" class="wlfrm" id="createwishlistfrm" style="display: none;">
+	<span class="close">Close</span>
+	<h2><span>CREATE NEW WISH LIST</span></h2>
+	<input type="hidden" name="storeid" value="*1a4c945171a04aae08de729fc95b2a" />
+	<input type="hidden" name="func" value="create_wl" />
+	<label for="name">Wish List Name:</label>
+	<input type="text" name="name" size="20" />
+	
+	<label for="priv">Privacy Level:</label>
+	<select name="priv">
+		<option value="pub">Public</option>
+		<option value="shr">Shared</option>
+		<option value="pri">Private</option>
+	</select>
+	<label for="comments">Comment:</label>
+	<textarea cols="35" rows="5" name="comments"></textarea>
+	
+	<input type="hidden" name="itemnum" value="" disabled="disabled" />
+	<input type="hidden" name="addedfrom" value="" disabled="disabled" />
+	<input type="hidden" name="qnty" value="" disabled="disabled" />
+	
+	<div class="actions">
+		<input type="submit" name="Save" value="Apply Changes" />
+		<input type="button" value="Continue Shopping" />
+	</div>
+</form>
+<script type="text/javascript">
+!function(d,s,i,c){var j,f=d.getElementsByTagName(s)[0];if(!d.getElementById(i)){j=d.createElement(s);j.type='text/javascript';j.async=true;j.id=i;j.src=c;f.parentNode.insertBefore(j,f)}}(document,"script","wishlist_script_tag","https://www.mtgotraders.com/store/publish/wishlist.js");
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-432680-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>
