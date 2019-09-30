@@ -1,0 +1,554 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>StarCityGames.com - Shopping Cart</title>
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" sizes="57x57" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.starcitygames.com/www//images/apple/apple-touch-icon.png">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<meta property="og:url" content="http://www.starcitygames.com/cart/" /><meta property="og:type" content="website" /><meta property="og:title" content="StarCityGames.com - Shopping Cart" /><meta property="og:description" content="StarCityGames.com® is the world's largest Magic the Gathering store, with an inventory that includes an extensive selection of out-of print sealed product and over 20,000,000 individual cards!" /><meta property="og:image" content="http://static.starcitygames.com/www/images/articles/likeImage2.jpg" /><meta property="og:site_name" content="StarCityGames.com" /><meta property="fb:app_id" content="166463640084673" /><meta property="twitter:card" content="summary" /><meta property="twitter:site" content="@starcitygames" /><meta property="twitter:title" content="Shopping Cart" /><meta property="twitter:creator" content="@starcitygames" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//www.starcitygames.com/assets/reset.css">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/jqueryui.css">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/style_css.php?date=2018_06_14&ir=https://static.starcitygames.com/www/images/">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/jquery.jscrollpane.css">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/skin.css">
+<link rel="stylesheet" href="//www.starcitygames.com/assets/plugins/chosen-bootstrap/chosen/chosen.min.css">
+<link rel="stylesheet" type="text/css" href="//www.starcitygames.com/assets/plugins/fancybox/dist/jquery.fancybox.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="//www.starcitygames.com/assets/plugins/jquery-qtip/jquery.qtip.min.css" />
+<link rel="stylesheet" type="text/css" href="//www.starcitygames.com/js/google_translate.css" />
+<link rel="stylesheet" href="//www.starcitygames.com/assets/css/bootstrap.css" />
+<link rel="stylesheet" href="//www.starcitygames.com/assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="//www.starcitygames.com/assets/plugins/mana/css/mana.min.css" type="text/css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/assets/plugins/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/js/google_analytics.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/js/google_tags.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/js/google_translate.js"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//www.starcitygames.com/assets/js/tether.min.js"></script>
+<script type="text/javascript" src="//www.starcitygames.com/assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="//apis.google.com/js/platform.js"></script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s); js.id = id;
+    js.src = "//platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {t._e.push(f);};
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<style type="text/css">
+.beta_warning_top {
+	background: #a17202;
+	color: #f5f5f5;
+	font-size: 13pt;
+	font-family:Tahoma, Arial, Helvetica;
+	font-weight: bold;
+	text-align: center;
+	margin-top:0;
+	padding: 10px;
+	margin-bottom: 1px;
+	min-width: 1004px;
+}
+.beta_warning_top a {
+	color: #f5f5f5;
+	text-decoration: underline;
+}
+.beta_warning_top a:hover {
+	color: black;
+}
+.beta_warning_clear {
+	clear: both;
+}
+.premium_top {
+	background:#ff0 !important;
+	color:#000 !important;
+}
+.premium_top a {
+	color:#00f;
+}
+</style>
+<div class="fixedtop_holder"></div>
+<header id="header">
+<div id="inner_wrapper">
+<div class="header_wrapper">
+<div id="logo" class="left"><a href="http://www.starcitygames.com/"><img src="https://static.starcitygames.com/www/images/header/headerlogo.png" data-hover="https://static.starcitygames.com/www/images/header/headerlogo-over.png"></a></div>
+<div id="main_nav" class="left">
+<nav>
+<ul>
+<li class="spacer"><a href="http://www.starcitygames.com/catalog/magic_the_gathering/">STORE</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/content/schedule">EVENTS</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/articles/tags/Premium~Select/">ARTICLES</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/content/decklists/">DECKS</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/buylist/">BUYLIST</a></li>
+<li class="spacer"><a href="http://help.starcitygames.com">HELP</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/content/gamecenter/">GAME CENTER</a></li>
+<li class="spacer"><a href="http://www.starcitygames.com/content/newsletter/">NEWSLETTER</a></li>
+</ul>
+</nav> </div>
+<div id="main_menu_search" class="left">
+<div id="main_search">
+<form action="/results" method="get" name="search_form">
+<input name="name" type="text" placeholder="SEARCH THE WORLD'S LARGEST MAGIC:THE GATHERING STORE!" id="product_searchbox">
+<input id="go" name="go" type="image" value="GO" src="/images/go.jpg">
+<div id="advsearch" class="right">
+<a href="http://www.starcitygames.com/search">Advanced Search</a><br>
+<a href="http://www.starcitygames.com/search/deckbuilder" class="normal">Deck Builder</a>
+</div>
+</form>
+</div> </div>
+<div id="login" class="left">
+<ul>
+<li class="account-item account1">
+<a href="https://www.starcitygames.com/login">
+<div class="account_item_container">
+<span class="bold">LOGIN / <br>&nbsp;REGISTER<br /></span>
+<input type="hidden" id="mode" class="webdeveloper-unhidden" value="login" name="mode">
+</div>
+</a>
+</li>
+<li class="account-item account2">
+<a href="https://www.starcitygames.com/cart/">
+<div class="account_item_container">
+<span class="bold">CART</span> <br /><span id="cart_count2" class="cart-item-count">#</span>
+</div>
+</a>
+</li>
+<li class="account-item account3">
+<a href="https://www.starcitygames.com/myaccount/wishlist/">
+<div class="account_item_container">
+<span class="bold">WISH<br>LIST</span>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="menu_wrap">
+<div class="header_wrapper">
+<nav id="product_menu">
+ <ul id="nav" class="dropdown">
+<li id="nav_featured" class="main_menu">
+<a href="http://www.starcitygames.com/content/previews"><img src="https://static.starcitygames.com/www/images/setLogo.png" /></a>
+</li>
+<li id="nav_singles" class="main_menu"><a href="#">Magic Singles</a>
+<ul class="show_shadow">
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/?t=english_singles">English</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/?t=english_foils">Foil English</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/?t=non_english_singles">Non-English</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/?t=non_english_foils">Foil Non-English</a></li>
+<li><a href="http://www.starcitygames.com/results?name=SCAN+BGS&namematch=BOOL&text=&oracle=1&textmatch=AND">Scanned & Graded Cards</a></li>
+<li><a href="http://www.starcitygames.com/catalog/category/5226/5224">Rarities &amp; Misprints</a></li>
+<li class="lastmenu"><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/144">Wholesale Lots</a></li>
+</ul>
+</li>
+<li id="nav_sealed" class="main_menu"><a href="#">Magic Sealed Product</a>
+<ul class="show_shadow">
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5125">Booster Boxes</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5121">Booster Packs</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5129">Box Sets</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5126">Bundles &amp; Fat Packs</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5232">Duel Decks</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5122">Introductory Products</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5231">Multiplayer Products</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5114/5317/5318/5319/5320/5321/5322/5323/5324/5325/5326">Non-English Products</a></li>
+<li class="lastmenu"><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5123">Tournament/Starter Packs</a></li>
+</ul>
+</li>
+<li id="nav_supplies" class="main_menu"><a href="#">Gaming Supplies</a>
+<ul class="show_shadow">
+<li><a href="http://www.starcitygames.com/content/ultimateguard">Ultimate Guard&reg;</a></li>
+<li><a href="http://www.starcitygames.com/content/apparel">Apparel &amp; Accessories</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5088">Binders</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5204">Books</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5299">Collectibles</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5089/5091">Deck Boxes &amp; Cases</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5205">Life Counters &amp; Dice</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/5090">Playmats</a></li>
+<li class="lastmenu"><a href="http://www.starcitygames.com/content/sleeves">Sleeves</a></li>
+</ul>
+</li>
+<li id="nav_special" class="main_menu"><a href="#">Specialty Items</a>
+<ul class="show_shadow">
+<li><a href="http://www.starcitygames.com/content/creaturecollection/">Creature Collection</a></li>
+<li><a href="http://www.starcitygames.com/catalog/magic_the_gathering/category/1">Gift Cards</a></li>
+<li><a href="http://www.starcitygames.com/content/lithographs/">Lithographs</a></li>
+<li class="lastmenu"><a href="http://www.starcitygames.com/content/nextlevel/">Next Level Library</a></li>
+</ul>
+</li>
+<li id="nav_digital" class="main_menu"><a href="#">Digital Products</a>
+<ul class="show_shadow">
+<li><a href="http://www.starcitygames.com/content/completecommander/">Complete Commander</a></li>
+<li><a href="http://www.starcitygames.com/content/nextlevel/">Next Level Library</a></li>
+<li><a href="http://www.starcitygames.com/omg/">OMG: Official Miser's Guide</a></li>
+<li class="lastmenu"><a href="http://www.starcitygames.com/catalog/magic_the_gathering/product/267847">Tha Gatherin'</a></li>
+</ul>
+</li>
+<li id="nav_webuy" class="main_menu"><a href="http://www.starcitygames.com/buylist/">We Buy <img src="https://static.starcitygames.com/www/images/magiclogo.png" width="82" height="23"></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<section id="body_content">
+<div id="sidebar_background">
+<section id="content" class="left">
+<div id="checkout_cart_header"><img src="https://static.starcitygames.com/sales/images/checkout/header_cart.png"></div>
+<div class='container-fluid mt-2'>
+<div class="row mb-3 mt-2">
+<div class="col">
+<h1>Your cart is empty.</h1>
+<p><a href="/cardsets/english_singles/">Click here</a> to start shopping!</p>
+</div>
+</div>
+</div>
+</section>
+<aside id="sidebar" class="left">
+<article id="impulse_sidebar">
+<section>
+<p class="text-center" style="height:67px;background-color:#e1e1e1;color:#7c7c7c;line-height:61px;border:1px solid #a6a6a6;font-weight:bold;font-size:16px">Recommended</p>
+<div style="padding:0 1px;">
+<div class="card mb-3">
+<div class="card-header"><a href="http://www.starcitygames.com/catalog/product/1506604">Core Set 2020 Booster Pack</a><br /><a href="http://www.starcitygames.com/catalog/category/5121">Sealed: Booster Packs</a></div>
+<div class="card-block"><p class="text-center"><img src="https://static.starcitygames.com/sales/cardscans/MTG/M20/en/sealed/boosterPack.jpg" alt="Core Set 2020 Booster Pack" border="0" height="237" width="150" class="card-img-top"></p>
+</div>
+<div class="card-footer">
+<form action="/cart/" method="post" class="card-text">
+<div class="row no-gutters">
+<div class="col-md-4 text-center" style="line-height:31px;">$3.49</div>
+<div class="col-md-2"><input type="text" name="qty" value="1" class="form-control col-10"> <input type="hidden" name="productid" value="1506604"></div>
+<div class="col-md-4"><button class="btn btn-primary">Add to Cart</button></div>
+</div>
+</form>
+</div>
+</div>
+<div class="card mb-3">
+<div class="card-header"><a href="http://www.starcitygames.com/catalog/product/1578042">StarCityGames.com Matte Sleeves - Creature Collection - Chasing Your Trail</a><br /><a href="http://www.starcitygames.com/catalog/category/153">Supplies: Sleeves</a></div>
+<div class="card-block"><p class="text-center"><img src="https://static.starcitygames.com/sales/cardscans/SCG/CreatureCollection/2019/chasing-your-trail_sleeves.png" alt="StarCityGames.com Matte Sleeves - Creature Collection - Chasing Your Trail" border="0" height="150" width="150" class="card-img-top"></p>
+</div>
+<div class="card-footer">
+<form action="/cart/" method="post" class="card-text">
+<div class="row no-gutters">
+<div class="col-md-4 text-center" style="line-height:31px;">$3.99</div>
+<div class="col-md-2"><input type="text" name="qty" value="1" class="form-control col-10"> <input type="hidden" name="productid" value="1578042"></div>
+<div class="col-md-4"><button class="btn btn-primary">Add to Cart</button></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</article> </aside>
+<aside id="sidebar2" class="left" style="width:284px; margin: 0 0 0 10px; font-size: 13px; text-align:center;">
+</aside>
+<br class="clear">
+</div>
+</section>
+<footer id="main_footer" class="clear">
+<aside class="">
+<div id="article_bar">
+<h1>&nbsp;</h1>
+</div>
+<div id="sidebar_bar"><div id="sidebar_bar_sub"></div></div>
+</aside>
+<div id="footer">
+<div class="column">
+<span class="heading">Connect with us</span><br>
+<a href="https://visitor.r20.constantcontact.com/manage/optin?v=0015de0J6wWFJ4j9dVXs5_nw2kG8d7l1n3BiKOqeOAzKyr_Edgg0nqz9zZ_Ov1eesMzNS0KcyInKDcRy2aMCc4kU-naYeTAe-E0V8cXbUGZxZI%3D">
+<p style="width:250px;font-size: 13px;margin-bottom:7px;">Subscribe to our Newsletter!</p>
+</a>
+<div class="social-icons">
+<a href="http://www.facebook.com/StarCityGames"><i class="fa fa-facebook-square" aria-hidden="true" style="color:#3B5998!important;"></i></a>
+<a href="http://twitter.com/starcitygames"><i class="fa fa-twitter-square" aria-hidden="true" style="color:#1DA1F3!important;"></i></a>
+<a href="https://www.youtube.com/user/starcitygamesvideo"><i class="fa fa-youtube-square" aria-hidden="true" style="color:#FF0000!important;"></i></a>
+<a href="https://www.instagram.com/starcitygames/"><img src="https://static.starcitygames.com/www//images/banners/media/Social/instagramLogo.png" width="28" style="position: relative; margin-top:-16px;margin-left:7px;margin-right:2px;"></a>
+<a href="https://www.twitch.tv/scgtour"><i class="fa fa-twitch" aria-hidden="true" style="color:#6441A4;"></i></a>
+</div>
+</div>
+<div class="column">
+<span class="heading">Need help?</span><br>
+<a href="http://www.starcitygames.com/contactus">Contact Us</a><br>
+<a href="http://help.starcitygames.com">Help Center</a><br>
+
+</div>
+<div class="column">
+<span class="heading">Organized Play</span><br>
+<a href="http://www.starcitygames.com/content/scgtour">SCG Tour</a><br>
+<a href="http://www.starcitygames.com/content/schedule">Schedule</a><br>
+<a href="http://www.starcitygames.com/leaderboard">Leaderboard</a><br>
+<a href="http://www.starcitygames.com/content/coverage">Coverage</a><br>
+<a href="http://www.starcitygames.com/content/archive">Coverage Archives</a>
+</div>
+<div class="column">
+<span class="heading">In-Store Programs</span><br>
+<a href="http://www.starcitygames.com/content/iq">Invitational Qualifiers</a><br>
+<a href="http://www.starcitygames.com/content/gneventfinder/">Game Night</a><br>
+<a href="http://www.starcitygames.com/content/prerelease">Prerelease Playmats</a><br>
+<a href="http://isp.starcitygames.com/">Organizers</a><br>
+</div>
+<div class="column">
+<span class="heading">StarCityGames.com</span><br>
+<a href="http://www.starcitygames.com/content/about">About Us</a><br>
+<a href="http://careers.starcitygames.com/">Careers</a><br>
+<a href="http://www.starcitygames.com/content/gamecenter/">Game Center</a><br>
+<a href="https://www.google.com/maps/place/5728+Williamson+Rd,+Roanoke,+VA+24012/@37.3287328,-79.956158,17z/data=!3m1!4b1!4m5!3m4!1s0x884d0e5072670da1:0xce76b720a15a40c6!8m2!3d37.3287328!4d-79.9539693">
+<p><i class="fa fa-map-marker" aria-hidden="true" style="font-size: inherit !important;padding:0px"></i> 5728 Williamson Road NW</p>
+<p style="margin-top:-.6em;">Roanoke, VA 24012</p>
+</a>
+</div>
+<div class="legal">
+&copy; 2019 Star City Games<sup>&reg;</sup><br>
+<a href="https://help.starcitygames.com/article/68-terms-and-conditions">Terms &amp; Conditions</a> | <a href="https://help.starcitygames.com/article/67-privacy-statement">Privacy Statement</a> | <a href="https://help.starcitygames.com/article/58-return-policy">Refund &amp; Return Policy</a>
+</div>
+</div>
+</footer>
+<script src="//www.starcitygames.com/js/jquery.tabify.js"></script>
+<script src="//www.starcitygames.com/js/jquery.marquee.js"></script>
+<script src="//www.starcitygames.com/js/jquery.mousewheel.js"></script>
+<script src="//www.starcitygames.com/js/jquery.jscrollpane.min.js"></script>
+<script src="//www.starcitygames.com/js/jquery.jcarousel.min.js"></script>
+<script src="//www.starcitygames.com/assets/plugins/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+<script src="//www.starcitygames.com/js/jquery.validate.js"></script>
+<script src="//www.starcitygames.com/assets/plugins/jquery-qtip/jquery.qtip.min.js"></script>
+<script src="//www.starcitygames.com/javascript/jquery.cart_AJAX.js"></script>
+<script src="//www.starcitygames.com/js/jquery.flexslider-min.js"></script>
+<script src="//www.starcitygames.com/library/scripts/jquery.cycle.all.js"></script>
+<script src="//www.starcitygames.com/js/jquery.autocomplete_all_products.js"></script>
+<script src="//www.starcitygames.com/javascript/site_definitions.php"></script>
+<script src="//www.starcitygames.com/js/site.js"></script>
+
+<script src="/javascript/jquery.cardpopup_qtip.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(document).ready(function(e) {
+	
+	$(".cart_update_order").click(function() {
+		update_order($(this).attr("data-group"));		
+	});
+	$(".cart_update_cart").click(function() {
+		update_cart();		
+	});
+	$(".cart_delete_item").click(function() {
+		$("#cart_delete_product_ids").val(($(this).attr("data-product")).replace("product_",""));
+		$("#cart_update").submit();
+	});
+	$(".cart_delete_order").click(function() {
+		group_id = $(this).attr("data-group");
+		delete_products = new Array();
+		$("input[data-group='"+group_id+"']").each(function() {
+			thisnameid = $(this).attr("id");
+			thisid = thisnameid.replace("product_","");
+			delete_products.push(thisid);
+		});
+		$("#cart_delete_product_ids").val(delete_products.join(","));
+		$("#cart_update").submit();
+	});
+	$(".cart_delete_cart").click(function() {
+		delete_products = new Array();
+		$("input[data-group]").each(function() {
+			thisnameid = $(this).attr("id");
+			thisid = thisnameid.replace("product_","");
+			delete_products.push(thisid);
+		});
+		$("#cart_delete_product_ids").val(delete_products.join(","));
+		$("#cart_update").submit();
+	});
+	$("#combine_pre_stock_orders").click(function() {
+		combine_value = $(this).val();
+		combine_value = (combine_value == "Combine")?"true":"false";
+		$.ajax({
+			type:	'POST',
+			url:	'/Cart/set_combine_flag',
+			dataType:"json",
+			data:	"flag="+combine_value,
+			success: function(data) {
+				if (data.success) {					 
+					// Yeah it worked...
+					// we should reload the page so they can see their changes...
+					window.location.href=window.location.href
+				} else if (! data.success) {
+					error_message = Array();
+					error_message.push(data.error_message); 
+					display_errors(data.error_message);
+				} else {
+					error_message = Array();
+					error_message.push("Unexpected error happened. Please contact StarCityGames customer support."); 
+					display_errors(error_message);
+				}
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				error_message = Array();
+				error_message.push("Unexpected error happened. Please contact StarCityGames customer support.<br>" + errorThrown); 
+				display_errors(error_message, group_id);
+			}
+		});
+	});
+});
+function display_errors(message, group_id) {
+	$("#alert_group_"+group_id).html(message);
+	$("#alert_group_"+group_id).removeClass("hidden-xs-up");
+}
+function update_cart() {
+	error_list = new Array();
+	soft_errors = new Array(); 
+	is_errors = 0;
+	is_soft_errors = 0;
+	count = 0;
+	$("input[data-group]").each(function() {
+		count++;
+		group_id = $(this).attr("data-group");
+		this_error = '';
+		qty = $(this).val();
+		qty_original = $(this).attr("data-value");
+		qty_max = $(this).attr("data-max");
+		temp = $(this).attr("id");
+		this_id = temp.replace("product_","");
+		this_name = $(".cart_product_name[data-product='"+this_id+"']").html();
+		if (qty != qty_original) {
+			if ($.isNumeric(qty)) {
+				if (qty >= 0 && qty == parseInt(qty,10)) {
+					if (qty_max - qty < 0) {
+						this_error = "We have "+qty_max+" available for "+this_name+", we have reduced the quantity to "+qty_max + "<br>";						
+						$(this).val(qty_max);
+						is_errors = 1;
+					} 
+				} else {
+					this_error = "Please enter a whole number 0 or more for "+this_name+"<br>";
+					is_errors = 1;
+					// not a positive or whole number
+				}
+			} else {
+				this_error = "Please enter a whole number 0 or more for "+this_name+"<br>";
+				is_errors = 1;
+				// not a number
+			}
+		} else {			
+			is_soft_errors++;
+			// no change
+		}
+		if (this_error != '') {
+			if (typeof error_list[group_id] !== 'undefined') {
+				error_list[group_id] += this_error;
+			} else {
+				error_list[group_id] = this_error;
+			}
+		}
+		
+	});
+	if (!is_errors) {		
+		if (is_soft_errors == count) {
+			// nothing on the page changed.
+			$(".page_messages").html("Please change a quantity to update the cart.");
+			$(".page_messages").removeClass("hidden-xs-up");			
+			$('html,body').animate({scrollTop: $("#page_messages").position().top});
+		} else {
+			$("#cart_update").submit();
+		}
+	} else {
+		for (var index in error_list) {
+			$("#alert_group_"+index).html(error_list[index]);
+			$("#alert_group_"+index).removeClass("hidden-xs-up");
+		}
+		$('html,body').animate({scrollTop: $("#page_messages").position().top});
+	}
+}
+function update_order(group_id) {
+	error_list = new Array();
+	soft_errors = new Array(); 
+	is_errors = 0;
+	is_soft_errors = 0;
+	count = 0;
+	$("input[data-group='"+group_id+"']").each(function() {
+		count++;
+		this_error = '';
+		qty = $(this).val();
+		qty_original = $(this).attr("data-value");
+		qty_max = $(this).attr("data-max");
+		temp = $(this).attr("id");
+		this_id = temp.replace("product_","");
+		this_name = $(".cart_product_name[data-product='"+this_id+"']").html();
+		if (qty != qty_original) {
+			if ($.isNumeric(qty)) {
+				if (qty >= 0 && qty == parseInt(qty,10)) {
+					if (qty_max - qty < 0) {
+						this_error = "We have "+qty_max+" available for "+this_name+", we have reduced the quantity to "+qty_max + "<br>";						
+						$(this).val(qty_max);
+						is_errors = 1;
+					} 
+				} else {
+					this_error = "Please enter a whole number 0 or more for "+this_name+"<br>";
+					is_errors = 1;
+					// not a positive or whole number
+				}
+			} else {
+				this_error = "Please enter a whole number 0 or more for "+this_name+"<br>";
+				is_errors = 1;
+				// not a number
+			}
+		} else {			
+			is_soft_errors++;
+			// no change
+		}
+		if (this_error != '') {
+			if (typeof error_list[group_id] !== 'undefined') {
+				error_list[group_id] += this_error;
+			} else {
+				error_list[group_id] = this_error;
+			}
+		}
+	});
+	if (!is_errors) {		
+		if (is_soft_errors == count) {
+			// nothing on the page changed.
+			$("#alert_group_"+group_id).html("Please change a quantity to update the cart.");
+			$("#alert_group_"+group_id).removeClass("hidden-xs-up");						
+		} else {
+			$("#cart_update").submit();
+		}
+	} else {
+		$("#alert_group_"+group_id).html(error_list[group_id]);
+		$("#alert_group_"+group_id).removeClass("hidden-xs-up");
+	}
+}
+</script>
+
+</body>
+</html>

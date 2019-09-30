@@ -1,0 +1,3027 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta name="generator" content="ShopSite Pro 12 sp3 r2.1 (data - MTGOTraders_ProductsStatic)">
+
+<link href="https://www.mtgotraders.com/store/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://www.mtgotraders.com/store/css/sweetalert.css" rel="stylesheet">
+<link href="https://www.mtgotraders.com/store/css/minicart.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://www.mtgotraders.com/store/media/en-US/javascript/jquery/jquery.js"></script>
+<script>
+    var $j = jQuery.noConflict();
+</script>
+
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/angular.min.js"></script>
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/angular.route.min.js"></script>
+
+
+   
+   
+   
+          
+
+    
+
+
+
+		<link type="text/css" media="all" href="https://www.mtgotraders.com/store/media/css/frame.css?2" rel="stylesheet" />
+	<link type="text/css" media="all" href="https://www.mtgotraders.com/store/media/css/style.css?2" rel="stylesheet" />
+
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/prototype.js"></script>
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/effects.js"></script>	
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/validation.js"></script>	
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/overlay.js?1"></script>
+	<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/sstop.js?1"></script>
+	<script type="text/javascript">
+		var serialNumber = "0001148097";
+		var storeId = "*1a4c945171a04aae08de729fc95b2a";
+		var baseUrl = "https://www.mtgotraders.com/store";
+		var shoppingCartUrl = "https://www.mtgotraders.com/cgi-bin/shop-bin/sc";
+		var domain = ".mtgotraders.com";
+	</script>
+	<link rel="stylesheet" type="text/css" href="//d2r7ualogzlf1u.cloudfront.net/autocomplete/autocomplete.css">
+ 
+	<link type="text/css" media="all" href="https://www.mtgotraders.com/store/media/css/plist.css?1" rel="stylesheet" />
+	
+<title>Guildpact</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="Guildpact" /><meta name="description" content="Guildpact magic the gathering online cards" /><script type="text/javascript" src="https://www.mtgotraders.com/store/media/en-US/javascript/jquery/jquery.js"></script>
+  <script type="text/javascript">
+    var ss_jQuery = jQuery.noConflict(true);
+</script>
+
+  <script type="text/javascript" src="https://www.mtgotraders.com/store/media/en-US/javascript/jquery/json2.min.js"> </script>
+  <script type="text/javascript">
+
+function ss_handleResponse_inv(data) {
+  var cnt = 0;
+  while (data.getElementsByTagName("recid")[cnt] != undefined) {
+    recid = data.getElementsByTagName("recid")[cnt].firstChild.nodeValue;
+    msg = data.getElementsByTagName("message")[cnt].firstChild.nodeValue;
+    id = document.getElementById('ss_inv' + recid);
+    msg1 = msg.replace(/\"/g, '&quot;');
+    msg2 = msg1.replace(/\|q\|/g, '"');
+    id.innerHTML = msg2;
+    cnt++;
+  }
+}
+var ss_rec_str = '';
+function ss_inv_getinfo() {
+  var dataObj = {
+     storeid: "*1a4c945171a04aae08de729fc95b2a",
+     itemnum: ss_rec_str
+  }
+  var data = ss_jQuery.param(dataObj, false);
+
+  if (ss_rec_str != '') {
+   ss_jQuery.ajax({ type: "GET",
+    url: "https://www.mtgotraders.com/cgi-bin/shop-bin/sc/inv.cgi",
+    data: data,
+    dataType: "jsonp",
+    crossDomain: true,
+    jsonp: true,
+    success: function(rdata, textStatus, jqXHR){
+       if (window.DOMParser){
+         parser=new DOMParser();
+         data=parser.parseFromString(rdata.data,"text/xml");
+         ss_handleResponse_inv(data);
+       } else{ // Internet Explorer
+         xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+         xmlDoc.async=false;
+         xmlDoc.loadXML(rdata.data);
+         ss_handleResponse_inv(xmlDoc);
+       }
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+           //            console.log(errorThrown);
+    }
+   });
+ }
+}
+ss_jQuery(document).ready(function(){
+  ss_inv_getinfo();
+  return true;
+});
+  </script>
+</head>
+<body>
+<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/search.js"></script>
+<div class="wrapper">
+	<div class="wrapperinner">
+		<div class="content">
+<!-- End HEADER-->
+
+<div ng-app="MiniCart" ng-controller="CartController as cart" ng-cloak>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <div id="wrapped">
+        <div id="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-panel-top panel">
+                    <div class="panel-body" style="padding:2px;">
+                        <span class="sidebar-header">SHOPPING CART ({{getCardCount()}} Items)</span>
+                    </div>
+                </div>
+                <div class="cart-contents" style="" ng-show="products.length > 0">
+                    <table id="cart-table" class="table table-striped">
+                        <thead>
+                        <tr><th>Name</th><th>Price</th><th>Quantity</th><th></th></tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="card in products">
+                            <td>
+                                <a href="https://www.mtgotraders.com/store/{{card.sku}}.html" style="margin-top:2px">{{card.name}}</a>
+                                <br>
+                                <em>{{getCardInfo(card)}}</em>
+                            </td>
+                            <td>{{card.price}}</td>
+                            <td><input id="input-{{card.id}}" class="form-control input-sm qty-cart" type="number" ng-model="card.qty" min="1" ng-blur="updateCartQty(card, true)" ng-change="focusThis(card)"/></td>
+                            <td><a href="" ng-click="removeProduct(card)"><span class="remove-cart glyphicon glyphicon-remove"></span></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-contents-empty" ng-show="products.length == 0">
+                    <em class="em-msg">No items in your cart</em>
+                </div>
+                <div class="sidebar-panel-bottom panel">
+                    <div class="panel-body" style="padding:2px;">
+                        <button class="btn btn-success" style="margin-left:5px;float:right;margin-top:2px" ng-click="checkOut();"><i class="fa fa-shopping-cart"></i> Checkout</button>
+                        <button class="btn btn-danger" style="float:right;margin-top:2px" ng-click="emptyCart();"><i class="fa fa-trash"></i> Clear</button>
+                        <span class="sidebar-total">TOTAL: {{orderTotal}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="bottombar" class="navbar navbar-inverse navbar-fixed-bottom" style="visibility:collapse">
+        <div id="bottomcontent">
+            <div class="right-align">
+                <a href="" class="navbar-brand">Your Cart</a>
+
+                <div class="navbar-text navbar-left">Count: {{products.length}}</div>
+                <div class="navbar-text navbar-left">Total: {{orderTotal}}</div>
+                <button class="navbar-btn btn btn-danger btn-sm checkout-btn" ng-click="emptyCart();"><i class="fa fa-trash"></i> Clear </button>
+                <button class="navbar-btn btn btn-success btn-sm checkout-btn" ng-click="checkOut();"><i class="fa fa-shopping-cart"></i> Checkout </button>
+                <button class="navbar-btn btn btn-warning btn-sm checkout-btn" ng-click="addToCart();"><i class="fa fa-plus"></i> Add To Cart </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maincontent">
+
+	<table style="display: none;">
+		<tr><!-- Start of ROW -->
+<!-- rec 49284 -->
+<a name="49284"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 49309 -->
+<a name="49309"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 49547 -->
+<a name="49547"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 50015 -->
+<a name="50015"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 51638 -->
+<a name="51638"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 51778 -->
+<a name="51778"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 51819 -->
+<a name="51819"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 51862 -->
+<a name="51862"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 51941 -->
+<a name="51941"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 52170 -->
+<a name="52170"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 52377 -->
+<a name="52377"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 52641 -->
+<a name="52641"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 53171 -->
+<a name="53171"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 53175 -->
+<a name="53175"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 48771 -->
+<a name="48771"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 53616 -->
+<a name="53616"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 53737 -->
+<a name="53737"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 54705 -->
+<a name="54705"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55096 -->
+<a name="55096"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55168 -->
+<a name="55168"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55333 -->
+<a name="55333"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55378 -->
+<a name="55378"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55386 -->
+<a name="55386"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55419 -->
+<a name="55419"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 55586 -->
+<a name="55586"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 56125 -->
+<a name="56125"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 56935 -->
+<a name="56935"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 57035 -->
+<a name="57035"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 57406 -->
+<a name="57406"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr> <!-- END OF ROW -->
+<tr> <!-- Start OF Next ROW -->
+<!-- rec 57445 -->
+<a name="57445"></a>
+
+
+
+
+
+		<!------ Start Sub-Products Table ------>
+					
+
+
+
+
+
+
+			<!------ End Sub-Products Table ------>
+	
+
+
+
+</tr><!-- Last One -->	</table>
+
+
+	<h1>Guildpact</h1>
+			
+
+
+
+	
+<div id="results">
+		
+		<p style="float: left; display: none;">There are 165 results.</p>		
+		
+		<div class="searchopt" style="clear: both;">
+			<div class="searchoptinner">
+						
+				<div class="searchopt-sortby">
+					<label>Sort by:</label>
+					<select name="sortby" onchange="document.location.href=this.value">
+												<option value="https://www.mtgotraders.com/store/guildpact.html?sortby=name" selected="selected">Name: A to Z</option>
+												<option value="https://www.mtgotraders.com/store/guildpact.html?sortby=name_desc">Name: Z to A</option>
+												<option value="https://www.mtgotraders.com/store/guildpact.html?sortby=price">Price: Low to High</option>
+												<option value="https://www.mtgotraders.com/store/guildpact.html?sortby=price_desc">Price: High to Low</option>
+											</select>
+				</div>
+						
+				<div class="searchopt-itemsperpage">
+					<label>Items Per Page:</label>
+					<select name="limit" onchange="document.location.href=this.value">
+												<option value="https://www.mtgotraders.com/store/guildpact.html?limit=40" selected="selected">40</option>
+												<option value="https://www.mtgotraders.com/store/guildpact.html?limit=80">80</option>
+												<option value="https://www.mtgotraders.com/store/guildpact.html?limit=160">160</option>
+											</select>
+				</div>
+						
+				
+				
+						<ul class="searchopt-pages">
+		
+				
+									
+											<li><span>1</span></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=2">2</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=3">3</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=4">4</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=5">5</a></li>
+																	<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=2">Next</a></li>
+							</ul>
+								
+				<div class="clear">&nbsp;</div>
+			</div>
+		</div>		
+	
+		<form onsubmit="return validate()" action="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi" method="post">
+			<input type="hidden" name="storeid" value="*1a4c945171a04aae08de729fc95b2a" />
+			<input type="hidden" name="dbname" value="products" />
+			<input type="hidden" name="function" value="add" />
+			<div class="productlistbox">				
+				<span id="buyprice">Buy Price</span>
+				<div id="buypricepopup">
+					<span class="close">X</span>
+					<h2>Buy Price: Sell Us Your Cards</h2>
+					<p>To sell cards to us you will need to trade one of our buy bots within Magic Online.  Add the following bots to your buddylist:</p>
+					<ul>
+						<li>mtgotradersbuybot</li>
+						<li>mtgotradersbuybot1</li>
+						<li>mtgotradersbuybot2</li>
+					</ul>
+					<p>Make sure you have the cards you wish to sell in your active trade binder.</p>
+				</div>
+				
+				<table>
+															
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Absolver_Thrull.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Absolver_Thrull.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Absolver_Thrull.html">Absolver Thrull</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="49284:qnty" size="2" />
+							<input type="hidden" value="49284" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Absolver_Thrull_f.html">Absolver Thrull *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="49285:qnty" size="2" />
+							<input type="hidden" value="49285" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Abyssal_Nocturnus.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Abyssal_Nocturnus.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Abyssal_Nocturnus.html">Abyssal Nocturnus</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="49309:qnty" size="2" />
+							<input type="hidden" value="49309" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Abyssal_Nocturnus_f.html">Abyssal Nocturnus *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.01												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">22</td>
+						<td class="buy">
+														<input type="text" value="0" name="49310:qnty" size="2" />
+							<input type="hidden" value="49310" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Aetherplasm.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Aetherplasm.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Aetherplasm.html">Aetherplasm</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="87870:qnty" size="2" />
+							<input type="hidden" value="87870" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Aetherplasm_f.html">Aetherplasm *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="87871:qnty" size="2" />
+							<input type="hidden" value="87871" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Agent_of_Masks.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Agent_of_Masks.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Agent_of_Masks.html">Agent of Masks</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="49547:qnty" size="2" />
+							<input type="hidden" value="49547" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Agent_of_Masks_f.html">Agent of Masks *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="49548:qnty" size="2" />
+							<input type="hidden" value="49548" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Angel_of_Despair.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Angel_of_Despair.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Angel_of_Despair.html">Angel of Despair</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">27</td>
+						<td class="buy">
+													<input type="text" value="0" name="50015:qnty" size="2" />
+							<input type="hidden" value="50015" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Angel_of_Despair_f.html">Angel of Despair *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.50</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="50017:qnty" size="2" />
+							<input type="hidden" value="50017" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Battering_Wurm.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Battering_Wurm.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_6_mana.gif" alt="6 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Battering_Wurm.html">Battering Wurm</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="51638:qnty" size="2" />
+							<input type="hidden" value="51638" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Battering_Wurm_f.html">Battering Wurm *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">37</td>
+						<td class="buy">
+														<input type="text" value="0" name="51639:qnty" size="2" />
+							<input type="hidden" value="51639" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Beastmasters_Magemark.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Beastmasters_Magemark.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Beastmasters_Magemark.html">Beastmaster's Magemark</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="51778:qnty" size="2" />
+							<input type="hidden" value="51778" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Beastmasters_Magemark_f.html">Beastmaster's Magemark *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.23</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="51779:qnty" size="2" />
+							<input type="hidden" value="51779" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Belfry_Spirit.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Belfry_Spirit.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Belfry_Spirit.html">Belfry Spirit</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="51819:qnty" size="2" />
+							<input type="hidden" value="51819" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Belfry_Spirit_f.html">Belfry Spirit *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="51820:qnty" size="2" />
+							<input type="hidden" value="51820" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Benediction_of_Moons.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Benediction_of_Moons.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Benediction_of_Moons.html">Benediction of Moons</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="51862:qnty" size="2" />
+							<input type="hidden" value="51862" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Benediction_of_Moons_f.html">Benediction of Moons *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.34</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="51863:qnty" size="2" />
+							<input type="hidden" value="51863" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Bioplasm.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Bioplasm.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Bioplasm.html">Bioplasm</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="51941:qnty" size="2" />
+							<input type="hidden" value="51941" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Bioplasm_f.html">Bioplasm *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.05</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="51942:qnty" size="2" />
+							<input type="hidden" value="51942" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Blind_Hunter.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Blind_Hunter.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Blind_Hunter.html">Blind Hunter</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="52170:qnty" size="2" />
+							<input type="hidden" value="52170" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Blind_Hunter_f.html">Blind Hunter *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="52171:qnty" size="2" />
+							<input type="hidden" value="52171" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Bloodscale_Prowler.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Bloodscale_Prowler.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Bloodscale_Prowler.html">Bloodscale Prowler</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="52377:qnty" size="2" />
+							<input type="hidden" value="52377" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Bloodscale_Prowler_f.html">Bloodscale Prowler *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">38</td>
+						<td class="buy">
+														<input type="text" value="0" name="52378:qnty" size="2" />
+							<input type="hidden" value="52378" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Borborygmos.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Borborygmos.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Borborygmos.html">Borborygmos</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="52641:qnty" size="2" />
+							<input type="hidden" value="52641" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Borborygmos_f.html">Borborygmos *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.01												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">25</td>
+						<td class="buy">
+														<input type="text" value="0" name="52642:qnty" size="2" />
+							<input type="hidden" value="52642" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Bloodscale.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Burning_Tree_Bloodscale.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Bloodscale.html">Burning-Tree Bloodscale</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="53171:qnty" size="2" />
+							<input type="hidden" value="53171" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Bloodscale_f.html">Burning-Tree Bloodscale *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="53172:qnty" size="2" />
+							<input type="hidden" value="53172" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Shaman.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Burning_Tree_Shaman.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Shaman.html">Burning-Tree Shaman</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">23</td>
+						<td class="buy">
+													<input type="text" value="0" name="53175:qnty" size="2" />
+							<input type="hidden" value="53175" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Burning-Tree_Shaman_f.html">Burning-Tree Shaman *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.75</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="53176:qnty" size="2" />
+							<input type="hidden" value="53176" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Castigate.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Castigate.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Castigate.html">Castigate</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													0.002												</td>
+						<td class="price">$0.04</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="48771:qnty" size="2" />
+							<input type="hidden" value="48771" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Castigate_f.html">Castigate *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.02												</td>
+						<td class="price">$0.06</td>
+						<td class="qty">8</td>
+						<td class="buy">
+														<input type="text" value="0" name="53537:qnty" size="2" />
+							<input type="hidden" value="53537" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Caustic_Rain.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Caustic_Rain.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Caustic_Rain.html">Caustic Rain</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="53616:qnty" size="2" />
+							<input type="hidden" value="53616" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Caustic_Rain_f.html">Caustic Rain *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="53617:qnty" size="2" />
+							<input type="hidden" value="53617" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Cerebral_Vortex.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Cerebral_Vortex.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cerebral_Vortex.html">Cerebral Vortex</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="53737:qnty" size="2" />
+							<input type="hidden" value="53737" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cerebral_Vortex_f.html">Cerebral Vortex *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.34</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="53738:qnty" size="2" />
+							<input type="hidden" value="53738" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Conjurers_Ban.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Conjurers_Ban.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Conjurers_Ban.html">Conjurer's Ban</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="54705:qnty" size="2" />
+							<input type="hidden" value="54705" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Conjurers_Ban_f.html">Conjurer's Ban *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="54706:qnty" size="2" />
+							<input type="hidden" value="54706" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Crash_Landing.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Crash_Landing.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Crash_Landing.html">Crash Landing</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.05</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55096:qnty" size="2" />
+							<input type="hidden" value="55096" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Crash_Landing_f.html">Crash Landing *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="55097:qnty" size="2" />
+							<input type="hidden" value="55097" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Cremate.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Cremate.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cremate.html">Cremate</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55168:qnty" size="2" />
+							<input type="hidden" value="55168" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cremate_f.html">Cremate *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="55170:qnty" size="2" />
+							<input type="hidden" value="55170" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Cry_of_Contrition.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Cry_of_Contrition.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cry_of_Contrition.html">Cry of Contrition</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55333:qnty" size="2" />
+							<input type="hidden" value="55333" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cry_of_Contrition_f.html">Cry of Contrition *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.004												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="55334:qnty" size="2" />
+							<input type="hidden" value="55334" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Cryptwailing.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Cryptwailing.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cryptwailing.html">Cryptwailing</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55378:qnty" size="2" />
+							<input type="hidden" value="55378" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Cryptwailing_f.html">Cryptwailing *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">36</td>
+						<td class="buy">
+														<input type="text" value="0" name="55379:qnty" size="2" />
+							<input type="hidden" value="55379" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Crystal_Seer.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Crystal_Seer.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_4_mana.gif" alt="4 Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Crystal_Seer.html">Crystal Seer</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">50</td>
+						<td class="buy">
+													<input type="text" value="0" name="55386:qnty" size="2" />
+							<input type="hidden" value="55386" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Crystal_Seer_f.html">Crystal Seer *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="55387:qnty" size="2" />
+							<input type="hidden" value="55387" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Culling_Sun.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Culling_Sun.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Culling_Sun.html">Culling Sun</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55419:qnty" size="2" />
+							<input type="hidden" value="55419" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Culling_Sun_f.html">Culling Sun *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">30</td>
+						<td class="buy">
+														<input type="text" value="0" name="55420:qnty" size="2" />
+							<input type="hidden" value="55420" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Daggerclaw_Imp.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Daggerclaw_Imp.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Daggerclaw_Imp.html">Daggerclaw Imp</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="55586:qnty" size="2" />
+							<input type="hidden" value="55586" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Daggerclaw_Imp_f.html">Daggerclaw Imp *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="55589:qnty" size="2" />
+							<input type="hidden" value="55589" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Debtors_Knell.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Debtors_Knell.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_4_mana.gif" alt="4 Mana" border="0"/><img src="media/symbols/Symbol_WB_mana.gif" alt="W/B Mana" border="0"/><img src="media/symbols/Symbol_WB_mana.gif" alt="W/B Mana" border="0"/><img src="media/symbols/Symbol_WB_mana.gif" alt="W/B Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Debtors_Knell.html">Debtors' Knell</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">26</td>
+						<td class="buy">
+													<input type="text" value="0" name="56125:qnty" size="2" />
+							<input type="hidden" value="56125" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Debtors_Knell_f.html">Debtors' Knell *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.24												</td>
+						<td class="price">$0.69</td>
+						<td class="qty">29</td>
+						<td class="buy">
+														<input type="text" value="0" name="56126:qnty" size="2" />
+							<input type="hidden" value="56126" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Djinn_Illuminatus.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Djinn_Illuminatus.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_5_mana.gif" alt="5 Mana" border="0"/><img src="media/symbols/Symbol_UR_mana.gif" alt="U/R Mana" border="0"/><img src="media/symbols/Symbol_UR_mana.gif" alt="U/R Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Djinn_Illuminatus.html">Djinn Illuminatus</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="56935:qnty" size="2" />
+							<input type="hidden" value="56935" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Djinn_Illuminatus_f.html">Djinn Illuminatus *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.01												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="56938:qnty" size="2" />
+							<input type="hidden" value="56938" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Douse_in_Gloom.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Douse_in_Gloom.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Douse_in_Gloom.html">Douse in Gloom</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57035:qnty" size="2" />
+							<input type="hidden" value="57035" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Douse_in_Gloom_f.html">Douse in Gloom *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">35</td>
+						<td class="buy">
+														<input type="text" value="0" name="57037:qnty" size="2" />
+							<input type="hidden" value="57037" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Droning_Bureaucrats.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Droning_Bureaucrats.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Droning_Bureaucrats.html">Droning Bureaucrats</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57406:qnty" size="2" />
+							<input type="hidden" value="57406" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Droning_Bureaucrats_f.html">Droning Bureaucrats *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="57407:qnty" size="2" />
+							<input type="hidden" value="57407" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Drowned_Rusalka.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Drowned_Rusalka.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Drowned_Rusalka.html">Drowned Rusalka</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57445:qnty" size="2" />
+							<input type="hidden" value="57445" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Drowned_Rusalka_f.html">Drowned Rusalka *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.004												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="57446:qnty" size="2" />
+							<input type="hidden" value="57446" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Dryad_Sophisticate.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Dryad_Sophisticate.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Dryad_Sophisticate.html">Dryad Sophisticate</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.04</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57491:qnty" size="2" />
+							<input type="hidden" value="57491" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Dryad_Sophisticate_f.html">Dryad Sophisticate *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.005												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="57492:qnty" size="2" />
+							<input type="hidden" value="57492" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Dune-Brood_Nephilim.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Dune_Brood_Nephilim.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/><img src="media/symbols/white_mana.gif" alt="White Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Dune-Brood_Nephilim.html">Dune-Brood Nephilim</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57523:qnty" size="2" />
+							<input type="hidden" value="57523" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Dune-Brood_Nephilim_f.html">Dune-Brood Nephilim *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													0.02												</td>
+						<td class="price">$0.06</td>
+						<td class="qty">31</td>
+						<td class="buy">
+														<input type="text" value="0" name="57524:qnty" size="2" />
+							<input type="hidden" value="57524" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Earth_Surge.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Earth_Surge.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Earth_Surge.html">Earth Surge</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57666:qnty" size="2" />
+							<input type="hidden" value="57666" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Earth_Surge_f.html">Earth Surge *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="57667:qnty" size="2" />
+							<input type="hidden" value="57667" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Electrolyze.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Electrolyze.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Electrolyze.html">Electrolyze</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="57813:qnty" size="2" />
+							<input type="hidden" value="57813" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Electrolyze_f.html">Electrolyze *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.32</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="57819:qnty" size="2" />
+							<input type="hidden" value="57819" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Exhumer_Thrull.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Exhumer_Thrull.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_5_mana.gif" alt="5 Mana" border="0"/><img src="media/symbols/black_mana.gif" alt="Black Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Exhumer_Thrull.html">Exhumer Thrull</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="58716:qnty" size="2" />
+							<input type="hidden" value="58716" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Exhumer_Thrull_f.html">Exhumer Thrull *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="58717:qnty" size="2" />
+							<input type="hidden" value="58717" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Fencers_Magemark.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Fencers_Magemark.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_2_mana.gif" alt="2 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Fencers_Magemark.html">Fencer's Magemark</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="59183:qnty" size="2" />
+							<input type="hidden" value="59183" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Fencers_Magemark_f.html">Fencer's Magemark *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.03</td>
+						<td class="qty">38</td>
+						<td class="buy">
+														<input type="text" value="0" name="59184:qnty" size="2" />
+							<input type="hidden" value="59184" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Feral_Animist.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Feral_Animist.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/red_mana.gif" alt="Red Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Feral_Animist.html">Feral Animist</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.04</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="59192:qnty" size="2" />
+							<input type="hidden" value="59192" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Feral_Animist_f.html">Feral Animist *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="59194:qnty" size="2" />
+							<input type="hidden" value="59194" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="odd withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Frazzle.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Frazzle.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_3_mana.gif" alt="3 Mana" border="0"/><img src="media/symbols/blue_mana.gif" alt="Blue Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Frazzle.html">Frazzle</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="60558:qnty" size="2" />
+							<input type="hidden" value="60558" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="odd foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Frazzle_f.html">Frazzle *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.02</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="60559:qnty" size="2" />
+							<input type="hidden" value="60559" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+										
+					<tr class="even withfoil">
+					
+						<td class="img" rowspan="2">
+							<a href="https://www.mtgotraders.com/store/GPT_Gatherer_of_Graces.html"><img src="https://www.mtgotraders.com/store/media/products/guildpact/tmb_Gatherer_of_Graces.jpg" alt="" onerror="this.src='media/images/tmb_nophoto.png'" /></a>
+						</td>
+						<td class="mana" rowspan="2">
+							<img src="media/symbols/Symbol_1_mana.gif" alt="1 Mana" border="0"/><img src="media/symbols/green_mana.gif" alt="Green Mana" border="0"/>						</td>
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Gatherer_of_Graces.html">Gatherer of Graces</a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice ">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+													<input type="text" value="0" name="60967:qnty" size="2" />
+							<input type="hidden" value="60967" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+												</td>
+					</tr>
+										<tr class="even foil">
+						<td class="cardname"><a href="https://www.mtgotraders.com/store/GPT_Gatherer_of_Graces_f.html">Gatherer of Graces *Foil*</span></a></td>
+						<td class="set">GPT</td>
+						<td class="buyprice">
+													-
+												</td>
+						<td class="price">$0.01</td>
+						<td class="qty">32</td>
+						<td class="buy">
+														<input type="text" value="0" name="60968:qnty" size="2" />
+							<input type="hidden" value="60968" name="itemnum" />
+							<span class="add-qnty"><img src="https://www.mtgotraders.com/store/media/images/add.png" /></span>
+							<span class="minus-qnty"><img src="https://www.mtgotraders.com/store/media/images/minus.png" /></span>
+													</td>
+					</tr>
+									
+							</table>
+			</div>
+
+				<div class="searchopt" style="clear: both; margin: 16px 0 0 0;">
+			<div class="searchoptinner">
+				<ul class="searchopt-pages">
+		
+				
+									
+											<li><span>1</span></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=2">2</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=3">3</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=4">4</a></li>
+															<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=5">5</a></li>
+																	<li><a href="https://www.mtgotraders.com/store/guildpact.html?page=2">Next</a></li>
+							</ul>
+
+				<div class="clear">&nbsp;</div>
+			</div>
+		</div>
+					
+			<div class="ss-add_old" style="padding: 16px 0 0 0; text-align: right;"><input type="image" value="Add to Cart" src="https://www.mtgotraders.com/store/media/images/addtocart.png"></div>
+			<button style="display: block;" id="scroll">Add to Cart</button>
+		</form>
+		
+				</div>
+		
+		</div>
+		
+		
+			<div class="colleft">
+				
+				
+				<div class="filters">
+					<div class="filter">
+						<h3 style="font-weight: normal; font-size: 17px; margin: 0 0 5px 0; text-transform: uppercase;">Availability</h3>
+											<ul><li><input type="checkbox" /> <a href="https://www.mtgotraders.com/store/guildpact.html?instockonly[]=yes">In Stock Only <span>(165)</span></a></li></ul>
+										</div>
+					
+		<div class="filter"><h3 style="font-weight: normal; font-size: 17px; margin: 0 0 2px 0; text-transform: uppercase;">Set</h3>				<form method="get" action="https://www.mtgotraders.com/store/search.php">
+				<select multiple="multiple" id="categories" name="set[]"><option value="10th Edition">10th Edition</option><option value="7th Edition">7th Edition</option><option value="8th Edition">8th Edition</option><option value="9th Edition">9th Edition</option><option value="Aether Revolt">Aether Revolt</option><option value="Ajani vs Nicol Bolas">Ajani vs Nicol Bolas</option><option value="Alara Reborn">Alara Reborn</option><option value="Alliances">Alliances</option><option value="Amonkhet">Amonkhet</option><option value="Amonkhet Invocations">Amonkhet Invocations</option><option value="Apocalypse">Apocalypse</option><option value="Avacyn Restored">Avacyn Restored</option><option value="Avatar">Avatar</option><option value="Avatars">Avatars</option><option value="Battle for Zendikar">Battle for Zendikar</option><option value="Battlebond">Battlebond</option><option value="Betrayers of Kamigawa">Betrayers of Kamigawa</option><option value="Born of the Gods">Born of the Gods</option><option value="Champions of Kamigawa">Champions of Kamigawa</option><option value="Coldsnap">Coldsnap</option><option value="Commander">Commander</option><option value="Commander 2013 Edition">Commander 2013 Edition</option><option value="Commander 2014">Commander 2014</option><option value="Commander 2018">Commander 2018</option><option value="Commander 2019">Commander 2019</option><option value="Conflux">Conflux</option><option value="Core Set 2019">Core Set 2019</option><option value="Core Set 2020">Core Set 2020</option><option value="Dark Ascension">Dark Ascension</option><option value="DarkSteel">DarkSteel</option><option value="Dissension">Dissension</option><option value="Divine Vs Demonic">Divine Vs Demonic</option><option value="Dominaria">Dominaria</option><option value="Dragons Maze">Dragons Maze</option><option value="Dragons of Tarkir">Dragons of Tarkir</option><option value="Duel Decks: Heroes vs. Monsters">Duel Decks: Heroes vs. Monsters</option><option value="Duel Decks: Izzet vs. Golgari">Duel Decks: Izzet vs. Golgari</option><option value="Duel Decks: Jace vs. Vraska">Duel Decks: Jace vs. Vraska</option><option value="Duel Decks: Knights vs. Dragons">Duel Decks: Knights vs. Dragons</option><option value="Duel Decks: Sorin vs. Tibalt">Duel Decks: Sorin vs. Tibalt</option><option value="Duel Decks: Venser vs. Koth">Duel Decks: Venser vs. Koth</option><option value="Eldritch Moon">Eldritch Moon</option><option value="Elspeth vs Tezzeret">Elspeth vs Tezzeret</option><option value="Elves vs Goblins">Elves vs Goblins</option><option value="Eternal Masters">Eternal Masters</option><option value="Eventide">Eventide</option><option value="Exodus">Exodus</option><option value="Fate Reforged">Fate Reforged</option><option value="Fifth Dawn">Fifth Dawn</option><option value="From the Vault: Angels">From the Vault: Angels</option><option value="From the Vault: Annihilation">From the Vault: Annihilation</option><option value="From the Vault: Dragons">From the Vault: Dragons</option><option value="From the Vault: Exiled">From the Vault: Exiled</option><option value="From the Vault: Legends">From the Vault: Legends</option><option value="From the Vault: Lore">From the Vault: Lore</option><option value="From the Vault: Realms">From the Vault: Realms</option><option value="From the Vault: Relics">From the Vault: Relics</option><option value="From the Vault: Transform">From the Vault: Transform</option><option value="From the Vault: Twenty">From the Vault: Twenty</option><option value="Future Sight">Future Sight</option><option value="Garruk vs Liliana">Garruk vs Liliana</option><option value="Gatecrash">Gatecrash</option><option value="Guildpact">Guildpact</option><option value="Guilds of Ravnica">Guilds of Ravnica</option><option value="Hour of Devastation">Hour of Devastation</option><option value="Ice Age">Ice Age</option><option value="Iconic Masters">Iconic Masters</option><option value="Innistrad">Innistrad</option><option value="Invasion">Invasion</option><option value="Ixalan">Ixalan</option><option value="Jace vs Chandra">Jace vs Chandra</option><option value="Journey into Nyx">Journey into Nyx</option><option value="Judgment">Judgment</option><option value="Kaladesh">Kaladesh</option><option value="Kaladesh Inventions">Kaladesh Inventions</option><option value="Khans of Tarkir">Khans of Tarkir</option><option value="Legendary Cube Prize Packs">Legendary Cube Prize Packs</option><option value="Legions">Legions</option><option value="Lorwyn">Lorwyn</option><option value="Magic 2010">Magic 2010</option><option value="Magic 2011">Magic 2011</option><option value="Magic 2012">Magic 2012</option><option value="Magic 2013">Magic 2013</option><option value="Magic 2014">Magic 2014</option><option value="Magic 2015">Magic 2015</option><option value="Magic Origins">Magic Origins</option><option value="Masters 25">Masters 25</option><option value="Masters Edition">Masters Edition</option><option value="Masters Edition 2">Masters Edition 2</option><option value="Masters Edition 3">Masters Edition 3</option><option value="Masters Edition 4">Masters Edition 4</option><option value="Mercadian Masques">Mercadian Masques</option><option value="Mirage">Mirage</option><option value="Mirrodin">Mirrodin</option><option value="Mirrodin Besieged">Mirrodin Besieged</option><option value="Mirrodin Pure vs New Phyrexia">Mirrodin Pure vs New Phyrexia</option><option value="Modern Horizons">Modern Horizons</option><option value="Modern Masters">Modern Masters</option><option value="Modern Masters 2015 Edition">Modern Masters 2015 Edition</option><option value="Modern Masters 2017 Edition">Modern Masters 2017 Edition</option><option value="Morningtide">Morningtide</option><option value="Nemesis">Nemesis</option><option value="New Phyrexia">New Phyrexia</option><option value="Oath of the Gatewatch">Oath of the Gatewatch</option><option value="Odyssey">Odyssey</option><option value="Onslaught">Onslaught</option><option value="Phyrexia vs The Coalition">Phyrexia vs The Coalition</option><option value="Planar Chaos">Planar Chaos</option><option value="Planechase">Planechase</option><option value="Planechase 2012 Edition">Planechase 2012 Edition</option><option value="Planeshift">Planeshift</option><option value="Premium Deck Series: Fire & Lightning">Premium Deck Series: Fire & Lightning</option><option value="Premium Deck Series: Graveborn">Premium Deck Series: Graveborn</option><option value="Premium Deck Series: Slivers">Premium Deck Series: Slivers</option><option value="Promos">Promos</option><option value="Prophecy">Prophecy</option><option value="Ravnica Allegiance">Ravnica Allegiance</option><option value="Ravnica Mythic Edition">Ravnica Mythic Edition</option><option value="Ravnica: City of Guilds">Ravnica: City of Guilds</option><option value="Return to Ravnica">Return to Ravnica</option><option value="Rise of the Eldrazi">Rise of the Eldrazi</option><option value="Rivals of Ixalan">Rivals of Ixalan</option><option value="Saviors of Kamigawa">Saviors of Kamigawa</option><option value="Scars of Mirrodin">Scars of Mirrodin</option><option value="Scourge">Scourge</option><option value="Shadowmoor">Shadowmoor</option><option value="Shadows over Innistrad">Shadows over Innistrad</option><option value="Shards of Alara">Shards of Alara</option><option value="Starters/Boosters/Tix">Starters/Boosters/Tix</option><option value="Stronghold">Stronghold</option><option value="Tempest">Tempest</option><option value="Tempest Remastered">Tempest Remastered</option><option value="Theme Deck Set">Theme Deck Set</option><option value="Theros">Theros</option><option value="Throne of Eldraine">Throne of Eldraine</option><option value="Time Spiral">Time Spiral</option><option value="Timeshifted">Timeshifted</option><option value="Torment">Torment</option><option value="Treasure Chest">Treasure Chest</option><option value="Ultimate Box Toppers">Ultimate Box Toppers</option><option value="Ultimate Masters">Ultimate Masters</option><option value="Urzas Destiny">Urzas Destiny</option><option value="Urzas Legacy">Urzas Legacy</option><option value="Urzas Saga">Urzas Saga</option><option value="Vintage Masters">Vintage Masters</option><option value="Vintage Masters Original Power 9">Vintage Masters Original Power 9</option><option value="Visions">Visions</option><option value="War of the Spark">War of the Spark</option><option value="Weatherlight">Weatherlight</option><option value="Welcome Deck 2016">Welcome Deck 2016</option><option value="Welcome Deck 2017">Welcome Deck 2017</option><option value="Worldwake">Worldwake</option><option value="Zendikar">Zendikar</option><option value="Zendikar Expeditions">Zendikar Expeditions</option></select>					<input type="submit" value="Filter Sets" id="filtersets" /> <a type="reset" href="https://www.mtgotraders.com/store/guildpact.html?" id="clearsets">Clear</a>
+					</form>
+					</div>					<div id="slidervalues">
+						$0.01 - $4.16					</div>
+					
+					<div id="slider" class="slider" minValue="0.01" maxValue="4.16" currentMinValue="0.01" currentMaxValue="4.16" baseurl="https://www.mtgotraders.com/store/guildpact.html?">
+						<div style="left: 0px; width: 222px;">
+							<span class="min">Min Price</span>
+							<span class="max">Max Price</span>
+						</div>
+					</div>
+									
+				<div id="tree">
+					<h4>Card Type</h4>
+				
+								
+				<div class="filter"><ul><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Artifact">Artifact <span>(7)</span></a></li><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Creature">Creature <span>(89)</span></a></li><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Enchant">Enchantment <span>(21)</span></a></li><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Instant">Instant <span>(21)</span></a></li><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Land">Land <span>(9)</span></a></li><li class=""><a href="https://www.mtgotraders.com/store/guildpact.html?type=Sorcery">Sorcery <span>(18)</span></a></li></ul></div>				</div>
+				<div class="filter"><h2>Rarity</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?rarity[]=Common">Common <span>(55)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?rarity[]=Rare">Rare <span>(55)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?rarity[]=Uncommon">Uncommon <span>(55)</span></a></li></ul></div><div class="filter"><h2>Color</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=black">black <span>(21)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=blue">blue <span>(20)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=colorless">colorless <span>(16)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=green">green <span>(21)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=red">red <span>(15)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?color[]=white">white <span>(21)</span></a></li></ul></div><div class="filter"><h2>CMC</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=0">0 <span>(9)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=1">1 <span>(18)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=2">2 <span>(23)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=3">3 <span>(40)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=4">4 <span>(39)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=5">5 <span>(16)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=6">6 <span>(9)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=7">7 <span>(7)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=8">8 <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?cmc[]=10">10 <span>(1)</span></a></li></ul></div><div class="filter"><h2>Power</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=0">0 <span>(5)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=1">1 <span>(23)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=2">2 <span>(25)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=3">3 <span>(19)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=4">4 <span>(9)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=5">5 <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=6">6 <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=7">7 <span>(1)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?power[]=8">8 <span>(2)</span></a></li></ul></div><div class="filter"><h2>Toughness</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=0">0 <span>(1)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=1">1 <span>(28)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=2">2 <span>(19)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=3">3 <span>(23)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=4">4 <span>(10)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=5">5 <span>(5)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=7">7 <span>(1)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?toughness[]=8">8 <span>(1)</span></a></li></ul></div><div class="filter"><h2>Artist</h2><ul><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Adam+Rex">Adam Rex <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Aleksi+Briclot">Aleksi Briclot <span>(3)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Alex+Horley-Orlandelli">Alex Horley-Orlandelli <span>(5)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Anthony+S.+Waters">Anthony S. Waters <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Ben+Thompson">Ben Thompson <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Bob+Eggleton">Bob Eggleton <span>(1)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Brandon+Kitkouski">Brandon Kitkouski <span>(5)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Carl+Critchlow">Carl Critchlow <span>(3)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Christopher+Moeller">Christopher Moeller <span>(2)</span></a></li><li class=""><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Cynthia+Sheppard">Cynthia Sheppard <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Dan+Scott">Dan Scott <span>(5)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Dany+Orizio">Dany Orizio <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Daren+Bader">Daren Bader <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Darrell+Riche">Darrell Riche <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Glen+Angus">Glen Angus <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Glenn+Fabry">Glenn Fabry <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Greg+Hildebrandt">Greg Hildebrandt <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Greg+Staples">Greg Staples <span>(7)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Heather+Hudson">Heather Hudson <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Hideaki+Takamura">Hideaki Takamura <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Ittoku">Ittoku <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=James+Wong">James Wong <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Jeremy+Jarvis">Jeremy Jarvis <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Jim+Murray">Jim Murray <span>(5)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Jim+Nelson">Jim Nelson <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=John+Avon">John Avon <span>(5)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Jon+Foster">Jon Foster <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Justin+Norman">Justin Norman <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Kev+Walker">Kev Walker <span>(7)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Lars+Grant-West">Lars Grant-West <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Liam+Sharp">Liam Sharp <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Luca+Zontini">Luca Zontini <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Mark+Romanoski">Mark Romanoski <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Mark+Zug">Mark Zug <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Martina+Pilcerova">Martina Pilcerova <span>(5)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Matt+Cavotta">Matt Cavotta <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Matt+Thompson">Matt Thompson <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Mitch+Cotie">Mitch Cotie <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Nick+Percival">Nick Percival <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Nottsuo">Nottsuo <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Paolo+Parente">Paolo Parente <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Parente">Parente <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Pat+Lee">Pat Lee <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Pete+Venters">Pete Venters <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Raoul+Vitale">Raoul Vitale <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Rob+Alexander">Rob Alexander <span>(4)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Ron+Spears">Ron Spears <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Ron+Spencer">Ron Spencer <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Steven+Belledin">Steven Belledin <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Svetlin+Velinov">Svetlin Velinov <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Tim+Hildebrandt">Tim Hildebrandt <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Todd+Lockwood">Todd Lockwood <span>(3)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Warren+Mahy">Warren Mahy <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Wayne+Reynolds">Wayne Reynolds <span>(2)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Yeong-Hao+Han">Yeong-Hao Han <span>(1)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=Zoltan+Boros+%26+Gabor+Szikszai">Zoltan Boros & Gabor Szikszai <span>(6)</span></a></li><li class="hidden"><input type='checkbox' /><a href="https://www.mtgotraders.com/store/guildpact.html?artist[]=rk+post">rk post <span>(2)</span></a></li>							<li class="more">Show More Options</li>
+							<li class="less">Show Less Options</li>
+							</ul></div>
+
+				</div>
+				
+
+			</div>
+		<div class="clear">&nbsp;</div>
+
+
+<!-- Start FOOTER-->
+
+		<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<div class="absheader">
+		<h2 class="logo"><a href="https://www.mtgotraders.com" title="Go to www.mtgotraders.com">www.mtgotraders.com</a></h2>
+		<span class="deliveryhours">
+			<span id="time"></span>
+		</span>
+		<ul class="social">
+			<li class="twitter"><a href="https://twitter.com/MTGOTraders" target="_blank">Twiter</a></li>
+			<li class="facebook"><a href="https://www.facebook.com/MTGOTraders" target="_blank">Facebook</a></li>
+		</ul>
+		<ul class="topnav">
+			<script type="text/javascript">
+  var cookies=document.cookie;
+  var start = cookies.indexOf("ss_reg_0001148097=");
+  var name = "";
+  var start1;
+  var end1;
+  var tmp;
+  var signed_in = -1;
+
+  if (start != -1) {
+    start = cookies.indexOf("=", start) +1;
+    var end = cookies.indexOf("|", start);
+    if (end != -1) {
+      signed_in = cookies.indexOf("|yes", start);
+    }
+  }
+  if (signed_in == -1) {
+  	document.write('<li><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=2&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">Log In</a></li>')
+  }else{
+  	document.write('<li><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=3&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">My Account</a> - <a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?func=4&storeid=*1a4c945171a04aae08de729fc95b2a&html_reg=html">Logout</a></li>')
+  }
+			</script>
+			<li><a href="https://www.mtgotraders.com/store/contact.html">Contact Us</a></li>
+			<li><a href="https://www.mtgotraders.com/store/faq.html">FAQ</a></li>
+			<li><a href="https://www.mtgotraders.com/store/index.html#news">Articles</a></li>
+			<li><a href="https://www.mtgotraders.com/hotlist/#/">Hot List</a></li>
+			<li class="last"><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi?storeid=*1a4c945171a04aae08de729fc95b2a&amp;function=show" rel="nofollow">View Cart <span id="cartinner"></span></a></li>
+		</ul>
+		<script type="text/javascript">showCart("cartinner", '({price})');</script>
+		<form method="get" action="https://www.mtgotraders.com/store/search.php" class="searchfrm">
+			<fieldset>
+				<legend>Search our Site</legend>
+				<input type="text" name="q" class="searchfrm-text" autocomplete="off" placeholder="Search store" value="" />
+				<input type="image" class="searchfrm-img" src="https://www.mtgotraders.com/store/media/images/go.png" value="Go" />
+			</fieldset>
+			<a href="https://www.mtgotraders.com/store/advanced-search.php">Advanced Search</a>
+		</form>
+		<ul class="nav">
+			<li class="level1 level1-standard" onmouseover="this.className = 'level1 level1-standard over'" onmouseout="this.className= 'level1 level1-standard'">
+				<h3>Standard</h3>
+				<div class="subnav">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 489px;">
+								<div class="img"><img src="https://www.mtgotraders.com/store/media/images/nav/standard-img.png" width="489" height="159" alt="" /></div>
+								<p class="fleft">This format consists of the most recent "Core Set" and the two most recent "Block" releases.  You may use any printing of a card that has an appearance in a standard legal set.
+</p>
+								
+								<ul class="fright">
+									<li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/core_set_2020.html">Core Set 2020</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/throne_of_eldraine.html">Throne of Eldraine</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/war_of_the_spark.html">War of the Spark</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/ravnica_allegiance.html">Ravnica Allegiance</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/guilds_of_ravnica.html">Guilds of Ravnica</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="level1 level1-modern" onmouseover="this.className='level1 level1-modern over'" onmouseout="this.className='level1 level1-modern'">
+				<h3>Modern</h3>
+				<div class="subnav" style="margin-left: -2px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/modern-img.png" width="493" height="159" alt="" /></div>
+								<p class="fright">Modern is the newest constructed format. Modern was created by Wizards of the Coast in the Spring of 2011 as a response to the increasing popularity of the Legacy format, which although popular proved difficult to access due to the high price of staple cards.  Modern allows cards from the 8th Edition core set and all expansions printed afterwards. 
+</p>
+								<ul class="big">
+									<li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_horizons.html">Modern Horizons</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters_2017.html">Modern Masters 2017</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters_2015.html">Modern Masters 2015</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/modern_masters.html">Modern Masters</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/core_set_2019.html">Core Set 2019</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic_origins.html">Magic Origins</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic2015.html">Magic 2015</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic2014.html">Magic 2014</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/magic2013.html">Magic 2013</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic_2012.html">Magic 2012</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/magic_2011.html">Magic 2011</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Magic_2010.html">Magic 2010</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/10th_edition.html">Tenth Edition</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/9th_edition.html">Ninth Edition</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/8th_edition.html">Eighth Edition</a></h4>
+									</li>
+                                                                                <li>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/dominaria.html">Dominaria</a></h4>
+										<h4>Ixalan</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ixalan.html">Ixalan</a></li>
+											<li><a href="https://www.mtgotraders.com/store/rivals_of_ixalan.html">Rivals of Ixalan</a></li>
+                                                                                </ul>
+										<h4>Amonkhet</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/amonkhet.html">Amonkhet</a></li>
+											<li><a href="https://www.mtgotraders.com/store/hour_of_devastation.html">Hour of Devastation</a></li>
+                                                                                </ul>
+										<h4>Kaladesh</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/kaladesh.html">Kaladesh</a></li>
+											<li><a href="https://www.mtgotraders.com/store/aether_revolt.html">Aether Revolt</a></li>
+                                                                                </ul>
+                                                                                <h4>Shadows over Innistrad</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/shadows_over_innistrad.html">Shadows over Innistrad</a></li>
+											<li><a href="https://www.mtgotraders.com/store/eldritch_moon.html">Eldritch Moon</a></li>
+                                                                                </ul>
+										<h4>Battle for Zendikar</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/battle_for_zendikar.html">Battle for Zendikar</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/oath_of_the_gatewatch.html">Oath of the Gatewatch</a></li>
+                                                                                </ul>
+                                                                                <h4>Khans of Tarkir</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/khans_of_tarkir.html">Khans of Tarkir</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/fate_reforged.html">Fate Reforged</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/dragons_of_tarkir.html">Dragons of Tarkir</a></li>
+										</ul>
+										</li>
+									<li>                                                                      
+                                                                                <h4>Theros</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/theros.html">Theros</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/born_of_the_gods.html">Born of the Gods</a></li>
+											<li><a href="https://www.mtgotraders.com/store/journey_into_nyx.html">Journey into Nyx</a></li>
+										</ul>
+                                                                                <h4>Return to Ravnica</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/return_to_ravnica.html">Return to Ravnica</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/gatecrash.html">Gatecrash</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dragons_maze.html">Dragon's Maze</a></li>
+										</ul>
+                                                                                <h4>Innistrad</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/innistrad.html">Innistrad</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dark_ascension.html">Dark Ascension</a></li>
+											<li><a href="https://www.mtgotraders.com/store/avacyn_restored.html">Avacyn Restored</a></li>
+										</ul>
+										<h4>Scars of Mirrodin</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/scars_of_mirrodin.html">Scars of Mirrodin</a></li>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin_besieged.html">Mirrodin Besieged</a></li>
+											<li><a href="https://www.mtgotraders.com/store/new_phyrexia.html">New Phyrexia</a></li>
+										</ul>
+										<h4>Zendikar</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Zendikar.html">Zendikar</a></li>
+											<li><a href="https://www.mtgotraders.com/store/worldwake.html">Worldwake</a></li>
+											<li><a href="https://www.mtgotraders.com/store/rise_of_the_eldrazi.html">Rise of the Eldrazi</a></li>
+										</ul>
+                                                                                <h4>Shards of Alara</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Shards_of_Alara.html">Shards of Alara</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Conflux.html">Conflux</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Alara_Reborn.html">Alara Reborn</a></li>
+										</ul>
+									</li>
+									<li class="last">
+										<h4>Lorwyn-Shadowmoor</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/lorwyn.html">Lorwyn</a></li>
+											<li><a href="https://www.mtgotraders.com/store/morningtide.html">Morningtide</a></li>
+											<li><a href="https://www.mtgotraders.com/store/shadowmoor.html">Shadowmoor</a></li>
+											<li><a href="https://www.mtgotraders.com/store/eventide.html">Eventide</a></li>
+										</ul>
+										<h4>Time Spiral</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/timespiral.html">Time Spiral</a></li>
+											<li><a href="https://www.mtgotraders.com/store/timeshifted.html">Timeshifted</a></li>
+											<li><a href="https://www.mtgotraders.com/store/planar_chaos.html">Planar Chaos</a></li>
+											<li><a href="https://www.mtgotraders.com/store/future_sight.html">Future Sight</a></li>
+										</ul>
+										<h4><a href="https://www.mtgotraders.com/store/coldsnap.html">Coldsnap</a></h4>
+										<h4>Ravnica</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ravnica.html">Ravnica: City of Guilds</a></li>
+											<li><a href="https://www.mtgotraders.com/store/guildpact.html">Guildpact</a></li>
+											<li><a href="https://www.mtgotraders.com/store/dissension.html">Dissension</a></li>
+										</ul>
+										<h4>Kamigawa</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/champions_of_kamigawa.html">Champions of Kamigawa</a></li>
+											<li><a href="https://www.mtgotraders.com/store/betrayers_of_kamgawa.html">Betrayers of Kamigawa</a></li>
+											<li><a href="https://www.mtgotraders.com/store/saviors_of_kamigawa.html">Saviors of Kamigawa</a></li>
+										</ul>
+										<h4>Mirrodin</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin.html">Mirrodin</a></li>
+											<li><a href="https://www.mtgotraders.com/store/darksteel.html">Darksteel</a></li>
+											<li><a href="https://www.mtgotraders.com/store/5th_dawn.html">Fifth Dawn</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-legacy" onmouseover="this.className='level1 level1-legacy over'" onmouseout="this.className='level1 level1-legacy'">
+				<h3>Legacy</h3>
+				<div class="subnav" style="margin-left: -77px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/legacy-img.png" width="509" height="159" alt="" /></div>
+								<p class="fright">Legacy decks may consist of cards from all Magic card sets, any edition of the core set, and all special sets, supplements, and promotional printings released by Wizards of the Coast.
+
+Cards from expansions and special sets (like From the Vault, Commander, Duel Decks, etc) are legal in the Legacy format on the date of release of the expansion or special set.</p>
+								<ul class="big">
+									<li>
+										<h4><a href="https://www.mtgotraders.com/store/ultimate_masters.html">Ultimate Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/masters_25.html">Masters 25</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/iconic_masters.html">Iconic Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/eternal_masters.html">Eternal Masters</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/vintage_masters.html">Vintage Masters</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/tempest_remastered.html">Tempest Remastered</a></h4>
+									</li>
+									<li>
+										<h4>Onslaught</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/onslaught.html">Onslaught</a></li>
+											<li><a href="https://www.mtgotraders.com/store/legions.html">Legions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/scourge.html">Scourge</a></li>
+										</ul>
+										<h4>Odyssey</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/odyssey.html">Odyssey</a></li>
+											<li><a href="https://www.mtgotraders.com/store/torment.html">Torment</a></li>
+											<li><a href="https://www.mtgotraders.com/store/judgment.html">Judgment</a></li>
+										</ul>
+                                                                                <h4>Invasion</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/invasion.html">Invasion</a></li>
+											<li><a href="https://www.mtgotraders.com/store/planeshift.html">Planeshift</a></li>
+											<li><a href="https://www.mtgotraders.com/store/apocalypse.html">Apocalypse</a></li>
+										</ul>										
+									</li>
+									<li>
+										<h4>Masques</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mercadian_masques.html">Mercadian Masques</a></li>
+											<li><a href="https://www.mtgotraders.com/store/nemesis.html">Nemesis</a></li>
+											<li><a href="https://www.mtgotraders.com/store/prophecy.html">Prophecy</a></li>
+										</ul>
+                                                                                <h4>Urza's</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/urzas_saga.html">Urza's Saga</a></li>
+											<li><a href="https://www.mtgotraders.com/store/urzas_legacy.html">Urza's Legacy</a></li>
+											<li><a href="https://www.mtgotraders.com/store/urzas_destiny.html">Urza's Destiny</a></li>
+										</ul>
+										<h4>Tempest</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/tempest.html">Tempest</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Stronghold.html">Stronghold</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Exodus.html">Exodus</a></li>
+										</ul>
+									</li>
+									<li class="last">
+                                                                                <h4>Mirage</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/mirage.html">Mirage</a></li>
+											<li><a href="https://www.mtgotraders.com/store/visions.html">Visions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/weatherlight.html">Weatherlight</a></li>											
+										</ul>
+										<h4>Masters Edition</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition.html">Masters Edition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition_2.html">Masters Edition II</a></li>
+											<li><a href="https://www.mtgotraders.com/store/Masters_Edition_3.html">Masters Edition III</a></li>
+											<li><a href="https://www.mtgotraders.com/store/masters_edition_4.html">Masters Edition IV</a></li>
+										</ul>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/7th_edition.html">Seventh Edition</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/classic.html">Ice Age/Alliances</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-specialsets" onmouseover="this.className='level1 level1-specialsets over'" onmouseout="this.className='level1 level1-specialsets'">
+				<h3>Special Sets</h3>
+				<div class="subnav" style="margin-left: -144px;">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 890px;">
+								<div class="fimg"><img src="https://www.mtgotraders.com/store/media/images/nav/specialsets-img.png" width="509" height="159" alt="" /></div>
+								<p class="fright">These are various special releases that feature selected highlights throughout Magic's history.  This also includes Planechase and Commander format legal cards that are used in their respective format.
+</p>
+								<ul class="big">
+									<li>
+										<h4>Masterpiece Series</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ravnica_mythic_edition.html">Ravnica Mythic Edition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/amonkhet_invocations.html">Amonkhet Invocations</a></li>
+											<li><a href="https://www.mtgotraders.com/store/kaladesh_inventions.html">Kaladesh Inventions</a></li>
+											<li><a href="https://www.mtgotraders.com/store/zendikar_expeditions.html">Zendikar Expeditions</a></li>
+										</ul>
+										<h4><a href="https://www.mtgotraders.com/store/vintage_masters_original_p9.html">Vintage Masters Original Power 9</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/ultimate_box_toppers.html">Ultimate Masters Box Toppers</a></h4>
+									</li>
+									<li>
+										<ul>
+										<h4><a href="https://www.mtgotraders.com/store/avatars.html">Vanguard</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Promos.html">Promotional</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/Theme_Deck_Set.html">Theme Deck Set</a></h4>
+										<h4><a href="https://www.mtgotraders.com/store/planechase.html">Planechase</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/planechase2012.html">Planechase 2012</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/welcome_deck_2016.html">Welcome Deck 2016</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/welcome_deck_2017.html">Welcome Deck 2017</a></h4>
+                                                                                <h4><a href="https://www.mtgotraders.com/store/battlebond.html">Battlebond</a></h4>
+										</ul>
+										<h4>Commander</h4>
+										<ul>
+										<li><a href="https://www.mtgotraders.com/store/commander.html">Commander</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander2013.html">Commander 2013</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander2014.html">Commander 2014</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/commander_2019.html">Commander 2019</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/legendary_cube_prize_packs.html">Legendary Cube Prize Packs</a></li>
+                                                                                <li><a href="https://www.mtgotraders.com/store/treasure_chest.html">Treasure Chest</a></li>
+										</ul>
+									</li>
+									<li>
+										<h4>Duel Decks</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/ElvesVsGoblins.html">Elves vs Goblins</a></li>
+											<li><a href="https://www.mtgotraders.com/store/JaceVsChandra.html">Jace vs Chandra</a></li>
+											<li><a href="https://www.mtgotraders.com/store/DivineVsDemonic.html">Divine vs Demonic</a></li>
+											<li><a href="https://www.mtgotraders.com/store/garruk_vs_liliana.html">Garruk vs Liliana</a></li>
+											<li><a href="https://www.mtgotraders.com/store/phyrexia_vs_the_coalition.html">Phyrexia vs The Coalition</a></li>
+											<li><a href="https://www.mtgotraders.com/store/elspeth_vs_tezzeret.html">Elspeth vs Tezzeret</a></li>
+											<li><a href="https://www.mtgotraders.com/store/knights_vs_dragons.html">Knights vs Dragons</a></li>
+											<li><a href="https://www.mtgotraders.com/store/mirrodin_pure_vs_new_phyrexia.html">Mirrodin Pure vs New Phyrexia</a></li>
+											<li><a href="https://www.mtgotraders.com/store/ajani_vs_nicol_bolas.html">Ajani vs Nicol Bolas</a></li>
+											<li><a href="https://www.mtgotraders.com/store/venser_vs_koth.html">Venser vs Koth</a></li>
+											<li><a href="https://www.mtgotraders.com/store/izzet_vs_golgari.html">Izzet vs Golgari</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/sorin_vs_tibalt.html">Sorin vs Tibalt</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/heroes_vs_monsters.html">Heroes vs Monsters</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/jace_vs_vraska.html">Jace vs Vraska</a></li>
+										</ul>
+										<h4>Premium Deck Series</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/slivers.html">Slivers</a></li>
+											<li><a href="https://www.mtgotraders.com/store/fire_lightning.html">Fire &amp; Lightning</a></li>
+											<li><a href="https://www.mtgotraders.com/store/graveborn.html">Graveborn</a></li>
+										</ul>
+									</li>
+									<li class="last">
+										<h4>From the Vault</h4>
+										<ul>
+											<li><a href="https://www.mtgotraders.com/store/From_the_Vault_Dragons.html">Dragons</a></li>
+											<li><a href="https://www.mtgotraders.com/store/From_the_Vault_Exiled.html">Exiled</a></li>
+											<li><a href="https://www.mtgotraders.com/store/from_the_vault_relics.html">Relics</a></li>
+											<li><a href="https://www.mtgotraders.com/store/from_the_vault_legends.html">Legends</a></li>
+											<li><a href="https://www.mtgotraders.com/store/ftv_realms.html">Realms</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_twenty.html">Twenty</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_annihilation.html">Annihilation</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_angels.html">Angels</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_lore.html">Lore</a></li>
+                                                                                        <li><a href="https://www.mtgotraders.com/store/from_the_vault_transform.html">Transform</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				
+				</div>
+			</li>
+			<li class="level1 level1-sealedtickets" onmouseover="this.className='level1 level1-sealedtickets over'" onmouseout="this.className='level1 level1-sealedtickets'">
+				<h3>Sealed &amp; Tickets</h3>
+				<div class="subnav">
+					<div class="arrow">&nbsp;</div>
+					<div class="subnavinner">
+						<div class="subnavinner2">
+							<div class="subnavinner3" style="width: 489px; margin-left: -2px;">
+								<div class="img"><img src="https://www.mtgotraders.com/store/media/images/nav/sealedtickets-img.png" width="489" height="159" alt="" /></div>
+								<p class="fleft">Purchase everything you need for a draft or purchase bot credits to use on our automated trading bots that are online 24/7.
+</p>
+								
+								<ul class="fright">
+									<li>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/10tix.html">Event Tickets</a></h4>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/mtgobotcredit.html">Bot Credits</a></h4>
+                                                                                <h4 class="main"><a href="https://www.mtgotraders.com/store/100mtgobotcredits.html">Bot Credits x100</a></h4>
+										<h4 class="main"><a href="https://www.mtgotraders.com/store/boosters.html">Boosters</a></h4>
+                                                                                <h4 class="main"><a href="https://www.mtgotraders.com/store/selltickets.html">Sell Your Tickets</a></h4>
+									</li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="subnavfooter">
+						<div class="subnavfooter2">
+							<div class="subnavfooter3">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="level1 level1-bots">
+				<a href="https://www.mtgotraders.com/store/bots.html" class="h3">Bots</a>
+			</li>
+			<li class="level1 level1-decks">
+				<a href="https://www.mtgotraders.com/deck/" class="h3">Decks</a>
+			</li>
+			<li class="level1 level1-completesets">
+				<a href="https://www.mtgotraders.com/store/complete_sets.html" class="h3">Complete Sets</a>
+			</li>
+			<li class="level1 level1-sellyourcollection">
+				<a href="https://www.mtgotraders.com/buylist/" class="h3">Sell Your Collection</a>
+			</li>
+			<li class="level1 level1-physicalcards">
+				<a href="http://www.capefeargames.com/" target="_blank" class="h3">Physical Cards</a>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			$$(".nav ul.big").each(function(ul){
+				var height = 0
+				ul.select("> li").each(function(li){
+					height = Math.max(height, li.getHeight())
+				})
+				height -= 3;
+				ul.select("> li").each(function(li){
+					li.setStyle({height: height + "px"})
+				})
+			})
+		</script>
+		
+	</div>
+	<div class="absfooter">
+		<ul>
+			<li><a href="https://www.mtgotraders.com/mtgo-guide/" target="_blank">Beginner's Guide</a></li>
+			<li><a href="https://www.mtgotraders.com/store/contact.html">Contact Us</a></li>
+			<li><a href="https://www.mtgotraders.com/store/faq.html">FAQs</a></li>
+			<li><a href="https://www.mtgotraders.com/deck/#/" target="_blank">Decks Section</a></li>
+			<li><a href="https://www.mtgotraders.com/store/terms-of-use.html">Terms of Use</a></li>
+			<li style="background: none"><a href="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi?storeid=*1a4c945171a04aae08de729fc95b2a">Wish List</a></li>		</ul>
+		<p class="copyright"><script type="text/javascript">document.write( (new Date()).getFullYear())</script> &copy; Copyright MTGO Traders. All rights reserved.</p>
+	</div>
+</div>
+
+<form action="https://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi" method="post" class="wlfrm" id="createwishlistfrm" style="display: none;">
+	<span class="close">Close</span>
+	<h2><span>CREATE NEW WISH LIST</span></h2>
+	<input type="hidden" name="storeid" value="*1a4c945171a04aae08de729fc95b2a" />
+	<input type="hidden" name="func" value="create_wl" />
+	<label for="name">Wish List Name:</label>
+	<input type="text" name="name" size="20" />
+	
+	<label for="priv">Privacy Level:</label>
+	<select name="priv">
+		<option value="pub">Public</option>
+		<option value="shr">Shared</option>
+		<option value="pri">Private</option>
+	</select>
+	<label for="comments">Comment:</label>
+	<textarea cols="35" rows="5" name="comments"></textarea>
+	
+	<input type="hidden" name="itemnum" value="" disabled="disabled" />
+	<input type="hidden" name="addedfrom" value="" disabled="disabled" />
+	<input type="hidden" name="qnty" value="" disabled="disabled" />
+	
+	<div class="actions">
+		<input type="submit" name="Save" value="Apply Changes" />
+		<input type="button" value="Continue Shopping" />
+	</div>
+</form>
+<script type="text/javascript" src="https://www.mtgotraders.com/store/media/js/plist.js?1"></script>
+
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/sweetalert.min.js"></script>
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/cartplugin.js"></script>
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/app.js"></script>
+<script type='text/javascript' src="https://www.mtgotraders.com/store/js/minicart.js"></script>
+
+<script type="text/javascript">
+!function(d,s,i,c){var j,f=d.getElementsByTagName(s)[0];if(!d.getElementById(i)){j=d.createElement(s);j.type='text/javascript';j.async=true;j.id=i;j.src=c;f.parentNode.insertBefore(j,f)}}(document,"script","wishlist_script_tag","https://www.mtgotraders.com/store/publish/wishlist.js");
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-432680-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

