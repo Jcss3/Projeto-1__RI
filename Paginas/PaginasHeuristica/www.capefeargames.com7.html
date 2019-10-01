@@ -61,7 +61,7 @@
 <!-- Latest jquery with fall back in case CDN is not available -->
 <script type="text/javascript">window.jQuery || document.write(unescape('%3Cscript%20type%3D%22text/javascript%22%20src%3D%22//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js%22%3E%3C/script%3E'))</script>
 <script type="text/javascript">window.jQuery || document.write('%3Cscript%20src%3D%22/javascripts/jquery-ui/js/jquery-1.7.1.min.js%22%3E%3C/script%3E')</script>
-<meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="ay7AVKqJOqAHFgWYuPNS8/+kK7ZFJZN4jCLXyNSP1oE=">
+<meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="pD7JD9CdFIl/wDM3biqzQv4Xg2HnkSXLadEUNr0mpcs=">
 
 <script>
   //<![CDATA[
@@ -93,7 +93,7 @@
 
 </head>
 
-<body class="advanced_search  guest">
+<body class="parent_category  guest">
 
 	<div id="click-mask"><!-- DO NOT REMOVE --></div>
 	
@@ -494,15 +494,15 @@
         site.extra_title: <strong></strong><br>
         site.buylist_mode?: <strong></strong><br>
         !site.buylist_mode?: <strong></strong><br>
-        template_filename: <strong>advanced_search</strong><br>
-        site.action: <strong>advanced_search</strong><br>
-        site.controller: <strong>inventory</strong><br>
+        template_filename: <strong>parent_category</strong><br>
+        site.action: <strong>index</strong><br>
+        site.controller: <strong>products</strong><br>
         site.pagename: <strong></strong><br>
         site.search_path: <strong>/products/search</strong><br>
         page.url: <strong></strong><br>
         page.title: <strong></strong><br>
-        category.id: <strong></strong><br>
-        category.name: <strong></strong><br>
+        category.id: <strong>8</strong><br>
+        category.name: <strong>Magic Singles</strong><br>
         product.id: <strong></strong><br>
         product.name: <strong></strong><br>
         tag: <strong></strong>
@@ -579,872 +579,606 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 
         
 
-	<h1 class="page-title">Advanced Search</h1>
-
-<div id='advanced_search' style='display: block'>
-<form accept-charset="UTF-8" action="/advanced_search" class="new_search" data-search-performed="false" id="advanced_search_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div><div id='name_includes'>
-<label for="search_fuzzy_search">Name includes:</label>
-<input id="search_fuzzy_search" name="search[fuzzy_search]" size="30" type="text" />
-</div>
-<div id='tags_includes'>
-<label for="search_tags_name_eq">Tagged with:</label>
-<input aria-autocomplete="list" aria-haspopup="true" autocomplete="off" class="ui-autocomplete-input" data-autocomplete="/inventory/auto_complete_for_search_tags_name_eq" id="search_tags_name_eq" name="search[tags_name_eq]" role="textbox" size="30" type="text" />
-</div>
-<div id='tags_includes'>
-<label for="search_product_group">Product group:</label>
-<select id="search_catalog_group_id_eq" name="search[catalog_group_id_eq]"><option value="">All</option>
-<option value="3">MTG Sealed - Kaladesh</option>
-<option value="13">MTG Format - Modern</option>
-<option value="23">MTG Sealed - Ixalan</option>
-<option value="33">Standard</option>
-<option value="43">Unstable</option>
-<option value="44">Amonkhet</option>
-<option value="45">YGO Sealed - Invasion Vengeance</option>
-<option value="46">Invasion: Vengeance Special Edition</option>
-<option value="47">Raging Tempest</option>
-<option value="48">Star Pack ARC-V</option>
-<option value="49">Star Pack Battle Royale</option>
-<option value="50">Amonkhet</option></select>
-</div>
-<div id='sort_by'>
-<label for="search_sort">Sort by</label>
-<select id="search_sort" name="search[sort]"><option value="name">Sort by Name</option>
-<option value="sell_price">Sort by Sell Price</option>
-<option value="buy_price">Sort by Buy Price</option></select>
-<select id="search_direction" name="search[direction]"><option value="ascend">Ascending (A-Z)</option>
-<option value="descend">Descending (Z-A)</option></select>
-</div>
-<div class='col1'>
-<div id='categories_select'>
-<input name="search[category_ids_with_descendants][]" type="hidden" value="" /><select id="search_category_ids_with_descendants" multiple="multiple" name="search[category_ids_with_descendants][]" onclick="cat_select_callback();"><option value="534">Event Registration</option>
-<option value="1823">-- Magic Events</option>
-<option value="4276">---- Deck Rentals</option>
-<option value="4277">---- Prerelease Events</option>
-<option value="4278">---- Draft/WPNQ Events</option>
-<option value="1833">-- Board Games Events</option>
-<option value="2833">-- TCG/CCG Events</option>
-<option value="230">Board Games</option>
-<option value="8">Magic Singles</option>
-<option value="4420">-- Throne of Eldraine Products</option>
-<option value="4419">---- Throne of Eldraine</option>
-<option value="4421">---- Throne of Eldraine Brawl Deck Exclusive</option>
-<option value="4422">---- Throne of Eldraine Collector's Singles</option>
-<option value="4423">---- Throne of Eldraine Planeswalker Deck Exclusive</option>
-<option value="4388">-- Core Set 2020</option>
-<option value="4287">-- Modern Horizons Sets</option>
-<option value="4288">---- Modern Horizons</option>
-<option value="4279">-- War of the Spark Products</option>
-<option value="4280">---- War of the Spark</option>
-<option value="4285">---- Alt. Art Planeswalkers- Japanese</option>
-<option value="4281">---- Mythic Edition: War of the Spark</option>
-<option value="4266">-- Ravnica Allegiance Products</option>
-<option value="4267">---- Ravnica Allegiance</option>
-<option value="4272">---- RNA Guild Kit</option>
-<option value="4273">---- Mythic Edition: Ravnica Allegiance</option>
-<option value="4241">-- Guilds of Ravnica Products</option>
-<option value="4193">---- Guilds of Ravnica</option>
-<option value="4242">---- Mythic Edition: Guilds of Ravnica</option>
-<option value="4248">---- GRN Guild Kit</option>
-<option value="4053">-- Core Set 2019</option>
-<option value="3853">-- Dominaria</option>
-<option value="3583">-- Ixalan Block</option>
-<option value="3593">---- Ixalan</option>
-<option value="3763">---- Rivals of Ixalan</option>
-<option value="3353">-- Amonkhet Block</option>
-<option value="3363">---- Amonkhet</option>
-<option value="3403">---- Hour of Devastation</option>
-<option value="3163">-- Kaladesh Block</option>
-<option value="3183">---- Kaladesh</option>
-<option value="3283">---- Aether Revolt</option>
-<option value="2813">-- Shadows Over Innistrad Block</option>
-<option value="2803">---- Shadows Over Innistrad</option>
-<option value="3113">---- Eldritch Moon</option>
-<option value="2593">-- Battle for Zendikar Block</option>
-<option value="2603">---- Battle for Zendikar</option>
-<option value="2703">---- Oath of The Gatewatch</option>
-<option value="65">-- Core Sets</option>
-<option value="2293">---- Magic Origins</option>
-<option value="1453">---- Magic 2015</option>
-<option value="871">---- Magic 2014</option>
-<option value="774">---- Magic 2013</option>
-<option value="702">---- Magic 2012</option>
-<option value="298">---- Magic 2011</option>
-<option value="224">---- Magic 2010</option>
-<option value="76">---- Tenth Edition</option>
-<option value="75">---- Ninth Edition</option>
-<option value="74">---- Eighth Edition</option>
-<option value="73">---- Seventh Edition</option>
-<option value="72">---- Classic Sixth Edition</option>
-<option value="71">---- Fifth Edition</option>
-<option value="70">---- Fourth Edition</option>
-<option value="69">---- Revised Edition</option>
-<option value="68">---- Unlimited</option>
-<option value="67">---- Beta</option>
-<option value="66">---- Alpha</option>
-<option value="1613">-- Khans of Tarkir Block</option>
-<option value="1563">---- Khans of Tarkir</option>
-<option value="1853">---- Fate Reforged</option>
-<option value="2173">---- Dragons of Tarkir</option>
-<option value="894">-- Theros Block</option>
-<option value="893">---- Theros</option>
-<option value="1043">---- Born of the Gods</option>
-<option value="1243">---- Journey Into Nyx</option>
-<option value="800">-- Return to Ravnica Block</option>
-<option value="801">---- Return to Ravnica</option>
-<option value="836">---- Gatecrash</option>
-<option value="854">---- Dragon's Maze</option>
-<option value="716">-- Innistrad Block</option>
-<option value="715">---- Innistrad</option>
-<option value="742">---- Dark Ascension</option>
-<option value="758">---- Avacyn Restored</option>
-<option value="528">-- Scars of Mirrodin Block</option>
-<option value="522">---- Scars of Mirrodin</option>
-<option value="624">---- Mirrodin Besieged</option>
-<option value="685">---- New Phyrexia</option>
-<option value="220">-- Zendikar Block</option>
-<option value="222">---- Zendikar</option>
-<option value="266">---- WorldWake</option>
-<option value="286">---- Rise of the Eldrazi</option>
-<option value="207">-- Shards of Alara Block</option>
-<option value="209">---- Shards of Alara</option>
-<option value="213">---- Conflux</option>
-<option value="219">---- Alara Reborn</option>
-<option value="138">-- Shadowmoor Block</option>
-<option value="144">---- Shadowmoor</option>
-<option value="146">---- Eventide</option>
-<option value="90">-- Lorwyn Block</option>
-<option value="136">---- Morningtide</option>
-<option value="91">---- Lorwyn</option>
-<option value="16">-- Time Spiral Block</option>
-<option value="18">---- Time Spiral</option>
-<option value="93">---- Time Spiral TimeShifted</option>
-<option value="17">---- Planar Chaos</option>
-<option value="15">---- Future Sight</option>
-<option value="19">-- Ravnica Block</option>
-<option value="22">---- Ravnica: City of Guilds</option>
-<option value="21">---- Guildpact</option>
-<option value="20">---- Dissension</option>
-<option value="23">-- Kamigawa Block</option>
-<option value="26">---- Champions of Kamigawa</option>
-<option value="25">---- Betrayers of Kamigawa</option>
-<option value="24">---- Saviors of Kamigawa</option>
-<option value="27">-- Mirrodin Block</option>
-<option value="30">---- Mirrodin</option>
-<option value="29">---- Darksteel</option>
-<option value="28">---- Fifth Dawn</option>
-<option value="31">-- Onslaught Block</option>
-<option value="34">---- Onslaught</option>
-<option value="33">---- Legions</option>
-<option value="32">---- Scourge</option>
-<option value="35">-- Odyssey Block</option>
-<option value="38">---- Odyssey</option>
-<option value="37">---- Torment</option>
-<option value="36">---- Judgment</option>
-<option value="39">-- Invasion Block</option>
-<option value="42">---- Invasion</option>
-<option value="41">---- Planeshift</option>
-<option value="40">---- Apocalypse</option>
-<option value="43">-- Masques Block</option>
-<option value="46">---- Mercadian Masques</option>
-<option value="45">---- Nemesis</option>
-<option value="44">---- Prophecy</option>
-<option value="47">-- Saga Block</option>
-<option value="50">---- Urza's Saga</option>
-<option value="49">---- Urza's Legacy</option>
-<option value="48">---- Urza's Destiny</option>
-<option value="51">-- Tempest Block</option>
-<option value="54">---- Tempest</option>
-<option value="53">---- Stronghold</option>
-<option value="52">---- Exodus</option>
-<option value="14">-- Ice Age Block</option>
-<option value="10">---- Ice Age</option>
-<option value="9">---- Alliances</option>
-<option value="11">---- ColdSnap</option>
-<option value="55">-- Mirage Block</option>
-<option value="58">---- Mirage</option>
-<option value="57">---- Visions</option>
-<option value="56">---- Weatherlight</option>
-<option value="59">-- Stand Alone Sets</option>
-<option value="64">---- Arabian Nights</option>
-<option value="63">---- Antiquities</option>
-<option value="62">---- Legends</option>
-<option value="61">---- The Dark</option>
-<option value="60">---- Fallen Empires</option>
-<option value="217">---- Homelands</option>
-<option value="3933">-- Archenemy Sets</option>
-<option value="3413">---- Archenemy: Nicol Bolas</option>
-<option value="532">---- Archenemy</option>
-<option value="3873">-- Commander Sets</option>
-<option value="4397">---- Commander 2019</option>
-<option value="4153">---- Commander 2018</option>
-<option value="3573">---- Commander 2017</option>
-<option value="3253">---- Commander 2016</option>
-<option value="2653">---- Commander 2015</option>
-<option value="1673">---- Commander 2014</option>
-<option value="899">---- Commander 2013</option>
-<option value="704">---- Commander 2011</option>
-<option value="3423">---- Commander Anthology</option>
-<option value="3993">---- Commander Anthology Volume II</option>
-<option value="831">---- Commander's Arsenal (Foil)</option>
-<option value="712">---- Commander Singles (Oversized)</option>
-<option value="3913">-- Conspiracy Sets</option>
-<option value="1383">---- Conspiracy</option>
-<option value="3143">---- Conspiracy: Take the Crown</option>
-<option value="270">-- Duel Decks</option>
-<option value="717">---- Duel Decks: Ajani vs. Nicol Bolas</option>
-<option value="1723">---- Duel Decks: Anthology</option>
-<option value="2783">---- Duel Decks: Blessed vs. Cursed</option>
-<option value="276">---- Duel Decks: Divine vs. Demonic</option>
-<option value="2163">---- Duel Decks: Elspeth vs. Kiora</option>
-<option value="538">---- Duel Decks: Elspeth vs. Tezzeret</option>
-<option value="278">---- Duel Decks: Elves vs. Goblins</option>
-<option value="3943">---- Duel Decks: Elves vs. Inventors</option>
-<option value="272">---- Duel Decks: Garruk vs. Liliana</option>
-<option value="891">---- Duel Decks: Heroes vs. Monsters</option>
-<option value="799">---- Duel Decks: Izzet vs. Golgari</option>
-<option value="274">---- Duel Decks: Jace vs. Chandra</option>
-<option value="1213">---- Duel Decks: Jace vs. Vraska</option>
-<option value="687">---- Duel Decks: Japanese Jace vs. Chandra</option>
-<option value="693">---- Duel Decks: Knights vs. Dragons</option>
-<option value="3723">---- Duel Decks: Merfolk vs. Goblins</option>
-<option value="3323">---- Duel Decks: Mind vs. Might</option>
-<option value="3153">---- Duel Decks: Nissa vs. Ob Nixilis</option>
-<option value="280">---- Duel Decks: Phyrexia vs. the Coalition</option>
-<option value="853">---- Duel Decks: Sorin vs. Tibalt</option>
-<option value="1553">---- Duel Decks: Speed vs. Cunning</option>
-<option value="761">---- Duel Decks: Venser vs. Koth</option>
-<option value="2623">---- Duel Decks: Zendikar vs. Eldrazi</option>
-<option value="294">-- From the Vault</option>
-<option value="2583">---- From the Vault: Angels</option>
-<option value="1543">---- From the Vault: Annihilation</option>
-<option value="622">---- From the Vault: Dragons</option>
-<option value="296">---- From the Vault: Exiled</option>
-<option value="714">---- From the Vault: Legends</option>
-<option value="3133">---- From the Vault: Lore</option>
-<option value="798">---- From the Vault: Realms</option>
-<option value="526">---- From the Vault: Relics</option>
-<option value="3733">---- From the Vault: Transform</option>
-<option value="885">---- From the Vault: Twenty</option>
-<option value="4260">-- Game Night</option>
-<option value="4033">-- Global Series</option>
-<option value="4043">---- Global Series: Jiangg Yanggu &amp; Mu Yanling</option>
-<option value="108">-- Magic Promos</option>
-<option value="131">---- Promo - Arena</option>
-<option value="129">---- Promo - FNM</option>
-<option value="127">---- Promo - JSS</option>
-<option value="125">---- Promo - Player Rewards</option>
-<option value="123">---- Promo - Judge Rewards</option>
-<option value="121">---- Promo - Pre-release</option>
-<option value="119">---- Promo - Book Insert</option>
-<option value="117">---- Promo - Guru Land</option>
-<option value="115">---- Promo - Euro Land</option>
-<option value="113">---- Promo - Token</option>
-<option value="111">---- Promo - Unique &amp; Misc.</option>
-<option value="110">---- Promo - Apac Land</option>
-<option value="4391">---- Promo Pack: Core Set 2020</option>
-<option value="3203">-- Masterpiece Series</option>
-<option value="3343">---- Amonkhet Block - Invocations</option>
-<option value="2613">---- Battle for Zendikar Block - Expeditions</option>
-<option value="3213">---- Kaladesh Block - Inventions</option>
-<option value="4251">---- Ultimate Masters Box Topper</option>
-<option value="3893">-- Masters Editions</option>
-<option value="2973">---- Eternal Masters</option>
-<option value="3603">---- Iconic Masters</option>
-<option value="3833">---- Masters 25</option>
-<option value="877">---- Modern Masters</option>
-<option value="2493">---- Modern Masters 2015</option>
-<option value="3313">---- Modern Masters 2017</option>
-<option value="4250">---- Ultimate Masters</option>
-<option value="3883">-- Portal Sets</option>
-<option value="78">---- Portal</option>
-<option value="79">---- Portal Second Age</option>
-<option value="80">---- Portal 3 Kingdoms</option>
-<option value="3923">-- Planechase Sets</option>
-<option value="773">---- Planechase - Planes 2012</option>
-<option value="772">---- Planechase 2012</option>
-<option value="3273">---- Planechase Anthology</option>
-<option value="290">---- Planechase - Planes</option>
-<option value="558">---- Planechase</option>
-<option value="3863">-- Planeswalker Deck Exclusives</option>
-<option value="3293">---- Aether Revolt Planeswalker Deck Exclusive</option>
-<option value="3373">---- Amonkhet Planeswalker Deck Exclusive</option>
-<option value="3473">---- Hour of Devastation Planeswalker Deck Exclusive</option>
-<option value="3613">---- Ixalan Planeswalker Deck Exclusive</option>
-<option value="3233">---- Kaladesh Planeswalker Deck Exclusive</option>
-<option value="3773">---- Rivals of Ixalan Planeswalker Deck Exclusive</option>
-<option value="3963">---- Dominaria Planeswalker Deck Exclusive</option>
-<option value="4083">---- Core Set 2019 Planeswalker Deck &amp; Gift Pack Exclusives</option>
-<option value="4233">---- Guilds of Ravnica Planeswalker Deck Exclusive</option>
-<option value="4270">---- Ravnica Allegiance Planeswalker Deck Exclusives</option>
-<option value="4283">---- War of the Spark Planeswalker Deck Exclusive</option>
-<option value="4396">---- Core Set 2020 Planeswalker Deck Exclusives</option>
-<option value="268">-- Premium Deck Series</option>
-<option value="554">---- Premium Deck Series: Fire &amp; Lightning</option>
-<option value="282">---- Premium Deck Series: Slivers</option>
-<option value="734">---- Premium Deck Series: Graveborn</option>
-<option value="4013">-- Signature Spellbook Series</option>
-<option value="3983">---- Signature Spellbook: Jace</option>
-<option value="4286">---- Signature Spellbook: Gideon</option>
-<option value="77">-- Special Editions</option>
-<option value="697">---- Anthologies</option>
-<option value="4003">---- Battlebond</option>
-<option value="85">---- Battle Royale</option>
-<option value="84">---- Beatdown Box Set</option>
-<option value="88">---- Chronicles</option>
-<option value="288">---- Coldsnap Theme Deck Reprints</option>
-<option value="548">---- Collector's Edition</option>
-<option value="550">---- Collector's Edition - International</option>
-<option value="562">---- Deckmasters</option>
-<option value="514">---- Duels of the Planeswalkers</option>
-<option value="3743">---- Explorers of Ixalan</option>
-<option value="1373">---- Modern Event Deck 2014</option>
-<option value="81">---- Starter 1999</option>
-<option value="2663">---- Starter 2000</option>
-<option value="2983">---- Welcome Deck</option>
-<option value="2993">------ Welcome Deck 2016</option>
-<option value="4264">------ Welcome Deck 2017</option>
-<option value="4395">---- Vanguard</option>
-<option value="3903">-- Un- Sets</option>
-<option value="89">---- Unglued</option>
-<option value="82">---- Unhinged</option>
-<option value="3753">---- Unstable</option>
-<option value="695">-- Sets</option>
-<option value="696">---- Partial Sets</option>
-<option value="694">---- Complete Sets</option>
-<option value="4236">-- Bulk</option>
-<option value="4387">-- Art Series: Modern Horizons</option>
-<option value="12">Magic Products</option>
-<option value="105">-- Fat Packs and Bundles</option>
-<option value="101">-- Booster Packs</option>
-<option value="100">-- Booster Boxes</option>
-<option value="132">-- Duel Decks (Sealed) Tournament Packs, Intro Packs and Toolkits</option>
-<option value="524">-- Box Sets and Collectibles</option>
-<option value="3443">-- Prerelease Kits</option>
-<option value="3453">-- Deck Builder's Toolkits</option>
-<option value="3463">-- Duel Decks</option>
-<option value="226">Pokemon Singles</option>
-<option value="4414">-- Hidden Fates</option>
-<option value="3383">-- Sun &amp; Moon</option>
-<option value="4393">---- Unified Minds</option>
-<option value="4284">---- Unbroken Bonds</option>
-<option value="4271">---- Team Up</option>
-<option value="4249">---- Lost Thunder</option>
-<option value="4213">---- Dragon Majesty</option>
-<option value="4143">---- Celestial Storm</option>
-<option value="3973">---- Forbidden Light</option>
-<option value="3783">---- Ultra Prism</option>
-<option value="3713">---- Crimson Invasion</option>
-<option value="3623">---- Shining Legends</option>
-<option value="3483">---- Burning Shadows</option>
-<option value="3393">---- Guardians Rising</option>
-<option value="3303">---- Sun &amp; Moon: Base Set</option>
-<option value="3433">---- Promo Sun &amp; Moon: Black Star</option>
-<option value="2103">-- XY</option>
-<option value="3173">---- Steam Siege</option>
-<option value="3073">---- Fates Collide</option>
-<option value="2773">---- BREAKpoint</option>
-<option value="2643">---- BREAKthrough</option>
-<option value="2543">---- Ancient Origins</option>
-<option value="2413">---- Roaring Skies</option>
-<option value="2403">---- Double Crisis</option>
-<option value="1973">---- Primal Clash</option>
-<option value="1963">---- Phantom Forces</option>
-<option value="1953">---- Furious Fists</option>
-<option value="1943">---- Flashfire</option>
-<option value="1933">---- XY</option>
-<option value="2153">---- Promos XY Black Star</option>
-<option value="3243">---- Evolutions</option>
-<option value="2763">---- PROMO XYSTAR</option>
-<option value="3193">---- Generations</option>
-<option value="2143">-- Black and White</option>
-<option value="2073">---- LEGENDARY TREASURES</option>
-<option value="2033">---- PLASMA BLAST</option>
-<option value="2043">---- PLASMA FREEZE</option>
-<option value="2023">---- PLASMA STORM</option>
-<option value="1983">---- BOUNDARIES CROSSED</option>
-<option value="1993">---- DRAGONS EXALTED</option>
-<option value="2003">---- NEXT DESTINIES</option>
-<option value="2013">---- NOBLE VICTORIES</option>
-<option value="2053">---- EMERGING POWERS</option>
-<option value="699">---- Black and White</option>
-<option value="2093">---- PROMOS - BW BLACK STAR</option>
-<option value="2363">---- DARK EXPLORERS</option>
-<option value="1773">-- Pokemon Promos</option>
-<option value="2953">-- Arceus</option>
-<option value="3523">-- Battle Arena Deck: Keldeo EX vs Rayquaza EX</option>
-<option value="4256">-- Call of Legends</option>
-<option value="2843">-- Dragon Vault</option>
-<option value="2963">-- Expedition</option>
-<option value="3553">-- EX Emerald</option>
-<option value="3533">-- EX Holon Phantoms</option>
-<option value="4255">-- EX Legend Maker</option>
-<option value="3063">-- EX Power Keepers</option>
-<option value="3563">-- EX Sandstorm</option>
-<option value="2863">-- Fire Red &amp; Leaf Green</option>
-<option value="4258">-- Gym Challenge</option>
-<option value="4257">-- Gym Heroes</option>
-<option value="4254">-- HS Triumphant</option>
-<option value="3043">-- HS Undaunted</option>
-<option value="3493">-- Neo Destiny</option>
-<option value="3543">-- Neo Discovery</option>
-<option value="3513">-- Neo Genesis Unimited</option>
-<option value="4259">-- Neo Revelation</option>
-<option value="3053">-- Platinum</option>
-<option value="2743">-- Shiny Rayquaza-EX Box Promo</option>
-<option value="4247">-- Skyridge</option>
-<option value="3503">-- Southern Islands</option>
-<option value="2893">-- Supreme Victories</option>
-<option value="3033">-- Supreme Victors</option>
-<option value="3013">-- Trainer Kit Noivern &amp; Sylveon</option>
-<option value="3003">-- XY Kalos Starter</option>
-<option value="3023">-- XY Trainer Kit Excadrill &amp; Zoroark</option>
-<option value="2133">-- Older Pokemon</option>
-<option value="688">---- Ex Dragon</option>
-<option value="719">---- EX Unseen Forces</option>
-<option value="683">---- Legendary Collection</option>
-<option value="684">---- Neo Genesis</option>
-<option value="560">---- Fossil</option>
-<option value="564">---- Jungle</option>
-<option value="691">---- POP Series 7</option>
-<option value="698">---- Base Set 2</option>
-<option value="770">---- Ex Hidden Legends</option>
-<option value="786">---- Ex Team Rocket Returns</option>
-<option value="1743">---- Jungle</option>
-<option value="1763">---- Base Set</option>
-<option value="1783">---- Team Rocket</option>
-<option value="1793">---- Aquapolis</option>
-<option value="4274">---- Dragon Frontiers</option>
-<option value="4275">---- EX Delta Species</option>
-<option value="4389">---- EX Crystal Guardians</option>
-<option value="4392">---- Team Magma vs. Team Aqua</option>
-<option value="4418">---- EX Deoxys</option>
-<option value="4282">-- Detective Pikachu</option>
-<option value="762">Pokemon Sealed</option>
-<option value="763">-- Pokemon Booster Packs</option>
-<option value="764">-- Pokemon Theme Decks</option>
-<option value="1733">-- Booster Boxes</option>
-<option value="3263">-- XY Evolutions</option>
-<option value="3653">-- Pokemon Tins &amp; Box Sets</option>
-<option value="228">Yu-Gi-Oh! Singles</option>
-<option value="4404">-- 2019 Yu-Gi-Oh</option>
-<option value="4394">---- Rising Rampage</option>
-<option value="4390">---- Battles of Legend: Hero's Revenge</option>
-<option value="4306">---- Speed Duel: Attack from the Deep</option>
-<option value="4290">---- Dark Neostorm</option>
-<option value="4359">---- Structure Deck: Order of the Spellcasters</option>
-<option value="4383">---- Duel Power</option>
-<option value="4305">---- Speed Duel: Arena of Lost Souls</option>
-<option value="4356">---- The Infinity Chasers</option>
-<option value="4360">---- Structure Deck: Soulburner</option>
-<option value="4303">---- Savage Strike</option>
-<option value="4353">---- Legendary Duelists: Sisters of the Rose</option>
-<option value="4424">---- 2019 Gold Sarcophagus Tin Promos</option>
-<option value="4425">---- Duel Devastator</option>
-<option value="4426">---- Legendary Duelists: Immortal Destiny</option>
-<option value="4416">-- 2019 Gold Sarcophagus Tin Mega Pack</option>
-<option value="4405">-- 2018 Yu-Gi-Oh</option>
-<option value="4357">---- Hidden Summoners</option>
-<option value="4361">---- Structure Deck: Zombie Horde</option>
-<option value="4302">---- Soul Fusion</option>
-<option value="4375">---- Legendary Hero Decks</option>
-<option value="4352">---- Legendary Duelists: White Dragon Abyss</option>
-<option value="4384">---- Mega Pack 2018</option>
-<option value="4355">---- Shadows in Valhalla</option>
-<option value="4362">---- Structure Deck: Powercode Link</option>
-<option value="4223">---- Cybernetic Horizon</option>
-<option value="4319">---- Starter Deck: Codebreaker</option>
-<option value="4173">---- Battles of Legend: Relentless Revenge</option>
-<option value="4203">---- Dark Saviors</option>
-<option value="4123">---- Flames of Destruction</option>
-<option value="4363">---- Structure Deck: Lair of Darkness</option>
-<option value="4343">---- Star Pack VRAINS</option>
-<option value="4063">---- Legendary Collection: Kaiba</option>
-<option value="4351">---- Legendary Duelists: Ancient Millennium</option>
-<option value="4301">---- Extreme Force</option>
-<option value="4364">---- Structure Deck: Wave of Light</option>
-<option value="4296">-- Core Sets</option>
-<option value="330">---- Absolute Powerforce</option>
-<option value="834">---- Abyss Rising</option>
-<option value="304">---- Ancient Prophecy</option>
-<option value="306">---- Ancient Sanctuary</option>
-<option value="2753">---- Breakers of Shadow</option>
-<option value="4163">---- Circuit Break</option>
-<option value="2673">---- Clash of Rebellions</option>
-<option value="4093">---- Code of the Duelist</option>
-<option value="842">---- Cosmo Blazer</option>
-<option value="348">---- Crimson Crisis</option>
-<option value="2503">---- Crossed Souls</option>
-<option value="350">---- Crossroads of Chaos</option>
-<option value="849">------ Crossroads of Chaos Special Edition</option>
-<option value="352">---- Cyberdark Impact</option>
-<option value="354">---- Cybernetic Revolution</option>
-<option value="360">---- Dark Crisis</option>
-<option value="2683">---- Dimension of Chaos</option>
-<option value="1513">---- Duelist Alliance</option>
-<option value="730">---- Duelist Revolution</option>
-<option value="512">------ Duelist Revolution</option>
-<option value="628">------ Duelist Revolution Special Edition</option>
-<option value="394">---- Elemental Energy</option>
-<option value="396">---- Enemy of Justice</option>
-<option value="725">---- Extreme Victory</option>
-<option value="701">------ Extreme Victory</option>
-<option value="703">------ Extreme Victory: Special Edition</option>
-<option value="398">---- Flaming Eternity</option>
-<option value="400">---- Force of the Breaker</option>
-<option value="767">---- Galactic Overlord</option>
-<option value="722">---- Generation Force</option>
-<option value="713">------ Generation Force</option>
-<option value="720">------ Generation Force: Special Edition</option>
-<option value="402">---- Gladiators Assault</option>
-<option value="727">---- Invasion of Chaos</option>
-<option value="412">------ Invasion of Chaos</option>
-<option value="728">------ Invasion of Chaos: Special Edition</option>
-<option value="4299">---- Invasion: Vengeance</option>
-<option value="886">---- Judgment of the Light</option>
-<option value="414">---- Labyrinth of Nightmare</option>
-<option value="416">---- Legacy of Darkness</option>
-<option value="1273">---- Legacy of the Valiant</option>
-<option value="418">---- Legend of Blue Eyes White Dragon</option>
-<option value="420">---- Light of Destruction</option>
-<option value="873">---- Lord of the Tachyon Galaxy</option>
-<option value="424">---- Magic Ruler</option>
-<option value="422">---- Magicians Force</option>
-<option value="3793">---- Maximum Crisis</option>
-<option value="426">---- Metal Raiders</option>
-<option value="744">---- Order of Chaos</option>
-<option value="428">---- Phantom Darkness</option>
-<option value="430">---- Pharaohs Servant</option>
-<option value="432">---- Pharaonic Guardian</option>
-<option value="733">---- Photon Shockwave</option>
-<option value="474">---- Power of the Duelist</option>
-<option value="1333">---- Primal Origin</option>
-<option value="438">---- Raging Battle</option>
-<option value="850">------ Raging Battle Special Edition</option>
-<option value="4300">---- Raging Tempest</option>
-<option value="818">---- Return of the Duelist</option>
-<option value="793">------ Return of the Duelist</option>
-<option value="819">------ Return of the Duelist: Special Edition</option>
-<option value="444">---- Rise of Destiny</option>
-<option value="1893">---- Secrets of Eternity</option>
-<option value="446">---- Shadow of Infinity</option>
-<option value="904">---- Shadow Specters</option>
-<option value="4297">---- Shining Victories</option>
-<option value="450">---- Soul of the Duelist</option>
-<option value="874">---- Spell Ruler</option>
-<option value="452">---- Stardust Overdrive</option>
-<option value="542">---- Starstrike Blast</option>
-<option value="669">---- Storm of Ragnarok</option>
-<option value="460">---- Strike of Neos</option>
-<option value="454">---- Tactical Evolution</option>
-<option value="4298">---- The Dark Illusion</option>
-<option value="456">---- The Duelist Genesis</option>
-<option value="458">---- The Lost Millenium</option>
-<option value="1693">---- The New Challengers</option>
-<option value="300">---- The Shining Darkness</option>
-<option value="4407">-- Deck Builder Sets</option>
-<option value="4348">---- Spirit Warriors</option>
-<option value="4347">---- Fusion Enforcers</option>
-<option value="4346">---- Destiny Soldiers</option>
-<option value="1903">---- The Secret Forces</option>
-<option value="4417">---- Fists of the Gadgets</option>
-<option value="4382">-- Mega/Collectors Tins</option>
-<option value="4073">---- Mega Pack 2017</option>
-<option value="3663">---- Mega Pack 2016</option>
-<option value="2733">---- Mega Pack 2015</option>
-<option value="1583">---- Mega Pack 2014</option>
-<option value="765">---- Ra Yellow Mega-Pack</option>
-<option value="4409">---- 2005 Collectors Tins</option>
-<option value="4410">---- 2010 Collectors Tins</option>
-<option value="4411">---- 2006 Collectors Tins</option>
-<option value="4412">---- 2015 Mega-Tins</option>
-<option value="4413">---- 2011 Collectors Tins</option>
-<option value="4415">---- 2012 Premium Tin</option>
-<option value="4292">-- Structure Decks</option>
-<option value="4103">---- Structure Deck: Cyberse Link</option>
-<option value="4133">---- Structure Deck: Dinosmasher's Fury</option>
-<option value="4365">---- Structure Deck: Machine Reactor</option>
-<option value="4366">---- Structure Deck: Pendulum Domination</option>
-<option value="4368">---- Structure Deck: Seto Kaiba</option>
-<option value="4367">---- Structure Deck: Yugi Moto</option>
-<option value="4369">---- Structure Deck: Emperor of Darkness</option>
-<option value="2933">---- Structure Deck: Master of Pendulum</option>
-<option value="2943">---- Structure Deck: Synchron Extreme</option>
-<option value="2473">---- Structure Deck: HERO Strike</option>
-<option value="4370">---- Structure Deck: Geargia Rampage</option>
-<option value="2453">---- Structure Deck: Realm of Light</option>
-<option value="1653">---- Structure Deck: Cyber Dragon Revolution</option>
-<option value="1073">---- Structure Deck: Saga of Blue-Eyes White Dragon</option>
-<option value="1303">---- Structure Deck: Onslaught of the Fire Kings</option>
-<option value="889">---- Structure Deck: Realm of the Sea Emperor</option>
-<option value="814">---- Structure Deck: Samurai Warlords</option>
-<option value="1113">---- Structure Deck: Dragons Collide</option>
-<option value="748">---- Structure Deck: Gates of the Underworld</option>
-<option value="815">---- Structure Deck: Lost Sanctuary</option>
-<option value="811">---- Structure Deck: Dragunity Legion</option>
-<option value="584">---- Structure Deck: Marik</option>
-<option value="572">---- Structure Deck: Machina Mayhem</option>
-<option value="618">---- Structure Deck: Warriors' Strike</option>
-<option value="570">---- Structure Deck: Spellcaster's Command</option>
-<option value="590">---- Structure Deck: Zombie World</option>
-<option value="480">---- Structure Deck: The Dark Emperor</option>
-<option value="614">---- Structure Deck: Rise of the Dragon Lords</option>
-<option value="602">---- Structure Deck: Machine Re-Volt</option>
-<option value="636">---- Structure Deck: Dinosaur's Rage</option>
-<option value="596">---- Structure Deck: Lord of the Storm</option>
-<option value="580">---- Structure Deck: Invincible Fortress</option>
-<option value="568">---- Structure Deck: Spellcaster's Judgment</option>
-<option value="578">---- Structure Deck: Warriors Triumph</option>
-<option value="606">---- Structure Deck: Fury from the Deep</option>
-<option value="592">---- Structure Deck: Blaze of Destruction</option>
-<option value="574">---- Structure Deck: Zombie Madness</option>
-<option value="594">---- Structure Deck: Dragon's Roar</option>
-<option value="4312">-- Starter Decks</option>
-<option value="608">---- Starter Deck: Yugi</option>
-<option value="610">---- Starter Deck: Kaiba</option>
-<option value="588">---- Starter Deck: Joey</option>
-<option value="604">---- Starter Deck: Pegasus</option>
-<option value="582">---- Starter Deck: Yugi Evolution</option>
-<option value="586">---- Starter Deck : Kaiba Evolution</option>
-<option value="598">---- Starter Deck 2006</option>
-<option value="813">---- Starter Deck: Jaden Yuki</option>
-<option value="576">---- Starter Deck: Syrus Truesdale</option>
-<option value="328">---- Starter Deck: Yu-Gi-Oh! 5D's</option>
-<option value="612">---- Starter Deck: Yu-Gi-Oh! 5D's 2009</option>
-<option value="616">---- Starter Deck: Duelist Toolbox</option>
-<option value="766">---- Starter Deck: Dawn of the Xyz</option>
-<option value="4313">---- Starter Deck: Xyz Symphony</option>
-<option value="881">---- Super Starter: V for Victory</option>
-<option value="1283">---- Starter Deck: Yugi Reloaded</option>
-<option value="4314">---- Starter Deck: Kaiba Reloaded</option>
-<option value="2513">---- Super Starter: Space-Time Showdown</option>
-<option value="4315">---- Starter Deck: Saber Force</option>
-<option value="4316">---- Starter Deck: Dark Legion</option>
-<option value="4317">---- Starter Deck: Yuya</option>
-<option value="4318">---- Starter Deck: Link Strike</option>
-<option value="4328">-- OTS Packs</option>
-<option value="4336">---- OTS Tournament Pack 10</option>
-<option value="4335">---- OTS Tournament Pack 9</option>
-<option value="4261">---- OTS Tournament Pack 8</option>
-<option value="4334">---- OTS Tournament Pack 7</option>
-<option value="4333">---- OTS Tournament Pack 6</option>
-<option value="4332">---- OTS Tournament Pack 5</option>
-<option value="4331">---- OTS Tournament Pack 4</option>
-<option value="4330">---- OTS Tournament Pack 3</option>
-<option value="4113">---- OTS Tournament Pack 2</option>
-<option value="4329">---- OTS Tournament Pack 1</option>
-<option value="4406">-- Battles of Legend</option>
-<option value="3813">---- Battles of Legend: Light's Revenge</option>
-<option value="4349">-- Legendary Duelists</option>
-<option value="4350">---- Legendary Duelists</option>
-<option value="4408">-- Dragons of Legend</option>
-<option value="3703">---- Dragons of Legends: Unleashed</option>
-<option value="3823">---- Dragons of Legend 2</option>
-<option value="1353">---- Dragons of Legend</option>
-<option value="4344">-- Special Booster Sets</option>
-<option value="3953">---- The Dark Side of Dimensions Movie Pack Gold Edition</option>
-<option value="4354">---- Pendulum Evolution</option>
-<option value="3683">---- The Dark Side of Dimensions Movie Pack</option>
-<option value="3083">---- Millennium Pack</option>
-<option value="2853">---- Wing Raiders</option>
-<option value="4345">---- High-Speed Riders</option>
-<option value="2523">---- World Superstars</option>
-<option value="1133">---- Number Hunters</option>
-<option value="700">---- Yu-Gi-Oh! 3D Bonds Beyond Time Movie Pack</option>
-<option value="4291">-- Astral Packs</option>
-<option value="861">---- Astral Pack 1</option>
-<option value="898">---- Astral Pack 2</option>
-<option value="1093">---- Astral Pack 3</option>
-<option value="1503">---- Astral Pack 4</option>
-<option value="1573">---- Astral Pack 5</option>
-<option value="2233">---- Astral Pack 6</option>
-<option value="4324">---- Astral Pack 7</option>
-<option value="4325">---- Astral Pack 8</option>
-<option value="828">-- Legendary Collections</option>
-<option value="900">---- Legendary Collection 4: Joey's World</option>
-<option value="829">---- Legendary Collection 3: Yugi's World</option>
-<option value="726">---- Legendary Collection 2</option>
-<option value="830">---- Legendary Collection 1</option>
-<option value="2463">---- Legendary Collection 5ds</option>
-<option value="1633">---- Legendary Collection 5D's Mega Pack</option>
-<option value="4376">-- Legendary Decks</option>
-<option value="4372">---- Yugi's Legendary Decks</option>
-<option value="4373">---- Legendary Decks II</option>
-<option value="4374">---- Legendary Dragon Decks</option>
-<option value="4377">---- Noble Knights of the Round Table Box Set</option>
-<option value="724">-- Gold Series</option>
-<option value="404">---- Gold Series</option>
-<option value="406">---- Gold Series 2009</option>
-<option value="408">---- Gold Series 3</option>
-<option value="705">---- Gold Series 4: Pyramids Edition</option>
-<option value="783">---- Gold Series: Haunted Mine</option>
-<option value="1223">---- Premium Gold</option>
-<option value="2553">---- Premium Gold 2: Return of the Bling</option>
-<option value="3803">---- Premium Gold 3:Infinite Gold</option>
-<option value="723">-- Hidden Arsenal</option>
-<option value="410">---- Hidden Arsenal 1</option>
-<option value="482">---- Hidden Arsenal 2</option>
-<option value="566">---- Hidden Arsenal 3</option>
-<option value="686">---- Hidden Arsenal 4: Trishulas Triumph</option>
-<option value="739">---- Hidden Arsenal 5: Steelswarm Invasion</option>
-<option value="792">---- Hidden Arsenal 6: Omega XYZ</option>
-<option value="869">---- Hidden Arsenal 7: Knight of Stars</option>
-<option value="803">-- Duel Terminal</option>
-<option value="508">---- Duel Terminal 1</option>
-<option value="510">---- Duel Terminal 2</option>
-<option value="668">---- Duel Terminal 3</option>
-<option value="806">---- Duel Terminal 4</option>
-<option value="805">---- Duel Terminal 5</option>
-<option value="804">---- Duel Terminal 6A</option>
-<option value="802">---- Duel Terminal 6B</option>
-<option value="887">---- Duel Terminal 7A (DT07)</option>
-<option value="888">---- Duel Terminal 7B (DT07)</option>
-<option value="4293">-- Duelist Packs</option>
-<option value="376">---- Duelist Pack: Jaden Yuki</option>
-<option value="378">---- Duelist Pack: Chazz Princeton</option>
-<option value="380">---- Duelist Pack: Jaden Yuki 2</option>
-<option value="382">---- Duelist Pack: Zane Truesdale</option>
-<option value="384">---- Duelist Pack: Aster Phoenix</option>
-<option value="386">---- Duelist Pack: Jaden Yuki 3</option>
-<option value="388">---- Duelist Pack: Jesse Anderson</option>
-<option value="390">---- Duelist Pack: Yusei</option>
-<option value="374">---- Duelist Pack: Yusei 2</option>
-<option value="675">---- Duelist Pack: Yusei 3</option>
-<option value="901">---- Duelist Pack: Crow</option>
-<option value="392">---- Duelist Pack: Yugi</option>
-<option value="372">---- Duelist Pack: Kaiba</option>
-<option value="3093">---- Duelist Pack: Battle City</option>
-<option value="3693">---- Duelist Pack: Rivals of the Pharaoh</option>
-<option value="478">---- Duelist Pack Collection Tin</option>
-<option value="4339">---- Duelist Pack: Dimensional Guardians</option>
-<option value="4340">-- Star Packs</option>
-<option value="2693">---- Star Pack 2013</option>
-<option value="1233">---- Star Pack 2014</option>
-<option value="4341">---- Star Pack ARC-V</option>
-<option value="4342">---- Star Pack Battle Royal</option>
-<option value="4358">-- Battle Packs</option>
-<option value="775">---- Battle Pack: Epic Dawn</option>
-<option value="3103">---- Battle Pack 2: War of the Giants</option>
-<option value="1603">---- Battle Pack 03: Monster League</option>
-<option value="860">-- Turbo Packs</option>
-<option value="662">---- Turbo Pack 1</option>
-<option value="664">---- Turbo Pack 2</option>
-<option value="660">---- Turbo Pack 3</option>
-<option value="673">---- Turbo Pack 4</option>
-<option value="862">---- Turbo Pack 5</option>
-<option value="778">---- Turbo Pack 6</option>
-<option value="864">---- Turbo Pack 7</option>
-<option value="865">---- Turbo Pack 8</option>
-<option value="794">-- Champion Packs</option>
-<option value="332">---- Champion Pack 1</option>
-<option value="334">---- Champion Pack 2</option>
-<option value="336">---- Champion Pack 3</option>
-<option value="338">---- Champion Pack 4</option>
-<option value="340">---- Champion Pack 5</option>
-<option value="342">---- Champion Pack 6</option>
-<option value="344">---- Champion Pack 7</option>
-<option value="346">---- Champion Pack 8</option>
-<option value="4294">-- Hobby League</option>
-<option value="648">---- Hobby League Season 1</option>
-<option value="650">---- Hobby League Season 2</option>
-<option value="652">---- Hobby League Season 3</option>
-<option value="654">---- Hobby League Season 4</option>
-<option value="656">---- Hobby League Season 5</option>
-<option value="658">---- Hobby League Season 6</option>
-<option value="552">---- Hobby League Season 7</option>
-<option value="4289">-- Tournament Packs</option>
-<option value="468">---- Tournament Pack 3</option>
-<option value="672">---- Tournament Pack 4</option>
-<option value="666">---- Tournament Pack 5</option>
-<option value="4320">---- Tournament Pack 6</option>
-<option value="4321">---- Tournament Pack 7</option>
-<option value="4322">---- Tournament Pack 8</option>
-<option value="462">---- Tournament Pack 1</option>
-<option value="464">---- Tournament Pack 2</option>
-<option value="4371">-- Reprint Booster Sets</option>
-<option value="356">---- Dark Beginnings 1</option>
-<option value="729">---- Dark Revelations</option>
-<option value="364">------ Dark Revelations 1</option>
-<option value="366">------ Dark Revelations 2</option>
-<option value="368">------ Dark Revelations 3</option>
-<option value="370">------ Dark Revelations 4</option>
-<option value="358">---- Dark Beginning 2</option>
-<option value="362">---- Dark Legends</option>
-<option value="600">---- Exclusive Pack</option>
-<option value="434">---- Premium Pack 1</option>
-<option value="436">---- Premium Pack 2</option>
-<option value="442">---- Retro Pack 1</option>
-<option value="440">---- Retro Pack 2</option>
-<option value="4183">---- Duelist Saga</option>
-<option value="678">---- Anniversary Pack</option>
-<option value="4386">-- Video Game Promos</option>
-<option value="484">Yugioh Sealed</option>
-<option value="490">-- Yugioh Booster</option>
-<option value="812">-- Yugioh Tins</option>
-<option value="2213">Supplies</option>
-<option value="2183">-- Dice</option>
-<option value="2193">---- Dice Sets</option>
-<option value="2203">---- Spindown Dice</option>
-<option value="2223">---- Monster Dice</option>
-<option value="4268">---- Monster Rocks: Token Dice</option>
-<option value="851">-- Life Counters</option>
-<option value="797">-- Playmats</option>
-<option value="808">-- Counters</option>
-<option value="827">-- Player's Guides</option>
-<option value="809">-- Binders and Bags</option>
-<option value="846">-- MTG Stickers</option>
-<option value="807">-- Deck Boxes</option>
-<option value="745">Sleeves, etc.</option>
-<option value="746">-- Sleeves</option>
-<option value="823">Custom Orders</option>
-<option value="824">-- Special Orders</option>
-<option value="4234">Transformers TCG Sealed Product</option>
-<option value="4235">Transformers TCG Singles</option>
-<option value="4253">-- Wave 1</option>
-<option value="4262">Disc Golf</option>
-<option value="4263">-- Special Ed Discs</option></select>
-</div>
-<div id='filter_buylist_mode'>
-<label for="buylist_mode">Search the buylist?</label>
-<input id="buylist_mode_false" name="buylist_mode" type="hidden" value="0" />
-<input id="buylist_mode" name="buylist_mode" type="checkbox" value="1" />
-</div>
-<div id='filter_sell_price'>
-<label for="search_sell_price_gte">Sell Price between</label>
-<input id="search_sell_price_gte" min="0.0" name="search[sell_price_gte]" size="3" step="any" type="number" />
-<label for="search_sell_price_lte">and</label>
-<input id="search_sell_price_lte" min="0.0" name="search[sell_price_lte]" size="3" step="any" type="number" />
-</div>
-<div id='filter_buy_price'>
-<label for="search_buy_price_gte">Buy Price between</label>
-<input id="search_buy_price_gte" min="0.0" name="search[buy_price_gte]" size="3" step="any" type="number" />
-<label for="search_buy_price_lte">and</label>
-<input id="search_buy_price_lte" min="0.0" name="search[buy_price_lte]" size="3" step="any" type="number" />
-</div>
-<div id='filter_in_stock'>
-<label for="search_in_stock">In Stock</label>
-<input name="search[in_stock]" type="hidden" value="0" /><input id="search_in_stock" name="search[in_stock]" type="checkbox" value="1" />
-</div>
-<div id='advsearch_submit'><input name="commit" type="submit" value="Search" /></div>
-</div>
-<div class='col2' id='category_descriptors'>
-<div id='search_descriptors'>
+	
+<div class="breadcrumbs-container small-centered">
+
+    
+    
+        <a href="/" id="home-button">Home</a>
+    
+    
+
+    
+
+        
+
+            
+
+                <span class="breadcrumb-divider">
+                    <i class="icon-angle-right"></i>
+                </span>
+
+            
+
+            
+
+                <span class="current-crumb">Magic Singles</span>
+
+            
+
+        
+
+    
 
 </div>
-<div id='variant_filters'>
 
-</div>
-</div>
-<div class='clear'></div>
-</form>
+<h1 class="page-title">Magic Singles</h1>
 
-</div>
-
-
-
-
-	<p class="no-product">Your search returned no results. <a href="javascript:history.go(-1)" class="go-back">Go Back</a></p>
-
+<ul class="parent-category row">
 
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-throne_of_eldraine_products/4420">Throne of Eldraine Products</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-core_set_2020/4388">Core Set 2020</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-modern_horizons/4287">Modern Horizons Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-war_of_the_spark/4279">War of the Spark Products</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-ravnica_allegiance/4266">Ravnica Allegiance Products</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-guilds_of_ravnica/4241">Guilds of Ravnica Products</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-core_set_2019/4053">Core Set 2019</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-dominaria/3853">Dominaria</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-ixalan_block/3583">Ixalan Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-amonkhet_block/3353">Amonkhet Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-kaladesh_block/3163">Kaladesh Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-shadows_over_innistrad_block/2813">Shadows Over Innistrad Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-battle_for_zendikar_block/2593">Battle for Zendikar Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-core_sets/65">Core Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-khans_of_tarkir_block/1613">Khans of Tarkir Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-theros_block/894">Theros Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-return_to_ravnica_block/800">Return to Ravnica Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-innistrad_block/716">Innistrad Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-scars_of_mirrodin_block/528">Scars of Mirrodin Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-zendikar_block/220">Zendikar Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-shards_of_alara_block/207">Shards of Alara Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-shadowmoor_block/138">Shadowmoor Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-lorwyn_block/90">Lorwyn Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-time_spiral_block/16">Time Spiral Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-ravnica_block/19">Ravnica Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-kamigawa_block/23">Kamigawa Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-mirrodin_block/27">Mirrodin Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-onslaught_block/31">Onslaught Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-odyssey_block/35">Odyssey Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-invasion_block/39">Invasion Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-masques_block/43">Masques Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-saga_block/47">Saga Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-tempest_block/51">Tempest Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-ice_age_block/14">Ice Age Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-mirage_block/55">Mirage Block</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-stand_alone_sets/59">Stand Alone Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-archenemy_sets/3933">Archenemy Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-commander_sets/3873">Commander Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-conspiracy_sets/3913">Conspiracy Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-duel_decks/270">Duel Decks</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-from_the_vault/294">From the Vault</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-game_night/4260">Game Night</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-global_series/4033">Global Series</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-magic_promos/108">Magic Promos</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-masterpiece_series/3203">Masterpiece Series</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-masters_editions/3893">Masters Editions</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-portal_sets/3883">Portal Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-planechase_sets/3923">Planechase Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-planeswalker_deck_exclusives/3863">Planeswalker Deck Exclusives</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-premium_deck_series/268">Premium Deck Series</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-signature_spellbook_series/4013">Signature Spellbook Series</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-special_editions/77">Special Editions</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-un_sets/3903">Un- Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-sets/695">Sets</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-bulk/4236">Bulk</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="small-12 medium-3 large-3 columns">
+                <a href="/catalog/magic_singles-art_series_modern_horizons/4387">Art Series: Modern Horizons</a>
+            </li>
+
+        
+
+    
+
+</ul>
 
 
 
@@ -10266,8 +10000,8 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 			
 			
 				
-				<a href="/catalog/yugioh_singles-2019_yugioh-2019_gold_sarcophagus_tin/4424" id="category-4424">
-                    <span class="category-name">2019 Gold Sarcophagus Mega Pack</span>
+				<a href="/catalog/yugioh_singles-2019_yugioh-2019_gold_sarcophagus_mega_pack/4424" id="category-4424">
+                    <span class="category-name">2019 Gold Sarcophagus Tin Promos</span>
                 </a>
 			
 			
@@ -10332,8 +10066,8 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 			
 			
 				
-				<a href="/catalog/yugioh_singles-megacollectors_tins-2019_gold_sarcophagus_tin/4416" id="category-4416">
-                    <span class="category-name">2019 Gold Sarcophagus Tin</span>
+				<a href="/catalog/yugioh_singles-2019_gold_sarcophagus_tin/4416" id="category-4416">
+                    <span class="category-name">2019 Gold Sarcophagus Tin Mega Pack</span>
                 </a>
 			
 			
@@ -12399,6 +12133,22 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 				
 				<a href="/catalog/2012_premium_tin/4415" id="category-4415">
                     <span class="category-name">2012 Premium Tin</span>
+                </a>
+			
+			
+		
+		</li>
+		
+	
+
+		
+
+		<li class="depth-3 leaf-category ">
+			
+			
+				
+				<a href="/catalog/20022003_collectors_tins/4427" id="category-4427">
+                    <span class="category-name">2002/2003 Collectors Tins</span>
                 </a>
 			
 			
@@ -16481,6 +16231,54 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 		
 	
 
+		
+			
+			
+				
+				
+			
+			
+
+		
+
+		<li class="depth-2 leaf-category col2">
+			
+			
+				
+				<a href="/catalog/wc4_gba_promos/4428" id="category-4428">
+                    <span class="category-name">WC4 GBA Promos</span>
+                </a>
+			
+			
+		
+		</li>
+		
+	
+
+		
+			
+			
+				
+				
+			
+			
+
+		
+
+		<li class="depth-2 leaf-category col3">
+			
+			
+				
+				<a href="/catalog/2018_advent_calendar/4429" id="category-4429">
+                    <span class="category-name">2018 Advent Calendar</span>
+                </a>
+			
+			
+		
+		</li>
+		
+	
+
 						<li class="placeholder"><span></span></li>
 					</ul>
 
@@ -17299,28 +17097,28 @@ Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a
 	
 	
 	<li class="product" itemscope itemtype="http://schema.org/Product">
-		<a href="/buylist/magic_singles-core_set_2020/chandra_awakened_inferno/601947" itemprop="url">
+		<a href="/buylist/magic_singles-throne_of_eldraine/oko_thief_of_crowns/606112" itemprop="url">
 			<span class="image">
                 
-				<img src="https://crystal-cdn2.crystalcommerce.com/photos/6514502/medium/en_iTPMovcbiG.png" alt="Chandra, Awakened Inferno" itemprop="image" />
+				<img src="https://crystal-cdn2.crystalcommerce.com/photos/6526721/medium/en_6dL3vYNqqs.png" alt="Oko, Thief of Crowns" itemprop="image" />
 			    
 			</span>
-			<span class="name" itemprop="name">Chandra, Awakened Inferno</span>
-			<span class="price">$8.00</span>
+			<span class="name" itemprop="name">Oko, Thief of Crowns</span>
+			<span class="price">$17.00</span>
 		</a>
 	</li>
 
 	
 	
 	<li class="product" itemscope itemtype="http://schema.org/Product">
-		<a href="/buylist/magic_singles-core_set_2020/sorin_imperious_bloodlord/602092" itemprop="url">
+		<a href="/buylist/magic_singles-throne_of_eldraine/emry_lurker_of_the_loch/606316" itemprop="url">
 			<span class="image">
                 
-				<img src="https://crystal-cdn4.crystalcommerce.com/photos/6514810/medium/en_baVaf4kTYX.png" alt="Sorin, Imperious Bloodlord" itemprop="image" />
+				<img src="https://crystal-cdn2.crystalcommerce.com/photos/6527214/medium/en_8m0lSh5iFH.png" alt="Emry, Lurker of the Loch" itemprop="image" />
 			    
 			</span>
-			<span class="name" itemprop="name">Sorin, Imperious Bloodlord</span>
-			<span class="price">$3.00</span>
+			<span class="name" itemprop="name">Emry, Lurker of the Loch</span>
+			<span class="price">$4.00</span>
 		</a>
 	</li>
 
