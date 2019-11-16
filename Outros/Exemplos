@@ -1,0 +1,30 @@
+Ler Postings - Document at Time
+def Document_at_Time(documento,consulta):
+    count = 0
+    
+    #Lista com os termos iguais (termo, documento)
+    termosIguais = []
+    
+    # lista de Nomes dos documentos para cada termo igual ao da consulta.(doc1,doc1,doc2,doc1,dco4...)
+    Documents = []
+    
+    for termo in termosConsulta:
+        for postingTermo in Postings:
+            if termo == postingTermo[0]:
+                termosIguais.append((termo,postingTermo[1]))
+                Documents.append(postingTermo[1])
+    
+    # Contando a frequencia de docmentos que possuem termos da consulta(quantsos termos da consulta o doc tem?)
+    scoreDocumentos = Counter(Documents)
+    #dicionario com doc:frequencia
+    scoreDocumentos = dict(scoreDocumentos)    
+    
+    #nomes dos documentos sem duplicatas
+    documentosNomes = list(scoreDocumentos) 
+    dataScore = []
+    
+    for doc in documentosNomes:
+        frequencia = scoreDocumentos[doc]
+        dataScore.append(dict(zip(['Documento','Score/Frequencia'],[doc,frequencia])))
+    
+    return pd.DataFrame(dataScore,columns=['Documento','Score/Frequencia'])
